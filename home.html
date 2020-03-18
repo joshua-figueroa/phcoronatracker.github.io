@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>PH Coronavirus Tracker</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src = "virus.png" alt="logo" class="logo">
+            <span>COVID-19 Update</span>    
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="info.html">Infographics</a></li> 
+                    <li><a href="news.html">News</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <div class="dashboard">
+            <div class="title">Dashboard</div>
+            <div class="source">
+                Source: Department of Health
+                <p>Updated as of: <i>March 18, 2020 - 6:00 PM</i></p> 
+            </div>
+            <img src="bacteria.png" alt="image" class="virus">
+            <div class="cases" onclick="window.open('#','mywindow');" id="cases"></div>
+            <div class="num">Total Confirmed Cases</div><br>
+            <img src="cross.png" alt="image" class="cross">
+            <div class="death" onclick="window.open('#','mywindow');" id="death"></div>
+            <div class="num">Total Deaths</div><br>
+            <img src="heartbeat.png" alt="image" class="heart">
+            <div class="recover" onclick="window.open('#','mywindow');" id="recover"></div>
+            <div class="num">Total Recoveries</div><br>
+            <img src="search.png" alt="image" class="search">
+            <div class="pui" id="pui"></div>
+            <div class="num">Person Under Investigation (PUI)</div><br>
+            <img src="monitor.png" alt="image" class="monitor">
+            <div class="pum" id="pum"></div>
+            <div class="num">Person Under Monitoring (PUM)</div><br>
+        </div>
+
+        <div class="ph">
+            <div class="country">Philippines</div>
+            <div class="infect">Infected Provinces: 14/81</div>
+            <img src="bar.png" alt="image" class="bar">
+            <input type="text" id="input_ph" class="input" onkeyup="search_ph()" placeholder="search data" title="Type in a name">
+            <div class="note">(Note: The data shown below are based on their residency)</div>
+            <div class="table-header">
+                <table cellpadding="10" id="ph">
+                    <tr>
+                        <th>Provinces</th>
+                        <th>Confirmed</th>
+                        <th>Deaths</th>
+                        <th>Recoveries</th>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>202</td>
+                        <td>17</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Metro Manila</td>
+                        <td>141</td>
+                        <td>9</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Rizal</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Bulacan</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Cavite</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Pampanga</td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Batangas</td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Negros Oriental</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Abra</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Bataan</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Davao</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Laguna</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Lanao del sur</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tarlac</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Quezon</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="ncr">
+            <div class="country">Metro Manila (NCR)</div>
+            <div class="infect">Infected Cities: 13/17</div>
+            <img src="bar.png" alt="image" class="bar">
+            <input type="text" class="input" id="input_ncr" onkeyup="search_ncr()" placeholder="search data" title="Type in a name">
+            <div class="note">(Note: The data shown below are based on their residency)</div>
+            <div class="table-header">
+                <table cellpadding="10" id="ncr">
+                    <tr>
+                        <th>Cities</th>
+                        <th>Confirmed</th>
+                        <th>Deaths</th>
+                        <th>Recoveries</th>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>141</td>
+                        <td>9</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Quezon City</td>
+                        <td>34</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>San Juan</td>
+                        <td>22</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Makati</td>
+                        <td>17</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Manila</td>
+                        <td>13</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Pasig</td>
+                        <td>13</td>
+                        <td>3</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Mandaluyong</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Las Pinas</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Marikina</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Paranaque</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Taguig</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Caloocan</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Muntinlupa</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Pasay</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>
