@@ -272,9 +272,10 @@ tr td:nth-child(4) {
 }
 
 /* Media Queries: Phone Portrait */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
     body, html {
         width: 100%;
+        overflow-x: hidden;
     }
     body {
         width: 100%;
