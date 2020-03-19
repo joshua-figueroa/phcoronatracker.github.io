@@ -388,7 +388,7 @@ tr td:nth-child(4) {
         height: 20px;
     }
     .input {
-        right: 20px;
+        right: 11px;
         top: 55px;
         width: 120px;
         height: 12px;
@@ -405,6 +405,12 @@ tr td:nth-child(4) {
     table {
         table-layout: fixed;
         width: 100%;
+        font-size: 11pt;
+    }
+    th {
+        font-weight: 400;
+        position: sticky;
+        top: 0;
     }
     .ncr {
         display: none;
