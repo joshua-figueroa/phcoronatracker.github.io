@@ -306,6 +306,8 @@ tr td:nth-child(4) {
         padding-top: 18px;
         position: absolute;
         right: 20px;
+        height: 32px;
+        width: 32px;
     }
     .dashboard {
         width: 85%;
