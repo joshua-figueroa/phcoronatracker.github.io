@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
 }
 header {
+    display: block;
     background-color: #55D6AA;
     height: 83px;
 }
@@ -25,15 +26,19 @@ header::after {
 span {
     font-size: 26pt;
     color: #364061;
-    text-align: left;
     padding-top: 10px;
     padding-left: 6px;
     position: absolute;
     top: 11px;
+    left: 130px;
+}
+.menu {
+    display: none;
 }
 nav {
     position: absolute;
     left: 675px;
+    display: block;
 }
 nav ul {
     margin: 0;
@@ -264,4 +269,95 @@ tr td:nth-child(4) {
     height: 525px;
     width: 460px;
     color: #F7F7F7;
+}
+
+/* Media Queries: Phone Portrait */
+@media screen and (max-width: 414px) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        padding: 0;
+        overflow-x: hidden;
+        position: relative;
+    }
+    header {
+        width: 100%;
+        height: 70px;
+    }  
+    .nav {
+        display: none;
+    }
+    .logo {
+        position: absolute;
+        left: 15px;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    span {
+        font-size: 18pt;
+        left: 80px;
+    }
+    .menu {
+        display: block;
+        padding-top: 18px;
+        position: absolute;
+        right: 20px;
+    }
+    .dashboard {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+    }
+    .ph {
+        display: none;
+    }
+    .ncr {
+        display: none;
+    }
+    .title {
+        font-size: 17pt;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .source {
+        font-size: 11pt;
+        text-align: center;
+    }
+    p {
+        font-size: 12pt;
+    }
+    .virus {    
+        left: calc(50% - 56px);
+    }
+    .cases {
+        left: calc(50% - 11px);
+    }
+    .cross {
+        left: calc(50% - 49px);
+    }
+    .death {
+        left: calc(50% - 4px);
+    }
+    .heart {
+        left: calc(50% - 37px);
+    }
+    .recover {
+        left: calc(50% + 8px);
+    }
+    .search {
+        left: calc(50% - 56px);
+    }
+    .pui {
+        left: calc(50% - 11px);
+    }
+    .monitor {
+        left: calc(50% - 68px);
+    }
+    .pum {
+        left: calc(50% - 23px);
+    }
 }
