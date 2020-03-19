@@ -314,12 +314,6 @@ tr td:nth-child(4) {
         left: 0px;
         right: 0px;
     }
-    .ph {
-        display: none;
-    }
-    .ncr {
-        display: none;
-    }
     .title {
         font-size: 17pt;
         text-align: center;
@@ -361,5 +355,58 @@ tr td:nth-child(4) {
     }
     .pum {
         left: calc(50% - 23px);
+    }
+    .ph {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+        top: 665px;
+    }
+    .country {
+        top: 20px;
+        left: 20px;
+        padding: 0px;
+        margin: 0;
+    }
+    .infect {
+        font-size: 10pt;
+        padding: 0px;
+        left: 21px;
+        top: 55px;
+    }
+    .note {
+        font-size: 9pt;
+        left: 21px;
+        top: 78px;
+    }
+    .bar {
+        right: 150px;
+        top: 53px;
+        width: 20px;
+        height: 20px;
+    }
+    .input {
+        right: 20px;
+        top: 55px;
+        width: 120px;
+        height: 12px;
+    }
+    .table-header {
+        height: 430px;
+        width: 350px;
+        top: 100px;
+        left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+    .ncr {
+        display: none;
     }
 }
