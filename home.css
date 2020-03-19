@@ -273,12 +273,13 @@ tr td:nth-child(4) {
 
 /* Media Queries: Phone Portrait */
 @media screen and (max-width: 414px) {
+    body, html {
+        width: 100%;
+    }
     body {
         width: 100%;
         height: 100%;
-        margin: 0px auto;
         padding: 0;
-        overflow-x: hidden;
         position: relative;
     }
     header {
