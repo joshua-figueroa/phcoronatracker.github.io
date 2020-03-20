@@ -246,7 +246,7 @@ td {
     border-top: 1px solid black;
 }
 tr td:nth-child(1) {
-    font-weight: 500;
+    font-weight: 400;
 }
 tr td:nth-child(2) {
     color: #172783;
@@ -371,20 +371,22 @@ tr td:nth-child(4) {
         left: 20px;
         padding: 0px;
         margin: 0;
+        font-size: 6.8vw;
     }
     .infect {
-        font-size: 10pt;
+        font-size: 3.3vw;
         padding: 0px;
         left: 21px;
         top: 55px;
     }
     .note {
-        font-size: 9pt;
+        font-size: 2.8vw;
         left: 21px;
         top: 82px;
+        width: 90%;
     }
     .bar {
-        right: calc(30% + 30px);
+        right: calc(30% + 28px);
         top: 56px;
         width: 15px;
         height: 15px;
@@ -399,12 +401,12 @@ tr td:nth-child(4) {
         height: 425px;
         width: 88%;
         top: 105px;
-        margin-left: 10px;
+        margin-left: 8px;
         margin-right: auto;
     }
     table {
         table-layout: fixed;
-        font-size: 11pt;
+        font-size: 3.5vw;
     }
     th {
         font-weight: 400;
