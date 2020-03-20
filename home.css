@@ -20,7 +20,7 @@ header::after {
 }
 .logo {
     position: absolute;
-    left: 28px;
+    left: calc(2%);
     padding: 10px;
 }
 span {
@@ -29,15 +29,15 @@ span {
     padding-top: 10px;
     padding-left: 6px;
     position: absolute;
-    top: 11px;
-    left: 130px;
+    top: 9px;
+    left: calc(4% + 60px);
 }
 .menu {
     display: none;
 }
 nav {
     position: absolute;
-    left: 675px;
+    right: calc(4%);
     display: block;
 }
 nav ul {
@@ -272,7 +272,7 @@ tr td:nth-child(4) {
 }
 
 /* Media Queries: Phone Portrait */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     body, html {
         width: 100%;
     }
@@ -280,7 +280,7 @@ tr td:nth-child(4) {
         width: 100%;
         height: 100%;
         padding: 0;
-        position: relative;
+        position: absolute;
         overflow-x: hidden;
     }
     header {
@@ -291,21 +291,21 @@ tr td:nth-child(4) {
         display: none;
     }
     .logo {
-        position: absolute;
-        left: 15px;
+        left: calc(3%);
         padding: 10px;
         height: 50px;
         width: 50px;
     }
     span {
-        font-size: 18pt;
-        left: 80px;
+        font-size: 5.6vw;
+        left: calc(3% + 64px);
+        margin: auto;
     }
     .menu {
+        position: absolute;
         display: block;
         padding-top: 18px;
-        position: absolute;
-        right: 20px;
+        right: calc(5%);
         height: 32px;
         width: 32px;
     }
@@ -386,7 +386,7 @@ tr td:nth-child(4) {
         width: 90%;
     }
     .bar {
-        right: calc(30% + 28px);
+        right: calc(30% + 31px);
         top: 56px;
         width: 15px;
         height: 15px;
@@ -401,7 +401,7 @@ tr td:nth-child(4) {
         height: 425px;
         width: 88%;
         top: 105px;
-        margin-left: 8px;
+        margin-left: 9px;
         margin-right: auto;
     }
     table {
@@ -414,6 +414,11 @@ tr td:nth-child(4) {
         top: 0;
     }
     .ncr {
-        display: none;
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+        top: 1235px;
     }
 }
