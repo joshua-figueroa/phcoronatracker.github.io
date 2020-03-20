@@ -290,6 +290,12 @@ tr td:nth-child(4) {
     .nav {
         display: none;
     }
+    nav ul {
+        display: none;
+    }
+    nav a {
+        display: none;
+    }
     .logo {
         left: calc(3%);
         padding: 10px;
