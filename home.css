@@ -381,32 +381,29 @@ tr td:nth-child(4) {
     .note {
         font-size: 9pt;
         left: 21px;
-        top: 78px;
+        top: 82px;
     }
     .bar {
-        right: 150px;
-        top: 53px;
-        width: 20px;
-        height: 20px;
+        right: calc(30% + 30px);
+        top: 56px;
+        width: 15px;
+        height: 15px;
     }
     .input {
-        right: 11px;
+        right: 18px;
         top: 55px;
-        width: 120px;
+        width: 30%;
         height: 12px;
     }
     .table-header {
-        height: 430px;
-        width: 350px;
-        top: 100px;
-        left: 10px;
-        margin-left: auto;
+        height: 425px;
+        width: 88%;
+        top: 105px;
+        margin-left: 10px;
         margin-right: auto;
-        padding: 0px;
     }
     table {
         table-layout: fixed;
-        width: 100%;
         font-size: 11pt;
     }
     th {
