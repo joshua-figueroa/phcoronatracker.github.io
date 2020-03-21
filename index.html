@@ -10,21 +10,20 @@
     <title>PH Coronavirus Tracker</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <img src = "virus.png" alt="logo" class="logo">
-            <span>COVID-19 Update</span>    
+    <nav>
+        <img src = "virus.png" alt="logo" class="logo">
+        <input type="checkbox" id= "check">
+        <label for="check" class="checkbtn">
             <img src = "menu.png" alt="menu" class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li> 
-                    <li><a href="about.html">About</a></li> 
-                    <li><a href="info.html">Maps</a></li> 
-                    <li><a href="news.html">News</a></li> 
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </label>
+        <label class="brand">COVID-19 Update</label>
+        <ul class="navbar-nav ml-auto">
+            <li><a class="active" href="index.html">Home</a></li> 
+            <li><a href="about.html">About</a></li> 
+            <li><a href="info.html">Infographics</a></li> 
+            <li><a href="news.html">News</a></li> 
+        </ul>
+    </nav>
 
     <article>
         <div class="dashboard">
@@ -287,6 +286,7 @@
             </div>
         </div>
     </article>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
