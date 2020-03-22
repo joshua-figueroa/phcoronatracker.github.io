@@ -1,10 +1,10 @@
 console.log("Philippines COVID-19 Tracker");
 
-update('cases', 230);
-update('death', 18);
-update('recover', 8);
-update('pui', 380);
-update('pum', 4929);
+update('cases', 380);
+update('death', 25);
+update('recover', 17);
+update('pui', 593);
+update('pum', 6321);
 
 function update(id, count) {
     document.getElementById(id).innerHTML = (`${count}`);
