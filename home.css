@@ -11,7 +11,6 @@ nav {
     width: 100%;
 }
 label.brand {
-    color: #364061;
     font-size: 33px;
     line-height: 80px;
     padding: 0 50px;
@@ -106,6 +105,14 @@ nav ul li:hover a::before {
     font-size: 10pt;
     text-align: center;
 }
+.doh {
+    text-decoration: none;
+    color: white;
+}
+.doh:hover() {
+    color: #364061;
+    text-decoration: solid;
+}
 p {
     font-size: 11pt;
 }
@@ -150,16 +157,16 @@ p {
 .heart {
     position: absolute;
     padding: 10px;
-    left: 105px;
+    left: 105px !important;
 }
 .recover {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: #00FF00;
-    left: 150px;
+    left: 150px !important; 
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 300;
 }
 .recover:hover {
     color: wheat;
@@ -860,10 +867,10 @@ tr td:nth-child(4) {
         left: calc(50% - 4px);
     }
     .heart {
-        left: calc(50% - 37px);
+        left: calc(50% - 49px);
     }
     .recover {
-        left: calc(50% + 8px);
+        left: calc(50% - 4px);
     }
     .search {
         left: calc(50% - 56px);
