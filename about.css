@@ -1,71 +1,164 @@
 body {
 	margin: 0;
     background: #364061;
-    font-family: 'Work Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    padding: 0;
 }
-.navbar {
-    width: 80%;
-    margin: 0 auto;
+nav {
+    background: #55D6AA;
+    height: 73px;
+    width: 100%;
 }
-header {
-    background-color: #55D6AA;
-    height: 83px;
-}
-header::after {
-    content: '';
-    display: table;
-    clear: both;
+label.brand {
+    color: #364061;
+    font-size: 33px;
+    line-height: 80px;
+    padding: 0 50px;
+    position: absolute;
+    left: calc(5%);
 }
 .logo {
     position: absolute;
-    left: 25px;
+    left: calc(2%);
     padding: 10px;
-}
-span {
-    font-size: 26pt;
-    color: #364061;
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 6px;
-    position: absolute;
-    top: 11px;
-}
-nav {
-    position: absolute;
-    left: 675px;
+    height: 55px;
+    width: 55px;
 }
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    float: right;
+    margin-right: 20px;
 }
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 29px;
-    position: relative;
+nav ul li {
+    display:inline-block;
+    line-height: 30px;
+    margin: 0 15px;
 }
-nav a {
-    color: #364061;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 22px;
-}
-nav a:hover {
+nav ul li a {
     color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius:3px;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    transition: all .3s ease;
 }
-nav a::before {
+a.active, a:hover {
+    color: #212f5c;
+}
+a::after {
     content: '';
     display: block;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    position: relative;
 }
-nav a:hover::before {
+a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+}
+nav ul li a:hover:after {
     width: 100%;
+}
+nav ul li:hover a::before {
+    right: 0;
+    left: 0;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+/* Media Queries: Phone Portrait */
+@media screen and (max-width: 500px) {
+    body, html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        overflow-x: hidden;
+    }
+    .checkbtn {
+        display: block;
+    }
+    label.brand {
+        font-size: 6.0vw;
+        left: calc(5% + 8px);
+        margin: auto;
+        line-height: 70px;
+    }
+    .menu {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 22px;
+        right: calc(4%);
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 335px;
+        background: #2c3e50; 
+        top: 58px;
+        left: 100%;
+        text-align: left;
+        transition: all .5s ease-in-out;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 5px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    a::after {
+        display: none;
+    }
+    a::before {
+        display: none;
+    }
+    
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0px;
+        z-index: 2;
+        transition: all .5s ease-in-out;
+        text-align: start;
+    }
+    .logo {
+        left: calc(3%);
+        padding: 10px;
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        top: 3px;
+    }
 }
