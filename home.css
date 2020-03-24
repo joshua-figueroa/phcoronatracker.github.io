@@ -867,10 +867,10 @@ tr td:nth-child(4) {
         left: calc(50% - 4px);
     }
     .heart {
-        left: calc(50% - 49px);
+        left: calc(50% - 49px) !important;
     }
     .recover {
-        left: calc(50% - 4px);
+        left: calc(50% - 4px) !important;
     }
     .search {
         left: calc(50% - 56px);
