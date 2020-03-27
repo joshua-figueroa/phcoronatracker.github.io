@@ -9,6 +9,8 @@ nav {
     background: #55D6AA;
     height: 73px;
     width: 100%;
+    position: fixed;
+    z-index: 2;
 }
 label.brand {
     color: #364061;
@@ -87,7 +89,114 @@ nav ul li:hover a::before {
 #check {
     display: none;
 }
-
+.about {
+    background-color: #445175;
+    height: auto;
+    width: 96vw;
+    position: absolute;
+    top: calc(73px + 3vh);
+    left: 1.4vw;
+    border-radius: 25px;
+}
+.info {
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 95px);
+    width: 50px;
+    height: 50px;
+}
+#title {
+    color: whitesmoke;
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 30px);
+    font-weight: 500;
+    font-size: 30pt;
+}
+.ph {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 213px);
+    font-weight: 500;
+    font-size: 26pt;
+}
+.p {
+    position: absolute;
+    top: 130px;
+    color: whitesmoke;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-size: 14pt;
+    text-align: justify;
+    left: calc(25% - 10px);
+}
+.people {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 350px;
+    left: calc(50% - 143px);
+}
+.group {
+    position: absolute;
+    font-weight: 500;
+    font-size: 26pt;
+    color: whitesmoke;
+    top: 350px;
+    left: calc(50% - 78px);
+}
+.kuya {
+    font-size: 16pt;
+    color: whitesmoke;
+    position: absolute;
+    top: 410px;
+    left: calc(50% - 280px);
+}
+.heart {
+    font-size: 16pt;
+    color: whitesmoke;
+    position: absolute;
+    top: 445px;
+    left: calc(50% - 278px);
+}
+.suggest {
+    font-size: 16pt;
+    color: whitesmoke;
+    position: absolute;
+    top: 490px;
+    left: calc(50% - 450px);
+}
+.work {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 560px;
+    left: calc(50% - 125px);
+}
+.references {
+    position: absolute;
+    font-weight: 500;
+    font-size: 26pt;
+    color: whitesmoke;
+    top: 560px;
+    left: calc(50% - 60px);
+}
+.links {
+    color: white;
+    font-size: 14pt;
+    position: absolute;
+    top: 610px;
+    left: calc(50% - 160px);
+}
+.s {
+    text-align: center;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+    color: rgb(170, 170, 201);
+}
 /* Media Queries: Phone Portrait */
 @media screen and (max-width: 500px) {
     body, html {
@@ -160,5 +269,78 @@ nav ul li:hover a::before {
         width: 45px;
         position: absolute;
         top: 3px;
+    }
+    .about {
+        height: 110vh;
+        width: 90vw;
+        top: calc(73px + 2vh);
+        left: 5vw;
+    }
+    .info {
+        left: calc(50% - 75px);
+        width: 40px;
+        height: 40px;
+    }
+    #title {
+        left: calc(50% - 20px);
+        font-size: 24pt;
+    }
+    .ph {
+        top: 80px;
+        left: 2vw;
+        font-size: 6vw;
+    }
+    .p {
+        top: 95px;
+        width: 95%;
+        font-size: 10.5pt;
+        left: 0;
+    }
+    .people {
+        width: 30px;
+        height: 30px;
+        top: 330px;
+        left: calc(50% - 90px);
+    }
+    .group {
+        font-size: 6vw;
+        top: 330px;
+        left: calc(50% - 45px);
+    }
+    .kuya {
+        font-size: 4.3vw;
+        top: 370px;
+        left: 0vw;
+        text-align: center;
+    }
+    .heart {
+        font-size: 4.3vw;
+        top: 430px;
+        left: 0vw;
+        text-align: center;
+    }
+    .suggest {
+        font-size: 4.3vw;
+        top: 490px;
+        left: 0vw;
+        text-align: center;
+    }
+    .work {
+        width: 30px;
+        height: 30px;
+        top: 580px;
+        left: calc(50% - 85px);
+    }
+    .references {
+        font-weight: 500;
+        font-size: 6vw;
+        top: 580px;
+        left: calc(50% - 40px);
+    }
+    .links {
+        font-size: 4.3vw;
+        top: 620px;
+        left: 0vw;
+        width: 100%;
     }
 }
