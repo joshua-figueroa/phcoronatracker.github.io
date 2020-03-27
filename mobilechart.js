@@ -40,7 +40,7 @@ let chart = new Chart(ctx, {
             text: title,
             fontColor: 'white',
             fontFamily: 'Arial',
-            fontSize: 12
+            fontSize: 13
         },
         legend: {
             labels: {
@@ -52,7 +52,7 @@ let chart = new Chart(ctx, {
                 ticks: {
                     beginAtZero:true,
                     fontColor: 'white',
-                    fontSize: 12
+                    fontSize: 13
                 },
                 gridLines: {
                     display: true,
@@ -66,7 +66,7 @@ let chart = new Chart(ctx, {
                 gridLines: {
                     display: true,
                     color: "#6d727a",
-                    fontSize: 12
+                    fontSize: 13
                 }
             }]
         }
