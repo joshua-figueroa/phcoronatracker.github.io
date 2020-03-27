@@ -9,6 +9,8 @@ nav {
     background: #55D6AA;
     height: 73px;
     width: 100%;
+    position: fixed;
+    z-index: 2;
 }
 label.brand {
     color: #364061;
@@ -93,7 +95,7 @@ nav ul li:hover a::before {
     position: absolute;
     top: 93px;
     left: 30px;
-    height: 525px;
+    height: auto;
     width: 310px;
     color: #F7F7F7;
 }
@@ -289,9 +291,20 @@ tr td:nth-child(4) {
 }
 .news {
     position: absolute;
-    top: 645px;
-    left: 30px;
-    width: 310px;
+    border-radius: 25px;
+    width: 330px;
+    height: 522px;
+    overflow: auto;
+    top: 646px;
+    left: 23px;
+}
+.rss {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
 }
 .luzon {
     background-color: #6B7CB4;
@@ -516,11 +529,19 @@ tr td:nth-child(4) {
         top: 2375px;
     }
     .news {
+        border-radius: 25px !important;
         width: 90%;
         margin: 0 auto;
-        padding: 10px;
+        top: 2935px;
         left: 0px;
         right: 0px;
-        top: 2935px;
+    }
+    .rss {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        z-index: 2;
+        top: 10px;
+        right: 15px;
     }
 }
