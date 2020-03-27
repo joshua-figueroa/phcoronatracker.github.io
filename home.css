@@ -92,7 +92,7 @@ nav ul li:hover a::before {
     border-radius: 25px;
     position: absolute;
     top: 93px;
-    left: 25px;
+    left: 30px;
     height: 525px;
     width: 310px;
     color: #F7F7F7;
@@ -105,6 +105,10 @@ nav ul li:hover a::before {
 .source {
     font-size: 10pt;
     text-align: center;
+}
+.doh {
+    text-decoration: none;
+    color: #F7F7F7;
 }
 p {
     font-size: 11pt;
@@ -150,14 +154,14 @@ p {
 .heart {
     position: absolute;
     padding: 10px;
-    left: 118px;
+    left: 105px;
 }
 .recover {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: #00FF00;
-    left: 163px;
+    left: 150px;
     cursor: pointer;
     font-weight: 500;
 }
@@ -196,7 +200,7 @@ p {
     border-radius: 24px;
     position: absolute;
     top: 93px;
-    left: 390px;
+    left: 385px;
     height: 525px;
     width: 460px;
     color: #F7F7F7;
@@ -278,7 +282,7 @@ tr td:nth-child(4) {
     border-radius: 24px;
     position: absolute;
     top: 93px;
-    left: 880px;
+    left: 870px;
     height: 525px;
     width: 460px;
     color: #F7F7F7;
@@ -286,7 +290,7 @@ tr td:nth-child(4) {
 .news {
     position: absolute;
     top: 645px;
-    left: 25px;
+    left: 30px;
     width: 310px;
 }
 .luzon {
@@ -294,7 +298,7 @@ tr td:nth-child(4) {
     border-radius: 24px;
     position: absolute;
     top: 645px;
-    left: 390px;
+    left: 385px;
     height: 525px;
     width: 460px;
     color: #F7F7F7;
@@ -304,7 +308,7 @@ tr td:nth-child(4) {
     border-radius: 24px;
     position: absolute;
     top: 645px;
-    left: 880px;
+    left: 870px;
     height: 525px;
     width: 460px;
     color: #F7F7F7;
@@ -326,7 +330,7 @@ tr td:nth-child(4) {
         display: block;
     }
     label.brand {
-        font-size: 6.0vw;
+        font-size: 6.2vw;
         left: calc(5% + 8px);
         margin: auto;
         line-height: 70px;
@@ -346,7 +350,7 @@ tr td:nth-child(4) {
         top: 58px;
         left: 100%;
         text-align: left;
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
         z-index: 2;
     }
     nav ul li{
@@ -372,7 +376,7 @@ tr td:nth-child(4) {
     #check:checked ~ ul {
         left: 0px;
         z-index: 2;
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
         text-align: start;
     }
     .logo {
