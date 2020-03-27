@@ -91,9 +91,6 @@ canvas {
     width: 100% !important;
     height: 570px !important;
 }
-.source {
-    display: none;
-}
 
 /* Media Queries: Phone Portrait */
 @media screen and (max-width: 500px) {
@@ -169,23 +166,11 @@ canvas {
         top: 3px;
     }
     canvas {
-        height: 78vh !important;
+        height: 81vh !important;
         width: 100vw !important;
     }
     .chart-container {
         position: absolute;
-        top: calc(1vh + 75px);
-    }
-    .source {
-        display: block;
-        font-size: 11pt;
-        position: absolute;
-        bottom: 0vh;
-        padding-top: 5px;
-        padding-left: 15px;
-    }
-    a {
-        text-decoration: none;
-        color: whitesmoke;
+        top: calc(3vh + 75px);
     }
 }
