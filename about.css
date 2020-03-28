@@ -165,7 +165,7 @@ nav ul li:hover a::before {
     color: whitesmoke;
     position: absolute;
     top: 490px;
-    left: calc(50% - 450px);
+    left: calc(50% - 430px);
 }
 .work {
     width: 45px;
@@ -187,7 +187,7 @@ nav ul li:hover a::before {
     font-size: 14pt;
     position: absolute;
     top: 610px;
-    left: calc(50% - 160px);
+    left: calc(50% - 170px);
 }
 .s {
     text-align: center;
