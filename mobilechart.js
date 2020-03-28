@@ -20,14 +20,14 @@ let chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['March 1', '8', '15', '22', '25', '26', '27'],
+        labels: ['March 1', '8', '15', '22', '26', '27', '28'],
         datasets: [{
             label: 'Number of Cases',
             backgroundColor: 'rgba(255, 255, 255, 0)',
             borderColor: 'rgb(255, 255, 255)',
             pointBackgroundColor: 'rgb(255, 255, 255)',
             pointRadius: 4,
-            data: [3, 10, 140, 462, 636, 707, 803]
+            data: [3, 10, 140, 462, 707, 803, 1075]
         }]
     },
 
