@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162122410-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-162122410-1');
     gtag('set', {'user_id': 'UA-162122410-1'}); // Set the user ID using signed-in user_id.
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -49,7 +46,7 @@
             <div class="title">Dashboard</div>
             <div class="source">
                 <a href="https://ncovtracker.doh.gov.ph/" class="doh" target="_blank">Source: Department of Health</a>
-                <p>Updated as of: <i>March 24, 2020 - 4:00 PM</i></p> 
+                <p>Updated as of: <i>March 29, 2020 - 4:00 PM</i></p> 
             </div>
             <img src="bacteria.png" alt="image" class="virus">
             <div class="cases" onclick="window.open('Patients.xlsm','mywindow');" id="cases"></div>
@@ -70,10 +67,10 @@
 
         <div class="ph">
             <div class="country">Philippines</div>
-            <div class="infect">Infected Provinces: 19/82</div>
+            <div class="infect">Infected Provinces: 33/82</div>
             <img src="bar.png" alt="image" class="bar">
             <input type="text" id="input_ph" class="input" onkeyup="search_ph()" placeholder="search data" title="Type in a name">
-            <div class="note">(Note: The data shown below are based on their residency)</div>
+            <div class="note">Note: The data below are based on DOH and not on LGU's</div>
             <div class="table-header">
                 <table cellpadding="10" id="ph">
                     <tr>
@@ -85,43 +82,91 @@
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>552</td>
-                        <td>35</td>
-                        <td>20</td>
+                        <td>1418</td>
+                        <td>71</td>
+                        <td>42</td>
                     </tr>
                     <tr>
                         <td>Metro Manila</td>
-                        <td>199</td>
-                        <td>23</td>
-                        <td>12</td>
+                        <td>394</td>
+                        <td>50</td>
+                        <td>32</td>
                     </tr>
                     <tr>
                         <td>Rizal</td>
-                        <td>12</td>
-                        <td>3</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Cavite</td>
+                        <td>14</td>
+                        <td>2</td>
                         <td>1</td>
                     </tr>
                     <tr>
                         <td>Bulacan</td>
-                        <td>8</td>
+                        <td>11</td>
+                        <td>3</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Laguna</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Batangas</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Cagayan</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Davao del Sur</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Iloilo</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Isabela</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Lanao del sur</td>
+                        <td>3</td>
                         <td>2</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Cavite</td>
-                        <td>8</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Batangas</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Laguna</td>
+                        <td>Negros Occidental</td>
                         <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Pampanga</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Baguio City</td>
+                        <td>2</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
@@ -132,9 +177,15 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Lanao del sur</td>
+                        <td>La Union</td>
                         <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Misamis Oriental</td>
                         <td>2</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
@@ -150,13 +201,13 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Pampanga</td>
-                        <td>2</td>
+                        <td>Abra</td>
                         <td>1</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Abra</td>
+                        <td>Aklan</td>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
@@ -166,6 +217,18 @@
                         <td>1</td>
                         <td>0</td>
                         <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Capiz</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Cebu</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>Cotabato City</td>
@@ -180,15 +243,27 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td>Iloilo</td>
+                        <td>Lanao del Norte</td>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Negros Occidental</td>
+                        <td>Palawan</td>
                         <td>1</td>
                         <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Oriental Mindoro</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Sultan Kudarat</td>
+                        <td>1</td>
+                        <td>1</td>
                         <td>0</td>
                     </tr>
                     <tr>
@@ -204,6 +279,12 @@
                         <td>0</td>
                     </tr>
                     <tr>
+                        <td>Zamboanga del Sur</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
                         <td>Foreign</td>
                         <td>3</td>
                         <td>1</td>
@@ -211,8 +292,8 @@
                     </tr>
                     <tr>
                         <td>For Validation</td>
-                        <td>294</td>
-                        <td>0</td>
+                        <td>480</td>
+                        <td>1</td>
                         <td>0</td>
                     </tr>
                 </table>
@@ -221,10 +302,10 @@
 
         <div class="ncr">
             <div class="country">Metro Manila (NCR)</div>
-            <div class="infect">Infected Cities: 14/17</div>
+            <div class="infect">Infected Cities: 16/17</div>
             <img src="bar.png" alt="image" class="bar">
             <input type="text" class="input" id="input_ncr" onkeyup="search_ncr()" placeholder="search data" title="Type in a name">
-            <div class="note">(Note: The data shown below are based on their residency)</div>
+            <div class="note">Note: There are only 16 Cities in NCR and 1 Municipality </div>
             <div class="table-header">
                 <table cellpadding="10" id="ncr">
                     <tr>
@@ -236,85 +317,85 @@
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>199</td>
-                        <td>23</td>
-                        <td>12</td>
+                        <td>394</td>
+                        <td>50</td>
+                        <td>32</td>
                     </tr>
                     <tr>
                         <td>Quezon City</td>
-                        <td>61</td>
+                        <td>105</td>
+                        <td>20</td>
                         <td>9</td>
-                        <td>4</td>
                     </tr>
                     <tr>
                         <td>San Juan</td>
-                        <td>30</td>
-                        <td>5</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Makati</td>
-                        <td>20</td>
-                        <td>2</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Pasig</td>
-                        <td>19</td>
-                        <td>2</td>
-                        <td>0</td>
+                        <td>61</td>
+                        <td>7</td>
+                        <td>7</td>
                     </tr>
                     <tr>
                         <td>Manila</td>
-                        <td>13</td>
-                        <td>1</td>
+                        <td>43</td>
+                        <td>7</td>
                         <td>1</td>
                     </tr>
                     <tr>
+                        <td>Makati</td>
+                        <td>38</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Pasig</td>
+                        <td>38</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
                         <td>Mandaluyong</td>
-                        <td>13</td>
+                        <td>24</td>
                         <td>1</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>Paranaque</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Marikina</td>
-                        <td>7</td>
+                        <td>22</td>
+                        <td>3</td>
                         <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Caloocan</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>0</td>
                     </tr>
                     <tr>
                         <td>Taguig</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>19</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Marikina</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Caloocan</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td>Las Pinas</td>
-                        <td>5</td>
+                        <td>8</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>Muntinlupa</td>
-                        <td>3</td>
-                        <td>0</td>
+                        <td>7</td>
+                        <td>2</td>
                         <td>0</td>
                     </tr>
                     <tr>
                         <td>Pasay</td>
-                        <td>2</td>
+                        <td>6</td>
                         <td>0</td>
                         <td>1</td>
                     </tr>
@@ -324,16 +405,28 @@
                         <td>0</td>
                         <td>0</td>
                     </tr>
+                    <tr>
+                        <td>Malabon</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Pateros</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
                 </table>
             </div>
         </div>
 
         <div class="luzon">
             <div class="country">Luzon</div>
-            <div class="infect">Infected Provinces: 13/39</div>
+            <div class="infect">Infected Provinces: 19/39</div>
             <img src="bar.png" alt="image" class="bar">
             <input type="text" id="input_luzon" class="input" onkeyup="search_luzon()" placeholder="search data" title="Type in a name">
-            <div class="note">(Note: The data shown below are based on their residency)</div>
+            <div class="note">Note: This is Luzon as a whole and not just only the mainland</div>
             <div class="table-header">
                 <table cellpadding="10" id="luzon">
                     <tr>
@@ -345,43 +438,67 @@
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>246</td>
-                        <td>31</td>
-                        <td>15</td>
+                        <td>491</td>
+                        <td>64</td>
+                        <td>37</td>
                     </tr>
                     <tr>
                         <td>Metro Manila</td>
-                        <td>199</td>
-                        <td>23</td>
-                        <td>12</td>
+                        <td>394</td>
+                        <td>50</td>
+                        <td>32</td>
                     </tr>
                     <tr>
                         <td>Rizal</td>
-                        <td>12</td>
-                        <td>3</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Cavite</td>
+                        <td>14</td>
+                        <td>2</td>
                         <td>1</td>
                     </tr>
                     <tr>
                         <td>Bulacan</td>
-                        <td>8</td>
+                        <td>11</td>
+                        <td>3</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Laguna</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Batangas</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Cagayan</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Isabela</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Pampanga</td>
+                        <td>3</td>
                         <td>2</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Cavite</td>
-                        <td>8</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Batangas</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Laguna</td>
-                        <td>3</td>
+                        <td>Baguio City</td>
+                        <td>2</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
@@ -392,15 +509,15 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Nueva Ecija</td>
+                        <td>La Union</td>
                         <td>2</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Pampanga</td>
+                        <td>Nueva Ecija</td>
                         <td>2</td>
-                        <td>1</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
@@ -414,6 +531,18 @@
                         <td>1</td>
                         <td>0</td>
                         <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Palawan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Oriental Mindoro</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>Tarlac</td>
@@ -433,10 +562,10 @@
 
         <div class="vimin">
             <div class="country">Visayas & Mindanao</div>
-            <div class="infect">Infected Provinces: 6/43</div>
+            <div class="infect">Infected Provinces: 14/43</div>
             <img src="bar.png" alt="image" class="bar">
             <input type="text" id="input_vimin" class="input" onkeyup="search_vimin()" placeholder="search data" title="Type in a name">
-            <div class="note">(Note: The data shown below are based on their residency)</div>
+            <div class="note">Note: The data below are based on patient's residency</div>
             <div class="table-header">
                 <table cellpadding="10" id="vimin">
                     <tr>
@@ -448,14 +577,38 @@
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>9</td>
-                        <td>3</td>
+                        <td>26</td>
+                        <td>5</td>
                         <td>2</td>
                     </tr>
                     <tr>
+                        <td>Davao del Sur</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Iloilo</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
                         <td>Lanao del sur</td>
+                        <td>3</td>
                         <td>2</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Negros Occidental</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Misamis Oriental</td>
                         <td>2</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
@@ -463,6 +616,24 @@
                         <td>2</td>
                         <td>1</td>
                         <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Aklan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Capiz</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Cebu</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>Cotabato City</td>
@@ -477,13 +648,19 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td>Iloilo</td>
+                        <td>Lanao del Norte</td>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Negros Occidental</td>
+                        <td>Sultan Kudarat</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Zamboanga del Sur</td>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
