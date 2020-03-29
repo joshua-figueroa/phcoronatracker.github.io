@@ -87,9 +87,14 @@ nav ul li:hover a::before {
 #check {
     display: none;
 }
+.chart-container {
+    position: absolute;
+    width: 96vw;
+    left: 2vw;
+}
 canvas {
-    width: 100% !important;
-    height: 570px !important;
+    width: 96vw !important;
+    height: 545px !important;
 }
 
 /* Media Queries: Phone Portrait */
