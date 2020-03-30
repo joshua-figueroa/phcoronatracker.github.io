@@ -371,18 +371,18 @@ a {
     .work {
         width: 30px;
         height: 30px;
-        top: 770px;
+        top: 760px;
         left: calc(50% - 85px);
     }
     .references {
         font-weight: 500;
         font-size: 6vw;
-        top: 770px;
+        top: 760px;
         left: calc(50% - 40px);
     }
     .links {
         font-size: 4.3vw;
-        top: 810px;
+        top: 800px;
         left: 0vw;
         width: 100%;
     }
