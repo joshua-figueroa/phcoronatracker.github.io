@@ -248,8 +248,16 @@ p {
     left: 13px;
     overflow-y: scroll;
 }
+.table-head {
+    height: 425px;
+    width: 429px;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    overflow-x: hidden;
+}
 table {
-    width: 100%;
+    width: 100% !important;
 }
 table, th, td {
     border-collapse: collapse;
@@ -315,6 +323,7 @@ tr td:nth-child(4) {
     height: 525px;
     width: 460px;
     color: #F7F7F7;
+    overflow-x: hidden;
 }
 .vimin {
     background-color: #6B7CB4;
@@ -489,6 +498,14 @@ tr td:nth-child(4) {
         height: 12px;
     }
     .table-header {
+        height: 425px;
+        width: 88%;
+        top: 105px;
+        margin-left: 9px;
+        margin-right: auto;
+    }
+    .table-head {
+        overflow: auto;
         height: 425px;
         width: 88%;
         top: 105px;
