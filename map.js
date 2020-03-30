@@ -1,30 +1,156 @@
 let citymap = {
     manila: {
         center: {lat: 14.599512, lng: 120.984222},
-        cases: 211
+        cases: 426
     }, 
     rizal: {
         center: {lat: 14.6037, lng: 121.3084},
-        cases: 12
+        cases: 29
     },
     bulacan: {
         center: {lat: 14.8527, lng: 120.8160},
-        cases: 8
+        cases: 11
     },
     cavite: {
         center: {lat: 14.4791, lng: 120.8970},
-        cases: 8
+        cases: 15
+    },
+    laguna: {
+        center: {lat: 14.2691, lng: 121.4113},
+        cases: 10
+    },
+    batangas: {
+        center: {lat: 13.7565, lng: 121.0583},
+        cases: 9
+    },
+    cagayan: {
+        center: {lat: 17.6132, lng: 121.7270},
+        cases: 6
+    },  
+    davao_sur: {
+        center: {lat: 6.7663, lng: 125.3284},
+        cases: 39
+    }, 
+    iloilo: {
+        center: {lat: 10.7202, lng: 122.5621},
+        cases: 5
+    }, 
+    isabela: {
+        center: {lat: 16.9754, lng: 121.8107},
+        cases: 4
+    }, 
+    lanao_sur: {
+        center: {lat: 7.8232, lng: 124.4198},
+        cases: 5
+    }, 
+    negros_occ: {
+        center: {lat: 10.2926, lng: 123.0247},
+        cases: 5
+    }, 
+    pampanga: {
+        center: {lat: 15.0794, lng: 120.6200},
+        cases: 3
+    }, 
+    baguio: {
+        center: {lat: 16.4023, lng: 120.5960},
+        cases: 6
+    }, 
+    bataan: {
+        center: {lat: 14.6417, lng: 120.4818},
+        cases: 2
+    }, 
+    misamis_or: {
+        center: {lat: 8.5046, lng: 124.6220},
+        cases: 2
+    }, 
+    la_union: {
+        center: {lat: 16.6159, lng: 120.3209},
+        cases: 2
+    }, 
+    negros_or: {
+        center: {lat: 9.6282, lng: 122.9888},
+        cases: 2
+    }, 
+    nueva_ecija: {
+        center: {lat: 15.5784, lng: 121.1113},
+        cases: 2
+    }, 
+    abra: {
+        center: {lat: 17.5951, lng: 120.7983},
+        cases: 1
+    }, 
+    aklan: {
+        center: {lat: 11.8166, lng: 122.0942},
+        cases: 1
+    }, 
+    capiz: {
+        center: {lat: 11.3889, lng: 122.6277},
+        cases: 1
+    }, 
+    camsur: {
+        center: {lat: 13.5250, lng: 123.3486},
+        cases: 1
+    }, 
+    cebu: {
+        center: {lat: 10.3157, lng: 123.8854},
+        cases: 1
+    }, 
+    cotabato_city: {
+        center: {lat: 7.2047, lng: 124.2310},
+        cases: 1
+    }, 
+    davao_oro: {
+        center: {lat: 7.5125, lng: 126.1763},
+        cases: 1
+    }, 
+    lanao_norte: {
+        center: {lat: 7.8722, lng: 123.8858},
+        cases: 1
+    }, 
+    palawan: {
+        center: {lat: 9.8349, lng: 118.7384},
+        cases: 1
+    }, 
+    oriental_mindoro: {
+        center: {lat: 13.0565, lng: 121.4069},
+        cases: 1
+    }, 
+    sulatan_kudarat: {
+        center: {lat: 6.5069, lng: 124.4198},
+        cases: 1
+    },
+    tarlac: {
+        center: {lat: 15.4755, lng: 120.5963},
+        cases: 1
+    },
+    quezon: {
+        center: {lat: 13.9414, lng: 121.6234},
+        cases: 1
+    },
+    zamboanga_sur: {
+        center: {lat: 7.8383, lng: 123.2967},
+        cases: 1
+    },
+    davao_norte: {
+        center: {lat: 7.5618, lng: 125.6533},
+        cases: 3
+    },
+    nueva_viscaya: {
+        center: {lat: 16.3301, lng: 121.1710},
+        cases: 1
+    },
+    davao_oriental: {
+        center: {lat: 7.3172, lng: 126.5420},
+        cases: 2
     }
 };
-
-
 
 function initMap() {
     // Styles a map in night mode.
     var location = {lat: 12.879721, lng: 121.774017};
     var map = new google.maps.Map(document.getElementById('map'), {
         center: location,
-        zoom: 5,
+        zoom: 6,
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
