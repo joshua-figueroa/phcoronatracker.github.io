@@ -91,7 +91,7 @@ nav ul li:hover a::before {
 }
 .about {
     background-color: #445175;
-    height: 140vh;
+    height: 168vh;
     width: 96vw;
     position: absolute;
     top: calc(73px + 3vh);
@@ -167,11 +167,37 @@ nav ul li:hover a::before {
     top: 490px;
     left: calc(50% - 430px);
 }
-.work {
+.memo {
     width: 45px;
     height: 45px;
     position: absolute;
     top: 560px;
+    left: calc(50% - 165px);
+}
+.dev {
+    position: absolute;
+    font-weight: 500;
+    font-size: 26pt;
+    color: whitesmoke;
+    top: 560px;
+    left: calc(50% - 100px);
+}
+.develop {
+    position: absolute;
+    top: 617px;
+    color: whitesmoke;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-size: 14pt;
+    text-align: justify;
+    left: calc(25% - 15px);
+}
+.work {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 780px;
     left: calc(50% - 125px);
 }
 .references {
@@ -179,14 +205,14 @@ nav ul li:hover a::before {
     font-weight: 500;
     font-size: 26pt;
     color: whitesmoke;
-    top: 560px;
+    top: 780px;
     left: calc(50% - 60px);
 }
 .links {
     color: white;
     font-size: 14pt;
     position: absolute;
-    top: 617px;
+    top: 842px;
     left: calc(50% - 170px);
 }
 .s {
@@ -271,7 +297,7 @@ a {
         top: 3px;
     }
     .about {
-        height: 840px;
+        height: 1030px;
         width: 90vw;
         top: calc(73px + 2vh);
         left: 5vw;
@@ -325,21 +351,38 @@ a {
         left: 0vw;
         text-align: center;
     }
+    .memo {
+        width: 30px;
+        height: 30px;
+        top: 560px;
+        left: calc(50% - 105px);
+    }
+    .dev {
+        font-size: 6vw;
+        top: 560px;
+        left: calc(50% - 60px);
+    }
+    .develop {
+        top: 595px;
+        width: 95%;
+        font-size: 10.5pt;
+        left: 0;
+    }
     .work {
         width: 30px;
         height: 30px;
-        top: 580px;
+        top: 770px;
         left: calc(50% - 85px);
     }
     .references {
         font-weight: 500;
         font-size: 6vw;
-        top: 580px;
+        top: 770px;
         left: calc(50% - 40px);
     }
     .links {
         font-size: 4.3vw;
-        top: 620px;
+        top: 810px;
         left: 0vw;
         width: 100%;
     }
