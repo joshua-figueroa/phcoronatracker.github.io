@@ -118,14 +118,14 @@ p {
 .virus {
     position: absolute;
     padding: 10px;
-    left: 89px;
+    left: 88px;
 }
 .cases {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: #172783;
-    left: 134px;
+    left: 133px;
     cursor: pointer;
     font-weight: 500;
 }
@@ -173,14 +173,14 @@ p {
 .search {
     position: absolute;
     padding: 10px;
-    left: 98px;
+    left: 88px;
 }
 .pui {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: black;
-    left: 143px;
+    left: 133px;
     font-weight: 500;
 }
 .monitor {
@@ -454,10 +454,10 @@ tr td:nth-child(4) {
         left: calc(50% - 4px) !important;
     }
     .search {
-        left: calc(50% - 56px);
+        left: calc(50% - 68px);
     }
     .pui {
-        left: calc(50% - 11px);
+        left: calc(50% - 23px);
     }
     .monitor {
         left: calc(50% - 68px);
