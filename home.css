@@ -493,6 +493,12 @@ tr td:nth-child(4) {
         top: 82px;
         width: 90%;
     }
+    .ok {
+        font-size: 3.3vw;
+        left: 21px;
+        top: 80px;
+        width: 90%;
+    }
     .bar {
         right: calc(31% + 30px);
         top: 56px;
