@@ -1,67 +1,67 @@
 let citymap = {
     manila: {
         center: {lat: 14.599512, lng: 120.984222},
-        cases: 426
+        cases: 1319
     }, 
     rizal: {
         center: {lat: 14.6037, lng: 121.3084},
-        cases: 29
+        cases: 75
     },
     bulacan: {
         center: {lat: 14.8527, lng: 120.8160},
-        cases: 11
+        cases: 23
     },
     cavite: {
         center: {lat: 14.4791, lng: 120.8970},
-        cases: 15
+        cases: 31
     },
     laguna: {
         center: {lat: 14.2691, lng: 121.4113},
-        cases: 10
+        cases: 21
     },
     batangas: {
         center: {lat: 13.7565, lng: 121.0583},
-        cases: 9
+        cases: 15
     },
     cagayan: {
         center: {lat: 17.6132, lng: 121.7270},
-        cases: 6
+        cases: 10
     },  
     davao_sur: {
         center: {lat: 6.7663, lng: 125.3284},
-        cases: 39
+        cases: 51
     }, 
     iloilo: {
         center: {lat: 10.7202, lng: 122.5621},
-        cases: 5
+        cases: 6
     }, 
     isabela: {
         center: {lat: 16.9754, lng: 121.8107},
-        cases: 4
+        cases: 5
     }, 
     lanao_sur: {
         center: {lat: 7.8232, lng: 124.4198},
-        cases: 5
+        cases: 7
     }, 
     negros_occ: {
         center: {lat: 10.2926, lng: 123.0247},
-        cases: 5
+        cases: 7
     }, 
     pampanga: {
         center: {lat: 15.0794, lng: 120.6200},
-        cases: 3
+        cases: 5
     }, 
-    baguio: {
+    benguet: {
         center: {lat: 16.4023, lng: 120.5960},
-        cases: 6
+        cases: 10
     }, 
     bataan: {
         center: {lat: 14.6417, lng: 120.4818},
-        cases: 2
+        cases: 3
     }, 
     misamis_or: {
         center: {lat: 8.5046, lng: 124.6220},
-        cases: 2
+        cases: 1
     }, 
     la_union: {
         center: {lat: 16.6159, lng: 120.3209},
@@ -69,11 +69,11 @@ let citymap = {
     }, 
     negros_or: {
         center: {lat: 9.6282, lng: 122.9888},
-        cases: 2
+        cases: 5
     }, 
     nueva_ecija: {
         center: {lat: 15.5784, lng: 121.1113},
-        cases: 2
+        cases: 13
     }, 
     abra: {
         center: {lat: 17.5951, lng: 120.7983},
@@ -81,11 +81,11 @@ let citymap = {
     }, 
     aklan: {
         center: {lat: 11.8166, lng: 122.0942},
-        cases: 1
+        cases: 2
     }, 
     capiz: {
         center: {lat: 11.3889, lng: 122.6277},
-        cases: 1
+        cases: 2
     }, 
     camsur: {
         center: {lat: 13.5250, lng: 123.3486},
@@ -93,7 +93,7 @@ let citymap = {
     }, 
     cebu: {
         center: {lat: 10.3157, lng: 123.8854},
-        cases: 1
+        cases: 25
     }, 
     cotabato_city: {
         center: {lat: 7.2047, lng: 124.2310},
@@ -105,7 +105,7 @@ let citymap = {
     }, 
     lanao_norte: {
         center: {lat: 7.8722, lng: 123.8858},
-        cases: 1
+        cases: 2
     }, 
     palawan: {
         center: {lat: 9.8349, lng: 118.7384},
@@ -121,27 +121,47 @@ let citymap = {
     },
     tarlac: {
         center: {lat: 15.4755, lng: 120.5963},
-        cases: 1
+        cases: 8
     },
     quezon: {
         center: {lat: 13.9414, lng: 121.6234},
-        cases: 1
+        cases: 3
     },
     zamboanga_sur: {
         center: {lat: 7.8383, lng: 123.2967},
-        cases: 1
+        cases: 2
     },
     davao_norte: {
         center: {lat: 7.5618, lng: 125.6533},
-        cases: 3
+        cases: 6
     },
     nueva_viscaya: {
         center: {lat: 16.3301, lng: 121.1710},
-        cases: 1
+        cases: 3
     },
     davao_oriental: {
         center: {lat: 7.3172, lng: 126.5420},
-        cases: 2
+        cases: 3
+    },
+    pangasinan: {
+        center: {lat: 15.8949, lng: 120.2863},
+        cases: 3
+    },
+    zambales: {
+        center: {lat: 15.5082, lng: 119.9698},
+        cases: 3
+    },
+    marinduque: {
+        center: {lat: 13.4767, lng: 121.9032},
+        cases: 1
+    },
+    north_samar: {
+        center: {lat: 12.3613, lng: 124.7741},
+        cases: 1
+    },
+    south_cotabato: {
+        center: {lat: 6.3358, lng: 124.7741},
+        cases: 1
     }
 };
 
