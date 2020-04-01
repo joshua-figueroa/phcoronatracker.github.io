@@ -1,8 +1,8 @@
 console.log("Philippines COVID-19 Tracker");
 
-update('cases', 2084);
-update('death', 88);
-update('recover', 49);
+update('cases', 2311);
+update('death', 96);
+update('recover', 50);
 update('pui', 968);
 update('pum', 6321);
 
