@@ -1,9 +1,9 @@
 body {
-	margin: 0;
+    margin: 0;
+    padding: 0;
     background-color: #364061 !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding: 0;
 }
 nav {
     background: #55D6AA;
@@ -254,6 +254,7 @@ p {
     top: 100px;
     left: 13px;
     overflow-y: scroll;
+    scrollbar-color: #364061;
 }
 .table-head {
     height: 425px;
