@@ -20,7 +20,7 @@ let chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['March 1', '8', '15', '22', '29', '31', 'April 1'],
+        labels: ['Jan 30', 'Feb 5', 'Mar 8', 'Mar 15', 'Mar 22', 'Mar 29', 'Mar 31', 'Apr 1'],
         datasets: [{
             label: 'Number of Cases',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -29,7 +29,25 @@ let chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [3, 10, 140, 462, 1418, 2084, 2311]
+            data: [1, 3, 10, 140, 462, 1418, 2084, 2311]
+        },{
+            label: 'Number of Deaths',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#FF0000',
+            pointBackgroundColor: '#FF0000',
+            pointRadius: 4,
+            hitRadius: 1,
+            hoverRadius: 5,
+            data: [0, 1, 1, 8, 25, 71, 88, 96]
+        },{
+            label: 'Number of Recoveries',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#00FF00',
+            pointBackgroundColor: '#00FF00',
+            pointRadius: 4,
+            hitRadius: 1,
+            hoverRadius: 5,
+            data: [0, 1, 2, 2, 17, 42, 49, 50]
         }]
     },
 
@@ -63,7 +81,10 @@ let chart = new Chart(ctx, {
             }],
             xAxes: [{
                 ticks: {
-                    fontColor: 'white'
+                    fontColor: 'white',
+                    autoSkip: false,
+                    maxRotation: 135,
+                    minRotation: 45
                 },
                 gridLines: {
                     display: true,
