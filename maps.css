@@ -130,8 +130,8 @@ nav ul li:hover a::before {
         top: 58px;
         left: 100%;
         text-align: left;
-        transition: all .3s ease-in-out;
-        z-index: 2;
+        transition: all .5s ease-in-out;
+        z-index: 3;
     }
     nav ul li{
         display: block;
@@ -155,8 +155,8 @@ nav ul li:hover a::before {
     }
     #check:checked ~ ul {
         left: 0px;
-        z-index: 2;
-        transition: all .3s ease-in-out;
+        z-index: 3;
+        transition: all .5s ease-in-out;
         text-align: start;
     }
     .logo {
