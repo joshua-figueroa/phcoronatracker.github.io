@@ -254,8 +254,8 @@ a {
     ul {
         position: fixed;
         width: 100%;
-        height: 330px;
-        background: #2C3E50; 
+        height: 350px;
+        background: #2c3e50; 
         top: 58px;
         left: 100%;
         text-align: left;
@@ -265,7 +265,7 @@ a {
     nav ul li{
         display: block;
         margin: 40px 0;
-        line-height: 0px;
+        line-height: 5px;
     }
     nav ul li a{
         font-size: 20px;
