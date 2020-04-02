@@ -139,14 +139,14 @@ p {
 .cross {
     position: absolute;
     padding: 10px;
-    left: 105px;
+    left: 96px;
 }
 .death {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: #C12020;
-    left: 150px;
+    left: 141px;
     cursor: pointer;
     font-weight: 500;
 }
@@ -443,10 +443,10 @@ tr td:nth-child(4) {
         left: calc(50% - 23px);
     }
     .cross {
-        left: calc(50% - 49px);
+        left: calc(50% - 59px);
     }
     .death {
-        left: calc(50% - 4px);
+        left: calc(50% - 14px);
     }
     .heart {
         left: calc(50% - 49px) !important;
