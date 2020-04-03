@@ -571,7 +571,7 @@ tr td:nth-child(4) {
         position: absolute;
         height: 25px;
         width: 25px;
-        z-index: 2;
+        z-index: 1;
         top: 10px;
         right: 15px;
     }
