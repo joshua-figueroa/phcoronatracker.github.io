@@ -1,55 +1,55 @@
 let citymap = {
     manila: {
         center: {lat: 14.599512, lng: 120.984222},
-        cases: 1507
+        cases: 1634
     }, 
     rizal: {
         center: {lat: 14.6037, lng: 121.3084},
-        cases: 84
+        cases: 98
     },
     bulacan: {
         center: {lat: 14.8527, lng: 120.8160},
-        cases: 32
+        cases: 39
     },
     cavite: {
         center: {lat: 14.4791, lng: 120.8970},
-        cases: 39
+        cases: 47
     },
     laguna: {
         center: {lat: 14.2691, lng: 121.4113},
-        cases: 27
+        cases: 31
     },
     batangas: {
         center: {lat: 13.7565, lng: 121.0583},
-        cases: 15
+        cases: 20
     },
     cagayan: {
         center: {lat: 17.6132, lng: 121.7270},
-        cases: 10
+        cases: 11
     },  
     davao_sur: {
         center: {lat: 6.7663, lng: 125.3284},
-        cases: 51
+        cases: 53
     }, 
     iloilo: {
         center: {lat: 10.7202, lng: 122.5621},
-        cases: 6
+        cases: 8
     }, 
     isabela: {
         center: {lat: 16.9754, lng: 121.8107},
-        cases: 6
+        cases: 5
     }, 
     lanao_sur: {
         center: {lat: 7.8232, lng: 124.4198},
-        cases: 7
+        cases: 8
     }, 
     negros_occ: {
         center: {lat: 10.2926, lng: 123.0247},
-        cases: 7
+        cases: 8
     }, 
     pampanga: {
         center: {lat: 15.0794, lng: 120.6200},
-        cases: 11
+        cases: 16
     }, 
     benguet: {
         center: {lat: 16.4023, lng: 120.5960},
@@ -57,7 +57,7 @@ let citymap = {
     }, 
     bataan: {
         center: {lat: 14.6417, lng: 120.4818},
-        cases: 3
+        cases: 5
     }, 
     misamis_or: {
         center: {lat: 8.5046, lng: 124.6220},
@@ -73,7 +73,7 @@ let citymap = {
     }, 
     nueva_ecija: {
         center: {lat: 15.5784, lng: 121.1113},
-        cases: 15
+        cases: 17
     }, 
     abra: {
         center: {lat: 17.5951, lng: 120.7983},
@@ -81,7 +81,7 @@ let citymap = {
     }, 
     aklan: {
         center: {lat: 11.8166, lng: 122.0942},
-        cases: 2
+        cases: 5
     }, 
     capiz: {
         center: {lat: 11.3889, lng: 122.6277},
@@ -89,11 +89,11 @@ let citymap = {
     }, 
     camsur: {
         center: {lat: 13.5250, lng: 123.3486},
-        cases: 2
+        cases: 3
     }, 
     cebu: {
         center: {lat: 10.3157, lng: 123.8854},
-        cases: 29
+        cases: 28
     }, 
     cotabato_city: {
         center: {lat: 7.2047, lng: 124.2310},
@@ -105,7 +105,7 @@ let citymap = {
     }, 
     lanao_norte: {
         center: {lat: 7.8722, lng: 123.8858},
-        cases: 2
+        cases: 4
     }, 
     palawan: {
         center: {lat: 9.8349, lng: 118.7384},
@@ -121,15 +121,15 @@ let citymap = {
     },
     tarlac: {
         center: {lat: 15.4755, lng: 120.5963},
-        cases: 8
+        cases: 9
     },
     quezon: {
         center: {lat: 13.9414, lng: 121.6234},
-        cases: 4
+        cases: 5
     },
     zamboanga_sur: {
         center: {lat: 7.8383, lng: 123.2967},
-        cases: 2
+        cases: 4
     },
     davao_norte: {
         center: {lat: 7.5618, lng: 125.6533},
@@ -145,15 +145,15 @@ let citymap = {
     },
     pangasinan: {
         center: {lat: 15.8949, lng: 120.2863},
-        cases: 5
+        cases: 7
     },
     zambales: {
         center: {lat: 15.5082, lng: 119.9698},
-        cases: 5
+        cases: 4
     },
     marinduque: {
         center: {lat: 13.4767, lng: 121.9032},
-        cases: 1
+        cases: 2
     },
     north_samar: {
         center: {lat: 12.3613, lng: 124.7741},
@@ -165,6 +165,14 @@ let citymap = {
     },
     albay: {
         center: {lat: 13.1775, lng: 123.5280},
+        cases: 1
+    },
+    samar: {
+        center: {lat: 11.5795, lng: 124.9748},
+        cases: 1
+    },
+    misamis_occ: {
+        center: {lat: 8.3375, lng: 123.7071},
         cases: 1
     }
 };
