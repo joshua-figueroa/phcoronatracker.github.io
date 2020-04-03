@@ -1,9 +1,9 @@
-alert("Due to some unknown errors, DOH has yet to release the information of today's patients (April 2) that has died/recovered. Our data are still reflecting yesterday's release (April 1). We will coordinate with them as soon as possible.");
+alert("Due to some unknown errors, DOH has yet to release the information of patients (April 2 and April 3) that has died/recovered. Our data are still reflecting April 1st release. We will coordinate with them as soon as possible.");
 console.log("Philippines COVID-19 Tracker");
 
-update('cases', 2633);
-update('death', 107);
-update('recover', 51);
+update('cases', 3018);
+update('death', 136);
+update('recover', 52);
 update('pui', 1101);
 update('pum', 6321);
 
