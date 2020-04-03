@@ -91,7 +91,7 @@ nav ul li:hover a::before {
 }
 .about {
     background-color: #445175;
-    height: 168vh;
+    height: 163vh;
     width: 96vw;
     position: absolute;
     top: calc(73px + 3vh);
@@ -165,7 +165,7 @@ nav ul li:hover a::before {
     color: whitesmoke;
     position: absolute;
     top: 490px;
-    left: calc(50% - 430px);
+    left: calc(50% - 460px);
 }
 .memo {
     width: 45px;
@@ -354,16 +354,16 @@ a {
     .memo {
         width: 30px;
         height: 30px;
-        top: 560px;
+        top: 580px;
         left: calc(50% - 105px);
     }
     .dev {
         font-size: 6vw;
-        top: 560px;
+        top: 580px;
         left: calc(50% - 60px);
     }
     .develop {
-        top: 595px;
+        top: 615px;
         width: 95%;
         font-size: 10.5pt;
         left: 0;
@@ -371,18 +371,18 @@ a {
     .work {
         width: 30px;
         height: 30px;
-        top: 760px;
+        top: 780px;
         left: calc(50% - 85px);
     }
     .references {
         font-weight: 500;
         font-size: 6vw;
-        top: 760px;
+        top: 780px;
         left: calc(50% - 40px);
     }
     .links {
         font-size: 4.3vw;
-        top: 800px;
+        top: 815px;
         left: 0vw;
         width: 100%;
     }
