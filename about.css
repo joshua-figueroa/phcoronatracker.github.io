@@ -91,7 +91,7 @@ nav ul li:hover a::before {
 }
 .about {
     background-color: #445175;
-    height: 163vh;
+    height: 167vh;
     width: 96vw;
     position: absolute;
     top: calc(73px + 3vh);
