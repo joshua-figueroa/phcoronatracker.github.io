@@ -1,4 +1,6 @@
 # htaccess
+# This allows you to redirect your entire website to any other domain
+Redirect 301 / https://phcoronatracker.com/
 # Extra Security Headers
 <IfModule mod_headers.c>
 	Header set X-XSS-Protection "1; mode=block"
