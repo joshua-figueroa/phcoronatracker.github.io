@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="virus.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="trend.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>PH Coronavirus Tracker</title>
+</head>
+<body>
+    <nav>
+        <img src = "virus.png" alt="logo" class="logo">
+        <input type="checkbox" id= "check">
+        <label for="check" class="checkbtn">
+            <img src = "menu.png" alt="menu" class="menu">
+        </label>
+        <label class="brand">
+            <div contenteditable="false">
+                <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+            </div>
+        </label>
+        <ul class="navbar-nav ml-auto">
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="maps.html">Maps</a></li>  
+            <li><a class="active" href="trend.html">Trend</a></li> 
+            <li><a href="about.html">About</a></li>
+            <li><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#364061', 'X8X61KLM4');kofiwidget2.draw();</script></li>
+        </ul>
+    </nav>
+
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        if (screen && screen.width > 900) {
+            document.write('<script type="text/javascript" src="chart.js"><\/script>');
+        }
+    </script>
+        
+    <script>
+        if (screen && screen.width < 900) {
+            document.write('<script type="text/javascript" src="mobilechart.js"><\/script>');
+        }
+    </script>
+</body>
+</html>
