@@ -1,0 +1,578 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #364061 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+nav {
+    background: #55D6AA;
+    height: 73px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+label.brand {
+    color: #364061;
+    font-size: 33px;
+    line-height: 80px;
+    padding: 0 50px;
+    position: absolute;
+    left: calc(5%);
+}
+.logo {
+    position: absolute;
+    left: calc(2%);
+    padding: 10px;
+    height: 55px;
+    width: 55px;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display:inline-block;
+    line-height: 30px;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius:3px;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    transition: all .3s ease;
+}
+a.active, a:hover {
+    color: #212f5c;
+}
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    position: relative;
+}
+a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+nav ul li:hover a::before {
+    right: 0;
+    left: 0;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.dashboard {
+    background-color: #6B7CB4;
+    border-radius: 25px;
+    position: absolute;
+    top: 93px;
+    left: 30px;
+    height: auto;
+    width: 310px;
+    color: #F7F7F7;
+}
+.title {
+    font-size: 17pt;
+    text-align: center;
+    padding-top: 10px;
+}
+.source {
+    font-size: 10pt;
+    text-align: center;
+}
+.doh {
+    text-decoration: none;
+    color: #F7F7F7;
+}
+p {
+    font-size: 11pt;
+}
+.virus {
+    position: absolute;
+    padding: 10px;
+    left: 88px;
+}
+.cases {
+    position: absolute;
+    padding: 5px;
+    font-size: 26pt;
+    color: #172783;
+    left: 133px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.cases:hover {
+    color: wheat;
+}
+.num {
+    padding-top: 48px;
+    text-align: center;
+}
+.cross {
+    position: absolute;
+    padding: 10px;
+    left: 96px;
+}
+.death {
+    position: absolute;
+    padding: 5px;
+    font-size: 26pt;
+    color: #C12020;
+    left: 141px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.death:hover {
+    color: wheat;
+}
+.heart {
+    position: absolute;
+    padding: 10px;
+    left: 105px;
+}
+.recover {
+    position: absolute;
+    padding: 5px;
+    font-size: 26pt;
+    color: #00FF00;
+    left: 150px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.recover:hover {
+    color: wheat;
+}
+.search {
+    position: absolute;
+    padding: 10px;
+    left: 88px;
+}
+.pui {
+    position: absolute;
+    padding: 5px;
+    font-size: 26pt;
+    color: black;
+    left: 133px;
+    font-weight: 500;
+}
+.monitor {
+    position: absolute;
+    padding: 10px;
+    left: 86px;
+}
+.pum {
+    position: absolute;
+    padding: 5px;
+    font-size: 26pt;
+    color: black;
+    left: 131px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.ph {
+    background-color: #6B7CB4;
+    border-radius: 24px;
+    position: absolute;
+    top: 93px;
+    left: 385px;
+    height: 525px;
+    width: 460px;
+    color: #F7F7F7;
+}
+.country {
+    font-weight: 300;
+    text-align: left;
+    font-size: 20pt;
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.infect {
+    font-size: 12pt;
+    text-align: left;
+    position: absolute;
+    left: 21px;
+    top: 50px;
+}
+.bar {
+    position: absolute;
+    right: 160px;
+    top: 48px;
+}
+.input {
+    position: absolute;
+    right: 18px;
+    top: 50px;
+    width: 133px;
+}
+.note {
+    font-size: 10pt;
+    text-align: left;
+    position: absolute;
+    left: 21px;
+    top: 76px;
+}
+.ok {
+    font-size: 12pt;
+    text-align: left;
+    position: absolute;
+    left: 21px;
+    top: 76px;
+}
+.table-header {
+    height: 425px;
+    width: 429px;
+    position: absolute;
+    top: 100px;
+    left: 13px;
+    overflow-y: scroll;
+    scrollbar-color: #364061;
+}
+.table-head {
+    height: 425px;
+    width: 429px;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    overflow-x: hidden;
+}
+table {
+    width: 100% !important;
+}
+table, th, td {
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    background-color: #6B7CB4;
+}
+td {
+    border-top: 1px solid black;
+}
+tr td:nth-child(1) {
+    font-weight: 400;
+}
+tr td:nth-child(2) {
+    color: #172783;
+    font-weight: 700;
+}
+tr td:nth-child(3) {
+    color: #C12020;
+    font-weight: 700;
+}
+tr td:nth-child(4) {
+    color: #00FF00;
+    font-weight: 700;
+}
+.ncr {
+    background-color: #6B7CB4;
+    border-radius: 24px;
+    position: absolute;
+    top: 93px;
+    left: 870px;
+    height: 525px;
+    width: 460px;
+    color: #F7F7F7;
+}
+.news {
+    position: absolute;
+    border-radius: 25px;
+    width: 330px;
+    height: 522px;
+    overflow: auto;
+    top: 646px;
+    left: 23px;
+}
+.rss {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+}
+.luzon {
+    background-color: #6B7CB4;
+    border-radius: 24px;
+    position: absolute;
+    top: 645px;
+    left: 385px;
+    height: 525px;
+    width: 460px;
+    color: #F7F7F7;
+    overflow-x: hidden;
+}
+.vimin {
+    background-color: #6B7CB4;
+    border-radius: 24px;
+    position: absolute;
+    top: 645px;
+    left: 870px;
+    height: 525px;
+    width: 460px;
+    color: #F7F7F7;
+}
+
+/* Media Queries: Phone Portrait */
+@media screen and (max-width: 500px) {
+    body, html {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        position: absolute;
+        overflow-x: hidden;
+    }
+    .checkbtn {
+        display: block;
+    }
+    label.brand {
+        font-size: 6.2vw;
+        left: calc(5% + 8px);
+        margin: auto;
+        line-height: 70px;
+    }
+    .menu {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 22px;
+        right: calc(4%);
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 350px;
+        background: #2C3E50; 
+        top: 58px;
+        left: 100%;
+        text-align: left;
+        transition: all .5s ease-in-out;
+        z-index: 3;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 5px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    a::after {
+        display: none;
+    }
+    a::before {
+        display: none;
+    }
+    
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0px;
+        z-index: 3;
+        transition: all .5s ease-in-out;
+        text-align: start;
+    }
+    .logo {
+        left: calc(3%);
+        padding: 10px;
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        top: 3px;
+    }
+    .dashboard {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+    }
+    .title {
+        font-size: 17pt;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .source {
+        font-size: 11pt;
+        text-align: center;
+    }
+    p {
+        font-size: 12pt;
+    }
+    .virus {    
+        left: calc(50% - 68px);
+    }
+    .cases {
+        left: calc(50% - 23px);
+    }
+    .cross {
+        left: calc(50% - 59px);
+    }
+    .death {
+        left: calc(50% - 14px);
+    }
+    .heart {
+        left: calc(50% - 49px) !important;
+    }
+    .recover {
+        left: calc(50% - 4px) !important;
+    }
+    .search {
+        left: calc(50% - 68px);
+    }
+    .pui {
+        left: calc(50% - 23px);
+    }
+    .monitor {
+        left: calc(50% - 68px);
+    }
+    .pum {
+        left: calc(50% - 23px);
+    }
+    .ph {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+        top: 665px;
+    }
+    .country {
+        top: 20px;
+        left: 20px;
+        padding: 0px;
+        margin: 0;
+        font-size: 6.8vw;
+    }
+    .infect {
+        font-size: 3.3vw;
+        padding: 0px;
+        left: 21px;
+        top: 55px;
+    }
+    .note {
+        font-size: 2.8vw;
+        left: 21px;
+        top: 82px;
+        width: 90%;
+    }
+    .ok {
+        font-size: 3.3vw;
+        left: 21px;
+        top: 80px;
+        width: 90%;
+    }
+    .bar {
+        right: calc(31% + 30px);
+        top: 56px;
+        width: 15px;
+        height: 15px;
+    }
+    .input {
+        right: 18px;
+        top: 55px;
+        width: 30%;
+        height: 12px;
+    }
+    .table-header {
+        height: 425px;
+        width: 88%;
+        top: 105px;
+        margin-left: 9px;
+        margin-right: auto;
+    }
+    .table-head {
+        overflow: auto;
+        height: 425px;
+        width: 88%;
+        top: 105px;
+        margin-left: 9px;
+        margin-right: auto;
+    }
+    table {
+        table-layout: fixed;
+        font-size: 3.5vw;
+    }
+    th {
+        font-weight: 400;
+        position: sticky;
+        top: 0;
+    }
+    .ncr {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+        top: 1235px;
+    }
+    .luzon {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+        top: 1805px;
+    }
+    .vimin {
+        width: 85%;
+        margin: 0 auto;
+        padding: 10px;
+        left: 0px;
+        right: 0px;
+        top: 2375px;
+    }
+    .news {
+        border-radius: 25px !important;
+        width: 90%;
+        margin: 0 auto;
+        top: 2935px;
+        left: 0px;
+        right: 0px;
+    }
+    .rss {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        z-index: 2;
+        top: 10px;
+        right: 15px;
+    }
+}
