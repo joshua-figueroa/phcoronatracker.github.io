@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Joshua",
+        "age": 16,
+        "height": 180
+    },
+    {
+        "name": "Janheart",
+        "age": 16,
+        "height": 150
+    },
+    {
+        "name": "Dream",
+        "age": 7,
+        "height": 80
+    },
+    {
+        "name": "Tootsie",
+        "age": 1,
+        "height": 20
+    },
+    {
+        "name": "Olaf",
+        "age": 16,
+        "height": 25
+    },
+    {
+        "name": "Cookie",
+        "age": 1,
+        "height": 15
+    }
+]
