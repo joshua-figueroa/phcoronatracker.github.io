@@ -71,7 +71,8 @@ let chart = new Chart(ctx, {
             yAxes: [{
                 ticks: {
                     beginAtZero:true,
-                    fontColor: 'white'
+                    fontColor: 'white',
+                    fontSize: 14
                 },
                 gridLines: {
                     display: true,
@@ -80,7 +81,8 @@ let chart = new Chart(ctx, {
             }],
             xAxes: [{
                 ticks: {
-                    fontColor: 'white'
+                    fontColor: 'white',
+                    fontSize: 14
                 },
                 gridLines: {
                     display: true,
