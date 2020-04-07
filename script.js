@@ -1,9 +1,9 @@
 alert("Due to some unknown errors, DOH has not yet to released the information of patients that has died and recovered since April 2. Our data are still reflecting April 1st release. Their website is still updating since yesterday. We will coordinate with them as soon as possible.");
 console.log("Philippines COVID-19 Tracker");
 
-update('cases', 3360);
-update('death', 163);
-update('recover', 73);
+update('cases', 3764);
+update('death', 177);
+update('recover', 84);
 update('pui', 1323);
 update('pum', 6321);
 
