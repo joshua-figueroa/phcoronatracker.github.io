@@ -83,8 +83,8 @@ let chart = new Chart(ctx, {
                 ticks: {
                     fontColor: 'white',
                     autoSkip: false,
-                    maxRotation: 135,
-                    minRotation: 45
+                    maxRotation: 145,
+                    minRotation: 35
                 },
                 gridLines: {
                     display: true,
