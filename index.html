@@ -10,6 +10,7 @@
     gtag('config', 'UA-162122410-1');
     gtag('set', {'user_id': 'UA-162122410-1'}); // Set the user ID using signed-in user_id.
     </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -22,21 +23,25 @@
     <meta property="og:description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
     <meta property="og:image" content="https://phcoronatracker.com/covid.png">
     <meta http-equiv="refresh" content="600">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://kit.fontawesome.com/a076d05399.js https://widget.rss.app/v1/list.js 
+    <meta http-equiv="Content-Security-Policy" content="script-src https://phcoronatracker.com https://kit.fontawesome.com/a076d05399.js https://widget.rss.app/v1/list.js 
     https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js https://ko-fi.com/widgets/widget_2.js 
     https://cdn.ko-fi.com/cdn/widget/Widget_2.js?v123=7 https://adservice.google.com.ph/adsid/integrator.js?domain=
-    https://pagead2.googlesyndication.com/pagead/js/r20200401/r20190131/show_ads_impl_fy2019.js https://adservice.google.com/adsid/integrator.js?domain=
-    https://www.google-analytics.com/analytics.js https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101 https://tpc.googlesyndication.com/sodar/sodar2.js 'unsafe-inline';
+    https://adservice.google.com/adsid/integrator.js?domain= https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    https://www.google-analytics.com/analytics.js https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101 https://tpc.googlesyndication.com/sodar/sodar2.js 
+    https://pagead2.googlesyndication.com/pagead/js/r20200402/r20190131/show_ads_impl_fy2019.js 'unsafe-inline';
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap
     https://fonts.googleapis.com/css?family=Quicksand:400,700 https://kit-free.fontawesome.com/releases/latest/css/free.min.css
-    https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap ;
-    img-src 'self' https:; connect-src 'self' https://rss.app/graphql https://pagead2.googlesyndication.com/getconfig/sodar?sv=200&tid=gda&tv=r20200401&st=env;">
+    https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap ; img-src 'self' https:; connect-src https://phcoronatracker.com https://rss.app/graphql 
+    https://pagead2.googlesyndication.com/getconfig/sodar?sv=200&tid=gda&tv=r20200401&st=env;">
     <meta name="HandheldFriendly" content="true">
     <meta name="google-site-verification" content="7pJqGISuNxC7O61Du8tq2G8fwPaGBeU07gx3iEoiB6g"/>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
     <link rel="icon" href="virus.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="home.css">
     <script data-ad-client="ca-pub-9762860547916440" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>PH Coronavirus Tracker</title>
 </head>
 <body>
@@ -65,7 +70,7 @@
             <div class="title">Dashboard</div>
             <div class="source">
                 <a href="https://ncovtracker.doh.gov.ph/" class="doh" target="_blank">Source: Department of Health</a>
-                <p>Updated as of: <i>April 8, 2020 - 5:45 PM</i></p> 
+                <p>Updated as of: <i>April 8, 2020 - 5:45 PM</i></p>
             </div>
             <img src="bacteria.png" alt="image" class="virus">
             <div class="cases" onclick="window.open('Patients.xlsx','mywindow');" id="cases"></div>
@@ -88,298 +93,19 @@
             <div class="country">Philippines</div>
             <div class="infect">Infected Provinces: 44/82</div>
             <img src="bar.png" alt="image" class="bar">
-            <input type="text" id="input_ph" class="input" onkeyup="search_ph()" placeholder="search data" title="Type in a name">
+            <input type="text" id="input_ph" class="input" onkeyup="search('input_ph', 'ph')" placeholder="search data" title="Type in a name">
             <div class="note">Note: The data below are based from DOH and not from LGUs</div>
             <div class="table-header">
                 <table cellpadding="10" id="ph">
-                    <tr>
-                        <th>Provinces</th>
-                        <th>Confirmed</th>
-                        <th>Deaths</th>
-                        <th>Recovered</th>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>3870</td>
-                        <td>182</td>
-                        <td>96</td>
-                    </tr>
-                    <tr>
-                        <td>Metro Manila</td>
-                        <td>1634</td>
-                        <td>71</td>
-                        <td>37</td>
-                    </tr>
-                    <tr>
-                        <td>Rizal</td>
-                        <td>98</td>
-                        <td>7</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Davao del Sur</td>
-                        <td>53</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Cavite</td>
-                        <td>47</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Bulacan</td>
-                        <td>39</td>
-                        <td>3</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Laguna</td>
-                        <td>31</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Cebu</td>
-                        <td>28</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Batangas</td>
-                        <td>20</td>
-                        <td>1</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Nueva Ecija</td>
-                        <td>17</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Pampanga</td>
-                        <td>16</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Benguet</td>
-                        <td>11</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Cagayan</td>
-                        <td>11</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Tarlac</td>
-                        <td>9</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Iloilo</td>
-                        <td>8</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Lanao del sur</td>
-                        <td>8</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Negros Occidental</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Pangasinan</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Davao del Norte</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Bataan</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Aklan</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Isabela</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Negros Oriental</td>
-                        <td>5</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Quezon</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Lanao del Norte</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>La Union</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Zambales</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Zamboanga del Sur</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Camarines Sur</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Capiz</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Cotabato City</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Davao Oriental</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Nueva Viscaya</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Abra</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Marinduque</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Sultan Kudarat</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Albay</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Davao de Oro</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Misamis Occidental</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Misamis Oriental</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Northern Samar</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Palawan</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Oriental Mindoro</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Samar</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>South Cotabato</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Foreign</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>For Validation</td>
-                        <td>893</td>
-                        <td>56</td>
-                        <td>14</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Provinces</th>
+                            <th>Confirmed</th>
+                            <th>Deaths</th>
+                            <th>Recovered</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ph_body"></tbody>
                 </table>
             </div>
         </div>
@@ -388,126 +114,20 @@
             <div class="country">Metro Manila (NCR)</div>
             <div class="infect">Infected Cities: 16/16</div>
             <img src="bar.png" alt="image" class="bar">
-            <input type="text" class="input" id="input_ncr" onkeyup="search_ncr()" placeholder="search data" title="Type in a name">
+            <input type="text" class="input" id="input_ncr" onkeyup="search('input_ncr', 'ncr')" placeholder="search data" title="Type in a name">
             <div class="ok">Infected Municipality: 1/1</div>
             <div class="table-header">
                 <table cellpadding="10" id="ncr">
-                    <tr>
-                        <th>Cities</th>
-                        <th>Confirmed</th>
-                        <th>Deaths</th>
-                        <th>Recovered</th>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>1634</td>
-                        <td>71</td>
-                        <td>37</td>
-                    </tr>
-                    <tr>
-                        <td>Quezon City</td>
-                        <td>480</td>
-                        <td>26</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Manila</td>
-                        <td>200</td>
-                        <td>9</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Makati</td>
-                        <td>158</td>
-                        <td>4</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>Pasig</td>
-                        <td>127</td>
-                        <td>5</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>San Juan</td>
-                        <td>119</td>
-                        <td>9</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>Parañaque</td>
-                        <td>104</td>
-                        <td>6</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Mandaluyong</td>
-                        <td>98</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Taguig</td>
-                        <td>69</td>
-                        <td>1</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Muntinlupa</td>
-                        <td>60</td>
-                        <td>5</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Marikina</td>
-                        <td>48</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Caloocan</td>
-                        <td>45</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Las Piñas</td>
-                        <td>45</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Pasay</td>
-                        <td>46</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Valenzuela</td>
-                        <td>18</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Malabon</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Pateros</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Navotas</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </table>
+                    <thead>
+                        <tr>
+                            <th>Cities</th>
+                            <th>Confirmed</th>
+                            <th>Deaths</th>
+                            <th>Recovered</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ncr_body"></tbody>
+                </table> 
             </div>
         </div>
 
@@ -515,71 +135,19 @@
             <div class="country">Luzon</div>
             <div class="infect">Infected Regions: 8/8</div>
             <img src="bar.png" alt="image" class="bar">
-            <input type="text" id="input_luzon" class="input" onkeyup="search_luzon()" placeholder="search data" title="Type in a name">
+            <input type="text" id="input_luzon" class="input" onkeyup="search('input_luzon', 'luzon')" placeholder="search data" title="Type in a name">
             <div class="note">Note: This is Luzon as a whole and not just only the mainland</div>
             <div class="table-head">
                 <table cellpadding="10" id="luzon">
-                    <tr>
-                        <th>Provinces</th>
-                        <th>Confirmed</th>
-                        <th>Deaths</th>
-                        <th>Recovered</th>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>1976</td>
-                        <td>87</td>
-                        <td>46</td>
-                    </tr>
-                    <tr>
-                        <td>Metro Manila</td>
-                        <td>1634</td>
-                        <td>71</td>
-                        <td>37</td>
-                    </tr>
-                    <tr>
-                        <td>CAR</td>
-                        <td>13</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Region 1</td>
-                        <td>11</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 2</td>
-                        <td>19</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 3</td>
-                        <td>90</td>
-                        <td>5</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Region 4A</td>
-                        <td>201</td>
-                        <td>11</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>Region 4B</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 5</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Provinces</th>
+                            <th>Confirmed</th>
+                            <th>Deaths</th>
+                            <th>Recovered</th>
+                        </tr>
+                    </thead>
+                    <tbody id="luzon_body"></tbody>
                 </table>
             </div>
         </div>
@@ -588,81 +156,22 @@
             <div class="country">Visayas & Mindanao</div>
             <div class="infect">Infected Regions: 8/9</div>
             <img src="bar.png" alt="image" class="bar">
-            <input type="text" id="input_vimin" class="input" onkeyup="search_vimin()" placeholder="search data" title="Type in a name">
+            <input type="text" id="input_vimin" class="input" onkeyup="search('input_vimin', 'vimin')" placeholder="search data" title="Type in a name">
             <div class="note">Note: The data below are based on patient's residency</div>
-            <div class="table-head">
+            <div class="table-header">
                 <table cellpadding="10" id="vimin">
-                    <tr>
-                        <th>Provinces</th>
-                        <th>Confirmed</th>
-                        <th>Deaths</th>
-                        <th>Recovered</th>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>146</td>
-                        <td>8</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Region 6</td>
-                        <td>24</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 7</td>
-                        <td>33</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Region 8</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 9</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 10</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 11</td>
-                        <td>63</td>
-                        <td>2</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Region 12</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Region 13</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>BARMM</td>
-                        <td>11</td>
-                        <td>2</td>
-                        <td>0</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Provinces</th>
+                            <th>Confirmed</th>
+                            <th>Deaths</th>
+                            <th>Recovered</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vimin_body"></tbody>
                 </table>
             </div>
         </div>
-
     </article>
 
     <div class="news">
