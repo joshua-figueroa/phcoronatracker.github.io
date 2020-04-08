@@ -143,11 +143,7 @@ p {
     font-size: 26pt;
     color: #C12020;
     left: 141px;
-    cursor: pointer;
     font-weight: 500;
-}
-.death:hover {
-    color: wheat;
 }
 .heart {
     position: absolute;
@@ -160,11 +156,7 @@ p {
     font-size: 26pt;
     color: #00FF00;
     left: 150px;
-    cursor: pointer;
     font-weight: 500;
-}
-.recover:hover {
-    color: wheat;
 }
 .search {
     position: absolute;
