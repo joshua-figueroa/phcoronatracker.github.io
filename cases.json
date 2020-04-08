@@ -70,24 +70,189 @@
         "death": 2,
         "rec": 0
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
+        "name": "Benguet",
+        "cases": 11,
+        "death": 0,
+        "rec": 0
     }, {
         "name": "Metro Manila",
         "cases": 3246,
         "death": 152,
         "rec": 64
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
+        "name": "Cagayan",
+        "cases": 11,
+        "death": 0,
+        "rec": 0
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
+        "name": "Tarlac",
+        "cases": 9,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Iloilo",
+        "cases": 8,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Lanao del Sur",
+        "cases": 8,
+        "death": 2,
+        "rec": 0
+    }, {
+        "name": "Negros Occidental",
+        "cases": 8,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Pangasinan",
+        "cases": 7,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Davao del Norte",
+        "cases": 6,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Bataan",
+        "cases": 5,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Aklan",
+        "cases": 5,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Isabela",
+        "cases": 5,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Negros Oriental",
+        "cases": 5,
+        "death": 1,
+        "rec": 1
+    }, {
+        "name": "Quezon",
+        "cases": 5,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Lanao del Norte",
+        "cases": 4,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "La Union",
+        "cases": 4,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Zambales",
+        "cases": 4,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Zamboanga del Sur",
+        "cases": 4,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Camarines Sur",
+        "cases": 3,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Capiz",
+        "cases": 3,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Cotabato City",
+        "cases": 3,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Davao Oriental",
+        "cases": 3,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Nueva Vizcaya",
+        "cases": 3,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Abra",
+        "cases": 2,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Marinduque",
+        "cases": 2,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Sultan Kudarat",
+        "cases": 2,
+        "death": 1,
+        "rec": 0
+    }, {
+        "name": "Albay",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Davao de Oro",
+        "cases": 1,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Misamis Occidental",
+        "cases": 1,
+        "death": 0,
+        "rec": 
+    }, {
+        "name": "Misamis Oriental",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Northern Samar",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Palawan",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Oriental Mindoro",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Samar",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "South Cotabato",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Foreign",
+        "cases": 3,
+        "death": 2,
+        "rec": 1
+    }, {
+        "name": "For Validation",
+        "cases": 893,
+        "death": 56,
+        "rec": 14
     }
 ]
