@@ -126,11 +126,7 @@ p {
     font-size: 26pt;
     color: #172783;
     left: 133px;
-    cursor: pointer;
     font-weight: 500;
-}
-.cases:hover {
-    color: wheat;
 }
 .num {
     padding-top: 48px;
