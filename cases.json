@@ -35,10 +35,15 @@
         "death": 1,
         "rec": 0
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
+        "name": "Cebu",
+        "cases": 28,
+        "death": 1,
+        "rec": 0
+    }, {
+        "name": "Batangas",
+        "cases": 20,
+        "death": 1,
+        "rec": 0
     }, {
         "name": "Metro Manila",
         "cases": 3246,
@@ -55,20 +60,15 @@
         "death": 152,
         "rec": 64
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
+        "name": "Nueva Ecija",
+        "cases": 17,
+        "death": 0,
+        "rec": 0
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
-    }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
+        "name": "Pampanga",
+        "cases": 16,
+        "death": 2,
+        "rec": 0
     }, {
         "name": "Metro Manila",
         "cases": 3246,
