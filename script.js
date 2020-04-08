@@ -7,73 +7,35 @@ update('recover', 96);
 update('pui', 1323);
 update('pum', 6321);
 
+table('https://phcoronatracker.com/cases.json', '#ph_body');
+table('https://phcoronatracker.com/ncr.json', '#ncr_body');
+table('https://phcoronatracker.com/luzon.json', '#luzon_body');
+table('https://phcoronatracker.com/vimin.json', '#vimin_body');
+
 function update(id, count) {
     document.getElementById(id).innerHTML = (`${count}`);
     console.log(`${id} = ${count}`);
 }
-
-function search_ph() {
-    let input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("input_ph");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("ph");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
+function table(link, id) {
+    $.ajax({
+        url: link,
+        dataType: 'json',
+        success: function(data) {
+            for(var i = 0; i < data.length; i++) {
+                var row = $('<tr><td>' + data[i].name + '</td><td>' + data[i].cases + '</td><td>' + data[i].death +'</td><td>' + data[i].rec + '</td></tr>');
+                $(id).append(row);
             }
-        }       
-    }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
 }
-
-function search_ncr() {
+function search(input_id, table_id) {
     let input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("input_ncr");
+    input = document.getElementById(input_id);
     filter = input.value.toUpperCase();
-    table = document.getElementById("ncr");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }       
-    }
-}
-
-function search_luzon() {
-    let input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("input_luzon");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("luzon");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }       
-    }
-}
-
-function search_vimin() {
-    let input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("input_vimin");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("vimin");
+    table = document.getElementById(table_id);
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
