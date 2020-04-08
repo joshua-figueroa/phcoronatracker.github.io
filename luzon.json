@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Total",
+        "cases": 1976,
+        "death": 87,
+        "rec": 46
+    }, {
+        "name": "Metro Manila",
+        "cases": 1634,
+        "death": 71,
+        "rec": 37
+    }, {
+        "name": "CAR",
+        "cases": 13,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Region 1",
+        "cases": 11,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Region 2",
+        "cases": 19,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Region 3",
+        "cases": 90,
+        "death": 5,
+        "rec": 1
+    }, {
+        "name": "Region 4A",
+        "cases": 201,
+        "death": 11,
+        "rec": 6
+    }, {
+        "name": "Region 4B",
+        "cases": 4,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Region 5",
+        "cases": 4,
+        "death": 0,
+        "rec": 1
+    }
+]
