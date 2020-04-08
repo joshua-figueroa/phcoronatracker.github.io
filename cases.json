@@ -45,21 +45,6 @@
         "death": 1,
         "rec": 0
     }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
-    }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
-    }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
-    }, {
         "name": "Nueva Ecija",
         "cases": 17,
         "death": 0,
@@ -74,11 +59,6 @@
         "cases": 11,
         "death": 0,
         "rec": 0
-    }, {
-        "name": "Metro Manila",
-        "cases": 3246,
-        "death": 152,
-        "rec": 64
     }, {
         "name": "Cagayan",
         "cases": 11,
