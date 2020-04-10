@@ -148,7 +148,7 @@ p {
 .heart {
     position: absolute;
     padding: 10px;
-    left: 105px;
+    left: 96px;
 }
 .recover {
     position: absolute;
@@ -161,14 +161,14 @@ p {
 .search {
     position: absolute;
     padding: 10px;
-    left: 105px;
+    left: 86px;
 }
 .pui {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: black;
-    left: 133px;
+    left: 131px;
     font-weight: 500;
 }
 .monitor {
