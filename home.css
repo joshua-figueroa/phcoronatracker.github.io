@@ -155,13 +155,13 @@ p {
     padding: 5px;
     font-size: 26pt;
     color: #00FF00;
-    left: 150px;
+    left: 141px;
     font-weight: 500;
 }
 .search {
     position: absolute;
     padding: 10px;
-    left: 88px;
+    left: 105px;
 }
 .pui {
     position: absolute;
@@ -436,10 +436,10 @@ tr td:nth-child(4) {
         left: calc(50% - 14px);
     }
     .heart {
-        left: calc(50% - 49px) !important;
+        left: calc(50% - 59px) !important;
     }
     .recover {
-        left: calc(50% - 4px) !important;
+        left: calc(50% - 14px) !important;
     }
     .search {
         left: calc(50% - 68px);
