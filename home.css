@@ -161,14 +161,14 @@ p {
 .search {
     position: absolute;
     padding: 10px;
-    left: 86px;
+    left: 105px;
 }
-.pui {
+.fv {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: black;
-    left: 131px;
+    left: 150px;
     font-weight: 500;
 }
 .monitor {
@@ -176,13 +176,12 @@ p {
     padding: 10px;
     left: 86px;
 }
-.pum {
+.ca {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: black;
     left: 131px;
-    cursor: pointer;
     font-weight: 500;
 }
 .ph {
@@ -442,15 +441,15 @@ tr td:nth-child(4) {
         left: calc(50% - 14px) !important;
     }
     .search {
-        left: calc(50% - 68px);
+        left: calc(50% - 50px);
     }
-    .pui {
-        left: calc(50% - 23px);
+    .fv {
+        left: calc(50% - 5px);
     }
     .monitor {
         left: calc(50% - 68px);
     }
-    .pum {
+    .ca {
         left: calc(50% - 23px);
     }
     .ph {
