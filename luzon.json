@@ -44,5 +44,10 @@
         "cases": 26,
         "death": 0,
         "rec": 1
+    }, {
+        "name": "For Verification",
+        "cases": 476,
+        "death": 8,
+        "rec": 3
     }
 ]
