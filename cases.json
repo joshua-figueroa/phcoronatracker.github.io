@@ -6,152 +6,177 @@
         "rec": 197
     }, {
         "name": "Metro Manila",
-        "cases": 1634,
-        "death": 71,
-        "rec": 37
+        "cases": 3335,
+        "death": 167,
+        "rec": 120
     }, {
         "name": "Rizal",
-        "cases": 98,
-        "death": 7,
-        "rec": 3
-    }, {
-        "name": "Davao del Sur",
-        "cases": 53,
-        "death": 2,
-        "rec": 0
-    }, {
-        "name": "Cavite",
-        "cases": 47,
-        "death": 2,
-        "rec": 0
-    }, {
-        "name": "Bulacan",
-        "cases": 39,
-        "death": 3,
-        "rec": 0
+        "cases": 221,
+        "death": 16,
+        "rec": 5
     }, {
         "name": "Laguna",
-        "cases": 31,
-        "death": 1,
+        "cases": 161,
+        "death": 6,
+        "rec": 2
+    }, {
+        "name": "Cavite",
+        "cases": 149,
+        "death": 17,
+        "rec": 3
+    }, {
+        "name": "Bulacan",
+        "cases": 76,
+        "death": 15,
+        "rec": 4
+    }, {
+        "name": "Davao del Sur",
+        "cases": 74,
+        "death": 13,
+        "rec": 7
+    }, {
+        "name": "Batangas",
+        "cases": 69,
+        "death": 12,
+        "rec": 10
+    }, {
+        "name": "Pampanga",
+        "cases": 41,
+        "death": 5,
         "rec": 0
     }, {
         "name": "Cebu",
-        "cases": 28,
-        "death": 1,
-        "rec": 0
-    }, {
-        "name": "Batangas",
-        "cases": 20,
-        "death": 1,
+        "cases": 34,
+        "death": 6,
         "rec": 0
     }, {
         "name": "Nueva Ecija",
-        "cases": 17,
+        "cases": 33,
         "death": 0,
-        "rec": 0
+        "rec": 1
     }, {
-        "name": "Pampanga",
-        "cases": 16,
-        "death": 2,
-        "rec": 0
-    }, {
-        "name": "Benguet",
-        "cases": 11,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Cagayan",
-        "cases": 11,
-        "death": 0,
+        "name": "Pangasinan",
+        "cases": 30,
+        "death": 7,
         "rec": 0
     }, {
         "name": "Tarlac",
-        "cases": 9,
-        "death": 0,
+        "cases": 24,
+        "death": 1,
+        "rec": 6
+    }, {
+        "name": "Bataan",
+        "cases": 22,
+        "death": 2,
         "rec": 1
+    }, {
+        "name": "Quezon",
+        "cases": 22,
+        "death": 4,
+        "rec": 3
     }, {
         "name": "Iloilo",
-        "cases": 8,
-        "death": 0,
-        "rec": 1
+        "cases": 20,
+        "death": 5,
+        "rec": 2
     }, {
-        "name": "Lanao del Sur",
-        "cases": 8,
+        "name": "Benguet",
+        "cases": 17,
+        "death": 1,
+        "rec": 6
+    }, {
+        "name": "Cagayan",
+        "cases": 14,
+        "death": 0,
+        "rec": 7
+    }, {
+        "name": "Zambales",
+        "cases": 14,
         "death": 2,
         "rec": 0
     }, {
-        "name": "Negros Occidental",
-        "cases": 8,
-        "death": 0,
+        "name": "La Union",
+        "cases": 13,
+        "death": 3,
         "rec": 0
     }, {
-        "name": "Pangasinan",
-        "cases": 7,
+        "name": "Albay",
+        "cases": 11,
         "death": 0,
         "rec": 0
     }, {
         "name": "Davao del Norte",
+        "cases": 11,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Negros Occidental",
+        "cases": 10,
+        "death": 1,
+        "rec": 2
+    }, {
+        "name": "Zamboanga del Sur",
+        "cases": 9,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Lanao del Sur",
+        "cases": 8,
+        "death": 3,
+        "rec": 0
+    }, {
+        "name": "Camarines Sur",
+        "cases": 7,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Isabela",
+        "cases": 7,
+        "death": 0,
+        "rec": 2
+    }, {
+        "name": "Negros Oriental",
+        "cases": 7,
+        "death": 3,
+        "rec": 2
+    }, {
+        "name": "Aklan",
         "cases": 6,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Bataan",
-        "cases": 5,
+        "name": "Cotabato City",
+        "cases": 6,
         "death": 0,
+        "rec": 2
+    }, {
+        "name": "Oriental Mindoro",
+        "cases": 6,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Lanao del Norte",
+        "cases": 5,
+        "death": 2,
         "rec": 0
     }, {
-        "name": "Aklan",
+        "name": "Nueva Vizcaya",
         "cases": 5,
-        "death": 0,
-        "rec": 0
+        "death": 1,
+        "rec": 2
     }, {
-        "name": "Isabela",
-        "cases": 5,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Negros Oriental",
-        "cases": 5,
+        "name": "Capiz",
+        "cases": 4,
         "death": 1,
         "rec": 1
     }, {
-        "name": "Quezon",
-        "cases": 5,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Lanao del Norte",
+        "name": "Marinduque",
         "cases": 4,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "La Union",
-        "cases": 4,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Zambales",
-        "cases": 4,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Zamboanga del Sur",
-        "cases": 4,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Camarines Sur",
-        "cases": 3,
         "death": 0,
         "rec": 1
     }, {
-        "name": "Capiz",
-        "cases": 3,
-        "death": 0,
-        "rec": 0
-    }, {
-        "name": "Cotabato City",
-        "cases": 3,
+        "name": "South Cotabato",
+        "cases": 4,
         "death": 0,
         "rec": 0
     }, {
@@ -160,67 +185,82 @@
         "death": 0,
         "rec": 0
     }, {
-        "name": "Nueva Vizcaya",
+        "name": "Abra",
+        "cases": 3,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Cotabato",
         "cases": 3,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Abra",
-        "cases": 2,
+        "name": "Ilocos Norte",
+        "cases": 3,
         "death": 0,
-        "rec": 1
+        "rec": 0
     }, {
-        "name": "Marinduque",
-        "cases": 2,
+        "name": "Occidental Mindoro",
+        "cases": 3,
+        "death": 1,
+        "rec": 0
+    }, {
+        "name": "Samar",
+        "cases": 3,
         "death": 0,
         "rec": 0
     }, {
         "name": "Sultan Kudarat",
-        "cases": 2,
+        "cases": 3,
         "death": 1,
         "rec": 0
     }, {
-        "name": "Albay",
-        "cases": 1,
-        "death": 0,
-        "rec": 0
-    }, {
         "name": "Davao de Oro",
-        "cases": 1,
+        "cases": 2,
         "death": 0,
         "rec": 1
     }, {
         "name": "Misamis Occidental",
+        "cases": 2,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Antique",
         "cases": 1,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Misamis Oriental",
+        "name": "Agusan del Norte",
         "cases": 1,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Northern Samar",
+        "name": "Bukidnon",
         "cases": 1,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Palawan",
+        "name": "Camiguin",
         "cases": 1,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Oriental Mindoro",
+        "name": "Catanduanes",
         "cases": 1,
         "death": 0,
         "rec": 0
     }, {
-        "name": "Samar",
+        "name": "Ilocos Sur",
         "cases": 1,
         "death": 0,
         "rec": 0
     }, {
-        "name": "South Cotabato",
+        "name": "Maguindanao",
+        "cases": 1,
+        "death": 0,
+        "rec": 0
+    }, {
+        "name": "Romblon",
         "cases": 1,
         "death": 0,
         "rec": 0
@@ -231,8 +271,8 @@
         "rec": 1
     }, {
         "name": "For Validation",
-        "cases": 1746,
-        "death": 85,
-        "rec": 47
+        "cases": 62,
+        "death": 0,
+        "rec": 0
     }
 ]
