@@ -1,11 +1,10 @@
-alert("Due to some unknown errors, DOH has not yet to released the information of patients that has died and recovered since April 2. Our data are still reflecting April 1st release. Their website is still under maintenance for the past few days. We are trying to contact them, but as of now, we still haven't received any reply.");
 console.log("Philippines COVID-19 Tracker");
 
 update('cases', 4648);
 update('death', 297);
 update('recover', 197);
-update('pui', 1323);
-update('pum', 6321);
+update('fv', 62);
+update('ca', 2841);
 
 table('https://phcoronatracker.com/cases.json', '#ph_body');
 table('https://phcoronatracker.com/ncr.json', '#ncr_body');
