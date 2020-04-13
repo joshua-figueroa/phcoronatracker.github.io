@@ -1,6 +1,7 @@
 # htaccess
 # This allows you to redirect your entire website to any other domain
 Redirect 301 / https://phcoronatracker.com/
+
 # Extra Security Headers
 <IfModule mod_headers.c>
 	Header set X-XSS-Protection "1; mode=block"
@@ -11,3 +12,9 @@ Redirect 301 / https://phcoronatracker.com/
 	Header set Referrer-Policy "same-origin"
 	Header set Feature-Policy "geolocation 'self'; vibrate 'none'"
 </IfModule>
+
+# mod_rewrite
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ %1.html [NC,L]
