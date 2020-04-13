@@ -6,72 +6,72 @@
         "rec": 242
     }, {
         "name": "Metro Manila",
-        "cases": 3511,
+        "cases": 3510,
         "death": 179,
         "rec": 132
     }, {
         "name": "Rizal",
-        "cases": 221,
-        "death": 16,
-        "rec": 5
+        "cases": 270,
+        "death": 19,
+        "rec": 8
     }, {
         "name": "Laguna",
-        "cases": 161,
+        "cases": 201,
         "death": 6,
-        "rec": 2
+        "rec": 4
     }, {
         "name": "Cavite",
-        "cases": 149,
+        "cases": 176,
         "death": 17,
         "rec": 3
     }, {
         "name": "Bulacan",
-        "cases": 76,
+        "cases": 92,
         "death": 15,
         "rec": 4
     }, {
         "name": "Davao del Sur",
-        "cases": 74,
-        "death": 13,
-        "rec": 7
+        "cases": 76,
+        "death": 14,
+        "rec": 35
     }, {
         "name": "Batangas",
-        "cases": 69,
-        "death": 12,
-        "rec": 10
+        "cases": 73,
+        "death": 13,
+        "rec": 11
     }, {
         "name": "Pampanga",
-        "cases": 41,
+        "cases": 46,
         "death": 5,
         "rec": 0
     }, {
-        "name": "Cebu",
-        "cases": 34,
-        "death": 6,
-        "rec": 0
-    }, {
         "name": "Nueva Ecija",
-        "cases": 33,
+        "cases": 42,
         "death": 0,
         "rec": 1
     }, {
+        "name": "Bataan",
+        "cases": 35,
+        "death": 2,
+        "rec": 1
+    }, {
+        "name": "Cebu",
+        "cases": 35,
+        "death": 6,
+        "rec": 0
+    }, {
         "name": "Pangasinan",
-        "cases": 30,
+        "cases": 32,
         "death": 7,
         "rec": 0
     }, {
         "name": "Tarlac",
-        "cases": 24,
+        "cases": 25,
         "death": 1,
         "rec": 6
     }, {
-        "name": "Bataan",
-        "cases": 22,
-        "death": 2,
-        "rec": 1
-    }, {
         "name": "Quezon",
-        "cases": 22,
+        "cases": 27,
         "death": 4,
         "rec": 3
     }, {
@@ -81,19 +81,19 @@
         "rec": 2
     }, {
         "name": "Benguet",
-        "cases": 17,
+        "cases": 19,
         "death": 1,
         "rec": 6
+    }, {
+        "name": "Zambales",
+        "cases": 17,
+        "death": 2,
+        "rec": 0
     }, {
         "name": "Cagayan",
         "cases": 14,
         "death": 0,
         "rec": 7
-    }, {
-        "name": "Zambales",
-        "cases": 14,
-        "death": 2,
-        "rec": 0
     }, {
         "name": "La Union",
         "cases": 13,
@@ -116,49 +116,49 @@
         "rec": 2
     }, {
         "name": "Zamboanga del Sur",
-        "cases": 9,
+        "cases": 10,
         "death": 0,
         "rec": 0
+    }, {
+        "name": "Isabela",
+        "cases": 9,
+        "death": 0,
+        "rec": 1
+    }, {
+        "name": "Camarines Sur",
+        "cases": 8,
+        "death": 0,
+        "rec": 1
     }, {
         "name": "Lanao del Sur",
         "cases": 8,
         "death": 3,
         "rec": 0
     }, {
-        "name": "Camarines Sur",
+        "name": "Aklan",
         "cases": 7,
         "death": 0,
-        "rec": 1
-    }, {
-        "name": "Isabela",
-        "cases": 7,
-        "death": 0,
-        "rec": 2
+        "rec": 0
     }, {
         "name": "Negros Oriental",
         "cases": 7,
         "death": 3,
         "rec": 2
     }, {
-        "name": "Aklan",
-        "cases": 6,
-        "death": 0,
-        "rec": 0
-    }, {
         "name": "Cotabato City",
         "cases": 6,
         "death": 0,
         "rec": 2
     }, {
+        "name": "Lanao del Norte",
+        "cases": 6,
+        "death": 2,
+        "rec": 0
+    }, {
         "name": "Oriental Mindoro",
         "cases": 6,
         "death": 0,
         "rec": 1
-    }, {
-        "name": "Lanao del Norte",
-        "cases": 5,
-        "death": 2,
-        "rec": 0
     }, {
         "name": "Nueva Vizcaya",
         "cases": 5,
@@ -202,7 +202,7 @@
     }, {
         "name": "Occidental Mindoro",
         "cases": 3,
-        "death": 1,
+        "death": 2,
         "rec": 0
     }, {
         "name": "Samar",
@@ -265,14 +265,9 @@
         "death": 0,
         "rec": 0
     }, {
-        "name": "Foreign",
-        "cases": 3,
-        "death": 2,
-        "rec": 1
-    }, {
         "name": "For Validation",
-        "cases": 62,
-        "death": 0,
+        "cases": 51,
+        "death": 1,
         "rec": 0
     }
 ]
