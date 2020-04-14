@@ -6,77 +6,77 @@
         "rec": 132
     }, {
         "name": "Quezon City",
-        "cases": 940,
-        "death": 53,
-        "rec": 28
+        "cases": 956,
+        "death": 57,
+        "rec": 31
     }, {
         "name": "Manila",
-        "cases": 443,
-        "death": 24,
-        "rec": 10
-    }, {
-        "name": "Makati",
-        "cases": 296,
-        "death": 7,
-        "rec": 21
+        "cases": 451,
+        "death": 28,
+        "rec": 12
     }, {
         "name": "Parañaque",
-        "cases": 276,
-        "death": 12,
+        "cases": 313,
+        "death": 14,
         "rec": 6
     }, {
+        "name": "Makati",
+        "cases": 306,
+        "death": 8,
+        "rec": 28
+    }, {
         "name": "Mandaluyong",
-        "cases": 253,
-        "death": 6,
+        "cases": 260,
+        "death": 8,
         "rec": 7
     }, {
         "name": "Pasig",
-        "cases": 215,
-        "death": 20,
-        "rec": 16
+        "cases": 221,
+        "death": 23,
+        "rec": 18
     }, {
         "name": "San Juan",
-        "cases": 174,
+        "cases": 187,
         "death": 11,
-        "rec": 13
+        "rec": 14
     }, {
         "name": "Taguig",
-        "cases": 182,
+        "cases": 186,
         "death": 5,
         "rec": 12
     }, {
-        "name": "Pasay",
-        "cases": 114,
+        "name": "Las Piñas",
+        "cases": 117,
         "death": 3,
-        "rec": 6
+        "rec": 4
+    }, {
+        "name": "Pasay",
+        "cases": 115,
+        "death": 3,
+        "rec": 9
     }, {
         "name": "Caloocan",
-        "cases": 110,
-        "death": 11,
-        "rec": 2
+        "cases": 112,
+        "death": 12,
+        "rec": 3
     }, {
         "name": "Muntinlupa",
         "cases": 108,
         "death": 8,
-        "rec": 0
-    }, {
-        "name": "Las Piñas",
-        "cases": 106,
-        "death": 3,
-        "rec": 4
+        "rec": 2
     }, {
         "name": "Marikina",
-        "cases": 99,
+        "cases": 108,
         "death": 8,
-        "rec": 5
+        "rec": 6
     }, {
         "name": "Valenzuela",
-        "cases": 51,
+        "cases": 50,
         "death": 2,
         "rec": 0
     }, {
         "name": "Malabon",
-        "cases": 23,
+        "cases": 26,
         "death": 0,
         "rec": 0
     }, {
@@ -91,7 +91,7 @@
         "rec": 0
     }, {
         "name": "For Verification",
-        "cases": 84,
+        "cases": 77,
         "death": 4,
         "rec": 1
     }
