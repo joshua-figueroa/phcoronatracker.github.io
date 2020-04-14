@@ -161,14 +161,14 @@ p {
 .search {
     position: absolute;
     padding: 10px;
-    left: 105px;
+    left: 96px;
 }
 .fv {
     position: absolute;
     padding: 5px;
     font-size: 26pt;
     color: black;
-    left: 150px;
+    left: 141px;
     font-weight: 500;
 }
 .monitor {
@@ -433,10 +433,10 @@ tr td:nth-child(4) {
         left: calc(50% - 14px) !important;
     }
     .search {
-        left: calc(50% - 50px);
+        left: calc(50% - 59px);
     }
     .fv {
-        left: calc(50% - 5px);
+        left: calc(50% - 14px);
     }
     .monitor {
         left: calc(50% - 68px);
