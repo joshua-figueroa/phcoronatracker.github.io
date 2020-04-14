@@ -11,42 +11,42 @@
         "rec": 154
     }, {
         "name": "Rizal",
-        "cases": 270,
-        "death": 19,
-        "rec": 8
+        "cases": 290,
+        "death": 21,
+        "rec": 10
     }, {
         "name": "Laguna",
-        "cases": 201,
+        "cases": 209,
         "death": 6,
-        "rec": 4
+        "rec": 5
     }, {
         "name": "Cavite",
-        "cases": 176,
+        "cases": 178,
         "death": 17,
         "rec": 3
     }, {
         "name": "Bulacan",
-        "cases": 92,
+        "cases": 96,
         "death": 15,
         "rec": 4
     }, {
         "name": "Davao del Sur",
-        "cases": 76,
-        "death": 14,
-        "rec": 35
+        "cases": 77,
+        "death": 15,
+        "rec": 36
     }, {
         "name": "Batangas",
-        "cases": 73,
+        "cases": 75,
         "death": 13,
         "rec": 11
     }, {
         "name": "Pampanga",
-        "cases": 46,
+        "cases": 53,
         "death": 5,
         "rec": 0
     }, {
         "name": "Nueva Ecija",
-        "cases": 42,
+        "cases": 45,
         "death": 0,
         "rec": 1
     }, {
@@ -56,9 +56,9 @@
         "rec": 1
     }, {
         "name": "Cebu",
-        "cases": 35,
+        "cases": 33,
         "death": 6,
-        "rec": 0
+        "rec": 14
     }, {
         "name": "Pangasinan",
         "cases": 32,
@@ -66,7 +66,7 @@
         "rec": 0
     }, {
         "name": "Quezon",
-        "cases": 27,
+        "cases": 29,
         "death": 4,
         "rec": 3
     }, {
@@ -83,17 +83,17 @@
         "name": "Benguet",
         "cases": 19,
         "death": 1,
-        "rec": 6
+        "rec": 7
     }, {
         "name": "Zambales",
-        "cases": 17,
+        "cases": 21,
         "death": 2,
         "rec": 0
     }, {
         "name": "Cagayan",
-        "cases": 14,
+        "cases": 15,
         "death": 0,
-        "rec": 7
+        "rec": 8
     }, {
         "name": "La Union",
         "cases": 13,
@@ -116,7 +116,7 @@
         "rec": 2
     }, {
         "name": "Zamboanga del Sur",
-        "cases": 10,
+        "cases": 11,
         "death": 0,
         "rec": 0
     }, {
@@ -127,17 +127,17 @@
     }, {
         "name": "Camarines Sur",
         "cases": 8,
-        "death": 0,
+        "death": 1,
         "rec": 1
-    }, {
-        "name": "Lanao del Sur",
-        "cases": 8,
-        "death": 3,
-        "rec": 0
     }, {
         "name": "Aklan",
         "cases": 7,
         "death": 0,
+        "rec": 0
+    }, {
+        "name": "Lanao del Sur",
+        "cases": 7,
+        "death": 3,
         "rec": 0
     }, {
         "name": "Negros Oriental",
@@ -153,7 +153,7 @@
         "name": "Lanao del Norte",
         "cases": 6,
         "death": 2,
-        "rec": 0
+        "rec": 1
     }, {
         "name": "Oriental Mindoro",
         "cases": 6,
@@ -168,11 +168,6 @@
         "name": "Capiz",
         "cases": 4,
         "death": 1,
-        "rec": 1
-    }, {
-        "name": "Marinduque",
-        "cases": 4,
-        "death": 0,
         "rec": 1
     }, {
         "name": "South Cotabato",
@@ -195,11 +190,6 @@
         "death": 0,
         "rec": 0
     }, {
-        "name": "Ilocos Norte",
-        "cases": 3,
-        "death": 0,
-        "rec": 0
-    }, {
         "name": "Occidental Mindoro",
         "cases": 3,
         "death": 2,
@@ -213,7 +203,7 @@
         "name": "Sultan Kudarat",
         "cases": 3,
         "death": 1,
-        "rec": 0
+        "rec": 1
     }, {
         "name": "Davao de Oro",
         "cases": 2,
@@ -223,7 +213,7 @@
         "name": "Misamis Occidental",
         "cases": 2,
         "death": 0,
-        "rec": 0
+        "rec": 1
     }, {
         "name": "Antique",
         "cases": 1,
@@ -266,8 +256,8 @@
         "rec": 0
     }, {
         "name": "For Validation",
-        "cases": 51,
-        "death": 1,
+        "cases": 173,
+        "death": 0,
         "rec": 0
     }
 ]
