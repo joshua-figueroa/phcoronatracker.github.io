@@ -202,7 +202,7 @@ function initMap() {
     var location = {lat: 12.879721, lng: 121.774017};
     var map = new google.maps.Map(document.getElementById('map'), {
         center: location,
-        minZoom: 6,
+        zoom: 6,
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
