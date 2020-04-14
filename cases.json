@@ -6,9 +6,9 @@
         "rec": 295
     }, {
         "name": "Metro Manila",
-        "cases": 3510,
-        "death": 179,
-        "rec": 132
+        "cases": 3621,
+        "death": 196,
+        "rec": 154
     }, {
         "name": "Rizal",
         "cases": 270,
@@ -65,15 +65,15 @@
         "death": 7,
         "rec": 0
     }, {
-        "name": "Tarlac",
-        "cases": 25,
-        "death": 1,
-        "rec": 6
-    }, {
         "name": "Quezon",
         "cases": 27,
         "death": 4,
         "rec": 3
+    }, {
+        "name": "Tarlac",
+        "cases": 25,
+        "death": 1,
+        "rec": 6
     }, {
         "name": "Iloilo",
         "cases": 20,
