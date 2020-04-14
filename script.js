@@ -3,8 +3,8 @@ console.log("Philippines COVID-19 Tracker");
 update('cases', 5223);
 update('death', 335);
 update('recover', 295);
-update('fv', 51);
-update('ca', 3082);
+update('fv', 173);
+update('ca', 3151);
 
 table('https://phcoronatracker.com/cases.json', '#ph_body');
 table('https://phcoronatracker.com/ncr.json', '#ncr_body');
