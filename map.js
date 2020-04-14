@@ -1,35 +1,35 @@
 let citymap = {
     manila: {
         center: {lat: 14.599512, lng: 120.984222},
-        cases: 3510
+        cases: 3621
     }, 
     rizal: {
         center: {lat: 14.6037, lng: 121.3084},
-        cases: 270
+        cases: 290
     },
     bulacan: {
         center: {lat: 14.8527, lng: 120.8160},
-        cases: 92
+        cases: 96
     },
     cavite: {
         center: {lat: 14.4791, lng: 120.8970},
-        cases: 176
+        cases: 178
     },
     laguna: {
         center: {lat: 14.2691, lng: 121.4113},
-        cases: 201
+        cases: 209
     },
     batangas: {
         center: {lat: 13.7565, lng: 121.0583},
-        cases: 73
+        cases: 75
     },
     cagayan: {
         center: {lat: 17.6132, lng: 121.7270},
-        cases: 14
+        cases: 15
     },  
     davao_sur: {
         center: {lat: 6.7663, lng: 125.3284},
-        cases: 76
+        cases: 77
     }, 
     iloilo: {
         center: {lat: 10.7202, lng: 122.5621},
@@ -41,7 +41,7 @@ let citymap = {
     }, 
     lanao_sur: {
         center: {lat: 7.8232, lng: 124.4198},
-        cases: 8
+        cases: 7
     }, 
     negros_occ: {
         center: {lat: 10.2926, lng: 123.0247},
@@ -49,7 +49,7 @@ let citymap = {
     }, 
     pampanga: {
         center: {lat: 15.0794, lng: 120.6200},
-        cases: 46
+        cases: 53
     }, 
     benguet: {
         center: {lat: 16.4023, lng: 120.5960},
@@ -69,7 +69,7 @@ let citymap = {
     }, 
     nueva_ecija: {
         center: {lat: 15.5784, lng: 121.1113},
-        cases: 42
+        cases: 45
     }, 
     abra: {
         center: {lat: 17.5951, lng: 120.7983},
@@ -89,7 +89,7 @@ let citymap = {
     }, 
     cebu: {
         center: {lat: 10.3157, lng: 123.8854},
-        cases: 35
+        cases: 33
     }, 
     cotabato_city: {
         center: {lat: 7.2047, lng: 124.2310},
@@ -117,11 +117,11 @@ let citymap = {
     },
     quezon: {
         center: {lat: 13.9414, lng: 121.6234},
-        cases: 27
+        cases: 29
     },
     zamboanga_sur: {
         center: {lat: 7.8383, lng: 123.2967},
-        cases: 10
+        cases: 11
     },
     davao_norte: {
         center: {lat: 7.5618, lng: 125.6533},
@@ -141,11 +141,7 @@ let citymap = {
     },
     zambales: {
         center: {lat: 15.5082, lng: 119.9698},
-        cases: 17
-    },
-    marinduque: {
-        center: {lat: 13.4767, lng: 121.9032},
-        cases: 4
+        cases: 21
     },
     south_cotabato: {
         center: {lat: 6.3358, lng: 124.7741},
@@ -166,10 +162,6 @@ let citymap = {
     ilocos_sur: {
         center: {lat: 17.2279, lng: 120.5740},
         cases: 1
-    },
-    ilocos_norte: {
-        center: {lat: 18.1647, lng: 120.7116},
-        cases: 3
     },
     romblon: {
         center: {lat: 12.5778, lng: 122.2691},
