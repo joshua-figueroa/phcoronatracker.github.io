@@ -20,7 +20,7 @@ let chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January 30', 'February 5', 'March 15', 'March 29', 'April 5', 'April 12', 'April 13', 'April 14'],
+        labels: ['January 30', 'February 5', 'March 15', 'March 29', 'April 12', 'April 13', 'April 14', 'April 15'],
         datasets: [{
             label: 'Number of Cases',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -29,7 +29,7 @@ let chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [1, 3, 140, 1418, 3246, 4648, 4932, 5223]
+            data: [1, 3, 140, 1418, 4648, 4932, 5223, 5453]
         },{
             label: 'Number of Deaths',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -38,7 +38,7 @@ let chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [0, 1, 8, 71, 152, 297, 315, 335]
+            data: [0, 1, 8, 71, 297, 315, 335, 349]
         },{
             label: 'Number of Recoveries',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -47,7 +47,7 @@ let chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [0, 1, 2, 42, 64, 197, 242, 295]
+            data: [0, 1, 2, 42, 197, 242, 295, 353]
         }]
     },
 
