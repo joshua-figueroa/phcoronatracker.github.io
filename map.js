@@ -1,67 +1,67 @@
 let citymap = {
     manila: {
         center: {lat: 14.599512, lng: 120.984222},
-        cases: 3621
+        cases: 3785
     }, 
     rizal: {
         center: {lat: 14.6037, lng: 121.3084},
-        cases: 290
+        cases: 300
     },
     bulacan: {
         center: {lat: 14.8527, lng: 120.8160},
-        cases: 96
+        cases: 99
     },
     cavite: {
         center: {lat: 14.4791, lng: 120.8970},
-        cases: 178
+        cases: 188
     },
     laguna: {
         center: {lat: 14.2691, lng: 121.4113},
-        cases: 209
+        cases: 219
     },
     batangas: {
         center: {lat: 13.7565, lng: 121.0583},
-        cases: 75
+        cases: 76
     },
     cagayan: {
         center: {lat: 17.6132, lng: 121.7270},
-        cases: 15
+        cases: 17
     },  
     davao_sur: {
         center: {lat: 6.7663, lng: 125.3284},
-        cases: 77
+        cases: 80
     }, 
     iloilo: {
         center: {lat: 10.7202, lng: 122.5621},
-        cases: 20
+        cases: 22
     }, 
     isabela: {
         center: {lat: 16.9754, lng: 121.8107},
-        cases: 9
+        cases: 11
     }, 
     lanao_sur: {
         center: {lat: 7.8232, lng: 124.4198},
-        cases: 7
+        cases: 8
     }, 
     negros_occ: {
         center: {lat: 10.2926, lng: 123.0247},
-        cases: 10
+        cases: 12
     }, 
     pampanga: {
         center: {lat: 15.0794, lng: 120.6200},
-        cases: 53
+        cases: 57
     }, 
     benguet: {
         center: {lat: 16.4023, lng: 120.5960},
-        cases: 19
+        cases: 20
     }, 
     bataan: {
         center: {lat: 14.6417, lng: 120.4818},
-        cases: 35
+        cases: 36
     }, 
     la_union: {
         center: {lat: 16.6159, lng: 120.3209},
-        cases: 13
+        cases: 14
     }, 
     negros_or: {
         center: {lat: 9.6282, lng: 122.9888},
@@ -69,7 +69,7 @@ let citymap = {
     }, 
     nueva_ecija: {
         center: {lat: 15.5784, lng: 121.1113},
-        cases: 45
+        cases: 47
     }, 
     abra: {
         center: {lat: 17.5951, lng: 120.7983},
@@ -85,11 +85,11 @@ let citymap = {
     }, 
     camsur: {
         center: {lat: 13.5250, lng: 123.3486},
-        cases: 8
+        cases: 10
     }, 
     cebu: {
         center: {lat: 10.3157, lng: 123.8854},
-        cases: 33
+        cases: 42
     }, 
     cotabato_city: {
         center: {lat: 7.2047, lng: 124.2310},
@@ -101,7 +101,7 @@ let citymap = {
     }, 
     lanao_norte: {
         center: {lat: 7.8722, lng: 123.8858},
-        cases: 6
+        cases: 5
     }, 
     oriental_mindoro: {
         center: {lat: 13.0565, lng: 121.4069},
@@ -117,7 +117,7 @@ let citymap = {
     },
     quezon: {
         center: {lat: 13.9414, lng: 121.6234},
-        cases: 29
+        cases: 34
     },
     zamboanga_sur: {
         center: {lat: 7.8383, lng: 123.2967},
@@ -125,7 +125,7 @@ let citymap = {
     },
     davao_norte: {
         center: {lat: 7.5618, lng: 125.6533},
-        cases: 11
+        cases: 12
     },
     nueva_viscaya: {
         center: {lat: 16.3301, lng: 121.1710},
@@ -137,7 +137,7 @@ let citymap = {
     },
     pangasinan: {
         center: {lat: 15.8949, lng: 120.2863},
-        cases: 32
+        cases: 36
     },
     zambales: {
         center: {lat: 15.5082, lng: 119.9698},
@@ -149,19 +149,19 @@ let citymap = {
     },
     albay: {
         center: {lat: 13.1775, lng: 123.5280},
-        cases: 11
+        cases: 15
     },
     samar: {
         center: {lat: 11.5795, lng: 124.9748},
-        cases: 3
+        cases: 4
     },
     misamis_occ: {
         center: {lat: 8.3375, lng: 123.7071},
-        cases: 2
+        cases: 3
     },
     ilocos_sur: {
         center: {lat: 17.2279, lng: 120.5740},
-        cases: 1
+        cases: 3
     },
     romblon: {
         center: {lat: 12.5778, lng: 122.2691},
@@ -193,7 +193,39 @@ let citymap = {
     },
     cotabato: {
         center: {lat: 7.204667, lng: 124.231044},
-        cases: 3
+        cases: 4
+    },
+    ilocos_norte: {
+        center: {lat: 18.1647, lng: 120.7116},
+        cases: 6
+    },
+    quirino: {
+        center: {lat: 16.2700, lng: 121.5370},
+        cases: 2
+    },
+    marinduque: {
+        center: {lat: 13.4767, lng: 121.9032},
+        cases: 4
+    },
+    palawan: {
+        center: {lat: 9.7638, lng: 118.7473},
+        cases: 2
+    },
+    masbate: {
+        center: {lat: 12.3574, lng: 123.5504},
+        cases: 1
+    },
+    bohol: {
+        center: {lat: 9.83333, lng: 124.166666},
+        cases: 2
+    },
+    northern_samar: {
+        center: {lat: 12.4198, lng: 124.6414},
+        cases: 1
+    },
+    misamis_or: {
+        center: {lat: 8.5046, lng: 124.6220},
+        cases: 2
     }
 };
 
