@@ -1,9 +1,9 @@
 [
     {
         "name": "Total",
-        "cases": 5223,
-        "death": 335,
-        "rec": 295
+        "cases": 5453,
+        "death": 349,
+        "rec": 353
     }, {
         "name": "Metro Manila",
         "cases": 3621,
@@ -256,8 +256,8 @@
         "rec": 0
     }, {
         "name": "For Validation",
-        "cases": 173,
-        "death": 0,
+        "cases": 151,
+        "death": 1,
         "rec": 0
     }
 ]
