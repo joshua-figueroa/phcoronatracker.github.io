@@ -28,7 +28,7 @@ let citymap = {
         cases: 17
     },  
     davao_sur: {
-        center: {lat: 6.7663, lng: 125.3284},
+        center: {lat: 7.1907, lng: 125.4553},
         cases: 80
     }, 
     iloilo: {
