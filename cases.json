@@ -38,32 +38,38 @@
         "name": "Davao del Sur",
         "cases": 80,
         "death": 16,
-        "rec": 37
+        "rec": 37,
+        "center": {"lat": 6.7663, "lng": 125.3284}
     }, {
         "name": "Batangas",
         "cases": 76,
         "death": 12,
-        "rec": 11
+        "rec": 11,
+        "center": {"lat": 13.7565, "lng": 121.0583}
     }, {
         "name": "Pampanga",
         "cases": 57,
         "death": 5,
-        "rec": 1
+        "rec": 1,
+        "center": {"lat": 15.0794, "lng": 120.6200}
     }, {
         "name": "Nueva Ecija",
         "cases": 47,
         "death": 0,
-        "rec": 1
+        "rec": 1,
+        "center": {"lat": 15.5784, "lng": 121.1113}
     }, {
         "name": "Bataan",
         "cases": 36,
         "death": 2,
-        "rec": 1
+        "rec": 1,
+        "center": {"lat": 14.6417, "lng": 120.4818}
     }, {
         "name": "Cebu",
         "cases": 42,
         "death": 6,
-        "rec": 15
+        "rec": 15,
+        "center": {"lat": 10.3157, "lng": 123.8854}
     }, {
         "name": "Pangasinan",
         "cases": 36,
