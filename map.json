@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Metropolitan Manila",
+        "center": {"lat": 14.599512, "lng": 120.984222},
+        "cases": 1634
+    }, 
+    {
+        "name" : "Rizal",
+        "center": {"lat": 14.6037, "lng": 121.3084},
+        "cases": 98
+    },
+    {
+        "name" : "Bulacan",
+        "center": {"lat": 14.8527, "lng": 120.8160},
+        "cases": 39
+    },
+    {
+        "name" : "Cavite",
+        "center": {"lat": 14.4791, "lng": 120.8970},
+        "cases": 47
+    }
+    
+]
