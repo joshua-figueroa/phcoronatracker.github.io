@@ -8,27 +8,32 @@
         "name": "Metro Manila",
         "cases": 3785,
         "death": 207,
-        "rec": 203
+        "rec": 203,
+        "center": {"lat": 14.599512, "lng": 120.984222}
     }, {
         "name": "Rizal",
         "cases": 300,
         "death": 22,
-        "rec": 13
+        "rec": 13,
+        "center": {"lat": 14.6037, "lng": 121.3084}
     }, {
         "name": "Laguna",
         "cases": 219,
         "death": 6,
-        "rec": 7
+        "rec": 7,
+        "center": {"lat": 14.2691, "lng": 121.4113}
     }, {
         "name": "Cavite",
         "cases": 188,
         "death": 18,
-        "rec": 5
+        "rec": 5,
+        "center": {"lat": 14.4791, "lng": 120.8970}
     }, {
         "name": "Bulacan",
         "cases": 99,
         "death": 15,
-        "rec": 4
+        "rec": 4,
+        "center": {"lat": 14.8527, "lng": 120.8160}
     }, {
         "name": "Davao del Sur",
         "cases": 80,
