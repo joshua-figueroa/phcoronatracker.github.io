@@ -99,7 +99,7 @@ function initMap() {
                     map: map,
                     center: data[i].center,
                     radius: Math.sqrt(data[i].cases) * 2000,
-                    content: '<h6>' + data[i].name + '</h6><span>Cases - ' + data[i].cases + '</span><br><span>Deaths - ' + data[i].death + '</span><br><span>Recoveries - ' + data[i].rec + '</span>'
+                    content: '<h4>' + data[i].name + '</h4><span>Cases - ' + data[i].cases + '</span><br><span>Deaths - ' + data[i].death + '</span><br><span>Recoveries - ' + data[i].rec + '</span>'
                 });
                 
                 var infoWindow = new google.maps.InfoWindow();
