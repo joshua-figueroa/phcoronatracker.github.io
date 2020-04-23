@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PH Coronavirus Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
+    <meta name="keywords" content="covid update, ph corona, ph covid update, corona update, covid, covid19, covid-19, ncov, ncov19, ncov-19, covid philippines, ncov philippines, corona virus, coronavirus philippines">
+    <meta name="author" content="Joshua Figueroa">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phcoronatracker.com/about">
+    <meta property="og:title" content="PH Coronavirus Tracker">
+    <meta property="og:description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
+    <meta property="og:image" content="https://phcoronatracker.com/static/images/thumbnail.png">
+    <meta http-equiv="refresh" content="600">
+    <meta name="HandheldFriendly" content="true">
+    <script src="static/javascript/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/50e259828d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/about.css">
+    <link rel="icon" href="static/images/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar d-none d-md-block my-auto" style="background-color: #55D6AA;">
+        <div contenteditable="false" class="navbar-brand text-large my-auto">
+            <img src="static/images/icon.png" alt="Icon" id="icon">
+            <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row min-vh-100 flex-column flex-md-row"> 
+            <aside class="col-12 col-md-3 col-lg-2 p-0 flex-shrink-1 bg-random sticky-top">
+                <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-start py-2 my-auto">
+                    <a class="navbar-brand text-large d-block d-md-none" href="#">
+                        <img src="static/images/icon.png" alt="Icon" id="icon">
+                        <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+                    </a>
+                    <button class="btn btn-outline-secondary navbar-toggler my-auto pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: #55D6AA;">
+                        <img src="static/images/menu.png" alt="menu" id="menu"></button>
+                    <div class="collapse navbar-collapse list" id="collapsibleNavbar">
+                        <ul class="flex-md-column flex-xs-row navbar-nav w-100 justify-content-between">
+                            <li class="nav-item"><i class="fas fa-home"></i><a href="index.html">&nbsp; Home</a></li>
+                            <li class="nav-item"><i class="fas fa-globe"></i><a href="global.html">&nbsp; Global Stats</a></li> 
+                            <li class="nav-item"><i class="fas fa-server"></i><a href="database.html">&nbsp; Patients Database</a></li>
+                            <li class="nav-item"><i class="fas fa-map-marked-alt"></i><a href="maps.html">&nbsp; Maps</a></li>
+                            <li class="nav-item"><i class="fas fa-chart-line"></i><a href="trends.html">&nbsp; Trends</a></li>
+                            <li class="nav-item"><i class="fas fa-syringe"></i><a href="vaccine-tracker.html">&nbsp; Vaccine Tracker</a></li>
+                            <li class="nav-item"><i class="fas fa-rss"></i><a href="news.html">&nbsp; News</a></li>
+                            <li class="nav-item" id="active"><i class="fas fa-address-card"></i><a href="about.html">&nbsp; About</a></li>
+                            <li class="nav-item"><i class="fas fa-coffee"></i><a href='https://ko-fi.com/X8X61KLM4'>&nbsp; Support me on Ko-fi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            
+            <main class="col py-3 flex-grow-1 text-white" style="background-color: #223446; font-family: 'Roboto', sans-serif;">
+                <button class="btn btn-warning btn-lg float-right" id="top"><i class="fas fa-angle-double-up"></i></button>
+                <div class="row ml-1 mr-1 mx-auto">
+                    <div class="col" id="about" style="background-color: #445175;">
+                        <div class="row text-white mt-2">
+                            <h1 class="mx-auto d-none d-md-block"><i class="fas fa-info-circle"></i>&nbsp;About</h1>
+                            <h3 class="mx-auto d-block d-md-none"><i class="fas fa-info-circle"></i>&nbsp;About</h3>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <h2 class="d-none d-md-block"><span style="color: #FFFFFF">What is </span><span style="color: rgb(0, 85, 255)">P</span><span style="color: rgb(211, 23, 23)">H</span><span style="color: #FFFFFF">CoronaTracker ?</span></h2>
+                                <h4 class="d-block d-md-none"><span style="color: #FFFFFF">What is </span><span style="color: rgb(0, 85, 255)">P</span><span style="color: rgb(211, 23, 23)">H</span><span style="color: #FFFFFF">CoronaTracker ?</span></h4>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto about-website" style="text-align: justify;">
+                                This website was created by Joshua Figueroa, a Grade 10 student from Manila Science High School.
+                                The purpose of this website is to help people to get the latest and simplified information about the COVID-19 Pandemic not only in our country but also throughout
+                                the world. This also aims to prevent the spread of fake news and panic. It includes a dashboard that tallies the total cases of the disease, maps about their 
+                                residency and a graph that tells its trend. The new version of this website also includes a Vaccine Tracker that are still under clinical trial. 
+                                This site is constantly updated and is sourced from the Department of Health, John Hopkins University and other International Media Outlets.
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <h2 class="d-none d-md-block"><i class="fas fa-users"></i>&nbsp;Collaboration</h2>
+                                <h4 class="d-block d-md-none"><i class="fas fa-users"></i>&nbsp;Collaboration</h4>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block collaboration mx-auto">
+                                    💻 Constructive collaboration with Glenn Figueroa Jr. 💻
+                                </span>
+                                <span class="d-block d-md-none collaboration mx-auto">
+                                    💻 Constructive collaboration with Glenn Figueroa Jr. 💻
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block collaboration mx-auto">
+                                    🎨 Visual Design collaboration with Janheart Layoso 🎨
+                                </span>
+                                <span class="d-block d-md-none collaboration mx-auto">
+                                    🎨 Visual Design collaboration with Janheart Layoso 🎨
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block collaboration mx-auto">
+                                    If you have an idea on improving my website, email me at <a href="mailto:joshuafigueroa@phcoronatracker.com?Subject=PHCoronaTracker Feedback">joshuafigueroa@phcoronatracker.com</a>
+                                </span>
+                                <span class="d-block d-md-none collaboration mx-auto">
+                                    If you have an idea on improving my website, email me at <a href="mailto:joshuafigueroa@phcoronatracker.com?Subject=PHCoronaTracker Feedback">joshuafigueroa@phcoronatracker.com</a>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <h2 class="d-none d-md-block"><i class="far fa-sticky-note"></i>&nbsp;Developer's Note</h2>
+                                <h4 class="d-block d-md-none"><i class="far fa-sticky-note"></i>&nbsp;Developer's Note</h4>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto about-website" style="text-align: justify;">
+                                The Philippines information are gathered from the Department of Health Website and not from LGUs. 
+                                Some data might be different because many cases are yet to be validated. Information about the patients can be seen
+                                in the Database Section. If you find any bugs/errors, kindly report it on my email shown above.
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <h2 class="d-none d-md-block"><i class="far fa-clipboard"></i>&nbsp;References</h2>
+                                <h4 class="d-block d-md-none"><i class="far fa-clipboard"></i>&nbsp;References</h4>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block source mx-auto">
+                                    Patients Information: <a href="https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP" target="_blank">DOH COVID-19 Data Drop</a>
+                                </span>
+                                <span class="d-block d-md-none source mx-auto">
+                                    Patients Information: <a href="https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP" target="_blank">DOH COVID-19 Data Drop</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block source mx-auto">
+                                    Content Source: <a href="https://www.doh.gov.ph/covid19tracker" target="_blank">Department of Health</a>
+                                </span>
+                                <span class="d-block d-md-none source mx-auto">
+                                    Content Source: <a href="https://www.doh.gov.ph/covid19tracker" target="_blank">Department of Health</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block source mx-auto">
+                                    Icons: <a href="https://www.flaticon.com/home" target="_blank">Flaticons, </a><a href="https://fontawesome.com/" target="_blank">Fontawesome</a>
+                                </span>
+                                <span class="d-block d-md-none source mx-auto">
+                                    Icons: <a href="https://www.flaticon.com/home" target="_blank">Flaticons, </a><a href="https://fontawesome.com/" target="_blank">Fontawesome</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row text-white mb-2">
+                            <div class="mx-auto">
+                                <span class="d-none d-md-block source mx-auto">
+                                    News Source: <a href="https://news.google.com/search?q=COVID-19%20Philippines&hl=en-PH&gl=PH&ceid=PH%3Aen" target="_blank">Google News</a>
+                                </span>
+                                <span class="d-block d-md-none source mx-auto">
+                                    News Source: <a href="https://news.google.com/search?q=COVID-19%20Philippines&hl=en-PH&gl=PH&ceid=PH%3Aen" target="_blank">Google News</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="static/javascript/about.js"></script>
+    <noscript>Your browser does not support JavaScript. Consider opening it with Google Chrome or Mozilla Firefox.</noscript>
+</body>
+</html>
