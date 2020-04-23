@@ -81,7 +81,7 @@ let chart = new Chart(ctx, {
             }],
             xAxes: [{
                 ticks: {
-                    fontColor: 'white',
+                    fontColor: 'black',
                     autoSkip: false,
                     maxRotation: 145,
                     minRotation: 35
