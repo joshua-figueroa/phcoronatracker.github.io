@@ -1,0 +1,518 @@
+:root {
+    --stat-green: rgb(101, 221, 155);
+    --stat-red: #F65164;
+    --stat-yellow: rgb(248, 245, 64);
+    --stat-blue: rgb(68, 155, 226);
+    --paleGray: #DFDFEF;
+}
+html, body {
+    overflow-x: hidden !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Nunito', sans-serif;
+}
+.nav-item:hover {
+    color: black;
+    font-weight: bold;
+}
+.list ul li {
+    color: rgba(0, 0, 0, 0.650);
+    padding: 10px 0px 15px 0px;
+    font-size: 13pt;
+    text-decoration: none;
+}
+a {
+    outline: 0;
+}
+.list ul li a {
+    color: black;
+    font-family: Nunito;
+}
+#active {
+    color: black;
+    font-weight: bold;
+}
+.list ul li a:hover {
+    text-decoration: none;
+}
+.text-large {
+    font-size: 6.2vw;
+}
+#icon {
+    height: 7.5vw;
+    width: 7.5vw;
+    margin-top: auto;
+    margin-bottom: 0.6vw;
+}
+.bg-random {
+    background-color: #55D6AA;
+}
+.navbar-toggler {
+    position: relative;
+    right: -10px;
+}
+#menu {
+    height: 6vw;
+    width: 6vw;
+    margin-bottom: 0.8vw;
+    margin-left: 0.7vw;
+}
+#start {
+    font-family: Nunito;
+}
+.blink {
+    animation:blinkingText 0.85s infinite;
+}
+@keyframes blinkingText{
+    0%{color: #e53e3e;}
+    49%{color: #e53e3e;}
+    60%{color: transparent;}
+    99%{color:transparent;}
+    100%{color: #e53e3e;}
+}
+.flex-box-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card {
+    width: 86vw;
+    height: 140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-title {
+    line-height: 55px;
+    font-size: 14.2vw;
+}
+.card-footer {
+    height: 40px;
+}
+.footer-title {
+    line-height: 13px;
+    font-weight: normal;
+}
+#top {
+    border-radius: 25px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: .2s linear;
+    z-index: 1025;
+    opacity: 0.80;
+}
+#top:hover {
+    opacity: 1;
+}
+.container-data {
+    width: 100%;
+    border-radius: 24px;
+    margin-top: 10px;
+}
+.container-title {
+    font-size: 6.8vw;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.container-subtitle {
+    font-size: 3.6vw;
+    margin-left: 30px;
+}
+.container-subtitle2 {
+    font-size: 3.6vw;
+    margin-left: 15px;
+}
+.search {
+    position: absolute;
+    right: -45px;
+}
+.search img {
+    height: 3.8vw;
+    width: auto;
+    vertical-align: top;
+}
+.input {
+    width: 55%;
+    height: 4.6vw;
+    border-radius: 5px;
+    border: 2px solid rgba(68, 81, 117, 0.5);
+    background: var(--paleGray);
+    vertical-align: top;
+    font-size: small;
+}
+.container-note {
+    font-size: 2.8vw;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+table {
+    position: relative;
+    table-layout: fixed;
+    font-size: 3.5vw;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table-header {
+    width: 94%;
+    height: 425px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+thead {
+    background-color: #6B7CB4;
+    color: whitesmoke;
+}
+.table > thead > tr > th, .table > tbody > tr > th {
+    font-weight: normal;
+}
+tbody tr {
+    border-bottom: 1px solid #223446;
+}
+tbody tr th {
+    color: whitesmoke;
+    font-weight: 500;
+}
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+tr td:nth-child(2) {
+    color: #172783;
+    font-weight: 700;
+}
+tr td:nth-child(3) {
+    color: #C12020;
+    font-weight: 700;
+}
+tr td:nth-child(4) {
+    color: rgb(81, 247, 16);
+    font-weight: 700;
+}
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 330px) {
+    .container-data {
+        width: 100%;
+    }
+    .container-title {
+        margin-left: 15px;
+    }
+    .container-subtitle {
+        margin-left: 30px;
+    }
+    .search {
+        right: -60px;
+    }
+    .search img {
+        height: 4.5vw;
+        width: auto;
+    }
+    .input {
+        vertical-align: top;
+        height: 5.3vw;
+        width: 48%;
+    }
+    .container-note {
+        margin-top: 5px;    
+        font-size: 2.95vw;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .text-large {
+        font-size: 4.5vw;
+    }
+    #icon {
+        height: 5.8vw;
+        width: 5.8vw;
+        margin-top: auto;
+        margin-bottom: 0.6vw;
+    }
+    .bg-random {
+        background-color: #55D6AA;
+    }
+    #menu {
+        height: 4.8vw;
+        width: 4.8vw;
+    }
+    .card {
+        width: 45vw;
+        height: 150px;
+    }
+    .card-title {
+        line-height: 60px;
+        font-size: 9vw;
+    }
+    .container-title {
+        font-size: 5.7vw;
+    }
+    .container-subtitle {
+        font-size: 3.2vw;
+        margin-left: 30px;
+    }
+    .container-subtitle2 {
+        font-size: 3.2vw;
+    }
+    .search {
+        right: -12px;
+    }
+    .search img {
+        height: 3.5vw;
+        width: auto;
+    }
+    .input {
+        width: 60%;
+        height: 4vw;
+        font-size: small;
+    }
+    .container-note {
+        font-size: 2.5vw;
+    }
+    table {
+        font-size: 3vw;
+    }
+    tr th:nth-child(1) {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .text-large {
+        font-size: 3.9vw;
+    }
+    #icon {
+        height: 5.2vw;
+        width: 5.2vw;
+        margin-top: auto;
+        margin-bottom: 0.6vw;
+    }
+    .bg-random {
+        background-color: #223446;
+    }
+    .nav-item:hover {
+        color: white;
+        font-weight: bold;
+    }
+    .list ul li {
+        color: rgba(245, 245, 245, 0.650);
+        font-size: 16px;
+    }
+    .list ul li a {
+        color: whitesmoke;
+    }
+    .nav-item:hover {
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    #active {
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    main {
+        border-left: 1px solid beige;
+    }
+    .card {
+        width: 32vw;
+        height: 150px;
+    }
+    .card-title {
+        line-height: 70px;
+        font-size: 44pt;
+    }
+    .card-footer {
+        height: 35px;
+    }
+    .footer-title {
+        line-height: 10px;
+        font-size: 14pt;
+    }
+    .container-title {
+        font-size: 4.75vw;
+    }
+    .container-subtitle {
+        font-size: 2.3vw;
+        margin-left: 30px;
+    }
+    .container-subtitle2 {
+        font-size: 2.3vw;
+    }
+    .search {
+        right: -7px;
+    }
+    .search img {
+        height: 2.4vw;
+    }
+    .input {
+        width: 65%;
+        height: 2.8vw;
+    }
+    .container-note {
+        font-size: 2vw;
+    }
+    table {
+        font-size: 2.3vw;
+    }
+    tr th:nth-child(1) {
+        width: 35%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .text-large {
+        font-size: 3.5vw;
+    }
+    #icon {
+        height: 4.8vw;
+        width: 4.8vw;
+        margin-top: auto;
+        margin-bottom: 0.6vw;
+    }
+    .bg-random {
+        background-color: #223446;
+    }
+    .list ul li {
+        color: rgba(245, 245, 245, 0.650);
+        font-size: 16px;
+    }
+    .list ul li a {
+        color: whitesmoke;
+    }
+    .nav-item:hover {
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    #active {
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    main {
+        border-left: 1px solid beige;
+    }
+    .card {
+        width: 36vw;
+        height: 170px;
+    }
+    .card-title {
+        line-height: 85px;
+        font-size: 6.5vw;
+    }
+    .card-footer {
+        height: 45px;
+    }
+    .footer-title {
+        line-height: 20px;
+        font-size: 18pt;
+    }
+    .container-title {
+        font-size: 3vw;
+    }
+    .container-subtitle {
+        font-size: 1.5vw;
+        margin-left: 30px;
+    }
+    .container-subtitle2 {
+        font-size: 1.5vw;
+    }
+    .search {
+        right: -15px;
+    }
+    .search img {
+        height: 2vw;
+    }
+    .input {
+        width: 60%;
+        height: 2.3vw;
+    }
+    .container-note {
+        font-size: 1.25vw;
+    }
+    table {
+        font-size: 1.5vw;
+    }
+    tr th:nth-child(1) {
+        width: 29%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-large {
+        font-size: 2.4vw;
+    }
+    #icon {
+        height: 3.2vw;
+        width: 3.2vw;
+        margin-top: auto;
+        margin-bottom: 0.6vw;
+    }
+    .bg-random {
+        background-color: #223446;
+    }
+    .list ul li {
+        color: rgba(245, 245, 245, 0.650);
+        font-size: 16px;
+    }
+    .list ul li a {
+        color: whitesmoke;
+    }
+    .nav-item:hover {
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    #active {
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    main {
+        border-left: 1px solid beige;
+    }   
+    .card {
+        width: 19vw;
+        height: 170px;
+    }
+    .card-title {
+        line-height: 85px;
+        font-size: 4.2vw;
+    }
+    .card-footer {
+        height: 35px;
+    }
+    .footer-title {
+        line-height: 7px;
+        font-size: 1.3vw;
+    }
+    .container-title {
+        font-size: 2.6vw;
+    }
+    .container-subtitle {
+        font-size: 1.45vw;
+        margin-left: 30px;
+    }
+    .container-subtitle2 {
+        font-size: 1.45vw;
+    }
+    .search {
+        right: -2px;
+    }
+    .search img {
+        height: 1.5vw;
+    }
+    .input {
+        width: 65%;
+        height: 1.8vw;
+    }
+    .container-note {
+        font-size: 1.2vw;
+    }
+    table {
+        font-size: 1.2vw;
+    }
+    tr th:nth-child(1) {
+        width: 35%;
+    }
+}
