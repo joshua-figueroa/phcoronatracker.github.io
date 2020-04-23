@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162122410-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-162122410-1');
+    gtag('set', {'user_id': 'UA-162122410-1'}); // Set the user ID using signed-in user_id.
+    </script>
+    
+    <title>PH Coronavirus Tracker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
+    <meta name="keywords" content="covid update, ph corona, ph covid update, corona update, covid, covid19, covid-19, ncov, ncov19, ncov-19, covid philippines, ncov philippines, corona virus, coronavirus philippines">
+    <meta name="author" content="Joshua Figueroa">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phcoronatracker.com/">
+    <meta property="og:title" content="PH Coronavirus Tracker">
+    <meta property="og:description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
+    <meta property="og:image" content="https://phcoronatracker.com/static/images/thumbnail.png">
+    <meta http-equiv="refresh" content="600">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="google-site-verification" content="7pJqGISuNxC7O61Du8tq2G8fwPaGBeU07gx3iEoiB6g"/>
+    <script src="static/javascript/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/50e259828d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="static/images/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Heebo:500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 10000;">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New Update!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <ul>
+                <li>Modified Dashboard</li>
+                <li>Real-time World COVID-19 Stats (All continents included)</li>
+                <li>Patients Record from DOH Data Drop</li>
+                <li>Hoverable Map</li>
+                <li>Modified Charts</li>
+                <li>Vaccine Tracker</li>
+                <li>Separate News Section</li>
+                <li>Improved UI Design</li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <nav class="navbar d-none d-md-block my-auto" style="background-color: #55D6AA;">
+        <div contenteditable="false" class="navbar-brand text-large my-auto">
+            <img src="static/images/icon.png" alt="Icon" id="icon">
+            <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row min-vh-100 flex-column flex-md-row"> 
+            <aside class="col-12 col-md-3 col-lg-2 p-0 flex-shrink-1 bg-random sticky-top" style="z-index: 3000;">
+                <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-start py-2 my-auto">
+                    <a class="navbar-brand text-large d-block d-md-none" href="#">
+                        <img src="static/images/icon.png" alt="Icon" id="icon">
+                        <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+                    </a>
+                    <button class="btn btn-outline-secondary navbar-toggler my-auto pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: #55D6AA;">
+                        <img src="static/images/menu.png" alt="menu" id="menu"></button>
+                    <div class="collapse navbar-collapse list" id="collapsibleNavbar">
+                        <ul class="flex-md-column flex-xs-row navbar-nav w-100 justify-content-between">
+                            <li class="nav-item" id="active"><i class="fas fa-home"></i><a href="index.html">&nbsp; Home</a></li>
+                            <li class="nav-item"><i class="fas fa-globe"></i><a href="global.html">&nbsp; Global Stats</a></li> 
+                            <li class="nav-item"><i class="fas fa-server"></i><a href="database.html">&nbsp; Patients Database</a></li>
+                            <li class="nav-item"><i class="fas fa-map-marked-alt"></i><a href="maps.html">&nbsp; Maps</a></li>
+                            <li class="nav-item"><i class="fas fa-chart-line"></i><a href="trends.html">&nbsp; Trends</a></li>
+                            <li class="nav-item"><i class="fas fa-syringe"></i><a href="vaccine-tracker.html">&nbsp; Vaccine Tracker</a></li>
+                            <li class="nav-item"><i class="fas fa-rss"></i><a href="news.html">&nbsp; News</a></li>
+                            <li class="nav-item"><i class="fas fa-address-card"></i><a href="about.html">&nbsp; About</a></li>
+                            <li class="nav-item"><i class="fas fa-coffee"></i><a href="https://ko-fi.com/X8X61KLM4" target="_blank">&nbsp; Support me on Ko-fi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            
+            <main class="col py-3 flex-grow-1 text-white" style="background-color: #223446;">
+                <h3 class="d-none d-lg-block" id="start">Dashboard</h3>
+                <h4 class="d-block d-lg-none" id="start">Dashboard</h4>
+                <span><h5 style="color: #e53e3e;"><i class="far fa-dot-circle blink"></i>&nbsp;Live</h5></span>
+
+                <div class="flex-box-1 mx-auto">
+                    <div class="card d-flex text-center rounded style" style="color: #236377;">
+                        <div class="card-body" style="background-color: #CAE9F5;">
+                            <h6 class="card-title" id="cases" style="color: #236377;"></h6>
+                        </div>
+                        <div class="card-footer" style="background-color: #8cd3eb;">
+                            <h5 class="footer-title">Total Confirmed Cases</h5>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex text-center" style="color: #e53e3e;">
+                        <div class="card-body" style="background-color: #fdd3d3;">
+                            <h1 class="card-title" id="deaths"></h1>
+                        </div>
+                        <div class="card-footer" style="background-color: #f7b5b5;">
+                            <h5 class="footer-title">Total Deaths</h5>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex text-center" style="color: #2a7a50;">
+                        <div class="card-body" style="background-color: #c6fcd4;">
+                            <h1 class="card-title" id="recover"></h1>
+                        </div>
+                        <div class="card-footer" style="background-color: #98f8b7;">
+                            <h5 class="footer-title">Total Recoveries</h5>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex text-center" style="color: #566274;">
+                        <div class="card-body" style="background-color: #cfd7dd;">
+                            <h1 class="card-title" id="validation"></h1>
+                        </div>
+                        <div class="card-footer" style="background-color: #aaaeb4;">
+                            <h5 class="footer-title">For Validation</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-warning btn-lg float-right" id="top"><i class="fas fa-angle-double-up"></i></button>
+            
+                <div class="row mt-2 mx-auto">
+                    <div class="col-lg mx-auto">
+                        <div class="container-data mx-auto" id="container-ph" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Philippines</div>
+                            <div class="row">
+                                <div class="container-subtitle my-auto">Infected Provinces: 58/82</div>
+                                <div class="search my-auto">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_ph" class="input" onkeyup="search('input_ph', 'ph_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-note">Note: The data below are based from DOH and not from LGUs</div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <caption style="color: var(--paleGray);">Updated as of: April 23, 2020 - 4:00 PM</caption>
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col">Provinces</th>
+                                            <th scope="col">Confirmed</th>
+                                            <th scope="col">Deaths</th>
+                                            <th scope="col">Recovered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ph_body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="container-data mx-auto" id="container-ncr" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Metro Manila (NCR)</div>
+                            <div class="row">
+                                <div class="container-subtitle">Infected Cities: 16/16</div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_ncr" class="input" onkeyup="search('input_ncr', 'ncr_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Infected Municipality: 1/1</div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <caption style="color: var(--paleGray);">Updated as of: April 23, 2020 - 4:00 PM</caption>
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col">Cities</th>
+                                            <th scope="col">Confirmed</th>
+                                            <th scope="col">Deaths</th>
+                                            <th scope="col">Recovered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ncr_body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2 mx-auto">
+                    <div class="col-lg">
+                        <div class="container-data mx-auto" id="container-luzon" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Luzon</div>
+                            <div class="row">
+                                <div class="container-subtitle">Infected Regions: 8/8</div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_luzon" class="input" onkeyup="search('input_luzon', 'luzon_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-note">Note: 4% of province-level data are still undergoing validation</div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <caption style="color: var(--paleGray);">Updated as of: April 23, 2020 - 4:00 PM</caption>
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col">Regions</th>
+                                            <th scope="col">Confirmed</th>
+                                            <th scope="col">Deaths</th>
+                                            <th scope="col">Recovered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="luzon_body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="container-data mx-auto" id="container-vimin" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Visayas & Mindanao</div>
+                            <div class="row">
+                                <div class="container-subtitle">Infected Regions: 9/9</div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_vimin" class="input" onkeyup="search('input_vimin', 'vimin_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-note">Note: 4% of province-level data are still undergoing validation</div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <caption style="color: var(--paleGray);">Updated as of: April 23, 2020 - 4:00 PM</caption>
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col">Regions</th>
+                                            <th scope="col">Confirmed</th>
+                                            <th scope="col">Deaths</th>
+                                            <th scope="col">Recovered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="vimin_body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="static/javascript/script.js"></script>
+    <noscript>Your browser does not support JavaScript. Consider opening it with Google Chrome or Mozilla Firefox.</noscript>
+</body>
+</html>
