@@ -1,98 +1,98 @@
 [
     {
         "name": "Total",
-        "cases": 3785,
-        "death": 207,
-        "rec": 203
+        "cases": 4673,
+        "death": 310,
+        "rec": 474
     }, {
         "name": "Quezon City",
-        "cases": 994,
-        "death": 61,
-        "rec": 41
+        "cases": 1098,
+        "death": 85,
+        "rec": 121
     }, {
         "name": "Manila",
-        "cases": 484,
-        "death": 30,
-        "rec": 15
+        "cases": 565,
+        "death": 40,
+        "rec": 54
     }, {
         "name": "Parañaque",
-        "cases": 328,
-        "death": 14,
-        "rec": 12
+        "cases": 379,
+        "death": 28,
+        "rec": 33
     }, {
         "name": "Makati",
-        "cases": 319,
-        "death": 8,
-        "rec": 32
+        "cases": 363,
+        "death": 13,
+        "rec": 61
     }, {
         "name": "Mandaluyong",
-        "cases": 285,
-        "death": 10,
-        "rec": 8
+        "cases": 317,
+        "death": 16,
+        "rec": 18
     }, {
         "name": "Pasig",
-        "cases": 239,
-        "death": 25,
-        "rec": 21
+        "cases": 258,
+        "death": 36,
+        "rec": 29
     }, {
         "name": "Taguig",
-        "cases": 193,
-        "death": 5,
-        "rec": 16
+        "cases": 217,
+        "death": 6,
+        "rec": 30
     }, {
         "name": "San Juan",
-        "cases": 188,
-        "death": 11,
-        "rec": 24
-    }, {
-        "name": "Pasay",
-        "cases": 131,
-        "death": 3,
-        "rec": 10
+        "cases": 206,
+        "death": 14,
+        "rec": 44
     }, {
         "name": "Caloocan",
-        "cases": 125,
-        "death": 13,
-        "rec": 4
+        "cases": 178,
+        "death": 17,
+        "rec": 13
     }, {
         "name": "Las Piñas",
-        "cases": 125,
-        "death": 3,
-        "rec": 7
+        "cases": 150,
+        "death": 6,
+        "rec": 15
+    }, {
+        "name": "Pasay",
+        "cases": 150,
+        "death": 4,
+        "rec": 14
     }, {
         "name": "Muntinlupa",
-        "cases": 109,
-        "death": 8,
-        "rec": 2
+        "cases": 134,
+        "death": 10,
+        "rec": 7
     }, {
         "name": "Marikina",
         "cases": 107,
-        "death": 8,
-        "rec": 8
+        "death": 9,
+        "rec": 12
     }, {
         "name": "Valenzuela",
-        "cases": 52,
+        "cases": 65,
         "death": 3,
-        "rec": 1
+        "rec": 6
     }, {
         "name": "Malabon",
-        "cases": 26,
-        "death": 0,
-        "rec": 0
+        "cases": 28,
+        "death": 3,
+        "rec": 3
     }, {
         "name": "Navotas",
-        "cases": 19,
-        "death": 2,
+        "cases": 26,
+        "death": 5,
         "rec": 0
     }, {
         "name": "Pateros",
-        "cases": 19,
-        "death": 1,
-        "rec": 1
+        "cases": 22,
+        "death": 3,
+        "rec": 2
     }, {
         "name": "For Verification",
-        "cases": 42,
-        "death": 1,
-        "rec": 1
+        "cases": 410,
+        "death": 12,
+        "rec": 12
     }
 ]
