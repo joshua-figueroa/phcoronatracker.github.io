@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PH Coronavirus Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
+    <meta name="keywords" content="covid update, ph corona, ph covid update, corona update, covid, covid19, covid-19, ncov, ncov19, ncov-19, covid philippines, ncov philippines, corona virus, coronavirus philippines">
+    <meta name="author" content="Joshua Figueroa">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phcoronatracker.com/global">
+    <meta property="og:title" content="PH Coronavirus Tracker">
+    <meta property="og:description" content="Tracks the latest information about the COVID-19 Pandemic in the Philippines">
+    <meta property="og:image" content="https://phcoronatracker.com/static/images/thumbnail.png">
+    <meta http-equiv="refresh" content="600">
+    <meta name="HandheldFriendly" content="true">
+    <script src="static/javascript/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/50e259828d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="icon" href="static/images/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar d-none d-md-block my-auto" style="background-color: #55D6AA;">
+        <div contenteditable="false" class="navbar-brand text-large my-auto">
+            <img src="static/images/icon.png" alt="Icon" id="icon">
+            <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row min-vh-100 flex-column flex-md-row"> 
+            <aside class="col-12 col-md-3 col-lg-2 p-0 flex-shrink-1 bg-random sticky-top">
+                <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-start py-2 my-auto">
+                    <a class="navbar-brand text-large d-block d-md-none" href="#">
+                        <img src="static/images/icon.png" alt="Icon" id="icon">
+                        <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+                    </a>
+                    <button class="btn btn-outline-secondary navbar-toggler my-auto pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: #55D6AA;">
+                        <img src="static/images/menu.png" alt="menu" id="menu"></button>
+                    <div class="collapse navbar-collapse list" id="collapsibleNavbar">
+                        <ul class="flex-md-column flex-xs-row navbar-nav w-100 justify-content-between">
+                            <li class="nav-item"><i class="fas fa-home"></i><a href="index.html">&nbsp; Home</a></li>
+                            <li class="nav-item" id="active"><i class="fas fa-globe"></i><a href="global.html">&nbsp; Global Stats</a></li> 
+                            <li class="nav-item"><i class="fas fa-server"></i><a href="database.html">&nbsp; Patients Database</a></li>
+                            <li class="nav-item"><i class="fas fa-map-marked-alt"></i><a href="maps.html">&nbsp; Maps</a></li>
+                            <li class="nav-item"><i class="fas fa-chart-line"></i><a href="trends.html">&nbsp; Trends</a></li>
+                            <li class="nav-item"><i class="fas fa-syringe"></i><a href="vaccine-tracker.html">&nbsp; Vaccine Tracker</a></li>
+                            <li class="nav-item"><i class="fas fa-rss"></i><a href="news.html">&nbsp; News</a></li>
+                            <li class="nav-item"><i class="fas fa-address-card"></i><a href="about.html">&nbsp; About</a></li>
+                            <li class="nav-item"><i class="fas fa-coffee"></i><a href='https://ko-fi.com/X8X61KLM4'>&nbsp; Support me on Ko-fi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            
+            <main class="col py-3 flex-grow-1 text-white" style="background-color: #223446;">
+                <h3 class="d-none d-lg-block" id="start">Dashboard</h3>
+                <h4 class="d-block d-lg-none" id="start">Dashboard</h4>
+                <span><h5 style="color: #e53e3e;"><i class="far fa-dot-circle blink"></i>&nbsp;Live</h5></span>
+
+                <div class="flex-box-1 mx-auto">
+                    <div class="card d-flex text-center rounded style" style="color: #236377;">
+                        <div class="card-body" style="background-color: #CAE9F5;">
+                            <h6 class="card-title" id="cases" style="color: #236377;"></h6>
+                        </div>
+                        <div class="card-footer" style="background-color: #8cd3eb;">
+                            <h5 class="footer-title">Total Confirmed Cases</h5>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex text-center" style="color: #e53e3e;">
+                        <div class="card-body" style="background-color: #fdd3d3;">
+                            <h1 class="card-title" id="deaths"></h1>
+                        </div>
+                        <div class="card-footer" style="background-color: #f7b5b5;">
+                            <h5 class="footer-title">Total Deaths</h5>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex text-center" style="color: #2a7a50;">
+                        <div class="card-body" style="background-color: #c6fcd4;">
+                            <h1 class="card-title" id="recover"></h1>
+                        </div>
+                        <div class="card-footer" style="background-color: #98f8b7;">
+                            <h5 class="footer-title">Total Recoveries</h5>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex text-center" style="color: #566274;">
+                        <div class="card-body" style="background-color: #cfd7dd;">
+                            <h1 class="card-title" id="critical"></h1>
+                        </div>
+                        <div class="card-footer" style="background-color: #aaaeb4;">
+                            <h5 class="footer-title">Critical Condition</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-warning btn-lg float-right" id="top"><i class="fas fa-angle-double-up"></i></button>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-global" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">World Status</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_global" class="input" onkeyup="search('input_global', 'global_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="global_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe"></i>&nbsp; Grand Total</th>
+                                            <td id="total-cases"></td>
+                                            <td class="d-none d-md-block" id="new-cases">(+)</td>
+                                            <td id="total-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-deaths">(+)</td>
+                                            <td id="total-recoveries"></td>
+                                            <td class="d-none d-xl-block" id="total-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-sea" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Southeast Asia</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="sea-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_sea" class="input" onkeyup="search('input_sea', 'sea_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="sea-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sea_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-asia"></i>&nbsp; Grand Total</th>
+                                            <td id="sea-cases"></td>
+                                            <td class="d-none d-md-block" id="new-sea-cases">(+)</td>
+                                            <td id="sea-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-sea-deaths">(+)</td>
+                                            <td id="sea-recover"></td>
+                                            <td class="d-none d-xl-block" id="sea-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-asia" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Asia</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="asia-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_asia" class="input" onkeyup="search('input_asia', 'asia_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="asia-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="asia_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-asia"></i>&nbsp; Grand Total</th>
+                                            <td id="asia-cases"></td>
+                                            <td class="d-none d-md-block" id="new-asia-cases">(+)</td>
+                                            <td id="asia-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-asia-deaths">(+)</td>
+                                            <td id="asia-recover"></td>
+                                            <td class="d-none d-xl-block" id="asia-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-euro" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Europe</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="euro-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_euro" class="input" onkeyup="search('input_euro', 'euro_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="euro-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="euro_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-europe"></i>&nbsp; Grand Total</th>
+                                            <td id="euro-cases"></td>
+                                            <td class="d-none d-md-block" id="new-euro-cases">(+)</td>
+                                            <td id="euro-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-euro-deaths">(+)</td>
+                                            <td id="euro-recover"></td>
+                                            <td class="d-none d-xl-block" id="euro-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-na" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">North America</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="na-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_na" class="input" onkeyup="search('input_na', 'na_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="na-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="na_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-americas"></i>&nbsp; Grand Total</th>
+                                            <td id="na-cases"></td>
+                                            <td class="d-none d-md-block" id="new-na-cases">(+)</td>
+                                            <td id="na-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-na-deaths">(+)</td>
+                                            <td id="na-recover"></td>
+                                            <td class="d-none d-xl-block" id="na-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-sa" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">South America</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="sa-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_sa" class="input" onkeyup="search('input_sa', 'sa_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="sa-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sa_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-americas"></i>&nbsp; Grand Total</th>
+                                            <td id="sa-cases"></td>
+                                            <td class="d-none d-md-block" id="new-sa-cases">(+)</td>
+                                            <td id="sa-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-sa-deaths">(+)</td>
+                                            <td id="sa-recover"></td>
+                                            <td class="d-none d-xl-block" id="sa-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-afr" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Africa</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="afr-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_afr" class="input" onkeyup="search('input_afr', 'afr_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="afr-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="afr_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-africa"></i>&nbsp; Grand Total</th>
+                                            <td id="afr-cases"></td>
+                                            <td class="d-none d-md-block" id="new-afr-cases">(+)</td>
+                                            <td id="afr-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-afr-deaths">(+)</td>
+                                            <td id="afr-recover"></td>
+                                            <td class="d-none d-xl-block" id="afr-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="container-data mx-auto" id="container-au" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">Australia & Oceania</div>
+                            <div class="row">
+                                <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="au-recovery"></span></div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_au" class="input" onkeyup="search('input_au', 'au_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="au-fatality"></span></div>
+                            <div class="table-header mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col" class="text-center">Countries</th>
+                                            <th scope="col">Total Cases</th>
+                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">Total Deaths</th>
+                                            <th scope="col" class="d-none d-lg-block"> New Deaths</th>
+                                            <th scope="col">Recoveries</th>
+                                            <th scope="col" class="d-none d-xl-block">Critical</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="au_body">
+                                        <tr>
+                                            <th scope="row" class="text-center"><i class="fas fa-globe-asia"></i>&nbsp; Grand Total</th>
+                                            <td id="au-cases"></td>
+                                            <td class="d-none d-md-block" id="new-au-cases">(+)</td>
+                                            <td id="au-deaths"></td>
+                                            <td class="d-none d-lg-block" id="new-au-deaths">(+)</td>
+                                            <td id="au-recover"></td>
+                                            <td class="d-none d-xl-block" id="au-critical"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="static/javascript/global.js"></script>
+    <noscript>Your browser does not support JavaScript. Consider opening it with Google Chrome or Mozilla Firefox.</noscript>
+</body>
+</html>
