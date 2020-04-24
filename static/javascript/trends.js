@@ -22,8 +22,8 @@ var chart = new Chart(ctx, {
             backgroundColor: 'rgba(255, 255, 255, 0)',
             borderColor: '#2BA366',
             pointBackgroundColor: '#2BA366',
-            pointRadius: 4,
-            hitRadius: 1,
+            pointRadius: 0,
+            hitRadius: 10,
             hoverRadius: 5,
             data: [0, 1, 2, 42, 197, 693, 722, 762],
             lineTension: 0
@@ -78,8 +78,8 @@ var chart_1 = new Chart(ctx_1, {
             backgroundColor: 'rgba(255, 255, 255, 0)',
             borderColor: '#236377',
             pointBackgroundColor: '#236377FF',
-            pointRadius: 4,
-            hitRadius: 1,
+            pointRadius: 0,
+            hitRadius: 0,
             hoverRadius: 5,
             data: [1, 3, 140, 1418, 4648, 6710, 6981, 7192],
             lineTension: 0
