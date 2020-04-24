@@ -6,7 +6,7 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['Jan 30', 'Feb 5', 'Mar 15', 'Mar 29', 'Apr 12', 'Apr 21', 'Apr 22', 'Apr 23'],
+        labels: ['Jan 30', 'Feb 5', 'Mar 15', 'Mar 29', 'Apr 12', 'Apr 22', 'Apr 23', 'Apr 24'],
         datasets: [{
             label: 'Total Fatalities',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -15,7 +15,7 @@ var chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [0, 1, 8, 71, 297, 437, 446, 462]
+            data: [0, 1, 8, 71, 297, 446, 462, 477]
         },{
             label: 'Total Recoveries',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -24,7 +24,7 @@ var chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [0, 1, 2, 42, 197, 654, 693, 722]
+            data: [0, 1, 2, 42, 197, 693, 722, 762]
         }]
     },
 
@@ -70,7 +70,7 @@ var chart_1 = new Chart(ctx_1, {
 
     // The data for our dataset
     data: {
-        labels: ['Jan 30', 'Feb 5', 'Mar 15', 'Mar 29', 'Apr 12', 'Apr 21', 'Apr 22', 'Apr 23'],
+        labels: ['Jan 30', 'Feb 5', 'Mar 15', 'Mar 29', 'Apr 12', 'Apr 22', 'Apr 23', 'Apr 24'],
         datasets: [{
             label: 'Total Confirmed Cases',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -79,7 +79,7 @@ var chart_1 = new Chart(ctx_1, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [1, 3, 140, 1418, 4648, 6599, 6710, 6981]
+            data: [1, 3, 140, 1418, 4648, 6710, 6981, 7192]
         }]
     },
 
