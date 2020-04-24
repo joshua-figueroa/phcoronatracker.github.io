@@ -15,7 +15,8 @@ var chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [0, 1, 8, 71, 297, 446, 462, 477]
+            data: [0, 1, 8, 71, 297, 446, 462, 477],
+            lineTension: 0
         },{
             label: 'Total Recoveries',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -24,7 +25,8 @@ var chart = new Chart(ctx, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [0, 1, 2, 42, 197, 693, 722, 762]
+            data: [0, 1, 2, 42, 197, 693, 722, 762],
+            lineTension: 0
         }]
     },
 
@@ -79,7 +81,8 @@ var chart_1 = new Chart(ctx_1, {
             pointRadius: 4,
             hitRadius: 1,
             hoverRadius: 5,
-            data: [1, 3, 140, 1418, 4648, 6710, 6981, 7192]
+            data: [1, 3, 140, 1418, 4648, 6710, 6981, 7192],
+            lineTension: 0
         }]
     },
 
