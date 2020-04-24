@@ -126,7 +126,7 @@ a {
 }
 .search {
     position: absolute;
-    right: -45px;
+    right: -58px;
 }
 .search img {
     height: 3.8vw;
@@ -193,18 +193,15 @@ tr td:nth-child(4) {
     font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .container-data {
         width: 108%;
-        margin-left: -3vw !important;
-        margin-right: 5vw !important;
+        margin-left: -4% !important;
+        margin-right: 4% !important;
     }
 }
 
 @media (max-width: 330px) {
-    .container-data {
-        width: 100%;
-    }
     .container-title {
         margin-left: 15px;
     }
@@ -212,7 +209,7 @@ tr td:nth-child(4) {
         margin-left: 30px;
     }
     .search {
-        right: -60px;
+        right: -68px;
     }
     .search img {
         height: 4.5vw;
