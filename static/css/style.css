@@ -193,6 +193,14 @@ tr td:nth-child(4) {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 576px) {
+    .container-data {
+        width: 108%;
+        margin-left: -4vw !important;
+        margin-right: 4vw !important;
+    }
+}
+
 @media (max-width: 330px) {
     .container-data {
         width: 100%;
