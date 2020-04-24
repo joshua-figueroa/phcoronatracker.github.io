@@ -43,6 +43,10 @@ a {
     height: 6vw;
     width: 6vw;
 }
+.navbar-toggler {
+    position: relative;
+    right: -10px;
+}
 #start {
     font-family: Nunito;
 }
