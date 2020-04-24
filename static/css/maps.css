@@ -46,6 +46,10 @@ a {
     height: 6vw;
     width: 6vw;
 }
+.navbar-toggler {
+    position: relative;
+    right: -10px;
+}
 #map {
     width: 100%;
     height: auto;
