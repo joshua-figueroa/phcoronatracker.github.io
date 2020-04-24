@@ -196,8 +196,8 @@ tr td:nth-child(4) {
 @media (max-width: 576px) {
     .container-data {
         width: 108%;
-        margin-left: -4vw !important;
-        margin-right: 4vw !important;
+        margin-left: -3.5vw !important;
+        margin-right: 4.5vw !important;
     }
 }
 
