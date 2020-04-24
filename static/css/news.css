@@ -46,9 +46,9 @@ a {
     height: 6vw;
     width: 6vw;
 }
-#map {
-    width: 100%;
-    height: auto;
+.navbar-toggler {
+    position: relative;
+    right: -10px;
 }
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
