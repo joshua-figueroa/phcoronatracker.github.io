@@ -32,10 +32,24 @@ $(document).ready(function() {
         });
     }
     table('https://phcoronatracker.com/static/JSON/cases.json', '#ph_body');
-    table('https://phcoronatracker.com/static/JSON/ncr.json', '#ncr_body');
     table('https://phcoronatracker.com/static/JSON/luzon.json', '#luzon_body');
     table('https://phcoronatracker.com/static/JSON/vimin.json', '#vimin_body');
+
+    $.ajax({
+        url: 'https://phcoronatracker.com/static/JSON/ncr.json',
+        dataType: 'json',
+        success: function(data) {
+            for(var i = 0; i < data.length; i++) {
+                var row = $('<tr><th scope="row">' + data[i].name + '</th><td>' + data[i].cases + '</td><td>' + data[i].death +'</td><td>' + data[i].rec + '</td><td>' + data[i].lgu + '</td></tr>');
+                $('#ncr_body').append(row);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
 });
+
 
 function update(id, count) {
     document.getElementById(id).innerHTML = (count.toLocaleString());
