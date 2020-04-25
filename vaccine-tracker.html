@@ -61,21 +61,40 @@
             </aside>
             
             <main class="col py-3 flex-grow-1 text-white" style="background-color: #223446;">
-                <h3 class="d-none d-lg-block" id="start">Vaccine Tracker</h3>
-                <h4 class="d-block d-lg-none" id="start">Vaccine Tracker</h4>
+                <h3 class="d-none d-lg-block" id="start">Vaccine and Treatment Tracker</h3>
+                <h4 class="d-block d-lg-none" id="start">Vaccine and Treatment Tracker</h4>
+                <h5 class="d-none d-lg-block" id="start">Vaccines: 96<br>Treatments: 176</h5>
+                <h6 class="d-block d-lg-none" id="start">Vaccines: 96<br>Treatments: 176</h6>
                 <div class="row mx-auto">
                     <div class="col">
                         <div class="card rounded">
                             <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;">
-                                <h6 class="d-block d-md-none">Potential COVID-19 Treatments and Vaccines in Research Pipeline</h6>
-                                <h5 class="d-none d-md-block">Potential COVID-19 Treatments and Vaccines in Research Pipeline</h5>
+                                <h6 class="d-block d-md-none">Potential Vaccines in Research Pipeline</h6>
+                                <h5 class="d-none d-md-block">Potential Vaccines in Research Pipeline</h5>
                             </div> 
                             <div class="card-body" style="background-color: whitesmoke; height: max-content;">
                                 <div id="chartContainer" style="height: 350px; width: 100%;"></div>
                             </div>
                             <div class="card-footer text-dark" style="background-color: whitesmoke;">
-                                <span><i class="far fa-clock"></i>&nbsp;Updated: April 20, 2020</span><br>
-                                <span><i class="far fa-sticky-note"></i>&nbsp;Note: The data that are not separated from the chart are categorized as treatments</span></div>
+                                <span><i class="far fa-clock"></i>&nbsp;Updated: April 25, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning btn-lg float-right" id="top"><i class="fas fa-angle-double-up"></i></button>
+                <div class="row mx-auto mt-3">
+                    <div class="col">
+                        <div class="card rounded">
+                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;">
+                                <h6 class="d-block d-md-none">Potential Tratments in Research Pipeline</h6>
+                                <h5 class="d-none d-md-block">Potential Treatments in Research Pipeline</h5>
+                            </div> 
+                            <div class="card-body" style="background-color: whitesmoke; height: max-content;">
+                                <div id="treatment_container" style="height: 350px; width: 100%;"></div>
+                            </div>
+                            <div class="card-footer text-dark" style="background-color: whitesmoke;">
+                                <span><i class="far fa-clock"></i>&nbsp;Updated: April 25, 2020</span>
+                            </div>
                         </div>
                     </div>
                 </div>
