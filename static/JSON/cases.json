@@ -354,7 +354,7 @@
         "center": {"lat": 12.5778, "lng": 122.2691}
     }, {
         "name": "For Validation",
-        "cases": 154,
+        "cases": 179,
         "death": 1,
         "rec": 0
     }
