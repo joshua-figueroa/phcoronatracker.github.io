@@ -65,7 +65,7 @@ $(document).ready(function() {
             let flag = new Array();
             for(var i = 0; i < data.length; i++) {
                 flag[i] = data[i].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[i].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[i].active.toLocaleString() + '</td></tr>');
                 $('#global_body').append(row);
             }
         },
@@ -90,7 +90,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#sea_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
@@ -127,7 +127,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#asia_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
@@ -164,7 +164,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#euro_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
@@ -201,7 +201,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#na_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
@@ -238,7 +238,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#sa_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
@@ -275,7 +275,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#afr_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
@@ -312,7 +312,7 @@ $(document).ready(function() {
             let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">(+)' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">(+)' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
                 $('#au_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
