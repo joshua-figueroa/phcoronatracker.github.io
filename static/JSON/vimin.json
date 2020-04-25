@@ -1,23 +1,23 @@
 [
     {
         "name": "Total",
-        "cases": 608,
-        "death": 43,
-        "rec": 104
+        "cases": 639,
+        "death": 44,
+        "rec": 105
     }, {
         "name": "Region 6",
-        "cases": 61,
+        "cases": 62,
         "death": 8,
         "rec": 10
     }, {
         "name": "Region 7",
-        "cases": 370,
+        "cases": 399,
         "death": 8,
         "rec": 19
     }, {
         "name": "Region 8",
-        "cases": 7,
-        "death": 0,
+        "cases": 8,
+        "death": 1,
         "rec": 2
     }, {
         "name": "Region 9",
@@ -26,14 +26,14 @@
         "rec": 3
     }, {
         "name": "Region 10",
-        "cases": 13,
+        "cases": 12,
         "death": 5,
         "rec": 5
     }, {
         "name": "Region 11",
-        "cases": 117,
+        "cases": 118,
         "death": 17,
-        "rec": 61
+        "rec": 62
     }, {
         "name": "Region 12",
         "cases": 10,
