@@ -105,7 +105,7 @@
         "cases": 25,
         "death": 2,
         "rec": 3,
-        "center": {"lat": 13.1775, "lng": 123.5280}
+        "center": {"lat": 13.1391, "lng": 123.7438}
     }, {
         "name": "Benguet",
         "cases": 23,
@@ -117,7 +117,7 @@
         "cases": 15,
         "death": 2,
         "rec": 3,
-        "center": {"lat": 10.2926, "lng": 123.0247}
+        "center": {"lat": 10.6840, "lng": 122.9563}
     }, {
         "name": "Cagayan",
         "cases": 14,
@@ -147,7 +147,7 @@
         "cases": 10,
         "death": 1,
         "rec": 1,
-        "center": {"lat": 13.5250, "lng": 123.3486}
+        "center": {"lat": 13.6218, "lng": 123.1948}
     }, {
         "name": "Lanao del Sur",
         "cases": 9,
@@ -171,7 +171,7 @@
         "cases": 7,
         "death": 0,
         "rec": 1,
-        "center": {"lat": 11.8166, "lng": 122.0942}
+        "center": {"lat": 11.6892, "lng": 122.3674}
     }, {
         "name": "Cotabato City",
         "cases": 6,
@@ -267,7 +267,7 @@
         "cases": 3,
         "death": 2,
         "rec": 1,
-        "center": {"lat": 8.5046, "lng": 124.6220}
+        "center": {"lat": 8.4542, "lng": 124.6319}
     }, {
         "name": "Occidental Mindoro",
         "cases": 3,
