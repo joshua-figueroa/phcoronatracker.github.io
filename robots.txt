@@ -5,6 +5,7 @@ Disallow: /nogooglebot/
 # Group 2
 User-agent: *
 Allow: /
+Allow: /sitemap.htm
 
 Sitemap: https://phcoronatracker.com/sitemap.xml
 Sitemap: https://phcoronatracker.com/rss.xml
