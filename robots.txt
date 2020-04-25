@@ -6,5 +6,5 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://phcoronatracker.github.io/sitemap.xml
-Sitemap: https://phcoronatracker.github.io/rss.xml
+Sitemap: https://phcoronatracker.com/sitemap.xml
+Sitemap: https://phcoronatracker.com/rss.xml
