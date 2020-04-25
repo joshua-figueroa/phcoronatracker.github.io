@@ -2,45 +2,80 @@
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <rss version="2.0">
   <channel>
-    <title>PH Coronavirus Tracker</title>
-    <link>https://phcoronatracker.github.io</link>
+    <title />
+    <link>https://phcoronatracker.com</link>
     <description />
     <item>
-      <guid>https://phcoronatracker.github.io/</guid>
-      <title>PH Coronavirus Tracker</title>
-      <link>https://phcoronatracker.github.io/</link>
-      <description />
-      <pubDate>Sat, 28 Mar 2020 06:08:00 Z</pubDate>
+      <guid>https://phcoronatracker.com/</guid>
+      <title />
+      <link>https://phcoronatracker.com/</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
     </item>
     <item>
-      <guid>https://phcoronatracker.github.io/about.html</guid>
-      <title>PH Coronavirus Tracker</title>
-      <link>https://phcoronatracker.github.io/about.html</link>
-      <description />
-      <pubDate>Sat, 28 Mar 2020 06:08:00 Z</pubDate>
+      <guid>https://phcoronatracker.com/about</guid>
+      <title>&amp;nbsp;About</title>
+      <link>https://phcoronatracker.com/about</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
     </item>
     <item>
-      <guid>https://phcoronatracker.github.io/trend.html</guid>
+      <guid>https://phcoronatracker.com/vaccine-tracker</guid>
       <title>PH Coronavirus Tracker</title>
-      <link>https://phcoronatracker.github.io/trend.html</link>
-      <description />
-      <pubDate>Sat, 28 Mar 2020 06:08:00 Z</pubDate>
+      <link>https://phcoronatracker.com/vaccine-tracker</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
     </item>
     <item>
-      <guid>https://phcoronatracker.github.io/maps.html</guid>
+      <guid>https://phcoronatracker.com/news</guid>
       <title>PH Coronavirus Tracker</title>
-      <link>https://phcoronatracker.github.io/maps.html</link>
-      <description />
-      <pubDate>Sat, 28 Mar 2020 06:08:00 Z</pubDate>
+      <link>https://phcoronatracker.com/news</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
     </item>
     <item>
-      <guid>https://phcoronatracker.github.io/index.html</guid>
+      <guid>https://phcoronatracker.com/database</guid>
       <title>PH Coronavirus Tracker</title>
-      <link>https://phcoronatracker.github.io/index.html</link>
-      <description />
-      <pubDate>Sat, 28 Mar 2020 06:08:00 Z</pubDate>
+      <link>https://phcoronatracker.com/database</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/maps</guid>
+      <title>PH Coronavirus Tracker</title>
+      <link>https://phcoronatracker.com/maps</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/trends</guid>
+      <title>PH Coronavirus Tracker</title>
+      <link>https://phcoronatracker.com/trends</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/</guid>
+      <title />
+      <link>https://phcoronatracker.com/</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/global</guid>
+      <title />
+      <link>https://phcoronatracker.com/global</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/index.html</guid>
+      <title />
+      <link>https://phcoronatracker.com/index.html</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Sat, 25 Apr 2020 06:26:00 Z</pubDate>
     </item>
   </channel>
 </rss>
-<!--<guid value="41bf16e0-7daf-43b0-932b-a1cfa4fd83fd" />-->
+<!--<guid value="50fa06c2-a100-477b-93dc-6169479f9491" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
