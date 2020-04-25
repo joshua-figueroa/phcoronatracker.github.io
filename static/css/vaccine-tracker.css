@@ -60,6 +60,18 @@ a {
     text-decoration: none;
     color: #717194;
 }
+#top {
+    border-radius: 25px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: .2s linear;
+    z-index: 1025;
+    opacity: 0.80;
+}
+#top:hover {
+    opacity: 1;
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .text-large {
