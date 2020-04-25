@@ -1,57 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://phcoronatracker.com/</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/global</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/database</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/maps</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/trends</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/vaccine-tracker</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/news</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/about</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://phcoronatracker.com/index.html</loc>
-  <lastmod>2020-04-25T18:04:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://phcoronatracker.com/</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/about</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/vaccine-tracker</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/news</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/database</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/maps</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/trends</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/global</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/index.html</loc>
+    <lastmod>2020-04-25</lastmod>
+    <changefreq>always</changefreq>
+  </url>
 </urlset>
+<!--<guid value="50fa06c2-a100-477b-93dc-6169479f9491" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
