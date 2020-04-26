@@ -4,7 +4,7 @@
         "cases": 5215,
         "death": 345,
         "rec": 562,
-        "lgu": 4027
+        "lgu": 4070
     }, {
         "name": "Quezon City",
         "cases": 1134,
@@ -28,7 +28,7 @@
         "cases": 385,
         "death": 16,
         "rec": 73,
-        "lgu": 312
+        "lgu": 321
     }, {
         "name": "Mandaluyong",
         "cases": 343,
@@ -46,25 +46,25 @@
         "cases": 235,
         "death": 12,
         "rec": 34,
-        "lgu": 215
+        "lgu": 219
     }, {
         "name": "San Juan",
         "cases": 217,
         "death": 18,
         "rec": 47,
-        "lgu": 206
+        "lgu": 214
     }, {
         "name": "Caloocan",
         "cases": 199,
         "death": 19,
         "rec": 15,
-        "lgu": 158
+        "lgu": 162
     }, {
         "name": "Pasay",
         "cases": 166,
         "death": 7,
         "rec": 14,
-        "lgu": 161
+        "lgu": 167
     }, {
         "name": "Las Piñas",
         "cases": 156,
@@ -82,7 +82,7 @@
         "cases": 114,
         "death": 10,
         "rec": 20,
-        "lgu": 101
+        "lgu": 103
     }, {
         "name": "Valenzuela",
         "cases": 71,
@@ -94,19 +94,19 @@
         "cases": 32,
         "death": 3,
         "rec": 3,
-        "lgu": 34
+        "lgu": 40
     }, {
         "name": "Navotas",
         "cases": 30,
         "death": 5,
         "rec": 0,
-        "lgu": 29
+        "lgu": 31
     }, {
         "name": "Pateros",
         "cases": 22,
         "death": 3,
         "rec": 2,
-        "lgu": 20
+        "lgu": 22
     }, {
         "name": "For Verification",
         "cases": 699,
