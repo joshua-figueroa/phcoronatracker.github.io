@@ -3,54 +3,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://phcoronatracker.com/</loc>
-    <lastmod>2020-04-25</lastmod>
+    <lastmod>2020-04-26</lastmod>
     <changefreq>always</changefreq>
-  </url>
-  <url>
-    <loc>https://phcoronatracker.com/about</loc>
-    <lastmod>2020-04-25</lastmod>
-    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://phcoronatracker.com/vaccine-tracker</loc>
-    <lastmod>2020-04-25</lastmod>
+    <lastmod>2020-04-26</lastmod>
     <changefreq>always</changefreq>
-  </url>
-  <url>
-    <loc>https://phcoronatracker.com/news</loc>
-    <lastmod>2020-04-25</lastmod>
-    <changefreq>always</changefreq>
-  </url>
-  <url>
-    <loc>https://phcoronatracker.com/database</loc>
-    <lastmod>2020-04-25</lastmod>
-    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://phcoronatracker.com/maps</loc>
-    <lastmod>2020-04-25</lastmod>
+    <lastmod>2020-04-26</lastmod>
     <changefreq>always</changefreq>
-  </url>
-  <url>
-    <loc>https://phcoronatracker.com/trends</loc>
-    <lastmod>2020-04-25</lastmod>
-    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://phcoronatracker.com/</loc>
-    <lastmod>2020-04-25</lastmod>
+    <lastmod>2020-04-26</lastmod>
     <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://phcoronatracker.com/global</loc>
-    <lastmod>2020-04-25</lastmod>
+    <loc>https://phcoronatracker.com/news</loc>
+    <lastmod>2020-04-26</lastmod>
     <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/about</loc>
+    <lastmod>2020-04-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/trends</loc>
+    <lastmod>2020-04-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/database</loc>
+    <lastmod>2020-04-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://phcoronatracker.com/index.html</loc>
-    <lastmod>2020-04-25</lastmod>
+    <lastmod>2020-04-26</lastmod>
     <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://phcoronatracker.com/global</loc>
+    <lastmod>2020-04-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
-<!--<guid value="50fa06c2-a100-477b-93dc-6169479f9491" />-->
+<!--<guid value="de115497-170f-4d36-9933-eba2828b077b" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
