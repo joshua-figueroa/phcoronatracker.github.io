@@ -6,67 +6,67 @@
         "rec": 862
     }, {
         "name": "Metro Manila",
-        "cases": 4916,
-        "death": 338,
-        "rec": 516,
+        "cases": 5215,
+        "death": 345,
+        "rec": 562,
         "center": {"lat": 14.599512, "lng": 120.984222}
     }, {
         "name": "Cebu",
-        "cases": 392,
+        "cases": 393,
         "death": 6,
-        "rec": 15,
+        "rec": 16,
         "center": {"lat": 10.3157, "lng": 123.8854}
     }, {
         "name": "Rizal",
-        "cases": 342,
+        "cases": 355,
         "death": 25,
-        "rec": 35,
+        "rec": 38,
         "center": {"lat": 14.6037, "lng": 121.3084}
     }, {
         "name": "Laguna",
-        "cases": 297,
+        "cases": 310,
         "death": 7,
-        "rec": 19,
+        "rec": 20,
         "center": {"lat": 14.2691, "lng": 121.4113}
     }, {
         "name": "Cavite",
-        "cases": 234,
+        "cases": 249,
         "death": 19,
         "rec": 20,
         "center": {"lat": 14.4791, "lng": 120.8970}
     }, {
         "name": "Bulacan",
-        "cases": 112,
+        "cases": 115,
         "death": 15,
         "rec": 9,
         "center": {"lat": 14.8527, "lng": 120.8160}
     }, {
         "name": "Davao del Sur",
-        "cases": 101,
+        "cases": 106,
         "death": 17,
-        "rec": 52,
+        "rec": 54,
         "center": {"lat": 7.199001, "lng": 125.454941}
     }, {
         "name": "Batangas",
-        "cases": 84,
+        "cases": 86,
         "death": 12,
         "rec": 16,
         "center": {"lat": 13.7565, "lng": 121.0583}
     }, {
         "name": "Bataan",
-        "cases": 76,
+        "cases": 77,
         "death": 2,
         "rec": 3,
         "center": {"lat": 14.6417, "lng": 120.4818}
     }, {
         "name": "Pampanga",
-        "cases": 60,
+        "cases": 61,
         "death": 5,
         "rec": 7,
         "center": {"lat": 15.0794, "lng": 120.6200}
     }, {
         "name": "Quezon",
-        "cases": 56,
+        "cases": 57,
         "death": 4,
         "rec": 3,
         "center": {"lat": 13.9414, "lng": 121.6234}
@@ -80,8 +80,14 @@
         "name": "Pangasinan",
         "cases": 33,
         "death": 8,
-        "rec": 0,
+        "rec": 5,
         "center": {"lat": 15.8949, "lng": 120.2863}
+    }, {
+        "name": "Benguet",
+        "cases": 31,
+        "death": 1,
+        "rec": 14,
+        "center": {"lat": 16.4023, "lng": 120.5960}
     }, {
         "name": "Tarlac",
         "cases": 30,
@@ -90,7 +96,7 @@
         "center": {"lat": 15.4755, "lng": 120.5963}
     }, {
         "name": "Iloilo",
-        "cases": 26,
+        "cases": 27,
         "death": 5,
         "rec": 4,
         "center": {"lat": 10.7202, "lng": 122.5621}
@@ -104,14 +110,8 @@
         "name": "Albay",
         "cases": 25,
         "death": 2,
-        "rec": 3,
+        "rec": 4,
         "center": {"lat": 13.1391, "lng": 123.7438}
-    }, {
-        "name": "Benguet",
-        "cases": 23,
-        "death": 1,
-        "rec": 14,
-        "center": {"lat": 16.4023, "lng": 120.5960}
     }, {
         "name": "Negros Occidental",
         "cases": 15,
@@ -128,7 +128,7 @@
         "name": "La Union",
         "cases": 13,
         "death": 3,
-        "rec": 2,
+        "rec": 6,
         "center": {"lat": 16.6159, "lng": 120.3209}
     }, {
         "name": "Davao del Norte",
@@ -149,6 +149,12 @@
         "rec": 1,
         "center": {"lat": 13.6218, "lng": 123.1948}
     }, {
+        "name": "Isabela",
+        "cases": 9,
+        "death": 0,
+        "rec": 7,
+        "center": {"lat": 16.9754, "lng": 121.8107}
+    }, {
         "name": "Lanao del Sur",
         "cases": 9,
         "death": 3,
@@ -161,41 +167,41 @@
         "rec": 0,
         "center": {"lat": 11.3806, "lng": 122.0635}
     }, {
-        "name": "Isabela",
-        "cases": 8,
-        "death": 0,
-        "rec": 7,
-        "center": {"lat": 16.9754, "lng": 121.8107}
-    }, {
         "name": "Aklan",
         "cases": 7,
         "death": 0,
         "rec": 1,
         "center": {"lat": 11.6892, "lng": 122.3674}
     }, {
-        "name": "Cotabato City",
-        "cases": 6,
-        "death": 0,
-        "rec": 2,
-        "center": {"lat": 7.2047, "lng": 124.2310}
-    }, {
         "name": "Negros Oriental",
-        "cases": 6,
-        "death": 2,
+        "cases": 7,
+        "death": 3,
         "rec": 3,
         "center": {"lat": 9.6282, "lng": 122.9888}
     }, {
         "name": "Nueva Vizcaya",
-        "cases": 6,
+        "cases": 7,
         "death": 1,
         "rec": 3,
         "center": {"lat": 16.3301, "lng": 121.1710}
     }, {
         "name": "Oriental Mindoro",
-        "cases": 6,
+        "cases": 7,
         "death": 1,
         "rec": 3,
         "center": {"lat": 13.0565, "lng": 121.4069}
+    }, {
+        "name": "Cotabato City",
+        "cases": 6,
+        "death": 0,
+        "rec": 6,
+        "center": {"lat": 7.2047, "lng": 124.2310}
+    }, {
+        "name": "Marinduque",
+        "cases": 6,
+        "death": 0,
+        "rec": 4,
+        "center": {"lat": 13.4767, "lng": 121.9032}
     }, {
         "name": "Capiz",
         "cases": 5,
@@ -215,12 +221,6 @@
         "rec": 2,
         "center": {"lat": 18.1647, "lng": 120.7116}
     }, {
-        "name": "Marinduque",
-        "cases": 4,
-        "death": 0,
-        "rec": 4,
-        "center": {"lat": 13.4767, "lng": 121.9032}
-    }, {
         "name": "Samar",
         "cases": 4,
         "death": 0,
@@ -230,14 +230,14 @@
         "name": "South Cotabato",
         "cases": 4,
         "death": 0,
-        "rec": 0,
+        "rec": 1,
         "center": {"lat": 6.3358, "lng": 124.7741}
     }, {
-        "name": "Cotabato",
-        "cases": 3,
-        "death": 0,
+        "name": "Sultan Kudarat",
+        "cases": 4,
+        "death": 1,
         "rec": 1,
-        "center": {"lat": 7.204667, "lng": 124.231044}
+        "center": {"lat": 6.5069, "lng": 124.4198}
     }, {
         "name": "Abra",
         "cases": 3,
@@ -250,6 +250,12 @@
         "death": 0,
         "rec": 0,
         "center": {"lat": 8.9456, "lng": 125.5319}
+    }, {
+        "name": "Cotabato",
+        "cases": 3,
+        "death": 0,
+        "rec": 2,
+        "center": {"lat": 7.204667, "lng": 124.231044}
     }, {
         "name": "Davao Oriental",
         "cases": 3,
@@ -275,12 +281,6 @@
         "rec": 0,
         "center": {"lat": 13.1024, "lng": 120.7651}
     }, {
-        "name": "Sultan Kudarat",
-        "cases": 3,
-        "death": 1,
-        "rec": 1,
-        "center": {"lat": 6.5069, "lng": 124.4198}
-    }, {
         "name": "Catanduanes",
         "cases": 2,
         "death": 0,
@@ -298,6 +298,12 @@
         "death": 1,
         "rec": 1,
         "center": {"lat": 8.3375, "lng": 123.7071}
+    }, {
+        "name": "Palawan",
+        "cases": 2,
+        "death": 0,
+        "rec": 0,
+        "center": {"lat": 9.7638, "lng": 118.7473}
     }, {
         "name": "Bohol",
         "cases": 1,
@@ -317,10 +323,16 @@
         "rec": 1,
         "center": {"lat": 9.1732, "lng": 124.7299}
     }, {
-        "name": "Ilocos Sur",
+        "name": "Ifugao",
         "cases": 1,
         "death": 0,
         "rec": 0,
+        "center": {"lat": 16.8083, "lng": 121.1939}
+    }, {
+        "name": "Ilocos Sur",
+        "cases": 1,
+        "death": 0,
+        "rec": 1,
         "center": {"lat": 17.2279, "lng": 120.5740}
     }, {
         "name": "Maguindanao",
@@ -335,12 +347,6 @@
         "rec": 0,
         "center": {"lat": 12.4198, "lng": 124.6414}
     }, {
-        "name": "Palawan",
-        "cases": 1,
-        "death": 0,
-        "rec": 0,
-        "center": {"lat": 9.7638, "lng": 118.7473}
-    }, {
         "name": "Romblon",
         "cases": 1,
         "death": 0,
@@ -348,8 +354,8 @@
         "center": {"lat": 12.5778, "lng": 122.2691}
     }, {
         "name": "For Validation",
-        "cases": 179,
-        "death": 1,
+        "cases": 21,
+        "death": 0,
         "rec": 0
     }
 ]
