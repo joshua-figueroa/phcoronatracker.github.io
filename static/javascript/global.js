@@ -78,7 +78,7 @@ $(document).ready(function() {
         url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
-            let sea = ["Philippines", "Indonesia", "Malaysia", "Singapore", "Brunei", "Cambodia", "Timor-Leste", "Laos", "Myanmar", "Thailand", "Vietnam"];
+            let sea = ["Philippines", "Indonesia", "Malaysia", "Singapore", "Brunei", "Cambodia", "Timor-Leste", "Lao People's Democratic Republic", "Myanmar", "Thailand", "Vietnam"];
             let num = new Array(), flag = new Array();
             for(var x = 0; x < data.length; x++) {
                 for(var y = 0; y < sea.length; y++) {
