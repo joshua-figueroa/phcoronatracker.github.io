@@ -12,9 +12,9 @@ $(document).ready(function() {
     $('#top').on('click', function() {
         $('html, body').animate({scrollTop: 0}, "fast");
     });
-    update('cases', 7294);
-    update('deaths', 494);
-    update('recover', 792);
+    update('cases', 7579);
+    update('deaths', 501);
+    update('recover', 862);
     update('ofw', 1337);
     function table(link, id) {
         $.ajax({
