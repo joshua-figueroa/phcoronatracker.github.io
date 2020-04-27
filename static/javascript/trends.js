@@ -41,9 +41,21 @@ var chart = new Chart(ctx, {
         },
         scales: {
             yAxes: [{
+                type: 'logarithmic',
                 ticks: {
-                    beginAtZero:true,
-                    fontColor: '#333333'
+                    min: 1,
+                    max: 1000,
+                    fontColor: '#333333',
+                    callback: function (value, index, values) {
+                        return Number(value.toString());//pass tick values as a string into Number function
+                    }
+                },
+                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                    chartObj.ticks = [];
+                    chartObj.ticks.push(1);
+                    chartObj.ticks.push(10);
+                    chartObj.ticks.push(100);
+                    chartObj.ticks.push(1000);
                 },
                 gridLines: {
                     display: true,
@@ -97,9 +109,22 @@ var chart_1 = new Chart(ctx_1, {
         },
         scales: {
             yAxes: [{
+                type: 'logarithmic',
                 ticks: {
-                    beginAtZero:true,
-                    fontColor: '#333333'
+                    min: 1,
+                    max: 10000,
+                    fontColor: '#333333',
+                    callback: function (value, index, values) {
+                        return Number(value.toString());//pass tick values as a string into Number function
+                    }
+                },
+                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                    chartObj.ticks = [];
+                    chartObj.ticks.push(1);
+                    chartObj.ticks.push(10);
+                    chartObj.ticks.push(100);
+                    chartObj.ticks.push(1000);
+                    chartObj.ticks.push(10000);
                 },
                 gridLines: {
                     display: true,
