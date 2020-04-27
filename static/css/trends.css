@@ -60,11 +60,18 @@ canvas {
 .navbar-brand {
     font-family: Roboto;
 }
+.card-footer {
+    font-size: 8pt;
+}
+
 @media (max-width: 575px) {
     .card {
         width: 108%;
         margin-left: -4% !important;
         margin-right: 4% !important;
+    }
+    #death_rec, #cases {
+        height: 100% !important;
     }
 }
 
@@ -84,6 +91,9 @@ canvas {
     #menu {
         height: 4.8vw;
         width: 4.8vw;
+    }
+    .card-footer {
+        font-size: 10pt;
     }
 }
 
@@ -122,6 +132,9 @@ canvas {
     main {
         border-left: 1px solid beige;
     }
+    .card-footer {
+        font-size: 11pt;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -154,6 +167,9 @@ canvas {
     }
     main {
         border-left: 1px solid beige;
+    }
+    .card-footer {
+        font-size: 12pt;
     }
 }
 
@@ -188,4 +204,7 @@ canvas {
     main {
         border-left: 1px solid beige;
     }   
+    .card-footer {
+        font-size: 13pt;
+    }
 }
