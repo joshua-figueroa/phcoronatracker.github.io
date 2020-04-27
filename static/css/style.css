@@ -187,18 +187,21 @@ tr td:nth-child(3) {
     font-weight: 700;
 }
 tr td:nth-child(4) {
-    color: rgb(81, 247, 16);
+    color: #51f710;
     font-weight: 700;
 }
-#container-ncr tr td:nth-child(5) {
+#container-ncr tr td:nth-child(5), #container-ofw tr td:nth-child(5) {
     color: #EEFF00;
     font-weight: 700;
 }
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
 }
-#container-ncr table {
+#container-ncr table, #container-ofw table {
     width: 130% !important;
+}
+caption a:hover {
+    text-decoration: none;
 }
 
 @media (max-width: 575px) {
@@ -372,10 +375,10 @@ tr td:nth-child(4) {
     tr th:nth-child(1) {
         width: 35%;
     }
-    #container-ncr tr th:nth-child(1) {
+    #container-ncr tr th:nth-child(1), #container-ofw tr th:nth-child(1) {
         width: 30% !important;
     }
-    #container-ncr table {
+    #container-ncr table, #container-ofw table {
         width: 120% !important;
     }
 }
@@ -457,6 +460,9 @@ tr td:nth-child(4) {
     }
     #container-ncr table {
         width: 140% !important;
+    }
+    #container-ofw table {
+        width: 100% !important;
     }
 }
 
@@ -541,7 +547,10 @@ tr td:nth-child(4) {
     #container-ncr table {
         width: 130% !important;
     }
-    #container-ncr tr th:nth-child(5) {
+    #container-ncr tr th:nth-child(5), #container-ofw tr th:nth-child(1) {
         width: 25% !important;
+    }
+    #container-ofw table {
+        width: 100% !important;
     }
 }
