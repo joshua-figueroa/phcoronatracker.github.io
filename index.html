@@ -264,6 +264,37 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row mt-2 mx-auto">
+                    <div class="col-lg-9 col-xl-8 mx-auto">
+                        <div class="container-data mx-auto" id="container-ofw" style="background-color: #6B7CB4; color: #F7F7F7;">
+                            <div class="container-title" style="font-weight: 300;">OFW Cases</div>
+                            <div class="row">
+                                <div class="container-subtitle">Infected Coutries: 44</div>
+                                <div class="search">
+                                    <img src="static/images/bar.png" alt="searchbar">
+                                    <input type="text" id="input_ofw" class="input" onkeyup="search('input_ofw', 'ofw_body')" placeholder=" search data" title="Type in a place">
+                                </div>
+                            </div>
+                            <div class="table-header table-responsive mx-auto">
+                                <table class="table table-hover table-borderless text-center">
+                                    <caption style="color: var(--paleGray);">Updated as of: April 27, 2020 - 4:00 PM
+                                    <br>Source: <a href="https://twitter.com/DFAPHL" target="_blank" rel="noopener noreferrer" style="color: #b5b5d8">Department of Foreign Affairs</a></caption>
+                                    <thead class="sticky-top">
+                                        <tr>
+                                            <th scope="col">Regions</th>
+                                            <th scope="col">Confirmed</th>
+                                            <th scope="col">Deaths</th>
+                                            <th scope="col">Recovered</th>
+                                            <th scope="col">Active</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ofw_body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
