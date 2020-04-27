@@ -48,6 +48,20 @@ $(document).ready(function() {
             alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
+
+    $.ajax({
+        url: 'https://phcoronatracker.com/static/JSON/ofw.json',
+        dataType: 'json',
+        success: function(data) {
+            for(var i = 0; i < data.length; i++) {
+                var row = $('<tr><th scope="row">' + data[i].name + '</th><td>' + data[i].cases + '</td><td>' + data[i].death +'</td><td>' + data[i].rec + '</td><td>' + data[i].active + '</td></tr>');
+                $('#ofw_body').append(row);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
 });
 
 
