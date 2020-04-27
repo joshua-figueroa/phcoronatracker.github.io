@@ -50,8 +50,8 @@ $(document).ready(function() {
             { "data": "Age" },
             { "data": "Sex" },
             { "data": "Admitted" },
-            { "data": "ProvCityRes" },
-            { "data": "RegionRes" },
+            { "data": "CityMunRes" },
+            { "data": "ProvRes" },
             { "data": "DateRepConf"}
         ]
     });
