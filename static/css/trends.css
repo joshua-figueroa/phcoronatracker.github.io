@@ -60,7 +60,13 @@ canvas {
 .navbar-brand {
     font-family: Roboto;
 }
-
+@media (max-width: 575px) {
+    .card {
+        width: 108%;
+        margin-left: -4% !important;
+        margin-right: 4% !important;
+    }
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .text-large {
