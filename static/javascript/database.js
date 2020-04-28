@@ -35,11 +35,11 @@ $(document).ready(function() {
                             data[i].Admitted = data[i].RemovalType;
                         }
                     }
-                    if(data[i].ProvCityRes == "") {
-                        data[i].ProvCityRes = "For Validation";
+                    if(data[i].CityMunRes == "") {
+                        data[i].CityMunRes = "For Validation";
                     }
-                    if(data[i].RegionRes == "") {
-                        data[i].RegionRes = "For Validation";
+                    if(data[i].ProvRes == "") {
+                        data[i].ProvRes = "For Validation";
                     }
                 }
                 return data;
