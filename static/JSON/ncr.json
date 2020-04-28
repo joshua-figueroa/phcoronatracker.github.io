@@ -4,7 +4,7 @@
         "cases": 5446,
         "death": 365,
         "rec": 645,
-        "lgu": 4344
+        "lgu": 4380
     }, {
         "name": "Quezon City",
         "cases": 1209,
@@ -64,7 +64,7 @@
         "cases": 167,
         "death": 7,
         "rec": 16,
-        "lgu": 169
+        "lgu": 183
     }, {
         "name": "Las Piñas",
         "cases": 163,
