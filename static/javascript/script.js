@@ -54,7 +54,7 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
             for(var i = 0; i < data.length; i++) {
-                var row = $('<tr><th scope="row">' + data[i].name + '</th><td>' + data[i].cases + '</td><td>' + data[i].death +'</td><td>' + data[i].rec + '</td><td>' + data[i].active + '</td></tr>');
+                var row = $('<tr><th scope="row">' + data[i].name + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].death.toLocaleString() +'</td><td>' + data[i].rec.toLocaleString() + '</td><td>' + data[i].active.toLocaleString() + '</td></tr>');
                 $('#ofw_body').append(row);
             }
         },
