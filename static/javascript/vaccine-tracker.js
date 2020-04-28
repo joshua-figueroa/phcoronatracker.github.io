@@ -29,10 +29,11 @@ $(document).ready(function() {
                 { y: 28, name: "Protein Sub-unit", exploded: true },
                 { y: 8, name: "DNA-Based" },
                 { y: 14, name: "RNA-Based" },
-                { y: 18, name: "Non-Replicating Viral Vector" },
+                { y: 12, name: "Non-Replicating Viral Vector" },
                 { y: 4, name: "Virus-like Particle" },
-                { y: 2, name: "Replicating Viral Vector" },
-                { y: 5, name: "Inactive Viruses"},
+                { y: 8, name: "Replicating Viral Vector" },
+                { y: 3, name: "Inactive Viruses"},
+                { y: 2, name: "Live Attenuated Virus"},
                 { y: 14, name: "Unknown"}
             ]
         }]
