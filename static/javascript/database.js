@@ -50,6 +50,7 @@ $(document).ready(function() {
             { "data": "Age" },
             { "data": "Sex" },
             { "data": "Admitted" },
+            { "data": "HealthStatus" },
             { "data": "CityMunRes" },
             { "data": "ProvRes" },
             { "data": "DateRepConf"}
