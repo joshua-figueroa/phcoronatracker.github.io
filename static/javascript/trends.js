@@ -51,7 +51,7 @@ var chart = new Chart(ctx, {
                 type: 'logarithmic',
                 ticks: {
                     min: 0,
-                    max: 1000,
+                    max: 10000,
                     fontColor: '#333333',
                     callback: function (value, index, values) {
                         return Number(value.toString());//pass tick values as a string into Number function
@@ -64,6 +64,7 @@ var chart = new Chart(ctx, {
                     chartObj.ticks.push(10);
                     chartObj.ticks.push(100);
                     chartObj.ticks.push(1000);
+                    chartObj.ticks.push(10000);
                 },
                 gridLines: {
                     display: true,
