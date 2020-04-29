@@ -4,7 +4,7 @@
         "cases": 5640,
         "death": 392,
         "rec": 677,
-        "lgu": 4380
+        "lgu": 4490
     }, {
         "name": "Quezon City",
         "cases": 1215,
@@ -16,13 +16,13 @@
         "cases": 633,
         "death": 45,
         "rec": 88,
-        "lgu": 659
+        "lgu": 669
     }, {
         "name": "Makati",
         "cases": 402,
         "death": 19,
         "rec": 81,
-        "lgu": 346
+        "lgu": 354
     }, {
         "name": "Parañaque",
         "cases": 398,
@@ -34,25 +34,25 @@
         "cases": 356,
         "death": 31,
         "rec": 26,
-        "lgu": 354
+        "lgu": 395
     }, {
         "name": "Pasig",
         "cases": 284,
         "death": 38,
         "rec": 39,
-        "lgu": 316
+        "lgu": 320
     }, {
         "name": "Taguig",
         "cases": 241,
         "death": 12,
         "rec": 35,
-        "lgu": 228
+        "lgu": 231
     }, {
         "name": "San Juan",
         "cases": 229,
         "death": 32,
         "rec": 53,
-        "lgu": 227
+        "lgu": 237
     }, {
         "name": "Caloocan",
         "cases": 205,
@@ -64,43 +64,43 @@
         "cases": 168,
         "death": 7,
         "rec": 16,
-        "lgu": 183
+        "lgu": 188
     }, {
         "name": "Las Piñas",
         "cases": 166,
         "death": 9,
         "rec": 31,
-        "lgu": 137
+        "lgu": 147
     }, {
         "name": "Muntinlupa",
         "cases": 143,
         "death": 11,
         "rec": 15,
-        "lgu": 139
+        "lgu": 142
     }, {
         "name": "Marikina",
         "cases": 123,
         "death": 10,
         "rec": 22,
-        "lgu": 106
+        "lgu": 108
     }, {
         "name": "Valenzuela",
         "cases": 76,
         "death": 5,
         "rec": 13,
-        "lgu": 92
+        "lgu": 96
     }, {
         "name": "Malabon",
         "cases": 40,
         "death": 3,
         "rec": 4,
-        "lgu": 46
+        "lgu": 51
     }, {
         "name": "Navotas",
         "cases": 30,
         "death": 5,
         "rec": 0,
-        "lgu": 35
+        "lgu": 40
     }, {
         "name": "Pateros",
         "cases": 23,
