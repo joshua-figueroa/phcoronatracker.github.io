@@ -48,8 +48,9 @@ $(document).ready(function() {
             update('new-deaths', data.todayDeaths);
             update('recover', data.recovered);
             update('total-recoveries', data.recovered);
-            update('critical', data.active);
-            update('total-critical', data.active);
+            update('active-main', data.active);
+            update('total-active', data.active);
+            update('total-tests', data.testsPerOneMillion);
             update('fatality', x.toFixed(2) + '%');
             update('recovery', y.toFixed(2) + '%');
         },
@@ -65,7 +66,7 @@ $(document).ready(function() {
             let flag = new Array();
             for(var i = 0; i < data.length; i++) {
                 flag[i] = data[i].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[i].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td>' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td>' + data[i].active.toLocaleString() + '</td><td>' + data[i].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#global_body').append(row);
             }
         },
@@ -87,17 +88,18 @@ $(document).ready(function() {
                     }
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#sea_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('sea-cases', totalCases);
@@ -105,7 +107,8 @@ $(document).ready(function() {
             update('sea-deaths', deaths);
             update('new-sea-deaths', newdeaths);
             update('sea-recover', rec);
-            update('sea-critical', critical);
+            update('sea-active', active);
+            update('sea-tests', Math.round(tests / num.length));
             update('sea-fatality', a.toFixed(2) + '%');
             update('sea-recovery', b.toFixed(2) + '%');
         },
@@ -124,17 +127,18 @@ $(document).ready(function() {
                     num.push(i);
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#asia_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('asia-cases', totalCases);
@@ -142,7 +146,8 @@ $(document).ready(function() {
             update('asia-deaths', deaths);
             update('new-asia-deaths', newdeaths);
             update('asia-recover', rec);
-            update('asia-critical', critical);
+            update('asia-active', active);
+            update('asia-tests', Math.round(tests / num.length));
             update('asia-fatality', a.toFixed(2) + '%');
             update('asia-recovery', b.toFixed(2) + '%');
         },
@@ -161,17 +166,18 @@ $(document).ready(function() {
                     num.push(i);
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#euro_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('euro-cases', totalCases);
@@ -179,7 +185,8 @@ $(document).ready(function() {
             update('euro-deaths', deaths);
             update('new-euro-deaths', newdeaths);
             update('euro-recover', rec);
-            update('euro-critical', critical);
+            update('euro-active', active);
+            update('euro-tests', Math.round(tests / num.length));
             update('euro-fatality', a.toFixed(2) + '%');
             update('euro-recovery', b.toFixed(2) + '%');
         },
@@ -198,17 +205,18 @@ $(document).ready(function() {
                     num.push(i);
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#na_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('na-cases', totalCases);
@@ -216,7 +224,8 @@ $(document).ready(function() {
             update('na-deaths', deaths);
             update('new-na-deaths', newdeaths);
             update('na-recover', rec);
-            update('na-critical', critical);
+            update('na-active', active);
+            update('na-tests', Math.round(tests / num.length));
             update('na-fatality', a.toFixed(2) + '%');
             update('na-recovery', b.toFixed(2) + '%');
         },
@@ -235,17 +244,18 @@ $(document).ready(function() {
                     num.push(i);
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#sa_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('sa-cases', totalCases);
@@ -253,7 +263,8 @@ $(document).ready(function() {
             update('sa-deaths', deaths);
             update('new-sa-deaths', newdeaths);
             update('sa-recover', rec);
-            update('sa-critical', critical);
+            update('sa-active', active);
+            update('sa-tests', Math.round(tests / num.length));
             update('sa-fatality', a.toFixed(2) + '%');
             update('sa-recovery', b.toFixed(2) + '%');
         },
@@ -272,17 +283,18 @@ $(document).ready(function() {
                     num.push(i);
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#afr_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('afr-cases', totalCases);
@@ -290,7 +302,8 @@ $(document).ready(function() {
             update('afr-deaths', deaths);
             update('new-afr-deaths', newdeaths);
             update('afr-recover', rec);
-            update('afr-critical', critical);
+            update('afr-active', active);
+            update('afr-tests', Math.round(tests / num.length));
             update('afr-fatality', a.toFixed(2) + '%');
             update('afr-recovery', b.toFixed(2) + '%');
         },
@@ -309,17 +322,18 @@ $(document).ready(function() {
                     num.push(i);
                 }
             }
-            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, critical = 0, a, b;
+            let totalCases = 0, newcases = 0, deaths = 0, newdeaths = 0, rec = 0, active = 0, tests = 0, a, b;
             for(i in num) {
                 flag[i] = data[num[i]].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td class="d-none d-md-block">' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td class="d-none d-lg-block">' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td class="d-none d-xl-block">' + data[num[i]].active.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[num[i]].country + '&nbsp;(' + data[num[i]].countryInfo['iso2'] + ')' + '</th><td>' + data[num[i]].cases.toLocaleString() + '</td><td>' + data[num[i]].todayCases.toLocaleString() +'</td><td>' + data[num[i]].deaths.toLocaleString() + '</td><td>' + data[num[i]].todayDeaths.toLocaleString() +'</td><td>' + data[num[i]].recovered.toLocaleString() +'</td><td>' + data[num[i]].active.toLocaleString() +'</td><td>' + data[num[i]].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#au_body').append(row);
                 totalCases += data[num[i]].cases;
                 newcases += data[num[i]].todayCases;
                 deaths += data[num[i]].deaths;
                 newdeaths += data[num[i]].todayDeaths;
                 rec += data[num[i]].recovered;
-                critical += data[num[i]].active;
+                active += data[num[i]].active;
+                tests += data[num[i]].testsPerOneMillion;
             }
             a = (deaths/totalCases) * 100, b = (rec/totalCases) * 100;
             update('au-cases', totalCases);
@@ -327,7 +341,8 @@ $(document).ready(function() {
             update('au-deaths', deaths);
             update('new-au-deaths', newdeaths);
             update('au-recover', rec);
-            update('au-critical', critical);
+            update('au-active', active);
+            update('au-tests', Math.round(tests / num.length));
             update('au-fatality', a.toFixed(2) + '%');
             update('au-recovery', b.toFixed(2) + '%');
         },
