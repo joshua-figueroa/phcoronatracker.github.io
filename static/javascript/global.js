@@ -66,7 +66,7 @@ $(document).ready(function() {
             let flag = new Array();
             for(var i = 0; i < data.length; i++) {
                 flag[i] = data[i].countryInfo['flag'];
-                var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td>' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td>' + data[i].active.toLocaleString() + '</td><td>' + data[i].testsPerOneMillion.toLocaleString() + '</td></tr>');
+                var row = $('<tr><th scope="row" class="sticky-top"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td>' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td>' + data[i].active.toLocaleString() + '</td><td>' + data[i].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#global_body').append(row);
             }
         },
