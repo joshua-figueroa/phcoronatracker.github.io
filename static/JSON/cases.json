@@ -12,27 +12,27 @@
         "center": {"lat": 14.599512, "lng": 120.984222}
     }, {
         "name": "Cebu",
-        "cases": 463,
+        "cases": 530,
         "death": 6,
         "rec": 16,
         "center": {"lat": 10.3157, "lng": 123.8854}
     }, {
         "name": "Rizal",
         "cases": 370,
-        "death": 26,
+        "death": 27,
         "rec": 44,
         "center": {"lat": 14.6037, "lng": 121.3084}
     }, {
         "name": "Laguna",
-        "cases": 314,
+        "cases": 316,
         "death": 7,
-        "rec": 24,
+        "rec": 25,
         "center": {"lat": 14.2691, "lng": 121.4113}
     }, {
         "name": "Cavite",
-        "cases": 251,
-        "death": 20,
-        "rec": 25,
+        "cases": 254,
+        "death": 21,
+        "rec": 26,
         "center": {"lat": 14.4791, "lng": 120.8970}
     }, {
         "name": "Bulacan",
@@ -42,9 +42,9 @@
         "center": {"lat": 14.8527, "lng": 120.8160}
     }, {
         "name": "Davao del Sur",
-        "cases": 116,
+        "cases": 115,
         "death": 18,
-        "rec": 60,
+        "rec": 61,
         "center": {"lat": 7.199001, "lng": 125.454941}
     }, {
         "name": "Batangas",
@@ -60,7 +60,7 @@
         "center": {"lat": 14.6417, "lng": 120.4818}
     }, {
         "name": "Pampanga",
-        "cases": 60,
+        "cases": 61,
         "death": 5,
         "rec": 8,
         "center": {"lat": 15.0794, "lng": 120.6200}
@@ -72,7 +72,7 @@
         "center": {"lat": 13.9414, "lng": 121.6234}
     }, {
         "name": "Nueva Ecija",
-        "cases": 49,
+        "cases": 50,
         "death": 0,
         "rec": 2,
         "center": {"lat": 15.5784, "lng": 121.1113}
@@ -101,17 +101,17 @@
         "rec": 1,
         "center": {"lat": 15.4755, "lng": 120.5963}
     }, {
+        "name": "Albay",
+        "cases": 28,
+        "death": 3,
+        "rec": 6,
+        "center": {"lat": 13.1391, "lng": 123.7438}
+    }, {
         "name": "Zambales",
         "cases": 26,
         "death": 2,
         "rec": 2,
         "center": {"lat": 15.5082, "lng": 119.9698}
-    }, {
-        "name": "Albay",
-        "cases": 25,
-        "death": 2,
-        "rec": 6,
-        "center": {"lat": 13.1391, "lng": 123.7438}
     }, {
         "name": "Cagayan",
         "cases": 15,
@@ -137,6 +137,12 @@
         "rec": 3,
         "center": {"lat": 6.9214, "lng": 122.0790}
     }, {
+        "name": "Camarines Sur",
+        "cases": 11,
+        "death": 1,
+        "rec": 1,
+        "center": {"lat": 13.6218, "lng": 123.1948}
+    }, {
         "name": "Davao del Norte",
         "cases": 11,
         "death": 0,
@@ -148,12 +154,6 @@
         "death": 0,
         "rec": 1,
         "center": {"lat": 11.3806, "lng": 122.0635}
-    }, {
-        "name": "Camarines Sur",
-        "cases": 10,
-        "death": 1,
-        "rec": 1,
-        "center": {"lat": 13.6218, "lng": 123.1948}
     }, {
         "name": "Isabela",
         "cases": 10,
@@ -221,12 +221,6 @@
         "rec": 2,
         "center": {"lat": 7.8722, "lng": 123.8858}
     }, {
-        "name": "Ilocos Norte",
-        "cases": 4,
-        "death": 0,
-        "rec": 2,
-        "center": {"lat": 18.1647, "lng": 120.7116}
-    }, {
         "name": "South Cotabato",
         "cases": 4,
         "death": 0,
@@ -262,6 +256,12 @@
         "death": 0,
         "rec": 3,
         "center": {"lat": 7.3172, "lng": 126.5420}
+    }, {
+        "name": "Ilocos Norte",
+        "cases": 3,
+        "death": 0,
+        "rec": 2,
+        "center": {"lat": 18.1647, "lng": 120.7116}
     }, {
         "name": "Leyte",
         "cases": 3,
@@ -354,7 +354,7 @@
         "center": {"lat": 12.5778, "lng": 122.2691}
     }, {
         "name": "For Validation",
-        "cases": 87,
+        "cases": 52,
         "death": 0,
         "rec": 0
     }
