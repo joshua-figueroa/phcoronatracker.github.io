@@ -94,7 +94,7 @@
 
                     <div class="card d-flex text-center" style="color: #A98600;">
                         <div class="card-body" style="background-color: #FAF5b5;">
-                            <h1 class="card-title" id="critical"></h1>
+                            <h1 class="card-title" id="active-main"></h1>
                         </div>
                         <div class="card-footer" style="background-color: #FAF285;">
                             <h5 class="footer-title">Active Cases</h5>
@@ -112,7 +112,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_global" class="input" onkeyup="search('input_global', 'global_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_global" class="input" onkeyup="search('input_global', 'global_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="fatality"></span></div>
@@ -122,22 +122,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="global_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe"></i>&nbsp; Grand Total</th>
                                             <td id="total-cases"></td>
-                                            <td class="d-none d-md-block" id="new-cases"></td>
+                                            <td id="new-cases"></td>
                                             <td id="total-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-deaths"></td>
+                                            <td id="new-deaths"></td>
                                             <td id="total-recoveries"></td>
-                                            <td class="d-none d-xl-block" id="total-critical"></td>
+                                            <td id="total-active"></td>
+                                            <td id="total-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -154,7 +156,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="sea-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_sea" class="input" onkeyup="search('input_sea', 'sea_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_sea" class="input" onkeyup="search('input_sea', 'sea_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="sea-fatality"></span></div>
@@ -164,22 +166,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="sea_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-asia"></i>&nbsp; Grand Total</th>
                                             <td id="sea-cases"></td>
-                                            <td class="d-none d-md-block" id="new-sea-cases"></td>
+                                            <td id="new-sea-cases"></td>
                                             <td id="sea-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-sea-deaths"></td>
+                                            <td id="new-sea-deaths"></td>
                                             <td id="sea-recover"></td>
-                                            <td class="d-none d-xl-block" id="sea-critical"></td>
+                                            <td id="sea-active"></td>
+                                            <td id="sea-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -196,7 +200,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="asia-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_asia" class="input" onkeyup="search('input_asia', 'asia_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_asia" class="input" onkeyup="search('input_asia', 'asia_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="asia-fatality"></span></div>
@@ -206,22 +210,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="asia_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-asia"></i>&nbsp; Grand Total</th>
                                             <td id="asia-cases"></td>
-                                            <td class="d-none d-md-block" id="new-asia-cases"></td>
+                                            <td id="new-asia-cases"></td>
                                             <td id="asia-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-asia-deaths"></td>
+                                            <td id="new-asia-deaths"></td>
                                             <td id="asia-recover"></td>
-                                            <td class="d-none d-xl-block" id="asia-critical"></td>
+                                            <td id="asia-active"></td>
+                                            <td id="asia-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -238,7 +244,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="euro-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_euro" class="input" onkeyup="search('input_euro', 'euro_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_euro" class="input" onkeyup="search('input_euro', 'euro_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="euro-fatality"></span></div>
@@ -248,22 +254,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="euro_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-europe"></i>&nbsp; Grand Total</th>
                                             <td id="euro-cases"></td>
-                                            <td class="d-none d-md-block" id="new-euro-cases"></td>
+                                            <td id="new-euro-cases"></td>
                                             <td id="euro-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-euro-deaths"></td>
+                                            <td id="new-euro-deaths"></td>
                                             <td id="euro-recover"></td>
-                                            <td class="d-none d-xl-block" id="euro-critical"></td>
+                                            <td id="euro-active"></td>
+                                            <td id="euro-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -280,7 +288,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="na-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_na" class="input" onkeyup="search('input_na', 'na_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_na" class="input" onkeyup="search('input_na', 'na_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="na-fatality"></span></div>
@@ -290,22 +298,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="na_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-americas"></i>&nbsp; Grand Total</th>
                                             <td id="na-cases"></td>
-                                            <td class="d-none d-md-block" id="new-na-cases"></td>
+                                            <td id="new-na-cases"></td>
                                             <td id="na-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-na-deaths"></td>
+                                            <td id="new-na-deaths"></td>
                                             <td id="na-recover"></td>
-                                            <td class="d-none d-xl-block" id="na-critical"></td>
+                                            <td id="na-active"></td>
+                                            <td id="na-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -322,7 +332,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="sa-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_sa" class="input" onkeyup="search('input_sa', 'sa_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_sa" class="input" onkeyup="search('input_sa', 'sa_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="sa-fatality"></span></div>
@@ -332,22 +342,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="sa_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-americas"></i>&nbsp; Grand Total</th>
                                             <td id="sa-cases"></td>
-                                            <td class="d-none d-md-block" id="new-sa-cases"></td>
+                                            <td id="new-sa-cases"></td>
                                             <td id="sa-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-sa-deaths"></td>
+                                            <td id="new-sa-deaths"></td>
                                             <td id="sa-recover"></td>
-                                            <td class="d-none d-xl-block" id="sa-critical"></td>
+                                            <td id="sa-active"></td>
+                                            <td id="sa-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -364,7 +376,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="afr-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_afr" class="input" onkeyup="search('input_afr', 'afr_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_afr" class="input" onkeyup="search('input_afr', 'afr_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="afr-fatality"></span></div>
@@ -374,22 +386,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="afr_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-africa"></i>&nbsp; Grand Total</th>
                                             <td id="afr-cases"></td>
-                                            <td class="d-none d-md-block" id="new-afr-cases"></td>
+                                            <td id="new-afr-cases"></td>
                                             <td id="afr-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-afr-deaths"></td>
+                                            <td id="new-afr-deaths"></td>
                                             <td id="afr-recover"></td>
-                                            <td class="d-none d-xl-block" id="afr-critical"></td>
+                                            <td id="afr-active"></td>
+                                            <td id="afr-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -406,7 +420,7 @@
                                 <div class="container-subtitle">Recovery Rate: <span style="color: var(--stat-green);" id="au-recovery"></span></div>
                                 <div class="search">
                                     <img src="static/images/bar.png" alt="searchbar">
-                                    <input type="text" id="input_au" class="input" onkeyup="search('input_au', 'au_body')" placeholder="search data" title="Type in a place">
+                                    <input type="text" id="input_au" class="input" onkeyup="search('input_au', 'au_body')" placeholder=" search data" title="Type in a place">
                                 </div>
                             </div>
                             <div class="container-subtitle2">Fatality Rate: <span class="text-danger" id="au-fatality"></span></div>
@@ -416,22 +430,24 @@
                                         <tr>
                                             <th scope="col" class="text-center">Countries</th>
                                             <th scope="col">Total Cases</th>
-                                            <th scope="col" class="d-none d-md-block">New Cases</th>
+                                            <th scope="col">New Cases</th>
                                             <th scope="col">Total Deaths</th>
-                                            <th scope="col" class="d-none d-lg-block">New Deaths</th>
+                                            <th scope="col">New Deaths</th>
                                             <th scope="col">Recoveries</th>
-                                            <th scope="col" class="d-none d-xl-block">Active</th>
+                                            <th scope="col">Active Cases</th>
+                                            <th scope="col">Tests/1M Population</th>
                                         </tr>
                                     </thead>
                                     <tbody id="au_body">
                                         <tr>
                                             <th scope="row" class="text-center"><i class="fas fa-globe-asia"></i>&nbsp; Grand Total</th>
                                             <td id="au-cases"></td>
-                                            <td class="d-none d-md-block" id="new-au-cases"></td>
+                                            <td id="new-au-cases"></td>
                                             <td id="au-deaths"></td>
-                                            <td class="d-none d-lg-block" id="new-au-deaths"></td>
+                                            <td id="new-au-deaths"></td>
                                             <td id="au-recover"></td>
-                                            <td class="d-none d-xl-block" id="au-critical"></td>
+                                            <td id="au-active"></td>
+                                            <td id="au-tests"></td>
                                         </tr>
                                     </tbody>
                                 </table>
