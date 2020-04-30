@@ -236,13 +236,6 @@ table > tbody > tr > th > img {
     table {
         font-size: 3.1vw;
     }
-    tr th:nth-child(1) {
-        text-align: left;
-        width: 30%;
-    }
-    table > tbody > tr > th > img {
-        display: none;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
