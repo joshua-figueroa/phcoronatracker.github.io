@@ -4,103 +4,103 @@
         "cases": 5809,
         "death": 399,
         "rec": 694,
-        "lgu": 4490
+        "lgu": 4661
     }, {
         "name": "Quezon City",
         "cases": 1231,
         "death": 95,
         "rec": 186,
-        "lgu": 888
+        "lgu": 961
     }, {
         "name": "Manila",
         "cases": 644,
         "death": 46,
         "rec": 90,
-        "lgu": 669
+        "lgu": 683
     }, {
         "name": "Makati",
         "cases": 411,
         "death": 21,
         "rec": 84,
-        "lgu": 354
+        "lgu": 368
     }, {
         "name": "Parañaque",
         "cases": 401,
         "death": 34,
         "rec": 44,
-        "lgu": 423
+        "lgu": 441
     }, {
         "name": "Mandaluyong",
         "cases": 367,
         "death": 31,
         "rec": 27,
-        "lgu": 395
+        "lgu": 407
     }, {
         "name": "Pasig",
         "cases": 288,
         "death": 41,
         "rec": 39,
-        "lgu": 320
+        "lgu": 325
     }, {
         "name": "Taguig",
         "cases": 245,
         "death": 12,
         "rec": 36,
-        "lgu": 231
+        "lgu": 233
     }, {
         "name": "San Juan",
         "cases": 224,
         "death": 32,
         "rec": 53,
-        "lgu": 237
+        "lgu": 238
     }, {
         "name": "Caloocan",
         "cases": 205,
         "death": 20,
         "rec": 18,
-        "lgu": 179
+        "lgu": 182
     }, {
         "name": "Pasay",
         "cases": 177,
         "death": 8,
         "rec": 16,
-        "lgu": 188
+        "lgu": 196
     }, {
         "name": "Las Piñas",
         "cases": 169,
         "death": 9,
         "rec": 31,
-        "lgu": 147
+        "lgu": 149
     }, {
         "name": "Muntinlupa",
         "cases": 145,
         "death": 11,
         "rec": 17,
-        "lgu": 142
+        "lgu": 148
     }, {
         "name": "Marikina",
         "cases": 123,
         "death": 9,
         "rec": 22,
-        "lgu": 108
+        "lgu": 109
     }, {
         "name": "Valenzuela",
         "cases": 77,
         "death": 5,
         "rec": 13,
-        "lgu": 96
+        "lgu": 97
     }, {
         "name": "Malabon",
         "cases": 40,
         "death": 3,
         "rec": 5,
-        "lgu": 51
+        "lgu": 57
     }, {
         "name": "Navotas",
         "cases": 30,
         "death": 5,
         "rec": 0,
-        "lgu": 40
+        "lgu": 45
     }, {
         "name": "Pateros",
         "cases": 22,
