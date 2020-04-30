@@ -164,7 +164,6 @@ thead {
 }
 tbody > tr > th, thead > tr th:nth-child(1) {
     background-color: #6B7CB4;
-    border-bottom: 1px solid #223446 !important;
     background-clip: padding-box;
 }
 .table > thead > tr > th, .table > tbody > tr > th {
@@ -183,8 +182,8 @@ tbody tr th {
 tr th:nth-child(1) {
     text-align: left;
     width: 18%;
-    position: sticky;
-    left: 0px;
+    position: sticky !important;
+    left: 0px !important;
 }
 tr td:nth-child(2), tr td:nth-child(3) {
     color: #172783;
