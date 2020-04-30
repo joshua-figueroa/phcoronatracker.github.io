@@ -150,14 +150,22 @@ table {
     text-align: center;
 }
 .table-header {
-    width: 96%;
+    width: 94%;
     height: 445px;
     overflow-y: scroll;
-    overflow-x: auto;
+    overflow-x: auto !important;
 }
 thead {
     background-color: #6B7CB4;
     color: whitesmoke;
+}
+.container-data table {
+    width: 250% !important;
+}
+tbody > tr > th, thead > tr th:nth-child(1) {
+    background-color: #6B7CB4;
+    border-bottom: 1px solid #223446 !important;
+    background-clip: padding-box;
 }
 .table > thead > tr > th, .table > tbody > tr > th {
     font-weight: normal;
@@ -174,7 +182,9 @@ tbody tr th {
 }
 tr th:nth-child(1) {
     text-align: left;
-    width: 35%;
+    width: 18%;
+    position: sticky;
+    left: 0px;
 }
 tr td:nth-child(2), tr td:nth-child(3) {
     color: #172783;
@@ -190,6 +200,10 @@ tr td:nth-child(6) {
 }
 tr td:nth-child(7) {
     color: #EEFF00;
+    font-weight: 700;
+}
+tr td:nth-child(8) {
+    color: #FCAA3F;
     font-weight: 700;
 }
 table > tbody > tr > th > img {
@@ -286,7 +300,10 @@ table > tbody > tr > th > img {
         font-size: 2.5vw;
     }
     tr th:nth-child(1) {
-        width: 30%;
+        width: 20%;
+    }
+    .container-data table {
+        width: 190% !important;
     }
     table > tbody > tr > th > img {
         width: 3.5vw;
@@ -371,7 +388,10 @@ table > tbody > tr > th > img {
         font-size: 1.6vw;
     }
     tr th:nth-child(1) {
-        width: 28%;
+        width: 20%;
+    }
+    .container-data table {
+        width: 160% !important;
     }
     table > tbody > tr > th > img {
         width: 2.8vw;
@@ -447,6 +467,9 @@ table > tbody > tr > th > img {
     }
     table {
         font-size: 1.3vw;
+    }
+    .container-data table {
+        width: 120% !important;
     }
     tr th:nth-child(1) {
         width: 25%;
@@ -532,8 +555,11 @@ table > tbody > tr > th > img {
     table {
         font-size: 1.2vw;
     }
+    .container-data table {
+        width: 120% !important;
+    }
     tr th:nth-child(1) {
-        width: 30%;
+        width: 20%;
     }
     table > tbody > tr > th > img {
         width: 2.3vw;
