@@ -15,7 +15,7 @@ $(document).ready(function() {
     update('cases', 8772);
     update('deaths', 579);
     update('recover', 1084);
-    update('ofw', 1677);
+    update('ofw', 1707);
     function table(link, id) {
         $.ajax({
             url: link,
