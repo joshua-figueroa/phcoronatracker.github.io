@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/all',
+        url: 'https://disease.sh/v2/all',
         dataType: 'json',
         success: function(data) {
             let x = (data.deaths/data.cases) * 100, y = (data.recovered/data.cases) * 100;
@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
     
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let flag = new Array();
@@ -76,7 +76,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let sea = ["Philippines", "Indonesia", "Malaysia", "Singapore", "Brunei", "Cambodia", "Timor-Leste", "Lao People's Democratic Republic", "Myanmar", "Thailand", "Vietnam"];
@@ -118,7 +118,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let num = new Array(), flag = new Array();
@@ -157,7 +157,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let num = new Array(), flag = new Array();
@@ -196,7 +196,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let num = new Array(), flag = new Array();
@@ -235,7 +235,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let num = new Array(), flag = new Array();
@@ -274,7 +274,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let num = new Array(), flag = new Array();
@@ -313,7 +313,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: 'https://corona.lmao.ninja/v2/countries?sort=cases',
+        url: 'https://disease.sh/v2/countries?sort=cases',
         dataType: 'json',
         success: function(data) {
             let num = new Array(), flag = new Array();
