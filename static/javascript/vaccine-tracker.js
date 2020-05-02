@@ -26,15 +26,15 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name} - {y}",
             dataPoints: [
-                { y: 28, name: "Protein Sub-unit", exploded: true },
-                { y: 8, name: "DNA-Based" },
-                { y: 14, name: "RNA-Based" },
-                { y: 12, name: "Non-Replicating Viral Vector" },
+                { y: 32, name: "Protein Sub-unit", exploded: true },
+                { y: 9, name: "DNA-Based" },
+                { y: 16, name: "RNA-Based" },
+                { y: 14, name: "Non-Replicating Viral Vector" },
                 { y: 4, name: "Virus-like Particle" },
-                { y: 8, name: "Replicating Viral Vector" },
-                { y: 3, name: "Inactive Viruses"},
-                { y: 2, name: "Live Attenuated Virus"},
-                { y: 14, name: "Unknown"}
+                { y: 11, name: "Replicating Viral Vector" },
+                { y: 5, name: "Inactive Viruses"},
+                { y: 3, name: "Live Attenuated Virus"},
+                { y: 15, name: "Unknown"}
             ]
         }]
     });
@@ -53,14 +53,14 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name} - {y}",
             dataPoints: [
-                { y: 49, name: "Antibodies", exploded: true },
-                { y: 20, name: "Antivirals" },
-                { y: 12, name: "Cell-Based Therapies" },
-                { y: 5, name: "RNA-Based" },
+                { y: 56, name: "Antibodies", exploded: true },
+                { y: 22, name: "Antivirals" },
+                { y: 15, name: "Cell-Based Therapies" },
+                { y: 6, name: "RNA-Based" },
                 { y: 2, name: "Discontinued" },
-                { y: 4, name: "Devices" },
-                { y: 53, name: "Others"},
-                { y: 14, name: "For Validation"}
+                { y: 6, name: "Devices" },
+                { y: 74, name: "Others"},
+                { y: 18, name: "For Validation"}
             ]
         }]
     });
