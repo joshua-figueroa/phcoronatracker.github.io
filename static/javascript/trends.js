@@ -8,7 +8,8 @@ var chart = new Chart(ctx, {
     data: {
         labels: ['Jan 30', 'Feb 2', 'Feb 5', 'Feb 8', 'Feb 11', 'Feb 14', 'Feb 17', 'Feb 20', 'Feb 23', 'Feb 26', 'Feb 29',
         'Mar 3', 'Mar 6', 'Mar 9', 'Mar 12', 'Mar 15', 'Mar 18', 'Mar 21', 'Mar 24', 'Mar 27', 'Mar 30',
-        'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29'],
+        'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29',
+        'May 2'],
         datasets: [{
             label: 'Total Fatalities',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -19,7 +20,8 @@ var chart = new Chart(ctx, {
             hoverRadius: 5,
             data: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
             1, 1, 1, 2, 11, 17, 19, 35, 54, 78,
-            107, 152, 182, 247, 335, 287, 428, 462, 501, 558],
+            107, 152, 182, 247, 335, 287, 428, 462, 501, 558,
+            603],
             lineTension: 0
         },{
             label: 'Total Recoveries',
@@ -32,7 +34,8 @@ var chart = new Chart(ctx, {
             data: [
                 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 
                 1, 1, 1, 2, 2, 5, 13, 20, 31, 42,
-                51, 64, 96, 157, 295, 487, 613, 722, 862, 1023],
+                51, 64, 96, 157, 295, 487, 613, 722, 862, 1023,
+                1124],
             lineTension: 0
         }]
     },
@@ -93,7 +96,8 @@ var chart_1 = new Chart(ctx_1, {
     data: {
         labels: ['Jan 30', 'Feb 2', 'Feb 5', 'Feb 8', 'Feb 11', 'Feb 14', 'Feb 17', 'Feb 20', 'Feb 23', 'Feb 26', 'Feb 29',
         'Mar 3', 'Mar 6', 'Mar 9', 'Mar 12', 'Mar 15', 'Mar 18', 'Mar 21', 'Mar 24', 'Mar 27', 'Mar 30',
-        'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29'],
+        'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29', 
+        'May 2'],
         datasets: [{
             label: 'Total Confirmed Cases',
             backgroundColor: 'rgba(255, 255, 255, 0)',
@@ -104,7 +108,8 @@ var chart_1 = new Chart(ctx_1, {
             hoverRadius: 5,
             data: [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 
             3, 5, 20, 52, 140, 202, 307, 552, 803, 1546,
-            2633, 3246, 3870, 4428, 5223, 5878, 6459, 6981, 7579, 8212],
+            2633, 3246, 3870, 4428, 5223, 5878, 6459, 6981, 7579, 8212, 
+            8928],
             lineTension: 0
         }]
     },
