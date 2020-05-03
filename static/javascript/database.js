@@ -49,7 +49,6 @@ $(document).ready(function() {
             { "data": "CaseCode" },
             { "data": "Age" },
             { "data": "Sex" },
-            { "data": "Admitted" },
             { "data": "HealthStatus" },
             { "data": "CityMunRes" },
             { "data": "ProvRes" },
