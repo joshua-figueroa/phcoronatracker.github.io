@@ -19,22 +19,6 @@ $(document).ready(function() {
             "url": "https://phcoronatracker.com/static/JSON/database.json",
             "dataSrc": function(data) {
                 for(var i = 0; i < data.length; i++) {
-                    if(data[i].Admitted == "Yes") {
-                        if(data[i].RemovalType == "") {
-                            data[i].Admitted = "Admitted";
-                        }
-                        else {
-                            data[i].Admitted = data[i].RemovalType;
-                        }
-                    } 
-                    else if(data[i].Admitted == "No" || data[i].Admitted == "") {
-                        if(data[i].RemovalType == "") {
-                            data[i].Admitted = "For Validation"
-                        }
-                        else {
-                            data[i].Admitted = data[i].RemovalType;
-                        }
-                    }
                     if(data[i].CityMunRes == "") {
                         data[i].CityMunRes = "For Validation";
                     }
@@ -49,7 +33,6 @@ $(document).ready(function() {
             { "data": "CaseCode" },
             { "data": "Age" },
             { "data": "Sex" },
-            { "data": "Admitted" },
             { "data": "HealthStatus" },
             { "data": "CityMunRes" },
             { "data": "ProvRes" },
