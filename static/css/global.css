@@ -203,8 +203,8 @@ tbody tr th {
 tr th:nth-child(1) {
     text-align: left;
     width: 18%;
-    position: sticky !important;
     position: -webkit-sticky !important;
+    position: sticky !important;
     left: 0px !important;
 }
 tr td:nth-child(2), tr td:nth-child(3) {
