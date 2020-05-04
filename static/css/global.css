@@ -186,7 +186,6 @@ thead {
 tbody > tr > th, thead > tr th:nth-child(1) {
     background-color: #6B7CB4;
     background-clip: padding-box;
-    border-bottom: 1px solid #223446;
 }
 .table > thead > tr > th, .table > tbody > tr > th {
     font-weight: normal;
