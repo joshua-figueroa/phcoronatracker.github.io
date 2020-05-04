@@ -218,6 +218,9 @@ tr td:nth-child(4) {
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
 }
+#container-ph table, #container-luzon table, #container-vimin table {
+    width: 110% !important;
+}
 #container-ncr table, #container-ofw table {
     width: 130% !important;
 }
