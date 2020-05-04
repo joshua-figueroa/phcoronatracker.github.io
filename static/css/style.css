@@ -218,9 +218,6 @@ tr td:nth-child(4) {
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
 }
-#container-ph table, #container-luzon table, #container-vimin table {
-    width: 110% !important;
-}
 #container-ncr table, #container-ofw table {
     width: 130% !important;
 }
@@ -233,6 +230,9 @@ caption a:hover {
         width: 108%;
         margin-left: -4% !important;
         margin-right: 4% !important;
+    }
+    #container-ph table, #container-luzon table, #container-vimin table {
+        width: 110% !important;
     }
 }
 
