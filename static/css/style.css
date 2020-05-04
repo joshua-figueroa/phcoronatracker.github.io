@@ -177,8 +177,8 @@ table {
 .table-header {
     width: 94%;
     height: 425px;
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
 }
 thead {
     background-color: #6B7CB4;
