@@ -209,7 +209,8 @@ table > tbody > tr > th {
     left: 0px !important;
 }
 table > thead > tr > th:nth-child(1) {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0px;
     left: 0px;
 }
