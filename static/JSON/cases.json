@@ -35,17 +35,17 @@
         "rec": 31,
         "center": {"lat": 14.4791, "lng": 120.8970}
     }, {
-        "name": "Bulacan",
-        "cases": 122,
-        "death": 15,
-        "rec": 18,
-        "center": {"lat": 14.8527, "lng": 120.8160}
-    }, {
         "name": "Davao del Sur",
         "cases": 127,
         "death": 19,
         "rec": 68,
         "center": {"lat": 7.199001, "lng": 125.454941}
+    }, {
+        "name": "Bulacan",
+        "cases": 122,
+        "death": 15,
+        "rec": 18,
+        "center": {"lat": 14.8527, "lng": 120.8160}
     }, {
         "name": "Batangas",
         "cases": 106,
