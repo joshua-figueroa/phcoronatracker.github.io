@@ -1,53 +1,53 @@
 [
     {
         "name": "Total",
-        "cases": 8250,
-        "death": 577,
-        "rec": 1243
+        "cases": 8454,
+        "death": 597,
+        "rec": 1329
     }, {
         "name": "Metro Manila",
-        "cases": 6420,
-        "death": 450,
-        "rec": 981
+        "cases": 6596,
+        "death": 468,
+        "rec": 1054
     }, {
         "name": "CAR",
         "cases": 42,
         "death": 1,
-        "rec": 18
+        "rec": 20
     }, {
         "name": "Region 1",
-        "cases": 63,
+        "cases": 64,
         "death": 12,
         "rec": 19
     }, {
         "name": "Region 2",
-        "cases": 34,
+        "cases": 35,
         "death": 1,
         "rec": 23
     }, {
         "name": "Region 3",
-        "cases": 383,
-        "death": 27,
-        "rec": 48
+        "cases": 389,
+        "death": 28,
+        "rec": 52
     }, {
         "name": "Region 4A",
-        "cases": 1230,
-        "death": 80,
-        "rec": 139
+        "cases": 1245,
+        "death": 81,
+        "rec": 145
     }, {
         "name": "Region 4B",
-        "cases": 24,
+        "cases": 28,
         "death": 2,
-        "rec": 8
+        "rec": 9
     }, {
         "name": "Region 5",
-        "cases": 54,
+        "cases": 55,
         "death": 4,
         "rec": 7
     }, {
         "name": "For Verification",
-        "cases": 973,
-        "death": 17,
-        "rec": 15
+        "cases": 1039,
+        "death": 16,
+        "rec": 18
     }
 ]
