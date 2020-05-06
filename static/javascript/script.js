@@ -12,10 +12,20 @@ $(document).ready(function() {
     $('#top').on('click', function() {
         $('html, body').animate({scrollTop: 0}, "fast");
     });
-    update('cases', 10004);
-    update('deaths', 658);
-    update('recover', 1506);
-    update('ofw', 1867);
+
+    $.ajax({
+        url: 'https://phcoronatracker.com/static/JSON/cases.json',
+        dataType: 'json',
+        success: function(data) {
+            update('cases', data[0].cases);
+            update('deaths', data[0].death);
+            update('recover', data[0].rec);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
+    
     function table(link, id) {
         $.ajax({
             url: link,
@@ -53,6 +63,7 @@ $(document).ready(function() {
         url: 'https://phcoronatracker.com/static/JSON/ofw.json',
         dataType: 'json',
         success: function(data) {
+            update('ofw', data[0].cases);
             for(var i = 0; i < data.length; i++) {
                 var row = $('<tr><th scope="row">' + data[i].name + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].death.toLocaleString() +'</td><td>' + data[i].rec.toLocaleString() + '</td><td>' + data[i].active.toLocaleString() + '</td></tr>');
                 $('#ofw_body').append(row);
