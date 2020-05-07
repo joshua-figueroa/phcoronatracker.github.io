@@ -1,5 +1,4 @@
 var ctx = document.getElementById('death_rec').getContext('2d');
-var ctx_1 = document.getElementById('cases').getContext('2d');
 var labels = ['Jan 30', 'Feb 2', 'Feb 5', 'Feb 8', 'Feb 11', 'Feb 14', 'Feb 17', 'Feb 20', 'Feb 23', 'Feb 26', 'Feb 29',
 'Mar 3', 'Mar 6', 'Mar 9', 'Mar 12', 'Mar 15', 'Mar 18', 'Mar 21', 'Mar 24', 'Mar 27', 'Mar 30',
 'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29',
@@ -85,10 +84,26 @@ var chart = new Chart(ctx, {
                     color: "#BEBEBE"
                 }
             }]
+        },
+        annotation: {
+            annotations: [{
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "Mar 15",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "Luzon ECQ",
+                    enabled: true,
+                    position: "top"
+                }
+            }]
         }
     }
 });
-
+var ctx_1 = document.getElementById('cases').getContext('2d');
 var chart_1 = new Chart(ctx_1, {
     // The type of chart we want to create
     type: 'line',
@@ -168,7 +183,22 @@ var chart_1 = new Chart(ctx_1, {
                     color: "#BEBEBE"
                 }
             }]
+        },
+        annotation: {
+            annotations: [{
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "Mar 15",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "Luzon ECQ",
+                    enabled: true,
+                    position: "top"
+                }
+            }]
         }
-        
     }
 });
