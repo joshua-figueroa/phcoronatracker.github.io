@@ -6,33 +6,33 @@
         "rec": 1618
     }, {
         "name": "Metro Manila",
-        "cases": 6596,
-        "death": 468,
-        "rec": 1054,
+        "cases": 6709,
+        "death": 492,
+        "rec": 1153,
         "center": {"lat": 14.599512, "lng": 120.984222}
     }, {
         "name": "Cebu",
         "cases": 1162,
         "death": 15,
-        "rec": 26,
+        "rec": 27,
         "center": {"lat": 10.3157, "lng": 123.8854}
     }, {
         "name": "Rizal",
-        "cases": 392,
+        "cases": 391,
         "death": 33,
-        "rec": 58,
+        "rec": 61,
         "center": {"lat": 14.6037, "lng": 121.3084}
     }, {
         "name": "Laguna",
         "cases": 359,
-        "death": 7,
-        "rec": 28,
+        "death": 9,
+        "rec": 31,
         "center": {"lat": 14.2691, "lng": 121.4113}
     }, {
         "name": "Cavite",
         "cases": 283,
         "death": 22,
-        "rec": 33,
+        "rec": 36,
         "center": {"lat": 14.4791, "lng": 120.8970}
     }, {
         "name": "Davao del Sur",
@@ -50,13 +50,13 @@
         "name": "Batangas",
         "cases": 109,
         "death": 13,
-        "rec": 21,
+        "rec": 22,
         "center": {"lat": 13.7565, "lng": 121.0583}
     }, {
         "name": "Bataan",
         "cases": 81,
         "death": 2,
-        "rec": 7,
+        "rec": 8,
         "center": {"lat": 14.6417, "lng": 120.4818}
     }, {
         "name": "Pampanga",
@@ -66,9 +66,9 @@
         "center": {"lat": 15.0794, "lng": 120.6200}
     }, {
         "name": "Quezon",
-        "cases": 65,
+        "cases": 64,
         "death": 4,
-        "rec": 4,
+        "rec": 5,
         "center": {"lat": 13.9414, "lng": 121.6234}
     }, {
         "name": "Nueva Ecija",
@@ -78,7 +78,7 @@
         "center": {"lat": 15.5784, "lng": 121.1113}
     }, {
         "name": "Zamboanga del Sur",
-        "cases": 46,
+        "cases": 45,
         "death": 2,
         "rec": 4,
         "center": {"lat": 6.9214, "lng": 122.0790}
@@ -126,7 +126,7 @@
         "center": {"lat": 17.6132, "lng": 121.7270}
     }, {
         "name": "La Union",
-        "cases": 17,
+        "cases": 16,
         "death": 3,
         "rec": 9,
         "center": {"lat": 16.6159, "lng": 120.3209}
@@ -372,7 +372,7 @@
         "center": {"lat": 6.0474, "lng": 121.0090}
     }, {
         "name": "For Validation",
-        "cases": 20,
+        "cases": 9,
         "death": 0,
         "rec": 0
     }
