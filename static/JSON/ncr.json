@@ -4,19 +4,19 @@
         "cases": 6793,
         "death": 500,
         "rec": 1236,
-        "lgu": 5455
+        "lgu": 5587
     }, {
         "name": "Quezon City",
         "cases": 1497,
         "death": 121,
         "rec": 362,
-        "lgu": 1102
+        "lgu": 1156
     }, {
         "name": "Manila",
         "cases": 817,
         "death": 67,
         "rec": 164,
-        "lgu": 811
+        "lgu": 833
     }, {
         "name": "Parañaque",
         "cases": 501,
@@ -28,25 +28,25 @@
         "cases": 476,
         "death": 30,
         "rec": 132,
-        "lgu": 416
+        "lgu": 427
     }, {
         "name": "Mandaluyong",
         "cases": 442,
         "death": 33,
         "rec": 62,
-        "lgu": 435
+        "lgu": 454
     }, {
         "name": "Pasig",
         "cases": 311,
         "death": 45,
         "rec": 63,
-        "lgu": 376
+        "lgu": 381
     }, {
         "name": "Taguig",
         "cases": 287,
         "death": 12,
         "rec": 57,
-        "lgu": 274
+        "lgu": 275
     }, {
         "name": "San Juan",
         "cases": 244,
@@ -64,13 +64,13 @@
         "cases": 231,
         "death": 13,
         "rec": 27,
-        "lgu": 268
+        "lgu": 271
     }, {
         "name": "Las Piñas",
         "cases": 206,
         "death": 12,
         "rec": 46,
-        "lgu": 193
+        "lgu": 201
     }, {
         "name": "Muntinlupa",
         "cases": 178,
@@ -82,25 +82,25 @@
         "cases": 136,
         "death": 18,
         "rec": 40,
-        "lgu": 124
+        "lgu": 126
     }, {
         "name": "Valenzuela",
         "cases": 114,
         "death": 7,
         "rec": 17,
-        "lgu": 132
+        "lgu": 133
     }, {
         "name": "Malabon",
         "cases": 62,
         "death": 4,
         "rec": 7,
-        "lgu": 68
+        "lgu": 70
     }, {
         "name": "Navotas",
         "cases": 40,
         "death": 5,
         "rec": 2,
-        "lgu": 55
+        "lgu": 59
     }, {
         "name": "Pateros",
         "cases": 24,
