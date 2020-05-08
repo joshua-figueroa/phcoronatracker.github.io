@@ -6,9 +6,9 @@
         "rec": 1734
     }, {
         "name": "Metro Manila",
-        "cases": 6709,
-        "death": 492,
-        "rec": 1153,
+        "cases": 6793,
+        "death": 500,
+        "rec": 1236,
         "center": {"lat": 14.599512, "lng": 120.984222}
     }, {
         "name": "Cebu",
