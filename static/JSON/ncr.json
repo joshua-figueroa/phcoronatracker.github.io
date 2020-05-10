@@ -4,19 +4,19 @@
         "cases": 6993,
         "death": 521,
         "rec": 1384,
-        "lgu": 5587
+        "lgu": 5756
     }, {
         "name": "Quezon City",
         "cases": 1558,
         "death": 133,
         "rec": 395,
-        "lgu": 1156
+        "lgu": 1168
     }, {
         "name": "Manila",
         "cases": 811,
         "death": 67,
         "rec": 179,
-        "lgu": 833
+        "lgu": 876
     }, {
         "name": "Parañaque",
         "cases": 500,
@@ -28,31 +28,31 @@
         "cases": 477,
         "death": 31,
         "rec": 142,
-        "lgu": 427
+        "lgu": 444
     }, {
         "name": "Mandaluyong",
         "cases": 446,
         "death": 33,
         "rec": 73,
-        "lgu": 454
+        "lgu": 466
     }, {
         "name": "Pasig",
         "cases": 324,
         "death": 46,
         "rec": 67,
-        "lgu": 381
+        "lgu": 402
     }, {
         "name": "Taguig",
         "cases": 287,
         "death": 12,
         "rec": 64,
-        "lgu": 275
+        "lgu": 280
     }, {
         "name": "San Juan",
         "cases": 246,
         "death": 35,
         "rec": 77,
-        "lgu": 259
+        "lgu": 268
     }, {
         "name": "Caloocan",
         "cases": 252,
@@ -64,19 +64,19 @@
         "cases": 232,
         "death": 14,
         "rec": 30,
-        "lgu": 271
+        "lgu": 295
     }, {
         "name": "Las Piñas",
         "cases": 206,
         "death": 12,
         "rec": 50,
-        "lgu": 201
+        "lgu": 207
     }, {
         "name": "Muntinlupa",
         "cases": 179,
         "death": 24,
         "rec": 37,
-        "lgu": 174
+        "lgu": 179
     }, {
         "name": "Marikina",
         "cases": 140,
@@ -88,7 +88,7 @@
         "cases": 121,
         "death": 7,
         "rec": 23,
-        "lgu": 133
+        "lgu": 141
     }, {
         "name": "Malabon",
         "cases": 63,
@@ -100,13 +100,13 @@
         "cases": 43,
         "death": 5,
         "rec": 4,
-        "lgu": 59
+        "lgu": 64
     }, {
         "name": "Pateros",
         "cases": 25,
         "death": 2,
         "rec": 9,
-        "lgu": 23
+        "lgu": 25
     }, {
         "name": "For Verification",
         "cases": 1083,
