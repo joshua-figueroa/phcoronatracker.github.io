@@ -54,8 +54,8 @@ $(document).ready(function() {
             update('fatality', x.toFixed(2) + '%');
             update('recovery', y.toFixed(2) + '%');
         },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        error: function() {
+            alert('Error: Server is under maintenance at the moment. Please try again later.');
         }
     });
     
@@ -69,9 +69,6 @@ $(document).ready(function() {
                 var row = $('<tr><th scope="row"><img src="' + flag[i] + '">&nbsp;&nbsp;' + data[i].country + '&nbsp;(' + data[i].countryInfo['iso2'] + ')' + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].todayCases.toLocaleString() +'</td><td>' + data[i].deaths.toLocaleString() + '</td><td>' + data[i].todayDeaths.toLocaleString() +'</td><td>' + data[i].recovered.toLocaleString() +'</td><td>' + data[i].active.toLocaleString() + '</td><td>' + data[i].testsPerOneMillion.toLocaleString() + '</td></tr>');
                 $('#global_body').append(row);
             }
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -111,9 +108,6 @@ $(document).ready(function() {
             update('sea-tests', Math.round(tests / num.length));
             update('sea-fatality', a.toFixed(2) + '%');
             update('sea-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -150,9 +144,6 @@ $(document).ready(function() {
             update('asia-tests', Math.round(tests / num.length));
             update('asia-fatality', a.toFixed(2) + '%');
             update('asia-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -189,9 +180,6 @@ $(document).ready(function() {
             update('euro-tests', Math.round(tests / num.length));
             update('euro-fatality', a.toFixed(2) + '%');
             update('euro-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -228,9 +216,6 @@ $(document).ready(function() {
             update('na-tests', Math.round(tests / num.length));
             update('na-fatality', a.toFixed(2) + '%');
             update('na-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -267,9 +252,6 @@ $(document).ready(function() {
             update('sa-tests', Math.round(tests / num.length));
             update('sa-fatality', a.toFixed(2) + '%');
             update('sa-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -306,9 +288,6 @@ $(document).ready(function() {
             update('afr-tests', Math.round(tests / num.length));
             update('afr-fatality', a.toFixed(2) + '%');
             update('afr-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 
@@ -345,9 +324,6 @@ $(document).ready(function() {
             update('au-tests', Math.round(tests / num.length));
             update('au-fatality', a.toFixed(2) + '%');
             update('au-recovery', b.toFixed(2) + '%');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
         }
     });
 });
