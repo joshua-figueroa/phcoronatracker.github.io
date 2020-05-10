@@ -6,13 +6,13 @@
         "rec": 1842
     }, {
         "name": "Metro Manila",
-        "cases": 6916,
-        "death": 506,
-        "rec": 1316,
+        "cases": 6993,
+        "death": 521,
+        "rec": 1384,
         "center": {"lat": 14.599512, "lng": 120.984222}
     }, {
         "name": "Cebu",
-        "cases": 1401,
+        "cases": 1475,
         "death": 15,
         "rec": 27,
         "center": {"lat": 10.3157, "lng": 123.8854}
@@ -20,19 +20,19 @@
         "name": "Rizal",
         "cases": 397,
         "death": 35,
-        "rec": 69,
+        "rec": 70,
         "center": {"lat": 14.6037, "lng": 121.3084}
     }, {
         "name": "Laguna",
-        "cases": 362,
+        "cases": 363,
         "death": 9,
-        "rec": 36,
+        "rec": 38,
         "center": {"lat": 14.2691, "lng": 121.4113}
     }, {
         "name": "Cavite",
-        "cases": 290,
+        "cases": 291,
         "death": 25,
-        "rec": 43,
+        "rec": 45,
         "center": {"lat": 14.4791, "lng": 120.8970}
     }, {
         "name": "Davao del Sur",
@@ -42,15 +42,15 @@
         "center": {"lat": 7.199001, "lng": 125.454941}
     }, {
         "name": "Bulacan",
-        "cases": 127,
+        "cases": 128,
         "death": 17,
-        "rec": 20,
+        "rec": 22,
         "center": {"lat": 14.8527, "lng": 120.8160}
     }, {
         "name": "Batangas",
         "cases": 107,
         "death": 13,
-        "rec": 28,
+        "rec": 32,
         "center": {"lat": 13.7565, "lng": 121.0583}
     }, {
         "name": "Bataan",
@@ -116,7 +116,7 @@
         "name": "Zambales",
         "cases": 27,
         "death": 2,
-        "rec": 3,
+        "rec": 5,
         "center": {"lat": 15.5082, "lng": 119.9698}
     }, {
         "name": "Negros Occidental",
@@ -136,6 +136,12 @@
         "death": 3,
         "rec": 9,
         "center": {"lat": 16.6159, "lng": 120.3209}
+    }, {
+        "name": "Samar",
+        "cases": 15,
+        "death": 0,
+        "rec": 3,
+        "center": {"lat": 11.5795, "lng": 124.9748}
     }, {
         "name": "Antique",
         "cases": 14,
@@ -160,12 +166,6 @@
         "death": 1,
         "rec": 3,
         "center": {"lat": 13.0565, "lng": 121.4069}
-    }, {
-        "name": "Samar",
-        "cases": 11,
-        "death": 0,
-        "rec": 2,
-        "center": {"lat": 11.5795, "lng": 124.9748}
     }, {
         "name": "Isabela",
         "cases": 9,
