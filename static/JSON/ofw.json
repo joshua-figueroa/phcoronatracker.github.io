@@ -3,8 +3,8 @@
         "name": "Total",
         "cases": 2178,
         "death": 253,
-        "rec": 640,
-        "active": 1285
+        "rec": 642,
+        "active": 1283
     }, {
         "name": "Asia Pacific",
         "cases": 388,
@@ -21,8 +21,8 @@
         "name": "Europe",
         "cases": 651,
         "death": 78,
-        "rec": 159,
-        "active": 414
+        "rec": 161,
+        "active": 412
     }, {
         "name": "Americas",
         "cases": 523,
