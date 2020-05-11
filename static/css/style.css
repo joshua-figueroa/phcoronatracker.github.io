@@ -224,8 +224,8 @@ tr td:nth-child(4) {
 caption a:hover {
     text-decoration: none;
 }
-#myModal {
-    z-index: 99999;
+#myModal, .modal {
+    z-index: 10000 !important;
 }
 
 @media (max-width: 575px) {
