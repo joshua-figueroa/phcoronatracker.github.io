@@ -18,8 +18,25 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
             update('cases', data[0].cases);
+            update('cases-ph', data[0].cases);
             update('deaths', data[0].death);
+            update('death-ph', data[0].death);
             update('recover', data[0].rec);
+            update('rec-ph', data[0].rec);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
+
+    $.ajax({
+        url: 'https://phcoronatracker.com/static/JSON/mapdata.json',
+        dataType: 'json',
+        success: function(data) {
+            for(var i = 0; i < 60; i++) {
+                var row = $('<tr><th scope="row">' + data.features[i].properties.NAME_1 + '</th><td>' + data.features[i].properties.cases.toLocaleString() + '</td><td>' + data.features[i].properties.death.toLocaleString() +'</td><td>' + data.features[i].properties.rec.toLocaleString() + '</td></tr>');
+                $('#ph_body').append(row);
+            }
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert('Error: ' + textStatus + ' - ' + errorThrown);
@@ -41,7 +58,6 @@ $(document).ready(function() {
             }
         });
     }
-    table('https://phcoronatracker.com/static/JSON/cases.json', '#ph_body');
     table('https://phcoronatracker.com/static/JSON/luzon.json', '#luzon_body');
     table('https://phcoronatracker.com/static/JSON/vimin.json', '#vimin_body');
 
