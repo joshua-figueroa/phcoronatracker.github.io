@@ -1,8 +1,11 @@
 var ctx = document.getElementById('death_rec').getContext('2d');
+var ctx_1 = document.getElementById('cases').getContext('2d');
+
 var labels = ['Jan 30', 'Feb 2', 'Feb 5', 'Feb 8', 'Feb 11', 'Feb 14', 'Feb 17', 'Feb 20', 'Feb 23', 'Feb 26', 'Feb 29',
 'Mar 3', 'Mar 6', 'Mar 9', 'Mar 12', 'Mar 15', 'Mar 18', 'Mar 21', 'Mar 24', 'Mar 27', 'Mar 30',
 'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29',
-'May 2', 'May 5', 'May 8'];
+'May 2', 'May 5', 'May 8', 'May 11'];
+
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
@@ -21,7 +24,7 @@ var chart = new Chart(ctx, {
             data: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
             1, 1, 1, 2, 11, 17, 19, 35, 54, 78,
             107, 152, 182, 247, 335, 287, 428, 462, 501, 558,
-            603, 637, 696],
+            603, 637, 696, 726],
             lineTension: 0
         },{
             label: 'Total Recoveries',
@@ -35,7 +38,7 @@ var chart = new Chart(ctx, {
                 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 
                 1, 1, 1, 2, 2, 5, 13, 20, 31, 42,
                 51, 64, 96, 157, 295, 487, 613, 722, 862, 1023,
-                1124, 1408, 1734],
+                1124, 1408, 1734, 1999],
             lineTension: 0
         }]
     },
@@ -103,7 +106,7 @@ var chart = new Chart(ctx, {
         }
     }
 });
-var ctx_1 = document.getElementById('cases').getContext('2d');
+
 var chart_1 = new Chart(ctx_1, {
     // The type of chart we want to create
     type: 'line',
@@ -122,7 +125,7 @@ var chart_1 = new Chart(ctx_1, {
             data: [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 
             3, 5, 20, 52, 140, 202, 307, 552, 803, 1546,
             2633, 3246, 3870, 4428, 5223, 5878, 6459, 6981, 7579, 8212, 
-            8928, 9684, 10463],
+            8928, 9684, 10463, 11086],
             lineTension: 0
         },{
             label: 'Active Cases',
@@ -135,7 +138,7 @@ var chart_1 = new Chart(ctx_1, {
             data: [1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 
             1, 3, 18, 48, 127, 180, 275, 497, 718, 1426, 
             2475, 3030, 3592, 4024, 4593, 5104, 5418, 5797, 6216, 6631,
-            7201, 7639, 8033],
+            7201, 7639, 8033, 8361],
             lineTension: 0
         }]
     },
@@ -154,7 +157,7 @@ var chart_1 = new Chart(ctx_1, {
                 type: 'logarithmic',
                 ticks: {
                     min: 1,
-                    max: 10000,
+                    max: 100000,
                     fontColor: '#333333',
                     callback: function (value, index, values) {
                         return Number(value.toString());//pass tick values as a string into Number function
@@ -167,6 +170,7 @@ var chart_1 = new Chart(ctx_1, {
                     chartObj.ticks.push(100);
                     chartObj.ticks.push(1000);
                     chartObj.ticks.push(10000);
+                    chartObj.ticks.push(100000);
                 },
                 gridLines: {
                     display: true,
