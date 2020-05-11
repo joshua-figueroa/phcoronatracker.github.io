@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, "fast");
     });
     
-    $('#vaccine_container').CanvasJSCharxt({
+    $('#vaccine_container').CanvasJSChart({
         animationEnabled: true,
         zoomEnabled: true,
         backgroundColor: "#F5F5F5",
