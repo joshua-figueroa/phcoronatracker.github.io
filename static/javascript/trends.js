@@ -7,6 +7,8 @@ var labels = ['Jan 30', 'Feb 2', 'Feb 5', 'Feb 8', 'Feb 11', 'Feb 14', 'Feb 17',
 'May 2', 'May 5', 'May 8', 'May 11'];
 
 var chart = new Chart(ctx, {
+    animationEnabled: true,
+	zoomEnabled: true,
     // The type of chart we want to create
     type: 'line',
 
@@ -108,6 +110,8 @@ var chart = new Chart(ctx, {
 });
 
 var chart_1 = new Chart(ctx_1, {
+    animationEnabled: true,
+	zoomEnabled: true,
     // The type of chart we want to create
     type: 'line',
 
