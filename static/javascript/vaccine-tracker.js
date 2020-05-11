@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, "fast");
     });
     
-    $('#vaccine_container').CanvasJSChart({
+    $('#vaccine_container').CanvasJSCharxt({
         animationEnabled: true,
         zoomEnabled: true,
         backgroundColor: "#F5F5F5",
@@ -34,7 +34,7 @@ $(document).ready(function() {
                 { y: 13, name: "Replicating Viral Vector" },
                 { y: 7, name: "Inactive Viruses"},
                 { y: 2, name: "Live Attenuated Virus"},
-                { y: 15, name: "Unknown"}
+                { y: 10, name: "Unknown"}
             ]
         }]
     });
@@ -53,13 +53,13 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name} - {y}",
             dataPoints: [
-                { y: 57, name: "Antibodies", exploded: true },
-                { y: 24, name: "Antivirals" },
+                { y: 58, name: "Antibodies", exploded: true },
+                { y: 21, name: "Antivirals" },
                 { y: 15, name: "Cell-Based Therapies" },
                 { y: 6, name: "RNA-Based" },
-                { y: 2, name: "Discontinued" },
-                { y: 6, name: "Devices" },
-                { y: 77, name: "Others"},
+                { y: 5, name: "Discontinued" },
+                { y: 7, name: "Devices" },
+                { y: 80, name: "Others"},
                 { y: 18, name: "For Validation"}
             ]
         }]
