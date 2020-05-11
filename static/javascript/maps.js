@@ -1,3 +1,5 @@
+let legend = document.getElementById('legend-container');
+
 function initMap() {
     // Styles a map in night mode.
     var location = {lat: 12.879721, lng: 121.774017};
@@ -7,12 +9,12 @@ function initMap() {
         mapTypeId: 'terrain',
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'},{visibility: "off"}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'},{visibility: "off"}]},
             {
             featureType: 'administrative.locality',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#d59563'}]
+            stylers: [{color: '#d59563'},{visibility: "off"}]
             },
             {
             featureType: 'poi',
@@ -84,38 +86,59 @@ function initMap() {
             elementType: 'labels.text.stroke',
             stylers: [{color: '#17263c'}]
             }
-        ]
+        ],
+        mapTypeControl: false
     });
-    $.ajax({
-        url: 'https://phcoronatracker.com/static/JSON/cases.json',
-        dataType: 'json',
-        success: function(data) {
-            for(var i = 1; i < data.length-1; i++) {
-                var cityCircle = new google.maps.Circle({
-                    strokeColor: '#FF0000',
-                    strokeOpacity: 0.8,
-                    strokeWeight: 2,
-                    fillColor: '#FF0000',
-                    fillOpacity: 0.35,
-                    map: map,
-                    center: data[i].center,
-                    radius: Math.sqrt(data[i].cases) * 2000,
-                    content: '<h6>' + data[i].name + '</h6><span>Cases - ' + data[i].cases + '</span><br><span>Deaths - ' + data[i].death + '</span><br><span>Recoveries - ' + data[i].rec + '</span>'
-                });
-                
-                var infoWindow = new google.maps.InfoWindow();
-                google.maps.event.addListener(cityCircle, 'mouseover', function(e) {
-                    infoWindow.setContent(this.content);
-                    infoWindow.setPosition(this.getCenter());
-                    infoWindow.open(map);
-                });
-                google.maps.event.addDomListener(cityCircle, 'mouseout', function(e) {
-                    infoWindow.close();
-                });
-            }
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
+    
+    var infoWindow = new google.maps.InfoWindow();
+
+    map.data.loadGeoJson('https://phcoronatracker.com/static/JSON/mapdata.json');  
+    map.data.setStyle(function(feature) {
+        var cases = feature.getProperty('cases');
+        var color = 'green'
+        if(cases > 0 && cases <= 10) {
+            color = 'yellowgreen';
+        } else if(cases > 10 && cases <= 50) {
+            color = '#EEEE03'
+        } else if(cases > 51 && cases <= 100) {
+            color = 'orange'
+        } else if(cases > 100 && cases <= 250) {
+            color = 'orangered'
+        } else if(cases > 250 && cases <= 500) {
+            color = 'red'
+        } else if(cases > 500 && cases <= 1000) {
+            color = '#C21A84'
+        } else if(cases > 1000) {
+            color = 'purple'
+        }
+        return {
+            strokeColor: 'white',
+            strokeWeight: 0.5,
+            strokeOpacity: 1,
+            fillColor: color,
+            fillOpacity: 1
         }
     });
+    map.data.addListener('mouseover', function(event) {
+        var feature = event.feature, cases = feature.getProperty('cases'), death = feature.getProperty('death'), rec = feature.getProperty('rec');
+        if(cases == undefined) {
+            cases = 0;
+            death = 0;
+            rec = 0;
+        }
+        var text = '<h6>' + feature.getProperty('NAME_1') + '</h6><span>Cases - ' + cases + '</span><br><span>Deaths - ' + death + '</span><br><span>Recoveries - ' + rec + '</span>';
+        map.data.revertStyle();
+        map.data.overrideStyle(feature, {strokeWeight: 2.5});
+        infoWindow.setContent(text);
+        infoWindow.setPosition(event.latLng);
+        infoWindow.open(map);
+    });
+    map.data.addListener('mouseout', function(event) {
+        map.data.revertStyle();
+        infoWindow.close();
+    });
+    
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(legend);
+
+    google.maps.event.addDomListener(window, "load", initMap);
 }
