@@ -225,7 +225,7 @@ caption a:hover {
     text-decoration: none;
 }
 #myModal, .modal {
-    z-index: 10000 !important;
+    z-index: 100000 !important;
 }
 
 @media (max-width: 575px) {
