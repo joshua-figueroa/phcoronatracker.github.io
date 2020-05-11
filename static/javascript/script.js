@@ -17,6 +17,7 @@ $(document).ready(function() {
         url: 'https://phcoronatracker.com/static/JSON/cases.json',
         dataType: 'json',
         success: function(data) {
+            update('name-ph', data[0].name);
             update('cases', data[0].cases);
             update('cases-ph', data[0].cases);
             update('deaths', data[0].death);
