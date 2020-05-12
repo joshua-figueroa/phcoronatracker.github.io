@@ -6,76 +6,83 @@
     <link>https://phcoronatracker.com</link>
     <description />
     <item>
-      <guid>https://phcoronatracker.com/</guid>
+      <guid>https://phcoronatracker.com</guid>
       <title />
-      <link>https://phcoronatracker.com/</link>
+      <link>https://phcoronatracker.com</link>
       <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
-    </item>
-    <item>
-      <guid>https://phcoronatracker.com/vaccine-tracker</guid>
-      <title>Vaccine Tracker</title>
-      <link>https://phcoronatracker.com/vaccine-tracker</link>
-      <description>Latest updates about potential COVID-19 Vaccines and Treatments in Research Pipeline.</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
-    </item>
-    <item>
-      <guid>https://phcoronatracker.com/maps</guid>
-      <title>Maps</title>
-      <link>https://phcoronatracker.com/maps</link>
-      <description>A hoverable Philippine map with a tally of total cases within the area.</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
-    </item>
-    <item>
-      <guid>https://phcoronatracker.com/</guid>
-      <title />
-      <link>https://phcoronatracker.com/</link>
-      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
-    </item>
-    <item>
-      <guid>https://phcoronatracker.com/news</guid>
-      <title>News Feed</title>
-      <link>https://phcoronatracker.com/news</link>
-      <description>Live news updates about COVID-19 in the Philippines, powered by Google News.</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
     </item>
     <item>
       <guid>https://phcoronatracker.com/about</guid>
-      <title>About</title>
+      <title>&amp;nbsp;About</title>
       <link>https://phcoronatracker.com/about</link>
       <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/news</guid>
+      <title>PH Coronavirus Tracker</title>
+      <link>https://phcoronatracker.com/news</link>
+      <description>Live news updates about COVID-19 in the Philippines, powered by Google News.</description>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/global</guid>
+      <title />
+      <link>https://phcoronatracker.com/global</link>
+      <description>Learn about the latest and real-time COVID-19 updates worldwide.</description>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/vaccine-tracker</guid>
+      <title>PH Coronavirus Tracker</title>
+      <link>https://phcoronatracker.com/vaccine-tracker</link>
+      <description>Latest updates about potential COVID-19 Vaccines and Treatments in Research Pipeline.</description>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
     </item>
     <item>
       <guid>https://phcoronatracker.com/trends</guid>
-      <title>Trends</title>
+      <title>PH Coronavirus Tracker</title>
       <link>https://phcoronatracker.com/trends</link>
       <description>Dynamic Charts that show the series of cases, fatalities, and recoveries in the Philippines.</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/ph-map</guid>
+      <title>PH Coronavirus Tracker</title>
+      <link>https://phcoronatracker.com/ph-map</link>
+      <description>An interactive NCR map with a tally of total cases within the area.</description>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
+    </item>
+    <item>
+      <guid>https://phcoronatracker.com/</guid>
+      <title />
+      <link>https://phcoronatracker.com/</link>
+      <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
     </item>
     <item>
       <guid>https://phcoronatracker.com/database</guid>
-      <title>Patients Database</title>
+      <title>PH Coronavirus Tracker</title>
       <link>https://phcoronatracker.com/database</link>
       <description>The latest records of COVID-19 Patients in the Philippines sourced from DOH Data Drop.</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
     </item>
     <item>
       <guid>https://phcoronatracker.com/index.html</guid>
       <title />
       <link>https://phcoronatracker.com/index.html</link>
       <description>Tracks the latest information about the COVID-19 Pandemic in the Philippines</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
     </item>
     <item>
-      <guid>https://phcoronatracker.com/global</guid>
-      <title>Global Stats</title>
-      <link>https://phcoronatracker.com/global</link>
-      <description>Learn about the latest and real-time COVID-19 updates worldwide.</description>
-      <pubDate>Sun, 26 Apr 2020 08:18:00 Z</pubDate>
+      <guid>https://phcoronatracker.com/ncr-map</guid>
+      <title>PH Coronavirus Tracker</title>
+      <link>https://phcoronatracker.com/ncr-map</link>
+      <description>An interactive local map with a tally of total cases within the area.</description>
+      <pubDate>Tue, 12 May 2020 06:27:00 Z</pubDate>
     </item>
   </channel>
 </rss>
-<!--<guid value="de115497-170f-4d36-9933-eba2828b077b" />-->
+<!--<guid value="f31e2445-c9ca-4b35-bd97-4abb8945d3ea" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
