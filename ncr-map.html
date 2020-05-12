@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PH Coronavirus Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A hoverable Philippine map with a tally of total cases within the area.">
+    <meta name="keywords" content="covid update, ph corona, ph covid update, corona update, covid, covid19, covid-19, ncov, ncov19, ncov-19, covid philippines, ncov philippines, corona virus, coronavirus philippines, phcoronatracker">
+    <meta name="author" content="Joshua Figueroa">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phcoronatracker.com/maps">
+    <meta property="og:title" content="PH Coronavirus Tracker - Maps">
+    <meta property="og:description" content="A hoverable Philippine map with a tally of total cases within the area.">
+    <meta property="og:image" content="https://phcoronatracker.com/static/images/thumbnail.png">
+    <meta http-equiv="refresh" content="600">
+    <meta name="HandheldFriendly" content="true">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/50e259828d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/maps.css">
+    <link rel="icon" href="static/images/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar d-none d-md-block my-auto" style="background-color: #55D6AA;">
+        <div contenteditable="false" class="navbar-brand text-large my-auto">
+            <img src="static/images/icon.png" alt="Icon" id="icon">
+            <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row min-vh-100 flex-column flex-md-row"> 
+            <aside class="col-12 col-md-3 col-lg-2 p-0 flex-shrink-1 bg-random sticky-top">
+                <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-start py-2 my-auto">
+                    <a class="navbar-brand text-large d-block d-md-none" href="#">
+                        <img src="static/images/icon.png" alt="Icon" id="icon">
+                        <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+                    </a>
+                    <button class="btn btn-outline-secondary navbar-toggler my-auto pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color: #55D6AA;">
+                        <img src="static/images/menu.png" alt="menu" id="menu"></button>
+                    <div class="collapse navbar-collapse list" id="collapsibleNavbar">
+                        <ul class="flex-md-column flex-xs-row navbar-nav w-100 justify-content-between">
+                            <li class="nav-item"><i class="fas fa-home"></i><a href="https://phcoronatracker.com">&nbsp; Home</a></li>
+                            <li class="nav-item"><i class="fas fa-globe"></i><a href="global">&nbsp; Global Stats</a></li> 
+                            <li class="nav-item"><i class="fas fa-server"></i><a href="database">&nbsp; Patients Database</a></li>
+                            <li class="nav-item dropdown" id="active">
+                                <div class="row">&nbsp;&nbsp;&nbsp;
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <a class="dropdown-toggle" href="ph-map" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; Maps</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item text-dark" href="ph-map">PH Map</a>
+                                        <a class="dropdown-item text-dark active" href="ncr-map">NCR Map</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><i class="fas fa-chart-line"></i><a href="trends">&nbsp; Trends</a></li>
+                            <li class="nav-item"><i class="fas fa-syringe"></i><a href="vaccine-tracker">&nbsp; Vaccine Tracker</a></li>
+                            <li class="nav-item"><i class="fas fa-rss"></i><a href="news">&nbsp; News</a></li>
+                            <li class="nav-item"><i class="fas fa-address-card"></i><a href="about">&nbsp; About</a></li>
+                            <li class="nav-item"><i class="fas fa-coffee"></i><a href="https://ko-fi.com/X8X61KLM4" target="_blank">&nbsp; Support me on Ko-fi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            
+            <main class="col py-3 flex-grow-1 text-black" style="background-color: #223446;">
+                <div id="legend-container">
+                    <h5 class="text-dark d-none d-md-block">Number of Cases</h5>
+                    <h6 class="text-dark d-block d-md-none" id="legend">Number of Cases</h6>
+                    <span class="d-none d-xl-block">Hover over a city for details</span>
+                    <span class="d-none d-md-block d-xl-none">Click on a city for details</span>
+                    <hr style="background-color: #888888" class="d-none d-md-block">
+                    <div class="row no-gutters">
+                        <div class="col legend-box">
+                            <h6><i class="fas fa-circle" style="color: green;"></i>&nbsp;0</h6>
+                            <h6><i class="fas fa-circle" style="color: yellowgreen;"></i>&nbsp;1-10</h6>
+                            <h6><i class="fas fa-circle" style="color: #EEEE03;"></i>&nbsp;11-50</h6>
+                            <h6><i class="fas fa-circle" style="color: orange;"></i>&nbsp;51-100</h6>
+                        </div>
+                        <div class="col legend-box">
+                            <h6><i class="fas fa-circle" style="color: orangered;"></i>&nbsp;101-250</h6>
+                            <h6><i class="fas fa-circle" style="color: red;"></i>&nbsp;251-500</h6>
+                            <h6><i class="fas fa-circle" style="color: #c21a84;"></i>&nbsp;500-1000</h6>
+                            <h6><i class="fas fa-circle" style="color: purple;"></i>&nbsp;1000+</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="map"></div>
+            </main>
+        </div>
+    </div>
+    <script>
+        if (screen && screen.width > 768) {
+            document.write('<script type="text/javascript" src="static/javascript/ncr-map.js"><\/script>');
+        }
+    </script>
+    <script>
+        if (screen && screen.width < 768) {
+            document.write('<script type="text/javascript" src="static/javascript/ncr-map-mobile.js"><\/script>');
+        }
+    </script>
+    <script src=""></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnVNvRiHMvt75GBbOauEBcVxnzpB47iDQ&callback=initMap&region=PH"></script>
+    <noscript>Your browser does not support JavaScript. Consider opening it with Google Chrome or Mozilla Firefox.</noscript>
+</body>
+</html>
