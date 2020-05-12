@@ -119,6 +119,12 @@ main a:hover {
     width: 100%;
     font-size: 3.7vw;
 }
+.dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+}
+.show .dropdown .dropdown-toggle::after {
+   transform: translateY(3px);
+}
 
 @media (max-width: 330px) {
     h4 {
