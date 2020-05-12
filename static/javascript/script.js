@@ -18,12 +18,17 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
             update('name-ph', data[0].name);
+            update('name-ncr', data[1].name);
             update('cases', data[0].cases);
             update('cases-ph', data[0].cases);
+            update('cases-ncr', data[1].cases);
             update('deaths', data[0].death);
             update('death-ph', data[0].death);
+            update('death-ncr', data[1].death);
             update('recover', data[0].rec);
             update('rec-ph', data[0].rec);
+            update('rec-ncr', data[1].rec);
+            update('lgu-ncr', data[1].lgu);
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert('Error: ' + textStatus + ' - ' + errorThrown);
@@ -41,6 +46,17 @@ $(document).ready(function() {
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert('Error: ' + textStatus + ' - ' + errorThrown);
+        }
+    });
+
+    $.ajax({
+        url: 'https://phcoronatracker.com/static/JSON/ncr_mapdata.json',
+        dataType: 'json',
+        success: function(data) {
+            for(var i = 0; i < 17; i++) {
+                var row = $('<tr><th scope="row">' + data.features[i].properties.NAME_2 + '</th><td>' + data.features[i].properties.cases.toLocaleString() + '</td><td>' + data.features[i].properties.death.toLocaleString() +'</td><td>' + data.features[i].properties.rec.toLocaleString() + '</td><td>' + data.features[i].properties.lgu.toLocaleString() + '</td></tr>');
+                $('#ncr_body').append(row);
+            }
         }
     });
     
@@ -61,20 +77,6 @@ $(document).ready(function() {
     }
     table('https://phcoronatracker.com/static/JSON/luzon.json', '#luzon_body');
     table('https://phcoronatracker.com/static/JSON/vimin.json', '#vimin_body');
-
-    $.ajax({
-        url: 'https://phcoronatracker.com/static/JSON/ncr.json',
-        dataType: 'json',
-        success: function(data) {
-            for(var i = 0; i < data.length; i++) {
-                var row = $('<tr><th scope="row">' + data[i].name + '</th><td>' + data[i].cases.toLocaleString() + '</td><td>' + data[i].death.toLocaleString() +'</td><td>' + data[i].rec.toLocaleString() + '</td><td>' + data[i].lgu.toLocaleString() + '</td></tr>');
-                $('#ncr_body').append(row);
-            }
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error: ' + textStatus + ' - ' + errorThrown);
-        }
-    });
 
     $.ajax({
         url: 'https://phcoronatracker.com/static/JSON/ofw.json',
