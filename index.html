@@ -53,7 +53,8 @@
             </div>
             <div class="modal-body">
                 <ul>
-                    <li>Color-coded Maps&nbsp;<a href="maps"><i class="fas fa-external-link-alt text-dark"></i></a></li>
+                    <li>Color-coded Maps&nbsp;<a href="ph-map"><i class="fas fa-external-link-alt text-dark"></i></a></li>
+                    <li>NCR Map&nbsp;<a href="ncr-map"><i class="fas fa-external-link-alt text-dark"></i></a></li>
                 </ul>
             </div>
             <div class="modal-footer">
@@ -85,7 +86,16 @@
                             <li class="nav-item" id="active"><i class="fas fa-home"></i><a href="https://phcoronatracker.com">&nbsp; Home</a></li>
                             <li class="nav-item"><i class="fas fa-globe"></i><a href="global">&nbsp; Global Stats</a></li> 
                             <li class="nav-item"><i class="fas fa-server"></i><a href="database">&nbsp; Patients Database</a></li>
-                            <li class="nav-item"><i class="fas fa-map-marked-alt"></i><a href="maps">&nbsp; Maps</a></li>
+                            <li class="nav-item dropdown">
+                                <div class="row">&nbsp;&nbsp;&nbsp;
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <a class="dropdown-toggle" href="ph-map" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; Maps</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item text-dark" href="ph-map">PH Map</a>
+                                        <a class="dropdown-item text-dark" href="ncr-map">NCR Map</a>
+                                    </div>
+                                </div>
+                            </li>                            
                             <li class="nav-item"><i class="fas fa-chart-line"></i><a href="trends">&nbsp; Trends</a></li>
                             <li class="nav-item"><i class="fas fa-syringe"></i><a href="vaccine-tracker">&nbsp; Vaccine Tracker</a></li>
                             <li class="nav-item"><i class="fas fa-rss"></i><a href="news">&nbsp; News</a></li>
