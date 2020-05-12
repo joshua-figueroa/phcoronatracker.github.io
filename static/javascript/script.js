@@ -34,7 +34,7 @@ $(document).ready(function() {
         url: 'https://phcoronatracker.com/static/JSON/mapdata.json',
         dataType: 'json',
         success: function(data) {
-            for(var i = 0; i < 63; i++) {
+            for(var i = 0; i < 62; i++) {
                 var row = $('<tr><th scope="row">' + data.features[i].properties.NAME_1 + '</th><td>' + data.features[i].properties.cases.toLocaleString() + '</td><td>' + data.features[i].properties.death.toLocaleString() +'</td><td>' + data.features[i].properties.rec.toLocaleString() + '</td></tr>');
                 $('#ph_body').append(row);
             }
