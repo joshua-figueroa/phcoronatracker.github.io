@@ -227,6 +227,12 @@ caption a:hover {
 #myModal, .modal {
     z-index: 100000 !important;
 }
+.dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+}
+.show .dropdown .dropdown-toggle::after {
+   transform: translateY(3px);
+}
 
 @media (max-width: 575px) {
     .container-data {
