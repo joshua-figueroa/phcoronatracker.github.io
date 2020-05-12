@@ -126,7 +126,7 @@ function initMap() {
             death = 0;
             rec = 0;
         }
-        var text = '<h6>' + feature.getProperty('NAME_1') + '</h6><span>Cases - ' + cases + '</span><br><span>Deaths - ' + death + '</span><br><span>Recoveries - ' + rec + '</span>';
+        var text = '<h6>' + feature.getProperty('NAME_1') + '</h6><span>Cases - ' + cases.toLocaleString() + '</span><br><span>Deaths - ' + death.toLocaleString() + '</span><br><span>Recoveries - ' + rec.toLocaleString() + '</span>';
         map.data.revertStyle();
         map.data.overrideStyle(feature, {strokeWeight: 2.5});
         infoWindow.setContent(text);
