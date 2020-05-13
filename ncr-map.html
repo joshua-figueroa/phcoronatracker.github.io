@@ -70,8 +70,16 @@
             
             <main class="col py-3 flex-grow-1 text-black" style="background-color: #223446;">
                 <div id="legend-container">
-                    <form class="mb-2">
+                    <form class="mb-2 d-none d-md-block">
                         <select class="form-control" id="filter" onchange="display(this)">
+                            <option value="cases">No. of Cases</option>
+                            <option value="death">No. of Deaths</option>
+                            <option value="rec">No. of Recoveries</option>
+                            <option value="active">No. of Active Cases</option>
+                        </select>
+                    </form>
+                    <form class="mb-2 d-block d-md-none">
+                        <select class="form-control form-control-sm" id="filter" onchange="display(this)">
                             <option value="cases">No. of Cases</option>
                             <option value="death">No. of Deaths</option>
                             <option value="rec">No. of Recoveries</option>
