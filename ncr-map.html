@@ -70,11 +70,16 @@
             
             <main class="col py-3 flex-grow-1 text-black" style="background-color: #223446;">
                 <div id="legend-container">
-                    <h5 class="text-dark d-none d-md-block">Number of Cases</h5>
-                    <h6 class="text-dark d-block d-md-none" id="legend">Number of Cases</h6>
+                    <form class="mb-2">
+                        <select class="form-control" id="filter" onchange="display(this)">
+                            <option value="cases">No. of Cases</option>
+                            <option value="death">No. of Deaths</option>
+                            <option value="rec">No. of Recoveries</option>
+                            <option value="active">No. of Active Cases</option>
+                        </select>
+                    </form>
                     <span class="d-none d-xl-block">Hover over a city for details</span>
-                    <span class="d-none d-md-block d-xl-none">Click on a city for details</span>
-                    <hr style="background-color: #888888" class="d-none d-md-block">
+                    <hr style="background-color: #888888" class="d-none d-xl-block">
                     <div class="row no-gutters">
                         <div class="col legend-box">
                             <h6><i class="fas fa-circle" style="color: green;"></i>&nbsp;0</h6>
@@ -95,7 +100,7 @@
         </div>
     </div>
     <script>
-        if (screen && screen.width > 768) {
+        if (screen && screen.width >= 768) {
             document.write('<script type="text/javascript" src="static/javascript/ncr-map.js"><\/script>');
         }
     </script>
