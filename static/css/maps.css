@@ -260,8 +260,9 @@ a {
     }   
     #legend-container {
         width: 210px;
+        height: 210px;
     }
-    span {
-        font-size: 10pt;
+    span #hover {
+        font-size: 10pt !important;
     }
 }
