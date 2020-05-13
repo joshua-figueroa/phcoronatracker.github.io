@@ -1,4 +1,6 @@
 let legend = document.getElementById('legend-container');
+let filter = document.getElementById('filter');
+var value = filter.options[filter.selectedIndex].value;
 
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
@@ -19,6 +21,11 @@ $dropdown.hover(
         $this.find($dropdownMenu).removeClass(showClass);
     }
 );
+
+function display(data) {
+    value = data.value;
+    initMap();
+}
 
 function initMap() {
     // Styles a map in night mode.
@@ -114,7 +121,10 @@ function initMap() {
 
     map.data.loadGeoJson('https://phcoronatracker.com/static/JSON/ncr_mapdata.json');  
     map.data.setStyle(function(feature) {
-        var cases = feature.getProperty('cases');
+        var cases = feature.getProperty(value);
+        if(value == "active") {
+            cases = feature.getProperty('cases') - feature.getProperty('death') - feature.getProperty('rec');
+        }
         var color = 'green'
         if(cases > 0 && cases <= 10) {
             color = 'yellowgreen';
@@ -141,12 +151,13 @@ function initMap() {
     });
     map.data.addListener('mouseover', function(event) {
         var feature = event.feature, cases = feature.getProperty('cases'), death = feature.getProperty('death'), rec = feature.getProperty('rec');
+        var active = cases - death - rec;
         if(cases == undefined) {
             cases = 0;
             death = 0;
             rec = 0;
         }
-        var text = '<h6>' + feature.getProperty('NAME_2') + '</h6><span>Cases - ' + cases.toLocaleString() + '</span><br><span>Deaths - ' + death.toLocaleString() + '</span><br><span>Recoveries - ' + rec.toLocaleString() + '</span>';
+        var text = '<h6>' + feature.getProperty('NAME_2') + '</h6><span>Confirmed Cases - ' + cases.toLocaleString() + '</span><br><span>Deaths - ' + death.toLocaleString() + '</span><br><span>Recoveries - ' + rec.toLocaleString() + '</span>' + '</span><br><span>Active Cases - ' + active.toLocaleString() + '</span>';
         map.data.revertStyle();
         map.data.overrideStyle(feature, {strokeWeight: 2.5});
         infoWindow.setContent(text);
@@ -160,5 +171,6 @@ function initMap() {
     
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(legend);
 
-    google.maps.event.addDomListener(window, "load", initMap);
+    google.maps.event.trigger(map, 'resize');
+    google.maps.event.addDomListener(window, "load", initMap);   
 }
