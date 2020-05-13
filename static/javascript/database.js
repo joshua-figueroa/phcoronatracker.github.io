@@ -15,6 +15,7 @@ $(document).ready(function() {
     $.fn.DataTable.ext.pager.numbers_length = 6;
     $('#example').DataTable({
         "lengthMenu": [[5, 10, 25, 50, 100, -1], [5, 10, 25, 50, 100, "All"]],
+        "order": [[ 6, "desc" ]],
         "ajax": {
             "url": "https://phcoronatracker.com/static/JSON/database.json",
             "dataSrc": function(data) {
