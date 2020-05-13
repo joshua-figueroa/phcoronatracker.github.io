@@ -103,8 +103,8 @@ a {
 
 @media (max-width: 575px) {
     #legend-container {
-        width: 160px;
-        height: 125px;
+        width: 200px;
+        height: 140px;
     }
     #legend {
         font-size: 10pt !important;
@@ -132,8 +132,8 @@ a {
         width: 4.8vw;
     }
     #legend-container {
-        width: 170px;
-        height: 130px;
+        width: 220px;
+        height: 150px;
     }
     #legend {
         font-size: 11pt !important;
@@ -179,8 +179,8 @@ a {
         border-left: 1px solid beige;
     }
     #legend-container {
-        width: 185px;
-        height: 190px;
+        width: 210px;
+        height: 155px;
     }
     .legend-box > h6 {
         font-size: 11pt !important;
@@ -219,8 +219,8 @@ a {
         border-left: 1px solid beige;
     }
     #legend-container {
-        width: 185px;
-        height: 190px;
+        width: 220px;
+        height: 160px;
     }
     .legend-box > h6 {
         font-size: 11pt !important;
@@ -260,5 +260,8 @@ a {
     }   
     #legend-container {
         width: 210px;
+    }
+    span {
+        font-size: 10pt;
     }
 }
