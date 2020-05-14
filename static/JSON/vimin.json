@@ -1,39 +1,39 @@
 [
     {
         "name": "Total",
-        "cases": 2149,
-        "death": 73,
-        "rec": 224
+        "cases": 2199,
+        "death": 74,
+        "rec": 230
     }, {
         "name": "Region 6",
-        "cases": 103,
+        "cases": 106,
         "death": 10,
         "rec": 39
     }, {
         "name": "Region 7",
-        "cases": 1736,
+        "cases": 1755,
         "death": 28,
-        "rec": 48
+        "rec": 53
     }, {
         "name": "Region 8",
-        "cases": 18,
+        "cases": 21,
         "death": 0,
         "rec": 4
     }, {
         "name": "Region 9",
-        "cases": 71,
+        "cases": 88,
         "death": 2,
         "rec": 7
     }, {
         "name": "Region 10",
-        "cases": 19,
+        "cases": 20,
         "death": 6,
         "rec": 6
     }, {
         "name": "Region 11",
-        "cases": 172,
-        "death": 22,
-        "rec": 99
+        "cases": 179,
+        "death": 23,
+        "rec": 100
     }, {
         "name": "Region 12",
         "cases": 10,
@@ -51,7 +51,7 @@
         "rec": 13
     }, {
         "name": "For Verification",
-        "cases": 11,
+        "cases": 14,
         "death": 0,
         "rec": 0
     }
