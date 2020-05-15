@@ -581,7 +581,7 @@ caption a:hover {
         font-size: 1.2vw;
     }
     #container-ncr tr th:nth-child(1) {
-        width: 30% !important;
+        width: 25% !important;
     }
     tr th:nth-child(1) {
         width: 35%;
