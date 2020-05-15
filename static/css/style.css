@@ -241,7 +241,10 @@ caption a:hover {
         margin-right: 4% !important;
     }
     #container-ph table, #container-luzon table, #container-vimin table {
-        width: 110% !important;
+        width: 115% !important;
+    }
+    tr th:nth-child(1) {
+        width: 40%;
     }
 }
 
