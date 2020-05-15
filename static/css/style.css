@@ -244,13 +244,13 @@ caption a:hover {
         width: 115% !important;
     }
     #container-ph table tr th:nth-child(1) {
-        width: 40% !important;
+        width: 35% !important;
     }
     #container-luzon table, #container-vimin table {
         width: 120% !important;
     }
     #container-luzon table tr th:nth-child(1), #container-vimin table tr th:nth-child(1) {
-        width: 50% !important;
+        width: 40% !important;
     }
 }
 
