@@ -1,53 +1,53 @@
 [
     {
         "name": "Total",
-        "cases": 9656,
-        "death": 716,
-        "rec": 2107
+        "cases": 9814,
+        "death": 731,
+        "rec": 2228
     }, {
-        "name": "Metro Manila",
-        "cases": 7646,
-        "death": 573,
-        "rec": 1654
+        "name": "NCR",
+        "cases": 7779,
+        "death": 588,
+        "rec": 1745
     }, {
         "name": "CAR",
         "cases": 45,
         "death": 1,
-        "rec": 36
+        "rec": 37
     }, {
-        "name": "Region 1",
+        "name": "Ilocos Region",
         "cases": 62,
         "death": 12,
         "rec": 23
     }, {
-        "name": "Region 2",
+        "name": "Cagayan Valley",
         "cases": 34,
         "death": 1,
         "rec": 28
     }, {
-        "name": "Region 3",
-        "cases": 413,
-        "death": 29,
-        "rec": 107
+        "name": "Central Luzon",
+        "cases": 418,
+        "death": 28,
+        "rec": 114
     }, {
-        "name": "Region 4A",
-        "cases": 1348,
-        "death": 92,
-        "rec": 234
+        "name": "CALABARZON(4A)",
+        "cases": 1370,
+        "death": 93,
+        "rec": 256
     }, {
-        "name": "Region 4B",
+        "name": "MIMAROPA(4B)",
         "cases": 35,
         "death": 4,
         "rec": 19
     }, {
-        "name": "Region 5",
-        "cases": 73,
+        "name": "Bicol Region",
+        "cases": 71,
         "death": 4,
         "rec": 6
     }, {
         "name": "For Verification",
-        "cases": 916,
-        "death": 21,
-        "rec": 21
+        "cases": 954,
+        "death": 22,
+        "rec": 22
     }
 ]
