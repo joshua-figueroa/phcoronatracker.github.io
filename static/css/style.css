@@ -244,7 +244,7 @@ caption a:hover {
         width: 115% !important;
     }
     tr th:nth-child(1) {
-        width: 40%;
+        width: 40% !important;
     }
 }
 
