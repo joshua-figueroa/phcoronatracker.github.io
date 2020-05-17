@@ -1,22 +1,22 @@
 [
     {
         "name": "Total",
-        "cases": 2264,
+        "cases": 2269,
         "death": 76,
-        "rec": 237
+        "rec": 254
     }, {
         "name": "Western Visayas",
-        "cases": 104,
+        "cases": 105,
         "death": 10,
-        "rec": 46
+        "rec": 61
     }, {
         "name": "Central Visayas",
-        "cases": 1755,
+        "cases": 1756,
         "death": 28,
         "rec": 53
     }, {
         "name": "Eastern Visayas",
-        "cases": 24,
+        "cases": 27,
         "death": 0,
         "rec": 4
     }, {
@@ -33,7 +33,7 @@
         "name": "Davao Region",
         "cases": 199,
         "death": 25,
-        "rec": 100
+        "rec": 101
     }, {
         "name": "SOCCSKSARGEN",
         "cases": 10,
@@ -43,7 +43,7 @@
         "name": "CARAGA",
         "cases": 3,
         "death": 0,
-        "rec": 0
+        "rec": 1
     }, {
         "name": "BARMM",
         "cases": 17,
@@ -51,7 +51,7 @@
         "rec": 13
     }, {
         "name": "For Verification",
-        "cases": 9,
+        "cases": 11,
         "death": 0,
         "rec": 1
     }
