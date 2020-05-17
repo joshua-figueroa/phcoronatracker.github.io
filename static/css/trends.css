@@ -100,6 +100,12 @@ canvas {
     #death_rec, #cases {
         height: 100% !important;
     }
+    .card-header {
+        height: 42px;
+    }
+    .card-header h5 {
+        line-height: 21px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -118,6 +124,12 @@ canvas {
     #menu {
         height: 4.8vw;
         width: 4.8vw;
+    }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
     }
     .card-footer {
         font-size: 10pt;
@@ -159,6 +171,12 @@ canvas {
     main {
         border-left: 1px solid beige;
     }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
+    }
     .card-footer {
         font-size: 11pt;
     }
@@ -194,6 +212,12 @@ canvas {
     }
     main {
         border-left: 1px solid beige;
+    }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
     }
     .card-footer {
         font-size: 12pt;
@@ -231,6 +255,12 @@ canvas {
     main {
         border-left: 1px solid beige;
     }   
+    .card-header {
+        height: 50px;
+    }
+    .card-header h5 {
+        line-height: 25px;
+    }
     .card-footer {
         font-size: 13pt;
     }
