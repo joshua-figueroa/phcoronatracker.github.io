@@ -1,10 +1,41 @@
 var ctx = document.getElementById('death_rec').getContext('2d');
 var ctx_1 = document.getElementById('cases').getContext('2d');
+var ctx_2 = document.getElementById('daily').getContext('2d');
 
-var labels = ['Jan 30', 'Feb 2', 'Feb 5', 'Feb 8', 'Feb 11', 'Feb 14', 'Feb 17', 'Feb 20', 'Feb 23', 'Feb 26', 'Feb 29',
-'Mar 3', 'Mar 6', 'Mar 9', 'Mar 12', 'Mar 15', 'Mar 18', 'Mar 21', 'Mar 24', 'Mar 27', 'Mar 30',
-'Apr 2', 'Apr 5', 'Apr 8', 'Apr 11', 'Apr 14', 'Apr 17', 'Apr 20', 'Apr 23', 'Apr 26', 'Apr 29',
-'May 2', 'May 5', 'May 8', 'May 11', 'May 14', 'May 17'];
+var labels = ['Jan 30', 'Feb 1', 'Feb 2', 'Feb 3', 'Feb 4', 'Feb 5', 'Feb 6', 'Feb 7', 'Feb 8', 'Feb 9', 'Feb 10',
+'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 
+'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 1', 'Mar 2', 'Mar 3', 
+'Mar 4', 'Mar 5', 'Mar 6', 'Mar 7', 'Mar 8', 'Mar 9', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 
+'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25',
+'Mar 26', 'Mar 27', 'Mar 28','Mar 29', 'Mar 30', 'Mar 31', 'Apr 1', 'Apr 2', 'Apr 3', 'Apr 4', 'Apr 5', 
+'Apr 6', 'Apr 7', 'Apr 8', 'Apr 9', 'Apr 10', 'Apr 11', 'Apr 12', 'Apr 13', 'Apr 14', 'Apr 15', 'Apr 16', 
+'Apr 17', 'Apr 18', 'Apr 19', 'Apr 20', 'Apr 21', 'Apr 22', 'Apr 23', 'Apr 24', 'Apr 25', 'Apr 26', 'Apr 27', 
+'Apr 28', 'Apr 29', 'Apr 30', 'May 1', 'May 2', 'May 3', 'May 4', 'May 5', 'May 6', 'May 7', 'May 8', 
+'May 9', 'May 10', 'May 11', 'May 12', 'May 13', 'May 14', 'May 15', 'May 16', 'May 17'];
+
+var cases = ['1','1','1','2','2','2','2','2','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','5','6','10','20','33','49','52','64','111','140','142','187','202','217','230','307','380','462','552','636','707','803','1075','1418','1546','2084','2311','2633','3018','3094','3246','3660','3764','3870','4076','4195','4428','4648','4932','5223','5453','5660','5878','6087','6259','6459','6599','6710','6981','7192','7294','7579','7777','7958','8212','8488','8772','8928','9223','9485','9684','10004','10343','10463','10610','10794','11086','11350','11618','11876','12091','12305','12513'];
+
+var deaths = ['0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','5','8','12','12','14','17','17','18','19','25','33','35','38','45','54','68','71','78','88','96','107','136','144','152','163','177','182','203','221','247','297','315','335','349','362','387','397','409','428','437','446','462','477','494','501','511','530','558','568','579','603','607','623','637','658','685','696','704','719','726','751','772','790','806','817','824'];
+
+var rec = ['0','0','0','0','0','0','0','0','0','0','0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','2','2','2','2','2','2','4','7','8','8','13','15','18','20','26','28','31','35','42','42','49','50','51','52','57','64','73','84','96','124','140','157','197','242','295','353','435','487','516','572','613','654','693','722','762','792','862','932','975','1023','1043','1084','1124','1214','1315','1408','1506','1618','1734','1842','1924','1999','2106','2251','2337','2460','2561','2635']
+
+var active = []
+
+for(var i = 0; i < cases.length; i++) {
+    var j = cases[i] - deaths[i] - rec[i];
+    active.push(j);
+}
+
+function daily(data) {
+    let total = []
+    for(var i in data) {
+        if(data[i-1] == null || data[i-1] == undefined) {
+            data[i-1] = 0;
+        }
+        total.push(data[i] - data[i-1]);
+    }
+    return total;
+}
 
 var chart = new Chart(ctx, {
     animationEnabled: true,
@@ -16,17 +47,14 @@ var chart = new Chart(ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: 'Total Fatalities',
+            label: 'Total Deaths',
             backgroundColor: 'rgba(255, 255, 255, 0)',
             borderColor: '#e53e3e',
             pointBackgroundColor: '#e53e3e',
             pointRadius: 0,
             hitRadius: 10,
             hoverRadius: 5,
-            data: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
-            1, 1, 1, 2, 11, 17, 19, 35, 54, 78,
-            107, 152, 182, 247, 335, 387, 428, 462, 501, 558,
-            603, 637, 696, 726, 790, 824],
+            data: deaths,
             lineTension: 0
         },{
             label: 'Total Recoveries',
@@ -36,11 +64,7 @@ var chart = new Chart(ctx, {
             pointRadius: 0,
             hitRadius: 10,
             hoverRadius: 5,
-            data: [
-                0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 
-                1, 1, 1, 2, 2, 5, 13, 20, 31, 42,
-                51, 64, 96, 157, 295, 487, 613, 722, 862, 1023,
-                1124, 1408, 1734, 1999, 2337, 2635],
+            data: rec,
             lineTension: 0
         }]
     },
@@ -95,7 +119,7 @@ var chart = new Chart(ctx, {
                 type: "line",
                 mode: "vertical",
                 scaleID: "x-axis-0",
-                value: "Mar 15",
+                value: "Mar 16",
                 borderColor: "black",
                 borderDash: [5, 6],
                 borderDashOffset: 15,
@@ -108,7 +132,7 @@ var chart = new Chart(ctx, {
                 type: "line",
                 mode: "vertical",
                 scaleID: "x-axis-0",
-                value: "May 17",
+                value: "May 16",
                 borderColor: "black",
                 borderDash: [5, 6],
                 borderDashOffset: 15,
@@ -116,7 +140,7 @@ var chart = new Chart(ctx, {
                     content: "GCQ, MECQ",
                     enabled: true,
                     position: "middle",
-                    xAdjust: -50
+                    xAdjust: -45
                 }
             }]
         }
@@ -140,10 +164,7 @@ var chart_1 = new Chart(ctx_1, {
             pointRadius: 0,
             hitRadius: 10,
             hoverRadius: 5,
-            data: [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 
-            3, 5, 20, 52, 140, 202, 307, 552, 803, 1546,
-            2633, 3246, 3870, 4428, 5223, 5878, 6459, 6981, 7579, 8212, 
-            8928, 9684, 10463, 11086, 11876, 12513],
+            data: cases,
             lineTension: 0
         },{
             label: 'Active Cases',
@@ -153,10 +174,7 @@ var chart_1 = new Chart(ctx_1, {
             pointRadius: 0,
             hitRadius: 10,
             hoverRadius: 5,
-            data: [1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 
-            1, 3, 18, 48, 127, 180, 275, 497, 718, 1426, 
-            2475, 3030, 3592, 4024, 4593, 5104, 5418, 5797, 6216, 6631,
-            7201, 7639, 8033, 8361, 8749, 9054],
+            data: active,
             lineTension: 0
         }]
     },
@@ -211,7 +229,7 @@ var chart_1 = new Chart(ctx_1, {
                 type: "line",
                 mode: "vertical",
                 scaleID: "x-axis-0",
-                value: "Mar 15",
+                value: "Mar 16",
                 borderColor: "black",
                 borderDash: [5, 6],
                 borderDashOffset: 15,
@@ -224,7 +242,7 @@ var chart_1 = new Chart(ctx_1, {
                 type: "line",
                 mode: "vertical",
                 scaleID: "x-axis-0",
-                value: "May 17",
+                value: "May 16",
                 borderColor: "black",
                 borderDash: [5, 6],
                 borderDashOffset: 15,
@@ -232,7 +250,112 @@ var chart_1 = new Chart(ctx_1, {
                     content: "GCQ, MECQ",
                     enabled: true,
                     position: "middle",
-                    xAdjust: -50
+                    xAdjust: -45
+                }
+            }]
+        }
+    }
+});
+
+var chart_2 = new Chart(ctx_2, {
+    animationEnabled: true,
+	zoomEnabled: true,
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: labels,
+        datasets: [{
+            label: 'New Cases',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#236377',
+            pointBackgroundColor: '#236377FF',
+            pointRadius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            data: daily(cases),
+            lineTension: 0
+        }, {
+            label: 'New Deaths',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#e53e3e',
+            pointBackgroundColor: '#e53e3e',
+            pointRadius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            data: daily(deaths),
+            lineTension: 0
+        }, {
+            label: 'New Recoveries',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#2BA366',
+            pointBackgroundColor: '#2BA366',
+            pointRadius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            data: daily(rec),
+            lineTension: 0
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        legend: {
+            labels: {
+                fontColor: '#333333'
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: '#333333'
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontColor: '#333333',
+                    maxTicksLimit: 8.1
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }]
+        },
+        annotation: {
+            annotations: [{
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "Mar 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "Luzon ECQ",
+                    enabled: true,
+                    position: "top"
+                }
+            }, {
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "May 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "GCQ, MECQ",
+                    enabled: true,
+                    position: "middle",
+                    xAdjust: -45
                 }
             }]
         }
