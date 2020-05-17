@@ -227,11 +227,11 @@ caption a:hover {
 #myModal, .modal {
     z-index: 100000 !important;
 }
-.dropdown-toggle::after {
+.dropdown-toggle:hover {
     transition: transform 0.15s linear; 
 }
-.show .dropdown .dropdown-toggle::after {
-   transform: translateY(3px);
+.show .dropdown .dropdown-toggle:hover {
+    transform: translateY(3px);
 }
 
 @media (max-width: 575px) {
@@ -241,16 +241,16 @@ caption a:hover {
         margin-right: 4% !important;
     }
     #container-ph table {
-        width: 115% !important;
+        width: 110% !important;
     }
     #container-ph table tr th:nth-child(1) {
         width: 35% !important;
     }
     #container-luzon table, #container-vimin table {
-        width: 120% !important;
+        width: 115% !important;
     }
     #container-luzon table tr th:nth-child(1), #container-vimin table tr th:nth-child(1) {
-        width: 40% !important;
+        width: 35% !important;
     }
 }
 
