@@ -1,14 +1,14 @@
 [
     {
         "name": "Total",
-        "cases": 12513,
-        "death": 824,
-        "rec": 2635
+        "cases": 12718,
+        "death": 831,
+        "rec": 2729
     }, {
         "name": "Total",
         "cases": 8131,
         "death": 603,
         "rec": 1873,
-        "lgu": 6837
+        "lgu": 6932
     }
 ]
