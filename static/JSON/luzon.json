@@ -1,14 +1,14 @@
 [
     {
         "name": "Total",
-        "cases": 10335,
-        "death": 755,
-        "rec": 2469
+        "cases": 10530,
+        "death": 761,
+        "rec": 2581
     }, {
         "name": "NCR",
-        "cases": 8245,
-        "death": 608,
-        "rec": 1938
+        "cases": 8414,
+        "death": 613,
+        "rec": 2027
     }, {
         "name": "CAR",
         "cases": 46,
@@ -23,17 +23,17 @@
         "name": "Cagayan Valley",
         "cases": 34,
         "death": 1,
-        "rec": 29
+        "rec": 31
     }, {
         "name": "Central Luzon",
-        "cases": 430,
+        "cases": 444,
         "death": 29,
-        "rec": 130
+        "rec": 133
     }, {
         "name": "CALABARZON",
-        "cases": 1407,
-        "death": 96,
-        "rec": 282
+        "cases": 1419,
+        "death": 97,
+        "rec": 300
     }, {
         "name": "MIMAROPA",
         "cases": 36,
@@ -46,8 +46,8 @@
         "rec": 6
     }, {
         "name": "For Verification",
-        "cases": 1181,
+        "cases": 1240,
         "death": 25,
-        "rec": 27
+        "rec": 29
     }
 ]
