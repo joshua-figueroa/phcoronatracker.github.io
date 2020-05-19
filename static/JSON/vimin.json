@@ -1,9 +1,9 @@
 [
     {
         "name": "Total",
-        "cases": 2294,
+        "cases": 2315,
         "death": 76,
-        "rec": 258
+        "rec": 260
     }, {
         "name": "Western Visayas",
         "cases": 106,
@@ -11,9 +11,9 @@
         "rec": 62
     }, {
         "name": "Central Visayas",
-        "cases": 1764,
+        "cases": 1781,
         "death": 28,
-        "rec": 54
+        "rec": 56
     }, {
         "name": "Eastern Visayas",
         "cases": 27,
@@ -36,7 +36,7 @@
         "rec": 101
     }, {
         "name": "SOCCSKSARGEN",
-        "cases": 10,
+        "cases": 14,
         "death": 1,
         "rec": 8
     }, {
