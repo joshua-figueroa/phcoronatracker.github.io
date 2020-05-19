@@ -1,3 +1,23 @@
+const $dropdown = $(".dropdown");
+const $dropdownToggle = $(".dropdown-toggle");
+const $dropdownMenu = $(".dropdown-menu");
+const showClass = "show";
+    
+$dropdown.hover(
+    function() {
+        const $this = $(this);
+        $this.addClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "true");
+        $this.find($dropdownMenu).addClass(showClass);
+    },
+    function() {
+        const $this = $(this);
+        $this.removeClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "false");
+        $this.find($dropdownMenu).removeClass(showClass);
+    }
+);
+
 var ctx = document.getElementById('death_rec').getContext('2d');
 var ctx_1 = document.getElementById('cases').getContext('2d');
 var ctx_2 = document.getElementById('daily').getContext('2d');
