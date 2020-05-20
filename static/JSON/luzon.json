@@ -1,14 +1,14 @@
 [
     {
         "name": "Total",
-        "cases": 10530,
-        "death": 761,
-        "rec": 2581
+        "cases": 10711,
+        "death": 766,
+        "rec": 2668
     }, {
         "name": "NCR",
-        "cases": 8414,
-        "death": 613,
-        "rec": 2027
+        "cases": 8565,
+        "death": 617,
+        "rec": 2105
     }, {
         "name": "CAR",
         "cases": 46,
@@ -26,14 +26,14 @@
         "rec": 31
     }, {
         "name": "Central Luzon",
-        "cases": 444,
-        "death": 29,
-        "rec": 133
+        "cases": 470,
+        "death": 30,
+        "rec": 134
     }, {
         "name": "CALABARZON",
-        "cases": 1419,
+        "cases": 1430,
         "death": 97,
-        "rec": 300
+        "rec": 309
     }, {
         "name": "MIMAROPA",
         "cases": 36,
@@ -41,13 +41,13 @@
         "rec": 19
     }, {
         "name": "Bicol Region",
-        "cases": 73,
+        "cases": 66,
         "death": 4,
-        "rec": 6
+        "rec": 5
     }, {
         "name": "For Verification",
-        "cases": 1240,
+        "cases": 1357,
         "death": 25,
-        "rec": 29
+        "rec": 31
     }
 ]
