@@ -93,6 +93,53 @@ function update_linear(chart, linear_id, log_id) {
                 }
             }]
         },
+        pan: {
+            enabled: true,
+            mode: 'xy',
+            
+            rangeMin: {
+                // Format of min pan range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max pan range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // On category scale, factor of pan velocity
+            speed: 20,
+ 
+            // Minimal pan distance required before actually applying pan
+            threshold: 10,
+        }, 
+        zoom: {
+            enabled: true,
+            drag: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min zoom range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max zoom range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // Speed of zoom via mouse wheel
+            // (percentage of zoom on a wheel event)
+            speed: 0.1,
+ 
+            // Minimal zoom distance required before actually applying zoom
+            threshold: 2,
+ 
+            // On category scale, minimal zoom level before actually applying zoom
+            sensitivity: 3
+        },
         annotation: {
             annotations: [{
                 type: "line",
@@ -175,6 +222,53 @@ function update_log(chart, linear_id, log_id) {
                     color: "#BEBEBE"
                 }
             }]
+        }, 
+        pan: {
+            enabled: true,
+            mode: 'xy',
+            
+            rangeMin: {
+                // Format of min pan range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max pan range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // On category scale, factor of pan velocity
+            speed: 20,
+ 
+            // Minimal pan distance required before actually applying pan
+            threshold: 10,
+        }, 
+        zoom: {
+            enabled: true,
+            drag: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min zoom range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max zoom range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // Speed of zoom via mouse wheel
+            // (percentage of zoom on a wheel event)
+            speed: 0.1,
+ 
+            // Minimal zoom distance required before actually applying zoom
+            threshold: 2,
+ 
+            // On category scale, minimal zoom level before actually applying zoom
+            sensitivity: 3
         },
         annotation: {
             annotations: [{
@@ -288,6 +382,53 @@ var chart = new Chart(ctx, {
                 }
             }]
         },
+        pan: {
+            enabled: true,
+            mode: 'xy',
+            
+            rangeMin: {
+                // Format of min pan range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max pan range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // On category scale, factor of pan velocity
+            speed: 20,
+ 
+            // Minimal pan distance required before actually applying pan
+            threshold: 10,
+        }, 
+        zoom: {
+            enabled: true,
+            drag: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min zoom range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max zoom range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // Speed of zoom via mouse wheel
+            // (percentage of zoom on a wheel event)
+            speed: 0.1,
+ 
+            // Minimal zoom distance required before actually applying zoom
+            threshold: 2,
+ 
+            // On category scale, minimal zoom level before actually applying zoom
+            sensitivity: 3
+        },
         annotation: {
             annotations: [{
                 type: "line",
@@ -398,6 +539,53 @@ var chart_1 = new Chart(ctx_1, {
                 }
             }]
         },
+        pan: {
+            enabled: true,
+            mode: 'xy',
+            
+            rangeMin: {
+                // Format of min pan range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max pan range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // On category scale, factor of pan velocity
+            speed: 20,
+ 
+            // Minimal pan distance required before actually applying pan
+            threshold: 10,
+        }, 
+        zoom: {
+            enabled: true,
+            drag: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min zoom range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max zoom range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // Speed of zoom via mouse wheel
+            // (percentage of zoom on a wheel event)
+            speed: 0.1,
+ 
+            // Minimal zoom distance required before actually applying zoom
+            threshold: 2,
+ 
+            // On category scale, minimal zoom level before actually applying zoom
+            sensitivity: 3
+        },
         annotation: {
             annotations: [{
                 type: "line",
@@ -502,6 +690,53 @@ var chart_2 = new Chart(ctx_2, {
                     color: "#BEBEBE"
                 }
             }]
+        },
+        pan: {
+            enabled: true,
+            mode: 'xy',
+            
+            rangeMin: {
+                // Format of min pan range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max pan range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // On category scale, factor of pan velocity
+            speed: 20,
+ 
+            // Minimal pan distance required before actually applying pan
+            threshold: 10,
+        }, 
+        zoom: {
+            enabled: true,
+            drag: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min zoom range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max zoom range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // Speed of zoom via mouse wheel
+            // (percentage of zoom on a wheel event)
+            speed: 0.1,
+ 
+            // Minimal zoom distance required before actually applying zoom
+            threshold: 2,
+ 
+            // On category scale, minimal zoom level before actually applying zoom
+            sensitivity: 3
         },
         annotation: {
             annotations: [{
@@ -613,6 +848,53 @@ var chart_3 = new Chart(ctx_3, {
                     color: "#BEBEBE"
                 }
             }]
+        },
+        pan: {
+            enabled: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min pan range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max pan range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // On category scale, factor of pan velocity
+            speed: 20,
+ 
+            // Minimal pan distance required before actually applying pan
+            threshold: 10,
+        }, 
+        zoom: {
+            enabled: true,
+            drag: true,
+            mode: 'xy',
+
+            rangeMin: {
+                // Format of min zoom range depends on scale type
+                x: null,
+                y: null
+            },
+            rangeMax: {
+                // Format of max zoom range depends on scale type
+                x: null,
+                y: null
+            },
+ 
+            // Speed of zoom via mouse wheel
+            // (percentage of zoom on a wheel event)
+            speed: 0.1,
+ 
+            // Minimal zoom distance required before actually applying zoom
+            threshold: 2,
+ 
+            // On category scale, minimal zoom level before actually applying zoom
+            sensitivity: 3
         },
         annotation: {
             annotations: [{
