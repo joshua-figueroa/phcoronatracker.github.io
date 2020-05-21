@@ -1,7 +1,7 @@
 [
     {
         "name": "Total",
-        "cases": 2330,
+        "cases": 2431,
         "death": 76,
         "rec": 261
     }, {
@@ -11,17 +11,17 @@
         "rec": 62
     }, {
         "name": "Central Visayas",
-        "cases": 1795,
+        "cases": 1893,
         "death": 28,
         "rec": 57
     }, {
         "name": "Eastern Visayas",
-        "cases": 27,
+        "cases": 28,
         "death": 0,
         "rec": 4
     }, {
         "name": "Zamboanga Peninsula",
-        "cases": 147,
+        "cases": 149,
         "death": 2,
         "rec": 7
     }, {
@@ -51,7 +51,7 @@
         "rec": 13
     }, {
         "name": "For Verification",
-        "cases": 28,
+        "cases": 31,
         "death": 0,
         "rec": 2
     }
