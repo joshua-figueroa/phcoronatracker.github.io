@@ -21,6 +21,7 @@ $dropdown.hover(
 var ctx = document.getElementById('death_rec').getContext('2d');
 var ctx_1 = document.getElementById('cases').getContext('2d');
 var ctx_2 = document.getElementById('daily').getContext('2d');
+var ctx_3 = document.getElementById('beds').getContext('2d');
 
 var labels = ['Jan 30', 'Feb 1', 'Feb 2', 'Feb 3', 'Feb 4', 'Feb 5', 'Feb 6', 'Feb 7', 'Feb 8', 'Feb 9', 'Feb 10',
 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 
@@ -31,13 +32,15 @@ var labels = ['Jan 30', 'Feb 1', 'Feb 2', 'Feb 3', 'Feb 4', 'Feb 5', 'Feb 6', 'F
 'Apr 6', 'Apr 7', 'Apr 8', 'Apr 9', 'Apr 10', 'Apr 11', 'Apr 12', 'Apr 13', 'Apr 14', 'Apr 15', 'Apr 16', 
 'Apr 17', 'Apr 18', 'Apr 19', 'Apr 20', 'Apr 21', 'Apr 22', 'Apr 23', 'Apr 24', 'Apr 25', 'Apr 26', 'Apr 27', 
 'Apr 28', 'Apr 29', 'Apr 30', 'May 1', 'May 2', 'May 3', 'May 4', 'May 5', 'May 6', 'May 7', 'May 8', 
-'May 9', 'May 10', 'May 11', 'May 12', 'May 13', 'May 14', 'May 15', 'May 16', 'May 17', 'May 18','May 19', 'May 20'];
+'May 9', 'May 10', 'May 11', 'May 12', 'May 13', 'May 14', 'May 15', 'May 16', 'May 17', 'May 18','May 19', 'May 20', 'May 21'];
 
-var cases = ['1','1','1','2','2','2','2','2','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','5','6','10','20','33','49','52','64','111','140','142','187','202','217','230','307','380','462','552','636','707','803','1075','1418','1546','2084','2311','2633','3018','3094','3246','3660','3764','3870','4076','4195','4428','4648','4932','5223','5453','5660','5878','6087','6259','6459','6599','6710','6981','7192','7294','7579','7777','7958','8212','8488','8772','8928','9223','9485','9684','10004','10343','10463','10610','10794','11086','11350','11618','11876','12091','12305','12513','12718','12942','13221'];
+var cases = ['1','1','1','2','2','2','2','2','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','5','6','10','20','33','49','52','64','111','140','142','187','202','217','230','307','380','462','552','636','707','803','1075','1418','1546','2084','2311','2633','3018','3094','3246','3660','3764','3870','4076','4195','4428','4648','4932','5223','5453','5660','5878','6087','6259','6459','6599','6710','6981','7192','7294','7579','7777','7958','8212','8488','8772','8928','9223','9485','9684','10004','10343','10463','10610','10794','11086','11350','11618','11876','12091','12305','12513','12718','12942','13221','13434'];
 
-var deaths = ['0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','5','8','12','12','14','17','17','18','19','25','33','35','38','45','54','68','71','78','88','96','107','136','144','152','163','177','182','203','221','247','297','315','335','349','362','387','397','409','428','437','446','462','477','494','501','511','530','558','568','579','603','607','623','637','658','685','696','704','719','726','751','772','790','806','817','824','831','837','842'];
+var deaths = ['0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','5','8','12','12','14','17','17','18','19','25','33','35','38','45','54','68','71','78','88','96','107','136','144','152','163','177','182','203','221','247','297','315','335','349','362','387','397','409','428','437','446','462','477','494','501','511','530','558','568','579','603','607','623','637','658','685','696','704','719','726','751','772','790','806','817','824','831','837','842','846'];
 
-var rec = ['0','0','0','0','0','0','0','0','0','0','0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','2','2','2','2','2','2','4','7','8','8','13','15','18','20','26','28','31','35','42','42','49','50','51','52','57','64','73','84','96','124','140','157','197','242','295','353','435','487','516','572','613','654','693','722','762','792','862','932','975','1023','1043','1084','1124','1214','1315','1408','1506','1618','1734','1842','1924','1999','2106','2251','2337','2460','2561','2635','2729','2843','2932']
+var rec = ['0','0','0','0','0','0','0','0','0','0','0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','2','2','2','2','2','2','4','7','8','8','13','15','18','20','26','28','31','35','42','42','49','50','51','52','57','64','73','84','96','124','140','157','197','242','295','353','435','487','516','572','613','654','693','722','762','792','862','932','975','1023','1043','1084','1124','1214','1315','1408','1506','1618','1734','1842','1924','1999','2106','2251','2337','2460','2561','2635','2729','2843','2932','3000']
+
+var beds = [null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, 4197, 6901, 6345, 6456, 7659, 8178, 8552, 10162, 11770, 9214, 9700, 12019, 11345, 11247, 11897, 12715, 12023, 11099, 12366, 12520, 13325, 13328, 13291, 13160, 12534, 13202, 13744, 12130, 14976, 14930, 13165, 12914, 14029, 12602, 13097, null]
 
 var active = []
 
@@ -55,6 +58,157 @@ function daily(data) {
         total.push(data[i] - data[i-1]);
     }
     return total;
+}
+
+function update_linear(chart, linear_id, log_id) {
+    $(linear_id).removeClass('btn-info').addClass('btn-secondary')
+    $(log_id).removeClass('btn-secondary').addClass('btn-info')
+
+    chart.options = {
+        responsive: true,
+        maintainAspectRatio: true,
+        legend: {
+            labels: {
+                fontColor: '#333333'
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    fontColor: '#333333'
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontColor: '#333333',
+                    maxTicksLimit: 8.1
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }]
+        },
+        annotation: {
+            annotations: [{
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "Mar 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "Luzon ECQ",
+                    enabled: true,
+                    position: "top"
+                }
+            }, {
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "May 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "GCQ, MECQ",
+                    enabled: true,
+                    position: "middle",
+                    xAdjust: -45
+                }
+            }]
+        }
+    };
+    chart.update();
+}
+
+function update_log(chart, linear_id, log_id) {
+    $(linear_id).removeClass('btn-secondary').addClass('btn-info')
+    $(log_id).removeClass('btn-info').addClass('btn-secondary')
+    
+    chart.options = {
+        responsive: true,
+        maintainAspectRatio: true,
+        spanGaps: true,
+        legend: {
+            labels: {
+                fontColor: '#333333'
+            }
+        },
+        scales: {
+            yAxes: [{
+                type: "logarithmic",
+                ticks: {
+                    min: 1,
+                    max: 100000,
+                    fontColor: '#333333',
+                    callback: function (value, index, values) {
+                        return Number(value.toString());//pass tick values as a string into Number function
+                    }
+                },
+                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                    chartObj.ticks = [];
+                    chartObj.ticks.push(1);
+                    chartObj.ticks.push(10);
+                    chartObj.ticks.push(100);
+                    chartObj.ticks.push(1000);
+                    chartObj.ticks.push(10000);
+                    chartObj.ticks.push(100000);
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontColor: '#333333',
+                    maxTicksLimit: 8.1
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }]
+        },
+        annotation: {
+            annotations: [{
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "Mar 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "Luzon ECQ",
+                    enabled: true,
+                    position: "top"
+                }
+            }, {
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "May 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "GCQ, MECQ",
+                    enabled: true,
+                    position: "middle",
+                    xAdjust: -45
+                }
+            }]
+        }
+    };
+
+    chart.update()
 }
 
 var chart = new Chart(ctx, {
@@ -332,6 +486,117 @@ var chart_2 = new Chart(ctx_2, {
             yAxes: [{
                 ticks: {
                     fontColor: '#333333'
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontColor: '#333333',
+                    maxTicksLimit: 8.1
+                },
+                gridLines: {
+                    display: true,
+                    color: "#BEBEBE"
+                }
+            }]
+        },
+        annotation: {
+            annotations: [{
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "Mar 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "Luzon ECQ",
+                    enabled: true,
+                    position: "top"
+                }
+            }, {
+                type: "line",
+                mode: "vertical",
+                scaleID: "x-axis-0",
+                value: "May 16",
+                borderColor: "black",
+                borderDash: [5, 6],
+                borderDashOffset: 15,
+                label: {
+                    content: "GCQ, MECQ",
+                    enabled: true,
+                    position: "middle",
+                    xAdjust: -45
+                }
+            }]
+        }
+    }
+});
+
+var chart_3 = new Chart(ctx_3, {
+    animationEnabled: true,
+	zoomEnabled: true,
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: labels,
+        datasets: [{
+            label: 'Active Cases',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#e3d400',
+            pointBackgroundColor: '#e3d400',
+            pointRadius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            data: active,
+            lineTension: 0
+        }, {
+            label: 'Available Beds',
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            borderColor: '#236377',
+            pointBackgroundColor: '#236377FF',
+            pointRadius: 0,
+            hitRadius: 10,
+            hoverRadius: 5,
+            data: beds,
+            lineTension: 0
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        spanGaps: true,
+        legend: {
+            labels: {
+                fontColor: '#333333'
+            }
+        },
+        scales: {
+            yAxes: [{
+                type: "logarithmic",
+                ticks: {
+                    min: 1,
+                    max: 100000,
+                    fontColor: '#333333',
+                    callback: function (value, index, values) {
+                        return Number(value.toString());//pass tick values as a string into Number function
+                    }
+                },
+                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                    chartObj.ticks = [];
+                    chartObj.ticks.push(1);
+                    chartObj.ticks.push(10);
+                    chartObj.ticks.push(100);
+                    chartObj.ticks.push(1000);
+                    chartObj.ticks.push(10000);
+                    chartObj.ticks.push(100000);
                 },
                 gridLines: {
                     display: true,
