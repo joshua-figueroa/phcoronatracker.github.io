@@ -6,9 +6,9 @@
         "rec": 3000
     }, {
         "name": "Total",
-        "cases": 8565,
-        "death": 617,
-        "rec": 2105,
+        "cases": 8659,
+        "death": 621,
+        "rec": 2172,
         "lgu": 7266
     }
 ]
