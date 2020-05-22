@@ -46,15 +46,15 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name} - {y}",
             dataPoints: [
-                { y: 41, name: "Protein Sub-unit", exploded: true },
+                { y: 44, name: "Protein Subunit", exploded: true },
                 { y: 11, name: "DNA-Based" },
-                { y: 18, name: "RNA-Based" },
+                { y: 19, name: "RNA-Based" },
                 { y: 16, name: "Non-Replicating Viral Vector" },
-                { y: 7, name: "Virus-like Particle" },
-                { y: 12, name: "Replicating Viral Vector" },
+                { y: 8, name: "Virus-like Particle" },
+                { y: 14, name: "Replicating Viral Vector" },
                 { y: 1, name: "Replicating Bacterial Vector" },
-                { y: 7, name: "Inactive Viruses"},
-                { y: 2, name: "Live Attenuated Virus"},
+                { y: 8, name: "Inactive Viruses"},
+                { y: 3, name: "Live Attenuated Virus"},
                 { y: 17, name: "Unknown"}
             ]
         }]
@@ -74,13 +74,13 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name} - {y}",
             dataPoints: [
-                { y: 61, name: "Antibodies", exploded: true },
-                { y: 22, name: "Antivirals" },
+                { y: 63, name: "Antibodies", exploded: true },
+                { y: 23, name: "Antivirals" },
                 { y: 15, name: "Cell-Based Therapies" },
                 { y: 6, name: "RNA-Based" },
                 { y: 5, name: "Discontinued" },
                 { y: 7, name: "Devices" },
-                { y: 87, name: "Others"},
+                { y: 91, name: "Others"},
                 { y: 18, name: "For Validation"}
             ]
         }]
