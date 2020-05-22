@@ -125,6 +125,23 @@ a {
     .table-responsive {
         font-size: small;
     }
+    .card {
+        width: 108%;
+        margin-left: -4% !important;
+        margin-right: 4% !important;
+    }
+    #sex, #active-cases {
+        height: 100% !important;
+    }
+    .card-header {
+        height: 42px;
+    }
+    .card-header h5 {
+        line-height: 21px;
+    }
+    .card-footer {
+        font-size: 9pt;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -160,6 +177,15 @@ a {
     }
     .table-responsive {
         font-size: small;
+    }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
+    }
+    .card-footer {
+        font-size: 10pt;
     }
 }
 
@@ -202,6 +228,15 @@ a {
     .table-responsive {
         font-size: small;
     }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
+    }
+    .card-footer {
+        font-size: 11pt;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -235,6 +270,15 @@ a {
     main {
         border-left: 1px solid beige;
     }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
+    }
+    .card-footer {
+        font-size: 12pt;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -267,5 +311,14 @@ a {
     }
     main {
         border-left: 1px solid beige;
+    }
+    .card-header {
+        height: 50px;
+    }
+    .card-header h5 {
+        line-height: 25px;
+    }
+    .card-footer {
+        font-size: 13pt;
     }
 }
