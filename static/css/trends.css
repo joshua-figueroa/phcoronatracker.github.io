@@ -82,7 +82,7 @@ canvas {
     font-family: Roboto;
 }
 .card-footer {
-    font-size: 8pt;
+    font-size: 9pt;
 }
 .dropdown-toggle::after {
     transition: transform 0.15s linear; 
