@@ -205,7 +205,7 @@ function update_log(chart, linear_id, log_id) {
             yAxes: [{
                 type: "logarithmic",
                 ticks: {
-                    min: 1,
+                    min: 0,
                     max: 100000,
                     fontColor: '#333333',
                     callback: function (value, index, values) {
@@ -214,6 +214,7 @@ function update_log(chart, linear_id, log_id) {
                 },
                 afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                     chartObj.ticks = [];
+                    chartObj.ticks.push(0);
                     chartObj.ticks.push(1);
                     chartObj.ticks.push(10);
                     chartObj.ticks.push(100);
