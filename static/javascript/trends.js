@@ -94,6 +94,19 @@ function update_linear(chart, linear_id, log_id) {
                 }
             }]
         },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontSize: 14,
+            titleFontColor: '#F5F5F5',
+            titleMarginBottom: 10,
+            bodyFontColor: '#F5F5F5',
+            bodySpacing: 6
+        },
+        hover: {
+            mode: 'index',
+            intersect: false
+        },
         pan: {
             enabled: true,
             mode: 'xy',
@@ -224,6 +237,19 @@ function update_log(chart, linear_id, log_id) {
                 }
             }]
         }, 
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontSize: 14,
+            titleFontColor: '#F5F5F5',
+            titleMarginBottom: 10,
+            bodyFontColor: '#F5F5F5',
+            bodySpacing: 6
+        },
+        hover: {
+            mode: 'index',
+            intersect: false
+        },
         pan: {
             enabled: true,
             mode: 'xy',
@@ -368,6 +394,19 @@ var chart = new Chart(ctx, {
                 }
             }]
         },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontSize: 14,
+            titleFontColor: '#F5F5F5',
+            titleMarginBottom: 10,
+            bodyFontColor: '#F5F5F5',
+            bodySpacing: 6
+        },
+        hover: {
+            mode: 'index',
+            intersect: false
+        },
         pan: {
             enabled: true,
             mode: 'xy',
@@ -509,6 +548,19 @@ var chart_1 = new Chart(ctx_1, {
                     color: "#BEBEBE"
                 }
             }]
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontSize: 14,
+            titleFontColor: '#F5F5F5',
+            titleMarginBottom: 10,
+            bodyFontColor: '#F5F5F5',
+            bodySpacing: 6
+        },
+        hover: {
+            mode: 'index',
+            intersect: false
         },
         pan: {
             enabled: true,
@@ -662,6 +714,19 @@ var chart_2 = new Chart(ctx_2, {
                 }
             }]
         },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontSize: 14,
+            titleFontColor: '#F5F5F5',
+            titleMarginBottom: 10,
+            bodyFontColor: '#F5F5F5',
+            bodySpacing: 6
+        },
+        hover: {
+            mode: 'index',
+            intersect: false
+        },
         pan: {
             enabled: true,
             mode: 'xy',
@@ -803,6 +868,19 @@ var chart_3 = new Chart(ctx_3, {
                     color: "#BEBEBE"
                 }
             }]
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleFontSize: 14,
+            titleFontColor: '#F5F5F5',
+            titleMarginBottom: 10,
+            bodyFontColor: '#F5F5F5',
+            bodySpacing: 6
+        },
+        hover: {
+            mode: 'index',
+            intersect: false
         },
         pan: {
             enabled: true,
