@@ -74,9 +74,6 @@ a {
 .navbar-brand {
     font-family: Roboto;
 }
-.card-footer {
-    font-size: 8pt;
-}
 #source:hover {
     text-decoration: none;
     color: #717194;
@@ -106,6 +103,15 @@ a {
         margin-left: -4% !important;
         margin-right: 4% !important;
     }
+    .card-header {
+        height: 42px;
+    }
+    .card-header h5 {
+        line-height: 21px;
+    }
+    .card-footer {
+        font-size: 9pt;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -124,6 +130,12 @@ a {
     #menu {
         height: 4.8vw;
         width: 4.8vw;
+    }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
     }
     .card-footer {
         font-size: 10pt;
@@ -165,6 +177,12 @@ a {
     main {
         border-left: 1px solid beige;
     }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
+    }
     .card-footer {
         font-size: 11pt;
     }
@@ -200,6 +218,12 @@ a {
     }
     main {
         border-left: 1px solid beige;
+    }
+    .card-header {
+        height: 46px;
+    }
+    .card-header h5 {
+        line-height: 23px;
     }
     .card-footer {
         font-size: 12pt;
@@ -237,6 +261,12 @@ a {
     main {
         border-left: 1px solid beige;
     }   
+    .card-header {
+        height: 50px;
+    }
+    .card-header h5 {
+        line-height: 25px;
+    }
     .card-footer {
         font-size: 13pt;
     }
