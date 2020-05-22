@@ -1,7 +1,7 @@
 [
     {
         "name": "Total",
-        "cases": 2431,
+        "cases": 2487,
         "death": 76,
         "rec": 261
     }, {
@@ -11,7 +11,7 @@
         "rec": 62
     }, {
         "name": "Central Visayas",
-        "cases": 1893,
+        "cases": 1949,
         "death": 28,
         "rec": 57
     }, {
@@ -50,8 +50,8 @@
         "death": 4,
         "rec": 13
     }, {
-        "name": "For Verification",
-        "cases": 31,
+        "name": "For Validation",
+        "cases": 87,
         "death": 0,
         "rec": 2
     }
