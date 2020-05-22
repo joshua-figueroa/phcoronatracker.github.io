@@ -31,82 +31,84 @@ $(document).ready(function() {
         }
     );
 
-    var ctx1 = document.getElementById('sex')
-    var ctx2 = document.getElementById('active-cases')
-    var chart1 = new Chart(ctx1, {
-        // The type of chart we want to create
-        type: 'pie',
-    
-        // The data for our dataset
-        data: {
-            labels: ['Male', 'Female'],
-            datasets: [{
-                backgroundColor: ["#6CA0DC","#FF6961"],
-                data: [7397, 6200]
-            }]
-        },
-    
-        // Configuration options go here
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            tooltips: {
-                callbacks: {
-                    label: function (tooltipItem, data) {
-                        try {
-                            let label = ' ' + data.labels[tooltipItem.index]
-                            const value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]
-                            const sum = data.datasets[0].data.reduce((accumulator, curValue) => {
-                                return accumulator + curValue;
-                            });
-                            
-                            label += ': ' + value + ' (' + Number((value / sum) * 100).toFixed(2) + '%)'
-                            
-                            return label;
-                        } catch (error) {
-                            console.log(error);
+    $.ajax({
+        url: 'https://phcoronatracker.com/static/JSON/database.json',
+        dataType: 'json',
+        success: function(data) {
+            var male = 0, female = 0, asymtomatic = 0, mild = 0, severe = 0, critical = 0, length = data.length
+            for(var i = 0; i < length; i++) {
+                //Counting for Sex
+                if(data[i].Sex == "Male") 
+                    male++
+                else
+                    female++
+                //Counting for Health Status
+                if(data[i].HealthStatus == "Mild")
+                    mild++
+                else if(data[i].HealthStatus == "Severe")
+                    severe++
+                else if(data[i].HealthStatus == "Critical")
+                    critical++
+                else
+                    asymtomatic++
+            }
+            var ctx1 = document.getElementById('sex')
+            var ctx2 = document.getElementById('active-cases')
+            var option = {
+                responsive: true,
+                maintainAspectRatio: true,
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            try {
+                                let label = ' ' + data.labels[tooltipItem.index]
+                                const value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]
+                                const sum = data.datasets[0].data.reduce((accumulator, curValue) => {
+                                    return accumulator + curValue;
+                                });
+                                
+                                label += ': ' + value + ' (' + Number((value / sum) * 100).toFixed(2) + '%)'
+                                
+                                return label;
+                            } catch (error) {
+                                console.log(error);
+                            }
                         }
                     }
                 }
             }
-        }
-    });
-    var chart2 = new Chart(ctx2, {
-        // The type of chart we want to create
-        type: 'pie',
-    
-        // The data for our dataset
-        data: {
-            labels: ['Asymtomatic', 'Mild', 'Severe', 'Critical'],
-            datasets: [{
-                backgroundColor: ["#6CA0DC","#FFC154","#FF6961","#BE61CA"],
-                data: [842, 8730, 54, 22]
-            }]
-        },
-    
-        // Configuration options go here
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            tooltips: {
-                callbacks: {
-                    label: function (tooltipItem, data) {
-                        try {
-                            let label = ' ' + data.labels[tooltipItem.index]
-                            const value = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]
-                            const sum = data.datasets[0].data.reduce((accumulator, curValue) => {
-                                return accumulator + curValue;
-                            });
-
-                            label += ': ' + value + ' (' + Number((value / sum) * 100).toFixed(2) + '%)'
-                            
-                            return label;
-                        } catch (error) {
-                            console.log(error);
-                        }
-                    }
-                }
-            }
+            var chart1 = new Chart(ctx1, {
+                // The type of chart we want to create
+                type: 'pie',
+            
+                // The data for our dataset
+                data: {
+                    labels: ['Male', 'Female'],
+                    datasets: [{
+                        backgroundColor: ["#6CA0DC","#FF6961"],
+                        data: [male, female]
+                    }]
+                },
+            
+                // Configuration options go here
+                options: option
+            });
+            var chart2 = new Chart(ctx2, {
+                // The type of chart we want to create
+                type: 'pie',
+            
+                // The data for our dataset
+                data: {
+                    labels: ['Asymtomatic', 'Mild', 'Severe', 'Critical'],
+                    datasets: [{
+                        backgroundColor: ["#BE61CA","#FFC154","#FF6961","#6CA0DC"],
+                        data: [asymtomatic, mild, severe, critical]
+                    }]
+                },
+            
+                // Configuration options go here
+                options: option
+            });
         }
     });
 
