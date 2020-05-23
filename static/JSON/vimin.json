@@ -1,12 +1,12 @@
 [
     {
         "name": "Total",
-        "cases": 2487,
+        "cases": 2529,
         "death": 76,
         "rec": 261
     }, {
         "name": "Western Visayas",
-        "cases": 106,
+        "cases": 107,
         "death": 10,
         "rec": 62
     }, {
@@ -26,12 +26,12 @@
         "rec": 7
     }, {
         "name": "Northern Mindanao",
-        "cases": 21,
+        "cases": 22,
         "death": 6,
         "rec": 7
     }, {
         "name": "Davao Region",
-        "cases": 199,
+        "cases": 237,
         "death": 25,
         "rec": 101
     }, {
@@ -41,17 +41,17 @@
         "rec": 8
     }, {
         "name": "CARAGA",
-        "cases": 3,
+        "cases": 4,
         "death": 0,
         "rec": 2
     }, {
         "name": "BARMM",
-        "cases": 18,
+        "cases": 19,
         "death": 4,
         "rec": 13
     }, {
         "name": "For Validation",
-        "cases": 87,
+        "cases": 86,
         "death": 0,
         "rec": 2
     }
