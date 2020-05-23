@@ -97,7 +97,7 @@ canvas {
         margin-left: -4% !important;
         margin-right: 4% !important;
     }
-    #death_rec, #cases {
+    canvas #death_rec, canvas #cases {
         height: 100% !important;
     }
     .card-header {
