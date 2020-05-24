@@ -70,10 +70,34 @@
             </aside>
             
             <main class="col py-3 flex-grow-1 text-white" style="background-color: #223446;">
-                <h3 class="d-none d-lg-block" id="start">Pandemic Timeline</h3>
-                <h4 class="d-block d-lg-none" id="start">Pandemic Timeline</h4>
+                <div class="row">
+                    <h3 class="d-none d-lg-block col" id="start">Pandemic Timeline</h3>
+                    <h4 class="d-block d-lg-none col" id="start">Pandemic Timeline</h4>
 
-                <div class="timeline">
+                    <form class="mt-1 mb-2 d-none d-md-block col col-md-4 my-auto">
+                        <select class="form-control" id="filter" onchange="display(this.value)">
+                            <option value="dec">December</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                        </select>
+                    </form>
+                    <div class="col-sm-12"></div>
+                    <form class="mt-1 mb-2 d-block d-md-none my-auto col-5 col-sm-4">
+                        <select class="form-control form-control-sm" id="filter-sm" onchange="display(this.value)">
+                            <option value="dec">December</option>
+                            <option value="jan">January</option>
+                            <option value="feb">February</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                        </select>
+                    </form>
+                </div>
+                
+                <div class="timeline mt-3" id="dec" style="display:none;">
                     <div class="container-timeline left">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Dec 31</h3>
@@ -81,28 +105,31 @@
                             <p>The World Health Organization (WHO) reported clustering of pneumonia cases in Wuhan City, Hubei Province, China.</p>
                         </div>
                     </div>
-                    <div class="container-timeline right">
+                </div>
+                
+                <div class="timeline mt-3" id="jan" style="display:block;">
+                    <div class="container-timeline left">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 6</h3>
                             <h4 class="d-block d-lg-none">Jan 6</h4>
                             <p>DOH ordered strict screening of incoming travelers.</p>
                         </div>
                     </div>
-                    <div class="container-timeline left">
+                    <div class="container-timeline right">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 7</h3>
                             <h4 class="d-block d-lg-none">Jan 7</h4>
                             <p>China identified the new type of coronavirus, the 2019 Novel Coronavirus Acute Respiratory Disease (2019-nCoV ARD).</p>
                         </div>
                     </div>
-                    <div class="container-timeline right">
+                    <div class="container-timeline left">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 11</h3>
                             <h4 class="d-block d-lg-none">Jan 11</h4>
                             <p>DOH urged the public with a history of travel to China to seek immediate medical consultation.</p>
                         </div>
                     </div>
-                    <div class="container-timeline left">
+                    <div class="container-timeline right">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 17</h3>
                             <h4 class="d-block d-lg-none">Jan 17</h4>
@@ -110,21 +137,21 @@
                             <p>DOH coordinated with DFA to inform the Chinese Embassy on the number of persons under investigation(PUIs).</p>
                         </div>
                     </div>
-                    <div class="container-timeline right">
+                    <div class="container-timeline left">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 20</h3>
                             <h4 class="d-block d-lg-none">Jan 20</h4>
                             <p>DOH established the nCoV Task Force.</p>
                         </div>
                     </div>
-                    <div class="container-timeline left">
+                    <div class="container-timeline right">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 21</h3>
                             <h4 class="d-block d-lg-none">Jan 21</h4>
                             <p>DOH related Health Advisories and issued the Interm Guidelines on the Preparedness and Response to the 2019 Novel Coronavirus.</p>
                         </div>
                     </div>
-                    <div class="container-timeline right">
+                    <div class="container-timeline left">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 23</h3>
                             <h4 class="d-block d-lg-none">Jan 23</h4>
@@ -132,7 +159,7 @@
                             <p>The Civil Aeronautics Board indefinitely suspended all operations from Wuhan to the Philippines.</p>
                         </div>
                     </div>
-                    <div class="container-timeline left">
+                    <div class="container-timeline right">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 28</h3>
                             <h4 class="d-block d-lg-none">Jan 28</h4>
@@ -141,7 +168,7 @@
                             <p>The Bureau of Immigration ordered the suspension of the issuance of visas upon arrival to passport holders from China.</p>
                         </div>
                     </div>
-                    <div class="container-timeline right">
+                    <div class="container-timeline left">
                         <div class="content">
                             <h3 class="d-none d-lg-block">Jan 30</h3>
                             <h4 class="d-block d-lg-none">Jan 30</h4>
@@ -154,6 +181,7 @@
             </main>
         </div>
     </div>
+    <script src="static/javascript/timeline.js"></script>
     <noscript>Your browser does not support JavaScript. Consider opening it with Google Chrome or Mozilla Firefox.</noscript>
 </body>
 </html>
