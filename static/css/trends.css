@@ -84,12 +84,6 @@ canvas {
 .card-footer {
     font-size: 9pt;
 }
-.dropdown-toggle::after {
-    transition: transform 0.15s linear; 
-}
-.show .dropdown .dropdown-toggle::after {
-   transform: translateY(3px);
-}
 
 @media (max-width: 575px) {
     .card {
