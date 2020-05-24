@@ -35,7 +35,7 @@ $(document).ready(function() {
         url: 'https://phcoronatracker.com/static/JSON/database.json',
         dataType: 'json',
         success: function(data) {
-            var male = 0, female = 0, asymtomatic = 0, mild = 0, severe = 0, critical = 0, length = data.length
+            var male = 0, female = 0, asymptomatic = 0, mild = 0, severe = 0, critical = 0, length = data.length
             for(var i = 0; i < length; i++) {
                 //Counting for Sex
                 if(data[i].Sex == "Male") 
@@ -49,8 +49,8 @@ $(document).ready(function() {
                     severe++
                 else if(data[i].HealthStatus == "Critical")
                     critical++
-                else
-                    asymtomatic++
+                else if(data[i].HealthStatus == "Asymptomatic")
+                    asymptomatic++
             }
             var ctx1 = document.getElementById('sex')
             var ctx2 = document.getElementById('active-cases')
@@ -99,10 +99,10 @@ $(document).ready(function() {
             
                 // The data for our dataset
                 data: {
-                    labels: ['Asymtomatic', 'Mild', 'Severe', 'Critical'],
+                    labels: ['Asymptomatic', 'Mild', 'Severe', 'Critical'],
                     datasets: [{
                         backgroundColor: ["#BE61CA","#FFC154","#FF6961","#6CA0DC"],
-                        data: [asymtomatic, mild, severe, critical]
+                        data: [asymptomatic, mild, severe, critical]
                     }]
                 },
             
