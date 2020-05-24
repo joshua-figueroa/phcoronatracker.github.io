@@ -112,7 +112,16 @@
             </main>
         </div>
     </div>
-    <script src="static/javascript/vaccine-tracker.js"></script>
+    <script>
+        if (screen && screen.width >= 576) {
+            document.write('<script type="text/javascript" src="static/javascript/vaccine-tracker.js"><\/script>');
+        }
+    </script>
+    <script>
+        if (screen && screen.width < 576) {
+            document.write('<script type="text/javascript" src="static/javascript/vaccine-tracker-mobile.js"><\/script>');
+        }
+    </script>
     <script src="static/javascript/canvasjs.min.js"></script>
     <noscript>Your browser does not support JavaScript. Consider opening it with Google Chrome or Mozilla Firefox.</noscript>
 </body>
