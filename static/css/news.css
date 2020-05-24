@@ -89,12 +89,6 @@ a {
 #top:hover {
     opacity: 1;
 }
-.dropdown-toggle::after {
-    transition: transform 0.15s linear; 
-}
-.show .dropdown .dropdown-toggle::after {
-   transform: translateY(3px);
-}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .text-large {
