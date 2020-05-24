@@ -234,12 +234,6 @@ table > tbody > tr > th > img {
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
 }
-.dropdown-toggle::after {
-    transition: transform 0.15s linear; 
-}
-.show .dropdown .dropdown-toggle::after {
-   transform: translateY(3px);
-}
 
 @media (max-width: 330px) {
     .container-title {
