@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('#filter').find('option[value=jan]').attr('selected','selected');
-    $('#filter-sm').find('option[value=jan]').attr('selected','selected');
+    document.getElementById("filter").value = "jan";
+    document.getElementById("filter-sm").value = "jan";
 });
 var prev = "jan";
 function display(data) {
