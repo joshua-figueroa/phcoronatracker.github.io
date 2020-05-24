@@ -89,6 +89,13 @@ a {
 #top:hover {
     opacity: 1;
 }
+main a {
+    color: #aaaac9;
+}
+main a:hover {
+    text-decoration: none;
+    color: #717194;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
