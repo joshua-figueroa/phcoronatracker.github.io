@@ -1,7 +1,7 @@
 [
     {
         "name": "Total",
-        "cases": 2529,
+        "cases": 2535,
         "death": 76,
         "rec": 261
     }, {
@@ -31,7 +31,7 @@
         "rec": 7
     }, {
         "name": "Davao Region",
-        "cases": 237,
+        "cases": 242,
         "death": 25,
         "rec": 101
     }, {
@@ -46,7 +46,7 @@
         "rec": 2
     }, {
         "name": "BARMM",
-        "cases": 19,
+        "cases": 20,
         "death": 4,
         "rec": 13
     }, {
