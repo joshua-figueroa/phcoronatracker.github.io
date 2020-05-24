@@ -77,7 +77,10 @@ a {
 .table {
     overflow-x: auto;
 }
-#source:hover {
+main a {
+    color: #aaaac9;
+}
+main a:hover {
     text-decoration: none;
     color: #717194;
 }
