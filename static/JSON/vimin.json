@@ -1,7 +1,7 @@
 [
     {
         "name": "Total",
-        "cases": 2535,
+        "cases": 2606,
         "death": 76,
         "rec": 261
     }, {
@@ -51,7 +51,7 @@
         "rec": 13
     }, {
         "name": "For Validation",
-        "cases": 86,
+        "cases": 89,
         "death": 0,
         "rec": 2
     }
