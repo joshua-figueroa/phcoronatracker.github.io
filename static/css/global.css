@@ -28,7 +28,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 ::-webkit-scrollbar-corner {
     background-color: rgb(73, 91, 150);
@@ -233,6 +233,24 @@ table > tbody > tr > th > img {
 }
 .navbar-brand {
     font-family: 'Roboto', sans-serif;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #4b5a81 !important;
+}
+.dropdown-item:visited {
+    background-color: #4b5a81 !important;
+    font-weight: bold;
+}
+.dropdown-item:hover {
+    font-weight: bold;
+    background-color: unset;
+}
+.btn-container {
+    position: absolute !important;
+    right: 20px !important;
+}
+a.kofi-button:hover {
+    opacity: 1 !important;
 }
 
 @media (max-width: 330px) {
@@ -524,7 +542,7 @@ table > tbody > tr > th > img {
     }
     main {
         border-left: 1px solid beige;
-    }   
+    }
     .card {
         width: 19vw;
         height: 170px;
