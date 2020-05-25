@@ -21,19 +21,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/trends.css">
     <link rel="icon" href="static/images/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar d-none d-md-block my-auto" style="background-color: #55D6AA;">
         <div contenteditable="false" class="navbar-brand text-large my-auto">
             <img src="static/images/icon.png" alt="Icon" id="icon">
             <span style="color: #0038A8">P</span><span style="color: #C12020">H</span><span style="color: #FFFFFF">CoronaTracker</span>
+            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a Coffee', '#364061', 'X8X61KLM4');kofiwidget2.draw();</script>
         </div>
     </nav>
 
     <div class="container-fluid">
-        <div class="row min-vh-100 flex-column flex-md-row"> 
+        <div class="row min-vh-100 flex-column flex-md-row">
             <aside class="col-12 col-md-3 col-lg-2 p-0 flex-shrink-1 bg-random sticky-top">
                 <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-start py-2 my-auto">
                     <a class="navbar-brand text-large d-block d-md-none" href="#">
@@ -44,45 +45,53 @@
                         <img src="static/images/menu.png" alt="menu" id="menu"></button>
                     <div class="collapse navbar-collapse list" id="collapsibleNavbar">
                         <ul class="flex-md-column flex-xs-row navbar-nav w-100 justify-content-between">
-                            <li class="nav-item"><i class="fas fa-home"></i><a href="https://phcoronatracker.com">&nbsp; Home</a></li>
-                            <li class="nav-item"><i class="fas fa-globe"></i><a href="global">&nbsp; Global Stats</a></li> 
-                            <li class="nav-item"><i class="fas fa-server"></i><a href="database">&nbsp; Patients Database</a></li>
                             <li class="nav-item dropdown">
                                 <div class="row">&nbsp;&nbsp;&nbsp;
-                                    <i class="fas fa-map-marked-alt"></i>
-                                    <a class="dropdown-toggle" href="ph-map" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; Maps</a>
+                                    <i class="fas fa-home" style="transform: translateY(3px);"></i>
+                                    <a class="dropdown-toggle" href="https://phcoronatracker.com" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; Dashboard</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item text-dark" href="ph-map">PH Map</a>
-                                        <a class="dropdown-item text-dark" href="ncr-map">NCR Map</a>
+                                        <a class="dropdown-item text-dark" href="https://phcoronatracker.com"><i class="fas fa-map-marker-alt"></i>&nbsp; Local Stats</a>
+                                        <a class="dropdown-item text-dark" href="global"><i class="fas fa-globe"></i>&nbsp; Global Stats</a>
                                     </div>
                                 </div>
-                            </li>                            
-                            <li class="nav-item" id="active"><i class="fas fa-chart-line"></i><a href="trends">&nbsp; Trends</a></li>
+                            </li>
+                            <li class="nav-item"><i class="fas fa-server"></i><a href="database">&nbsp; Patients Database</a></li>
                             <li class="nav-item"><i class="fas fa-calendar-alt"></i><a href="timeline">&nbsp; Timeline</a></li>
+                            <li class="nav-item dropdown">
+                                <div class="row">&nbsp;&nbsp;&nbsp;
+                                    <i class="fas fa-map-marked-alt" style="transform: translateY(3px);"></i>
+                                    <a class="dropdown-toggle" href="ph-map" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; Maps</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item text-dark" href="ph-map"><i class="fas fa-map-pin"></i>&nbsp; PH Map</a>
+                                        <a class="dropdown-item text-dark" href="ncr-map"><i class="fas fa-map-pin"></i>&nbsp; NCR Map</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="active"><i class="fas fa-chart-line"></i><a href="trends">&nbsp; Trends</a></li>
                             <li class="nav-item"><i class="fas fa-syringe"></i><a href="vaccine-tracker">&nbsp; Vaccine Tracker</a></li>
                             <li class="nav-item"><i class="fas fa-rss"></i><a href="news">&nbsp; News</a></li>
+                            <li class="nav-item"><i class="fas fa-question-circle"></i><a href="facts">&nbsp; Quick Facts</a></li>
                             <li class="nav-item"><i class="fas fa-address-card"></i><a href="about">&nbsp; About</a></li>
-                            <li class="nav-item"><i class="fas fa-coffee"></i><a href="https://ko-fi.com/X8X61KLM4" target="_blank">&nbsp; Support me on Ko-fi</a>
-                            </li>
+                            <li class="nav-item d-block d-md-none"><i class="fas fa-coffee"></i><a href="https://ko-fi.com/X8X61KLM4" target="_blank">&nbsp; Support me on Ko-fi</a></li>
                         </ul>
                     </div>
                 </nav>
             </aside>
-            
+
             <main class="col py-3 flex-grow-1 text-white" style="background-color: #223446;">
                 <h3 class="d-none d-lg-block" id="start">Dynamic Charts</h3>
                 <h4 class="d-block d-lg-none" id="start">Dynamic Charts</h4>
                 <div class="row mt-2 mx-auto">
                     <div class="col-lg mt-3 mb-1">
                         <div class="card">
-                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>PH Cases Series</h5></div> 
-                            <div class="card-body" style="background-color: whitesmoke;">    
+                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>PH Cases Series</h5></div>
+                            <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="cases" width="100%" height="90%"></canvas>
                                 <div class="row">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart_1,'#linear-cases','#log-cases')" id="linear-cases">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart_1,'#linear-cases','#log-cases')" id="log-cases">Logarithmic Scale</button>
-                                </div>                            
+                                </div>
                             </div>
                             <div class="card-footer text-dark" style="background-color: whitesmoke;">
                                 <span><i class="far fa-clock"></i>&nbsp;Updated: May 25, 2020</span>
@@ -91,14 +100,14 @@
                     </div>
                     <div class="col-lg mt-3 mb-1">
                         <div class="card">
-                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Fatality and Recovery Series</h5></div> 
+                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Fatality and Recovery Series</h5></div>
                             <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="death_rec" width="100%" height="90%"></canvas>
                                 <div class="row">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart,'#linear-dr','#log-dr')" id="linear-dr">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart,'#linear-dr','#log-dr')" id="log-dr">Logarithmic Scale</button>
-                                </div>   
+                                </div>
                             </div>
                             <div class="card-footer text-dark" style="background-color: whitesmoke;">
                                 <span><i class="far fa-clock"></i>&nbsp;Updated: May 25, 2020</span>
@@ -109,14 +118,14 @@
                 <div class="row mt-2 mx-auto">
                     <div class="col-lg mt-2 mb-2 mx-auto">
                         <div class="card" id="daily-report">
-                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Daily Report</h5></div> 
-                            <div class="card-body" style="background-color: whitesmoke;">    
+                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Daily Report</h5></div>
+                            <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="daily" width="100%" height="90%"></canvas>
                                 <div class="row">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart_2,'#linear-daily','#log-daily')" id="linear-daily">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart_2,'#linear-daily','#log-daily')" id="log-daily">Logarithmic Scale</button>
-                                </div>                            
+                                </div>
                             </div>
                             <div class="card-footer text-dark" style="background-color: whitesmoke;">
                                 <span><i class="far fa-clock"></i>&nbsp;Updated: May 25, 2020</span>
@@ -125,8 +134,8 @@
                     </div>
                     <div class="col-lg mt-2 mx-auto">
                         <div class="card" id="daily-report">
-                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Total Bed Capacity</h5></div> 
-                            <div class="card-body" style="background-color: whitesmoke;">    
+                            <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Total Bed Capacity</h5></div>
+                            <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="beds" width="100%" height="90%"></canvas>
                                 <div class="row">
                                     &nbsp;
