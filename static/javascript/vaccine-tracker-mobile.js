@@ -46,7 +46,7 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: null,
             dataPoints: [
-                { y: 44, name: "Protein Subunit", exploded: true },
+                { y: 44, name: "Protein Subunit", exploded: false },
                 { y: 11, name: "DNA-Based" },
                 { y: 19, name: "RNA-Based" },
                 { y: 16, name: "Non-Replicating Viral Vector" },
