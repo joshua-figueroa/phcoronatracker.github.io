@@ -1,17 +1,17 @@
 [
     {
         "name": "Total",
-        "cases": 2606,
-        "death": 76,
-        "rec": 261
+        "cases": 2624,
+        "death": 77,
+        "rec": 286
     }, {
         "name": "Western Visayas",
-        "cases": 107,
+        "cases": 108,
         "death": 10,
         "rec": 62
     }, {
         "name": "Central Visayas",
-        "cases": 1949,
+        "cases": 2021,
         "death": 28,
         "rec": 57
     }, {
@@ -21,19 +21,19 @@
         "rec": 4
     }, {
         "name": "Zamboanga Peninsula",
-        "cases": 149,
+        "cases": 153,
         "death": 2,
         "rec": 7
     }, {
         "name": "Northern Mindanao",
-        "cases": 22,
-        "death": 6,
+        "cases": 24,
+        "death": 7,
         "rec": 7
     }, {
         "name": "Davao Region",
-        "cases": 242,
+        "cases": 252,
         "death": 25,
-        "rec": 101
+        "rec": 126
     }, {
         "name": "SOCCSKSARGEN",
         "cases": 14,
@@ -51,7 +51,7 @@
         "rec": 13
     }, {
         "name": "For Validation",
-        "cases": 89,
+        "cases": 102,
         "death": 0,
         "rec": 2
     }
