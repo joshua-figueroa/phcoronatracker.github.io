@@ -1,4 +1,4 @@
-# PHCoronaTracker
+# <a href="https://phcoronatracker.com">PHCoronaTracker</a>
 
 This website was created by Joshua Figueroa, a Grade 10 student from Manila Science High School.
                                 The purpose of this website is to help people to get the latest and simplified information about the COVID-19 Pandemic not only in our country but also throughout
