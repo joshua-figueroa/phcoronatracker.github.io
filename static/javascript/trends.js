@@ -830,7 +830,7 @@ var chart_3 = new Chart(ctx_3, {
             data: active,
             lineTension: 0
         }, {
-            label: 'Available Beds',
+            label: 'Bed Capacity',
             backgroundColor: 'rgba(255, 255, 255, 0)',
             borderColor: '#236377',
             pointBackgroundColor: '#236377FF',
