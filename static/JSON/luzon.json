@@ -1,19 +1,19 @@
 [
     {
         "name": "Total",
-        "cases": 12040,
-        "death": 826,
-        "rec": 3191
+        "cases": 12438,
+        "death": 843,
+        "rec": 3267
     }, {
         "name": "NCR",
-        "cases": 9721,
-        "death": 669,
-        "rec": 2571
+        "cases": 10077,
+        "death": 686,
+        "rec": 2639
     }, {
         "name": "CAR",
         "cases": 47,
         "death": 1,
-        "rec": 38
+        "rec": 41
     }, {
         "name": "Ilocos Region",
         "cases": 66,
@@ -26,14 +26,14 @@
         "rec": 31
     }, {
         "name": "Central Luzon",
-        "cases": 509,
+        "cases": 523,
         "death": 30,
-        "rec": 143
+        "rec": 144
     }, {
         "name": "CALABARZON",
-        "cases": 1555,
+        "cases": 1583,
         "death": 104,
-        "rec": 343
+        "rec": 347
     }, {
         "name": "MIMAROPA",
         "cases": 37,
@@ -46,8 +46,8 @@
         "rec": 5
     }, {
         "name": "For Validation",
-        "cases": 1509,
-        "death": 21,
-        "rec": 28
+        "cases": 1723,
+        "death": 24,
+        "rec": 32
     }
 ]
