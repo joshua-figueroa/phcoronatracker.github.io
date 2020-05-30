@@ -82,7 +82,7 @@ a {
     font-weight: bold;
 }
 #about {
-    border-radius: 24px;
+    border-radius: 20px;
 }
 .collaboration {
     font-size: 12pt;
@@ -144,6 +144,19 @@ a.kofi-button:hover {
     }
 }
 
+@media (max-width: 575px) {
+    .py-3 {
+        padding-bottom: .60rem !important;
+        padding-top: .60rem !important;
+        padding-left: .60rem !important;
+        padding-right: .60rem !important;
+    }
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
     .text-large {
         font-size: 4.5vw;
@@ -172,6 +185,16 @@ a.kofi-button:hover {
     .source {
         width: 100%;
         font-size: 3.3vw;
+    }
+    .py-3 {
+        padding-bottom: .80rem !important;
+        padding-top: .80rem !important;
+        padding-left: .80rem !important;
+        padding-right: .80rem !important;
+    }
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
 }
 
@@ -222,6 +245,16 @@ a.kofi-button:hover {
         width: 100%;
         font-size: 2.5vw;
     }
+    .py-3 {
+        padding-bottom: .80rem !important;
+        padding-top: .80rem !important;
+        padding-left: .80rem !important;
+        padding-right: .80rem !important;
+    }
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -267,6 +300,16 @@ a.kofi-button:hover {
         width: 100%;
         font-size: 2.2vw;
     }
+    .py-3 {
+        padding-bottom: .80rem !important;
+        padding-top: .80rem !important;
+        padding-left: .80rem !important;
+        padding-right: .80rem !important;
+    }
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -276,8 +319,6 @@ a.kofi-button:hover {
     #icon {
         height: 3.2vw;
         width: 3.2vw;
-        margin-top: auto;
-        margin-bottom: 0.6vw;
     }
     .bg-random {
         background-color: #223446;
@@ -311,5 +352,15 @@ a.kofi-button:hover {
     .collaboration, .source {
         width: 100%;
         font-size: 1.6vw;
+    }
+    .py-3 {
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
 }
