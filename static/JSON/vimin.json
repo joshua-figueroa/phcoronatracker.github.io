@@ -1,39 +1,39 @@
 [
     {
         "name": "Total",
-        "cases": 2708,
-        "death": 77,
-        "rec": 321
+        "cases": 2762,
+        "death": 78,
+        "rec": 339
     }, {
         "name": "Western Visayas",
-        "cases": 109,
+        "cases": 114,
         "death": 10,
         "rec": 76
     }, {
         "name": "Central Visayas",
-        "cases": 2073,
+        "cases": 2101,
         "death": 28,
         "rec": 57
     }, {
         "name": "Eastern Visayas",
-        "cases": 30,
+        "cases": 31,
         "death": 0,
-        "rec": 11
+        "rec": 20
     }, {
         "name": "Zamboanga Peninsula",
-        "cases": 154,
+        "cases": 156,
         "death": 2,
-        "rec": 8
+        "rec": 9
     }, {
         "name": "Northern Mindanao",
-        "cases": 23,
+        "cases": 30,
         "death": 7,
-        "rec": 12
+        "rec": 14
     }, {
         "name": "Davao Region",
-        "cases": 277,
-        "death": 25,
-        "rec": 132
+        "cases": 279,
+        "death": 26,
+        "rec": 138
     }, {
         "name": "SOCCSKSARGEN",
         "cases": 15,
@@ -41,17 +41,17 @@
         "rec": 10
     }, {
         "name": "CARAGA",
-        "cases": 5,
+        "cases": 6,
         "death": 0,
         "rec": 2
     }, {
         "name": "BARMM",
-        "cases": 22,
+        "cases": 30,
         "death": 4,
         "rec": 13
     }, {
         "name": "For Validation",
-        "cases": 106,
+        "cases": 114,
         "death": 0,
         "rec": 2
     }
