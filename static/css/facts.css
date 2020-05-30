@@ -173,11 +173,11 @@ dl, ul {
         font-size: 1.3rem !important;
     }
     #about span {
-        font-weight: 500 !important;
+        font-weight: 400 !important;
         font-size: 0.9rem !important;
     } 
     li dd, #about li {
-        font-weight: 500 !important;
+        font-weight: 400 !important;
         font-size: 0.8rem !important;
     }
     figcaption {
