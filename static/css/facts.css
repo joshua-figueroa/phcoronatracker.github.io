@@ -1,5 +1,5 @@
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 body {
     margin: 0;
@@ -74,20 +74,34 @@ a {
 #start {
     font-family: Nunito;
 }
-main a {
-    font-family: 'Nunito', sans-serif;
-    color: #223446;
-    font-weight: bold;
+.navbar-brand {
+    font-family: Roboto;
+}
+#about {
+    border-radius: 20px;
+}
+.collaboration {
+    font-size: 12pt;
+    text-align: center;
+}
+main a, b {
+    color: #aaaac9;
 }
 main a:hover {
     text-decoration: none;
     color: #717194;
 }
-.navbar-brand {
-    font-family: Roboto;
+#top {
+    border-radius: 25px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: .2s linear;
+    z-index: 1025;
+    opacity: 0.80;
 }
-.card-footer {
-    font-size: 9pt;
+#top:hover {
+    opacity: 1;
 }
 .dropdown-item.active, .dropdown-item:active {
     background-color: #4b5a81 !important;
@@ -107,56 +121,96 @@ main a:hover {
 a.kofi-button:hover {
     opacity: 1 !important;
 }
-.card-header h5 {
-    text-align: left;
+figcaption {
+    text-align: center;
 }
-#top {
-    border-radius: 25px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1025;
-    opacity: 0.80;
+dt {
+    font-weight: 500;
 }
-#top:hover {
-    opacity: 1;
+dl {
+    width: 100%;
 }
-
-@media (min-width: 400px) and (max-width: 575px) {
-    .card-footer span {
-        font-size: 11.3pt !important;
-    }
+dl, ul {
+    margin-bottom: 0rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem;
+}
+.mb-3 {
+    margin-bottom: 0.75rem !important;
 }
 
-@media (min-width: 335px) and (max-width: 399px) {
-    .card-header h5 {
-        font-size: 12pt !important;
+@media (max-width: 330px) {
+    h4 {
+        font-size: 14pt !important;
     }
-    .card-footer span {
-        font-size: 10.5pt !important;
+    .mr-2 {
+        margin-right: 0rem !important;
     }
-}
-
-@media (max-width: 334px) {
-    .card-header h5 {
-        font-size: 11.3pt !important;
+    .ml-2 {
+        margin-right: 0rem !important;
     }
-    .card-footer span {
-        font-size: 10.3pt !important;
+    .mt-3 {
+        margin-top: 0.75rem !important;
+    }
+    figcaption {
+        font-size: 0.65rem !important;
     }
 }
 
 @media (max-width: 575px) {
-    .card {
-        width: 108%;
-        margin-left: -4% !important;
-        margin-right: 4% !important;
+    .py-3 {
+        padding-bottom: .60rem !important;
+        padding-top: .60rem !important;
+        padding-left: .60rem !important;
+        padding-right: .60rem !important;
     }
-    .card-header {
-        height: 42px;
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
-    .card-header h5 {
-        line-height: 21px;
+    h3 {
+        font-size: 1.3rem !important;
+    }
+    #about span {
+        font-weight: 500 !important;
+        font-size: 0.9rem !important;
+    } 
+    li dd, li {
+        font-weight: 500 !important;
+        font-size: 0.8rem !important;
+    }
+    figcaption {
+        font-size: 0.67rem !important;
+    }
+    h5 {
+        font-size: 1.15rem !important;
+    }
+    .mr-2 {
+        margin-right: 0.1rem !important;
+    }
+    .ml-2 {
+        margin-right: 0.1rem !important;
+    }
+    .column {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .margin {
+        margin-right: 0.1rem !important;
+    }
+    h3 {
+        font-size: 1.2rem !important;
+    }
+    h5 {
+        font-size: 1.05rem !important;
+    }
+    .column {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+    h6 {
+        font-size: 0.8rem !important;
     }
 }
 
@@ -177,14 +231,32 @@ a.kofi-button:hover {
         height: 4.8vw;
         width: 4.8vw;
     }
-    .card-header {
-        height: 46px;
+    .py-3 {
+        padding-bottom: .80rem !important;
+        padding-top: .80rem !important;
+        padding-left: .80rem !important;
+        padding-right: .80rem !important;
     }
-    .card-header h5 {
-        line-height: 23px;
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
-    .card-footer {
-        font-size: 10pt;
+    h3 {
+        font-size: 1.6rem !important;
+    }
+    #about span {
+        font-weight: 500 !important;
+        font-size: 0.95rem !important;
+    } 
+    li dd {
+        font-weight: 500 !important;
+        font-size: 0.9rem !important;
+    }
+    figcaption {
+        font-size: 0.75rem !important;
+    }
+    h5 {
+        font-size: 1.25rem !important;
     }
 }
 
@@ -223,14 +295,32 @@ a.kofi-button:hover {
     main {
         border-left: 1px solid beige;
     }
-    .card-header {
-        height: 46px;
+    .py-3 {
+        padding-bottom: .80rem !important;
+        padding-top: .80rem !important;
+        padding-left: .80rem !important;
+        padding-right: .80rem !important;
     }
-    .card-header h5 {
-        line-height: 23px;
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
-    .card-footer {
-        font-size: 11pt;
+    h1 {
+        font-size: 1.55rem !important;
+    }
+    #about span {
+        font-weight: 500 !important;
+        font-size: 1rem !important;
+    } 
+    li dd, li {
+        font-weight: 500 !important;
+        font-size: 0.9rem !important;
+    }
+    figcaption {
+        font-size: 0.8rem !important;
+    }
+    h3 {
+        font-size: 1.25rem !important;
     }
 }
 
@@ -265,14 +355,32 @@ a.kofi-button:hover {
     main {
         border-left: 1px solid beige;
     }
-    .card-header {
-        height: 46px;
+    .py-3 {
+        padding-bottom: .80rem !important;
+        padding-top: .80rem !important;
+        padding-left: .80rem !important;
+        padding-right: .80rem !important;
     }
-    .card-header h5 {
-        line-height: 23px;
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
-    .card-footer {
-        font-size: 12pt;
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    #about span {
+        font-weight: 500 !important;
+        font-size: 1.08rem !important;
+    } 
+    li dd, li {
+        font-weight: 500 !important;
+        font-size: 0.95rem !important;
+    }
+    figcaption {
+        font-size: 0.9rem !important;
+    }
+    h3 {
+        font-size: 1.5rem !important;
     }
 }
 
@@ -307,13 +415,25 @@ a.kofi-button:hover {
     main {
         border-left: 1px solid beige;
     }
-    .card-header {
-        height: 50px;
+    .py-3 {
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
-    .card-header h5 {
-        line-height: 25px;
+    .mx-1 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
     }
-    .card-footer {
-        font-size: 13pt;
+    h1 {
+        font-size: 2.18rem !important;
+    }
+    #about span {
+        font-weight: 500 !important;
+        font-size: 1.2rem !important;
+    } 
+    li dd, li {
+        font-weight: 500 !important;
+        font-size: 1.08rem !important;
     }
 }
