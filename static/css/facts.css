@@ -176,7 +176,7 @@ dl, ul {
         font-weight: 500 !important;
         font-size: 0.9rem !important;
     } 
-    li dd, li {
+    li dd, #about li {
         font-weight: 500 !important;
         font-size: 0.8rem !important;
     }
@@ -312,7 +312,7 @@ dl, ul {
         font-weight: 500 !important;
         font-size: 1rem !important;
     } 
-    li dd, li {
+    li dd, #about li {
         font-weight: 500 !important;
         font-size: 0.9rem !important;
     }
@@ -372,7 +372,7 @@ dl, ul {
         font-weight: 500 !important;
         font-size: 1.08rem !important;
     } 
-    li dd, li {
+    li dd, #about li {
         font-weight: 500 !important;
         font-size: 0.95rem !important;
     }
@@ -432,7 +432,7 @@ dl, ul {
         font-weight: 500 !important;
         font-size: 1.2rem !important;
     } 
-    li dd, li {
+    li dd, #about li {
         font-weight: 500 !important;
         font-size: 1.08rem !important;
     }
