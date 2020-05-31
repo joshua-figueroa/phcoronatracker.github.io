@@ -1,14 +1,14 @@
 [
     {
         "name": "Total",
-        "cases": 13005,
-        "death": 863,
-        "rec": 3370
+        "cases": 13442,
+        "death": 869,
+        "rec": 3458
     }, {
         "name": "NCR",
-        "cases": 10493,
-        "death": 704,
-        "rec": 2724
+        "cases": 10870,
+        "death": 709,
+        "rec": 2793
     }, {
         "name": "CAR",
         "cases": 47,
@@ -16,38 +16,38 @@
         "rec": 45
     }, {
         "name": "Ilocos Region",
-        "cases": 68,
+        "cases": 71,
         "death": 12,
         "rec": 29
     }, {
         "name": "Cagayan Valley",
-        "cases": 35,
+        "cases": 37,
         "death": 1,
         "rec": 31
     }, {
         "name": "Central Luzon",
-        "cases": 582,
-        "death": 30,
-        "rec": 145
+        "cases": 592,
+        "death": 31,
+        "rec": 150
     }, {
         "name": "CALABARZON",
-        "cases": 1669,
+        "cases": 1706,
         "death": 106,
-        "rec": 360
+        "rec": 374
     }, {
         "name": "MIMAROPA",
-        "cases": 38,
+        "cases": 40,
         "death": 4,
         "rec": 31
     }, {
         "name": "Bicol Region",
-        "cases": 73,
+        "cases": 79,
         "death": 5,
         "rec": 5
     }, {
         "name": "For Validation",
-        "cases": 1815,
-        "death": 25,
-        "rec": 36
+        "cases": 2093,
+        "death": 26,
+        "rec": 45
     }
 ]

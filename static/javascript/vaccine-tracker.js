@@ -46,16 +46,16 @@ $(document).ready(function() {
             toolTipContent: "{name}: <strong>{y}</strong>",
             indexLabel: "{name} - {y}",
             dataPoints: [
-                { y: 44, name: "Protein Subunit", exploded: true },
+                { y: 47, name: "Protein Subunit", exploded: true },
                 { y: 11, name: "DNA-Based" },
                 { y: 19, name: "RNA-Based" },
                 { y: 16, name: "Non-Replicating Viral Vector" },
                 { y: 8, name: "Virus-like Particle" },
-                { y: 14, name: "Replicating Viral Vector" },
+                { y: 15, name: "Replicating Viral Vector" },
                 { y: 1, name: "Replicating Bacterial Vector" },
-                { y: 8, name: "Inactive Viruses"},
+                { y: 9, name: "Inactive Viruses"},
                 { y: 3, name: "Live Attenuated Virus"},
-                { y: 17, name: "Unknown"}
+                { y: 16, name: "Unknown"}
             ]
         }]
     });
@@ -80,7 +80,7 @@ $(document).ready(function() {
                 { y: 6, name: "RNA-Based" },
                 { y: 5, name: "Discontinued" },
                 { y: 7, name: "Devices" },
-                { y: 91, name: "Others"},
+                { y: 92, name: "Others"},
                 { y: 18, name: "For Validation"}
             ]
         }]
