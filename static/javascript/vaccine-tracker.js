@@ -60,30 +60,20 @@ $(document).ready(function() {
         }]
     });
     
-    $('#treatment_container').CanvasJSChart({
-        animationEnabled: true,
-        zoomEnabled: true,
-        backgroundColor: "#F5F5F5",
-        legend:{
-            cursor: "pointer",
-            itemclick: explodePie
+    $.fn.DataTable.ext.pager.numbers_length = 6;
+    $('#vaccine-table').DataTable({
+        "lengthMenu": [[5, 10, 25, 50, 100, -1], [5, 10, 25, 50, 100, "All"]],
+        "ajax": {
+            "url": "https://phcoronatracker.com/static/JSON/vaccines.json",
+            "dataSrc": ""
         },
-        data: [{
-            type: "pie",
-            showInLegend: true,
-            toolTipContent: "{name}: <strong>{y}</strong>",
-            indexLabel: "{name} - {y}",
-            dataPoints: [
-                { y: 63, name: "Antibodies", exploded: true },
-                { y: 23, name: "Antivirals" },
-                { y: 15, name: "Cell-Based Therapies" },
-                { y: 6, name: "RNA-Based" },
-                { y: 5, name: "Discontinued" },
-                { y: 7, name: "Devices" },
-                { y: 92, name: "Others"},
-                { y: 18, name: "For Validation"}
-            ]
-        }]
+        "columns": [
+            { "data": "Developer_Researcher" },
+            { "data": "Product_Category" },
+            { "data": "Stage_of_Development" },
+            { "data": "Product_Description" }
+        ],
+        "order": [[ 1, "asc" ]]
     });
 });
 

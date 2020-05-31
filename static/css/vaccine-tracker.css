@@ -74,12 +74,19 @@ a {
 .navbar-brand {
     font-family: Roboto;
 }
+.table {
+    overflow-x: auto;
+}
 main a {
     color: #aaaac9;
 }
 main a:hover {
     text-decoration: none;
     color: #717194;
+}
+.table-hover tbody tr:hover td {
+    color: whitesmoke;
+    font-weight: 700;
 }
 #top {
     border-radius: 25px;
@@ -117,6 +124,23 @@ a.kofi-button:hover {
         width: 108%;
         margin-left: -4% !important;
         margin-right: 4% !important;
+    }
+    div.dataTables_wrapper div.dataTables_length label {
+        float: left;
+        padding-left: 15px;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        float: left;
+    }
+    div.dataTables_wrapper div.dataTables_filter label {
+        float: left;
+    }
+    .pagination {
+        position: absolute;
+        left: 0px;
+    }
+    .table-responsive {
+        font-size: small;
     }
 }
 
@@ -160,6 +184,23 @@ a.kofi-button:hover {
     #menu {
         height: 4.8vw;
         width: 4.8vw;
+    }
+    div.dataTables_wrapper div.dataTables_length label {
+        padding-left: 15px;
+        float: left;
+    }
+    div.dataTables_wrapper div.dataTables_filter label {
+        float: left;
+    }
+    div.dataTables_wrapper div.dataTables_info {
+        float: left;
+    }
+    .pagination {
+        position: absolute;
+        left: 0px;
+    }
+    .table-responsive {
+        font-size: small;
     }
 }
 
@@ -206,6 +247,9 @@ a.kofi-button:hover {
     }
     .card-footer {
         font-size: 11pt;
+    }
+    .table-responsive {
+        font-size: small;
     }
 }
 
