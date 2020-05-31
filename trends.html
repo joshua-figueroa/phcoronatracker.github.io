@@ -87,7 +87,7 @@
                             <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>PH Cases Series</h5></div>
                             <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="cases" width="100%" height="90%"></canvas>
-                                <div class="row">
+                                <div class="row px-1">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart_1,'#linear-cases','#log-cases')" id="linear-cases">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart_1,'#linear-cases','#log-cases')" id="log-cases">Logarithmic Scale</button>
@@ -103,7 +103,7 @@
                             <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Fatality and Recovery Series</h5></div>
                             <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="death_rec" width="100%" height="90%"></canvas>
-                                <div class="row">
+                                <div class="row px-1">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart,'#linear-dr','#log-dr')" id="linear-dr">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart,'#linear-dr','#log-dr')" id="log-dr">Logarithmic Scale</button>
@@ -121,7 +121,7 @@
                             <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Daily Report</h5></div>
                             <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="daily" width="100%" height="90%"></canvas>
-                                <div class="row">
+                                <div class="row px-1">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart_2,'#linear-daily','#log-daily')" id="linear-daily">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart_2,'#linear-daily','#log-daily')" id="log-daily">Logarithmic Scale</button>
@@ -137,7 +137,7 @@
                             <div class="card-header" style="background-color: #3a5775; color: whitesmoke; font-family: Nunito;"><h5>Total Bed Capacity</h5></div>
                             <div class="card-body" style="background-color: whitesmoke;">
                                 <canvas id="beds" width="100%" height="90%"></canvas>
-                                <div class="row">
+                                <div class="row px-1">
                                     &nbsp;
                                     <button class="btn btn-secondary btn-sm" onclick="update_linear(chart_3,'#linear-bed','#log-bed')" id="linear-bed">Linear Scale</button>&nbsp;&nbsp;
                                     <button class="btn btn-info btn-sm" onclick="update_log(chart_3,'#linear-bed','#log-bed')" id="log-bed">Logarithmic Scale</button>
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <br>
-                <caption><i class="fas fa-exclamation-circle"></i>&nbsp;Disclaimer: The bed capacity graph started on the April 17th mark because it is the only information available from <a href="https://bit.ly/3e4Ivcs" target="_blank">DOH Data Drop</a> as of time updated</caption>
+                <caption><i class="fas fa-exclamation-circle" style="color: #e05555;"></i>&nbsp;Disclaimer: The bed capacity graph started on the April 17th mark because it is the only information available from <a href="https://bit.ly/3e4Ivcs" target="_blank">DOH Data Drop</a> as of time updated</caption>
             </main>
         </div>
     </div>

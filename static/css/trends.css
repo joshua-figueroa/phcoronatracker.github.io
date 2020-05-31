@@ -102,6 +102,9 @@ canvas {
 a.kofi-button:hover {
     opacity: 1 !important;
 }
+.card-body {
+    padding: 0.9rem !important;
+}
 
 @media (max-width: 575px) {
     .card {
