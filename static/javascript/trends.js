@@ -34,13 +34,14 @@ var labels = ['Jan 30', 'Feb 1', 'Feb 2', 'Feb 3', 'Feb 4', 'Feb 5', 'Feb 6', 'F
 'Apr 17', 'Apr 18', 'Apr 19', 'Apr 20', 'Apr 21', 'Apr 22', 'Apr 23', 'Apr 24', 'Apr 25', 'Apr 26', 'Apr 27', 
 'Apr 28', 'Apr 29', 'Apr 30', 'May 1', 'May 2', 'May 3', 'May 4', 'May 5', 'May 6', 'May 7', 'May 8', 
 'May 9', 'May 10', 'May 11', 'May 12', 'May 13', 'May 14', 'May 15', 'May 16', 'May 17', 'May 18','May 19', 
-'May 20', 'May 21', 'May 22', 'May 23', 'May 24', 'May 25', 'May 26','May 27', 'May 28','May 29', 'May 30', 'May 31'];
+'May 20', 'May 21', 'May 22', 'May 23', 'May 24', 'May 25', 'May 26','May 27', 'May 28','May 29', 'May 30', 
+'May 31', 'Jun 1'];
 
 //data for the charts
-var cases = ['1','1','1','2','2','2','2','2','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','5','6','10','20','33','49','52','64','111','140','142','187','202','217','230','307','380','462','552','636','707','803','1075','1418','1546','2084','2311','2633','3018','3094','3246','3660','3764','3870','4076','4195','4428','4648','4932','5223','5453','5660','5878','6087','6259','6459','6599','6710','6981','7192','7294','7579','7777','7958','8212','8488','8772','8928','9223','9485','9684','10004','10343','10463','10610','10794','11086','11350','11618','11876','12091','12305','12513','12718','12942','13221','13434','13597','13777','14035','14319','14669','15049','15588','16634','17224','18086'];
-var deaths = ['0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','5','8','12','12','14','17','17','18','19','25','33','35','38','45','54','68','71','78','88','96','107','136','144','152','163','177','182','203','221','247','297','315','335','349','362','387','397','409','428','437','446','462','477','494','501','511','530','558','568','579','603','607','623','637','658','685','696','704','719','726','751','772','790','806','817','824','831','837','842','846','857','863','868','873','886','904','921','942','950','957'];
-var rec = ['0','0','0','0','0','0','0','0','0','0','0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','2','2','2','2','2','2','4','7','8','8','13','15','18','20','26','28','31','35','42','42','49','50','51','52','57','64','73','84','96','124','140','157','197','242','295','353','435','487','516','572','613','654','693','722','762','792','862','932','975','1023','1043','1084','1124','1214','1315','1408','1506','1618','1734','1842','1924','1999','2106','2251','2337','2460','2561','2635','2729','2843','2932','3000','3092','3177','3249','3323','3412','3506','3598','3720','3808','3909']
-var beds = [null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, 5664, 5959, 6171, 7284, 7704, 8144, 9265, 9734, 9005, 9288, 10901, 10728, 10729, 11420, 11851, 11716, 11219, 12122, 12530, 12788, 12834, 12792, 12715, 12646, 13233, 13455, 13127, 13442, 13314, 13011, 12823, 12183, 12841, 13119, 13147, 13264, 13091, 12930, 13037, 13384, 13467, 13446, 13464, 12979, null];
+var cases = ['1','1','1','2','2','2','2','2','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','3','5','6','10','20','33','49','52','64','111','140','142','187','202','217','230','307','380','462','552','636','707','803','1075','1418','1546','2084','2311','2633','3018','3094','3246','3660','3764','3870','4076','4195','4428','4648','4932','5223','5453','5660','5878','6087','6259','6459','6599','6710','6981','7192','7294','7579','7777','7958','8212','8488','8772','8928','9223','9485','9684','10004','10343','10463','10610','10794','11086','11350','11618','11876','12091','12305','12513','12718','12942','13221','13434','13597','13777','14035','14319','14669','15049','15588','16634','17224','18086','18638'];
+var deaths = ['0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','5','8','12','12','14','17','17','18','19','25','33','35','38','45','54','68','71','78','88','96','107','136','144','152','163','177','182','203','221','247','297','315','335','349','362','387','397','409','428','437','446','462','477','494','501','511','530','558','568','579','603','607','623','637','658','685','696','704','719','726','751','772','790','806','817','824','831','837','842','846','857','863','868','873','886','904','921','942','950','957','960'];
+var rec = ['0','0','0','0','0','0','0','0','0','0','0','0','0','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','2','2','2','2','2','2','2','4','7','8','8','13','15','18','20','26','28','31','35','42','42','49','50','51','52','57','64','73','84','96','124','140','157','197','242','295','353','435','487','516','572','613','654','693','722','762','792','862','932','975','1023','1043','1084','1124','1214','1315','1408','1506','1618','1734','1842','1924','1999','2106','2251','2337','2460','2561','2635','2729','2843','2932','3000','3092','3177','3249','3323','3412','3506','3598','3720','3808','3909','3979']
+var beds = [null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null,null, null, null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, 5664, 5959, 6171, 7284, 7704, 8144, 9265, 9734, 9005, 9288, 10901, 10728, 10729, 11420, 11851, 11716, 11219, 12122, 12530, 12788, 12834, 12792, 12715, 12646, 13233, 13455, 13127, 13442, 13314, 13011, 12823, 12183, 12841, 13119, 13147, 13264, 13091, 12930, 13037, 13384, 13467, 13446, 13464, 12979, null, null];
 var active = []
 
 //computation of active cases
@@ -59,6 +60,51 @@ function daily(data) {
         total.push(data[i] - data[i-1]);
     }
     return total;
+}
+
+let annotation = {
+    annotations: [{
+        type: "line",
+        mode: "vertical",
+        scaleID: "x-axis-0",
+        value: "Mar 16",
+        borderColor: "black",
+        borderDash: [5, 6],
+        borderDashOffset: 15,
+        label: {
+            content: "Luzon ECQ",
+            enabled: true,
+            position: "top"
+        }
+    }, {
+        type: "line",
+        mode: "vertical",
+        scaleID: "x-axis-0",
+        value: "May 16",
+        borderColor: "black",
+        borderDash: [5, 6],
+        borderDashOffset: 15,
+        label: {
+            content: "GCQ, MECQ",
+            enabled: true,
+            position: "middle",
+            xAdjust: -45
+        }
+    }, {
+        type: "line",
+        mode: "vertical",
+        scaleID: "x-axis-0",
+        value: "Jun 1",
+        borderColor: "black",
+        borderDash: [5, 6],
+        borderDashOffset: 15,
+        label: {
+            content: "NCR GCQ",
+            enabled: true,
+            yAdjust: -100,
+            xAdjust: -40
+        }
+    }]
 }
 
 //update to linear scale button
@@ -155,36 +201,7 @@ function update_linear(chart, linear_id, log_id) {
             // On category scale, minimal zoom level before actually applying zoom
             sensitivity: 3
         },
-        annotation: {
-            annotations: [{
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "Mar 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "Luzon ECQ",
-                    enabled: true,
-                    position: "top"
-                }
-            }, {
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "May 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "GCQ, MECQ",
-                    enabled: true,
-                    position: "middle",
-                    xAdjust: -45
-                }
-            }]
-        }
+        annotation: annotation
     };
     chart.update();
 }
@@ -300,36 +317,7 @@ function update_log(chart, linear_id, log_id) {
             // On category scale, minimal zoom level before actually applying zoom
             sensitivity: 3
         },
-        annotation: {
-            annotations: [{
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "Mar 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "Luzon ECQ",
-                    enabled: true,
-                    position: "top"
-                }
-            }, {
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "May 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "GCQ, MECQ",
-                    enabled: true,
-                    position: "middle",
-                    xAdjust: -45
-                }
-            }]
-        }
+        annotation: annotation
     };
 
     chart.update()
@@ -457,36 +445,7 @@ var chart = new Chart(ctx, {
             // On category scale, minimal zoom level before actually applying zoom
             sensitivity: 3
         },
-        annotation: {
-            annotations: [{
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "Mar 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "Luzon ECQ",
-                    enabled: true,
-                    position: "top"
-                }
-            }, {
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "May 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "GCQ, MECQ",
-                    enabled: true,
-                    position: "middle",
-                    xAdjust: -45
-                }
-            }]
-        }
+        annotation: annotation
     }
 });
 
@@ -612,36 +571,7 @@ var chart_1 = new Chart(ctx_1, {
             // On category scale, minimal zoom level before actually applying zoom
             sensitivity: 3
         },
-        annotation: {
-            annotations: [{
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "Mar 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "Luzon ECQ",
-                    enabled: true,
-                    position: "top"
-                }
-            }, {
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "May 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "GCQ, MECQ",
-                    enabled: true,
-                    position: "middle",
-                    xAdjust: -45
-                }
-            }]
-        }
+        annotation: annotation
     }
 });
 
@@ -777,36 +707,7 @@ var chart_2 = new Chart(ctx_2, {
             // On category scale, minimal zoom level before actually applying zoom
             sensitivity: 3
         },
-        annotation: {
-            annotations: [{
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "Mar 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "Luzon ECQ",
-                    enabled: true,
-                    position: "top"
-                }
-            }, {
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "May 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "GCQ, MECQ",
-                    enabled: true,
-                    position: "middle",
-                    xAdjust: -45
-                }
-            }]
-        }
+        annotation: annotation
     }
 });
 
@@ -932,35 +833,6 @@ var chart_3 = new Chart(ctx_3, {
             // On category scale, minimal zoom level before actually applying zoom
             sensitivity: 3
         },
-        annotation: {
-            annotations: [{
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "Mar 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "Luzon ECQ",
-                    enabled: true,
-                    position: "top"
-                }
-            }, {
-                type: "line",
-                mode: "vertical",
-                scaleID: "x-axis-0",
-                value: "May 16",
-                borderColor: "black",
-                borderDash: [5, 6],
-                borderDashOffset: 15,
-                label: {
-                    content: "GCQ, MECQ",
-                    enabled: true,
-                    position: "middle",
-                    xAdjust: -45
-                }
-            }]
-        }
+        annotation: annotation
     }
 });
