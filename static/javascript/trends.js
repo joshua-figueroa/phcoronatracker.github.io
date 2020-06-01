@@ -101,7 +101,7 @@ let annotation = {
         label: {
             content: "NCR GCQ",
             enabled: true,
-            yAdjust: -100,
+            yAdjust: -90,
             xAdjust: -40
         }
     }]
