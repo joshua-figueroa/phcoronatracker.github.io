@@ -1,7 +1,7 @@
 $('#top').hide();
 $(document).ready(function() {
-    document.getElementById("filter").value = "may";
-    document.getElementById("filter-sm").value = "may";
+    document.getElementById("filter").value = "jun";
+    document.getElementById("filter-sm").value = "jun";
     $(window).on('scroll', function() {
         if($(this).scrollTop() > 100) {
             $('#top').fadeIn(75);
@@ -34,7 +34,7 @@ $(document).ready(function() {
     );
 });
 
-var prev = "may";
+var prev = "jun";
 function display(data) {
     document.getElementById(prev).style.display = "none";
     document.getElementById(data).style.display = "block";
