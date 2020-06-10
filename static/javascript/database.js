@@ -67,7 +67,7 @@ $(document).ready(function() {
                                     return accumulator + curValue;
                                 });
                                 
-                                label += ': ' + value + ' (' + Number((value / sum) * 100).toFixed(2) + '%)'
+                                label += ': ' + value.toLocaleString() + ' (' + Number((value / sum) * 100).toFixed(2) + '%)'
                                 
                                 return label;
                             } catch (error) {
