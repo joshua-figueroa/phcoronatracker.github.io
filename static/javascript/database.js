@@ -136,8 +136,8 @@ $(document).ready(function() {
             { "data": "HealthStatus" },
             { "data": "CityMunRes" },
             { "data": "ProvRes" },
-            { "data": "RegionRes"} //DateRepConf
+            { "data": "DateRepConf"} //
         ],
-        "order": [[ 5, "asc" ]]
+        "order": [[ 6, "desc" ]]
     });
 });
