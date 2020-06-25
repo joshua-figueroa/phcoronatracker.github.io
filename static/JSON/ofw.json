@@ -1,28 +1,28 @@
 [
     {
         "name": "Total",
-        "cases": 8324,
-        "death": 508,
-        "rec": 5057,
-        "active": 2759
+        "cases": 8361,
+        "death": 513,
+        "rec": 5076,
+        "active": 2772
     }, {
         "name": "Asia Pacific",
-        "cases": 574,
+        "cases": 592,
         "death": 2,
-        "rec": 492,
-        "active": 80
+        "rec": 508,
+        "active": 82
     }, {
         "name": "Middle East/Africa",
-        "cases": 6104,
-        "death": 248,
+        "cases": 6114,
+        "death": 253,
         "rec": 3775,
-        "active": 2081
+        "active": 2086
     }, {
         "name": "Europe",
-        "cases": 961,
+        "cases": 970,
         "death": 94,
-        "rec": 417,
-        "active": 450
+        "rec": 420,
+        "active": 456
     }, {
         "name": "Americas",
         "cases": 685,
